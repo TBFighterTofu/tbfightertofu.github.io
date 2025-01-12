@@ -1,4 +1,15 @@
-<table border="1" class="dataframe table stripe" id="charitytable">
+<!doctype html>
+<html>
+  <head>
+    <title>P4A Charities</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>P4A Charities</h1>
+      <hr>
+      <table border="1" class="dataframe table stripe" id="charitytable">
   <thead>
     <tr style="text-align: right;">
       <th>Charity</th>
@@ -603,7 +614,7 @@
       <td>2023</td>
     </tr>
     <tr>
-      <td>Associação Auxílio e Amizade (Aid &amp; Friendship Association)</td>
+      <td>AssociaÃ§Ã£o AuxÃ­lio e Amizade (Aid &amp; Friendship Association)</td>
       <td><a href="https://auxilioeamizade.pt/" target="_blank">https://auxilioeamizade.pt/</a></td>
       <td></td>
       <td>$32,024.00</td>
@@ -1331,7 +1342,7 @@
       <td></td>
     </tr>
     <tr>
-      <td>Fundación Niños de los Andes</td>
+      <td>FundaciÃ³n NiÃ±os de los Andes</td>
       <td></td>
       <td></td>
       <td>$0.00</td>
@@ -2052,3 +2063,43 @@
     </tr>
   </tbody>
 </table>
+    </div>
+    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('#charitytable').DataTable({
+          order: [[3, 'desc']],
+          pageLength: 300,
+          columnDefs: [
+            {
+                targets: 0,
+                className: 'dt-body-left'
+            },
+            {
+                targets: 1,
+                className: 'dt-body-left'
+            },
+            {
+                targets: 2,
+                className: 'dt-body-left'
+            },
+            {
+                targets: 3,
+                className: 'dt-body-right'
+            },
+            {
+                targets: 4,
+                className: 'dt-body-right'
+            },
+            {
+                targets: 5,
+                className: 'dt-body-right'
+            }
+          ]
+        });
+      });
+    </script>
+  </body>
+</html>
