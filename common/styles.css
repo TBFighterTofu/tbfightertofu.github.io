@@ -22,3 +22,26 @@ h1 {
 .totals {
     text-align: center;
 }
+
+.navbar {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: table;
+}
+
+.navbutton {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: #bbd2ea;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+
+.navbutton:hover {
+    background-color: white;
+    color: #162a54;
+}
