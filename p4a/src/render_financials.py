@@ -3,6 +3,7 @@ import plotly.express as px
 import pandas as pd
 from pathlib import Path
 import string
+import json
 
 def generate_html():
     # Sample data
@@ -17,7 +18,6 @@ def generate_html():
                  barmode='group',
                  template="seaborn")
     fig.update_layout(barmode='relative',
-                      height=700,
                       xaxis=dict(
                             title=dict(text=""),
                             dtick=1
@@ -72,21 +72,16 @@ def generate_html():
             axref='pixel', ax=0, ayref='pixel', ay=30, arrowwidth=aw)
     df2 = pd.read_csv(Path(__file__).parent.parent / "data" / "assets.csv")
     fig.add_trace(go.Scatter(x=(df.year.unique()), y=df2.Amount, mode="lines+markers", line_color="black", name="Net assets"))
-
-    graph_html = fig.to_html(full_html=False)
-
-    total_raised = int(round(df[df.Amount>0].Amount.sum(), 0))
+    
+    fig_dict = json.loads(fig.to_json())
+    fig_dict["total_raised"] = "{0:,}".format(int(round(df[df.Amount>0].Amount.sum(), 0)))
     total_grants = int(round(-df[df.title=="P4A Grants"].Amount.sum(), 0))
-    other_expenses = int(round(-df[df.Amount<0].Amount.sum() - total_grants,0))
+    fig_dict["total_grants"] = "{0:,}".format(total_grants)
+    fig_dict["other_expenses"] = "{0:,}".format(int(round(-df[df.Amount<0].Amount.sum() - total_grants,0)))
 
-    template_string = open(Path(__file__).parent / "templates" / "financials.html", "r").read()
-    t = string.Template(template_string)
-    result = t.safe_substitute(graph_html=graph_html, 
-                          total_raised = f'${total_raised:,}', 
-                          total_grants = f'${total_grants:,}',
-                          other_expenses = f'${other_expenses:,}')
-    with open(Path(__file__).parent.parent / "financials.html", "w", encoding="utf-8") as f:
-        f.write(result)
+    with open(Path(__file__).parent.parent / "data" / 'financials.json', 'w', encoding='utf-8') as f:
+        json.dump(fig_dict, f, ensure_ascii=False, indent=4)
+
 
 if __name__ == '__main__':
     generate_html()
