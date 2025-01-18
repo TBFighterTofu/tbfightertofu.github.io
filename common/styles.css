@@ -13,6 +13,7 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
+    clear: left;
 }
 
 .textbox p{
@@ -45,3 +46,68 @@ h1 {
     background-color: white;
     color: #162a54;
 }
+
+.charitytag {
+    background-color: #f2d8ae;
+    float: left;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+
+#tags {
+    margin: 0 auto;
+    float: left;
+}
+
+.outertags {
+    display: flex;
+    align-items: center;
+}
+
+.linkstack {
+    float:left
+}
+
+.subtitle {
+    text-align: center;
+    margin: 0 auto;
+    padding: 3px;
+}
+
+.stat {
+    font-weight: bold;
+}
+
+.year_section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    display: block;
+}
+
+.video_div {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.thumbnail {
+    width: 200px;
+}
+
+#tester {
+    width: 100%;
+    
+}
+
+.year_title {
+    width: 100%;
+    text-align: center;
+}
+

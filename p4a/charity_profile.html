@@ -1,0 +1,131 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+    <script src="../common/jquery-3.7.1.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../common/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+  <body>
+    <div class="navbar"><a class="navbutton" href="../index.html">Home</a> <a class="navbutton" href="charity_table.html">P4A Charities</a></div>
+    <h1 id="page_title"></h1>
+    <div class="outertags"><div id="tags"></div></div>
+    <div class="outertags"><div id="tags">
+        <span id="website"></span>
+        <span id="charity_navigator"></span>
+        <span id="propublica"></span>
+        <span id="guidestar"></span>
+    </div></div>
+    <div class="subtitle">Annual revenue: <span id="revenue" class="stat"></span></div>
+    <div class="subtitle">Received&nbsp;<span id="num_grants" class="stat"></span>&nbsp;grants totaling <span id="total_grants" class="stat"></span><span id="last_grant" class="stat"></span>.&nbsp;<span id="guarantee" class="stat"></span></div>
+    <div class="subtitle"><span id="funding_years"></span></div>
+    <div class="subtitle"><span id="videos" class="stat"></span> videos this year, out of <span id="videos_all" class="stat"></span> total videos since 2024.</div>
+    <div class="subtitle"><span id="last_feature" class="stat"></span></div>
+
+    <div id="tester"></div>
+    <div class="textbox">
+        <p>^Grant totals come from the Foundation to Decrease World Suck tax documents at <a href="https://fightworldsuck.org/#Grants">https://fightworldsuck.org/#Grants</a>.</p>
+
+        <p>*Grant totals for the most recent year come from <a href="https://www.projectforawesome.com/">https://www.projectforawesome.com/</a>.</p>
+        
+        <p>Before 2020, P4A was in December, so grants were typically distributed the year after the revenue came in. Values represent the year when the transactions happened, not necessarily the P4A they correspond to.</p>
+    </div>
+    <script>
+
+        function prep_link(link, title){
+            return "<a class=navbutton href=".concat(link, ">", title, "</a>")
+        }
+
+        function video_div(d){
+            return '<a href='.concat(d['url'], '><div class="video_div"><img class="thumbnail" src="https://img.youtube.com/vi/', d['url'].replace("https://www.youtube.com/watch?v=", ""), '/hqdefault.jpg">', "<br><b>", d["Title"], "</b><br>", d["User"], "</div></a>" )
+        }
+
+        function year_section(year, d){
+            console.log(year, d)
+            h = ""
+            h = h.concat("<h2 class='year_title'>", year)
+            if (d["featured"]){
+                h = h.concat("  Featured on stream/website")
+            }
+            h = h.concat("</h2><br>")
+            h = h.concat('<div class="year_section">')
+            for (let i=0; i<d["Videos"].length; i++){
+                h = h.concat(video_div(d["Videos"][i]))
+            }
+            h = h.concat("</div>")
+            return h
+        }
+
+        $(document).ready(function () { 
+            // get charity name from the url params
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const charity = decodeURI(urlParams.get('charity'))
+
+            if (charity=="Partners in Health" || charity=="Save the Children"){
+                $('#guarantee').append("Guaranteed funding in 2025.")
+            }
+
+            $('#page_title').append(charity)
+  
+            // FETCHING DATA FROM JSON FILE 
+            $.getJSON("data/charities.json", function (data) { 
+                const summary = data[charity]
+                
+                const tags = summary.Tags.split(";").map(x=>"<div class=charitytag>".concat(x, "</div>")).join("")
+                $('#tags').append(tags)
+                $('#total_grants').append(summary["Total grants"])
+                $('#revenue').append(summary["Annual revenue"])
+                $('#num_grants').append(summary["Number of grants"])
+                if (summary["Most recent grant"]!="" && summary["Most recent grant"]!=null){
+                    $('#last_grant').append(", most recently in ".concat(summary["Most recent grant"]))
+                }
+                $('#videos').append(summary["Videos this year"])
+                $('#videos_all').append(summary["Videos since 2024"])
+                if (summary["Last featured"]!="" && summary["Last featured"]!=null){
+                    $('#last_feature').append("Last featured in ".concat(summary["Last featured"]))
+                }
+                
+                const ein = summary["EIN"]
+                if (ein!=""){
+                    cn = "https://www.charitynavigator.org/ein/".concat(ein) 
+                    pp = "https://projects.propublica.org/nonprofits/organizations/".concat(ein)
+                    cl = "https://www.guidestar.org/profile/".concat(ein)
+                }
+                else{
+                    ce = encodeURI(charity)
+                    cn = "https://www.charitynavigator.org/search?q=".concat(ce)
+                    pp = "https://projects.propublica.org/nonprofits/search?q=".concat(ce)
+                }
+                console.log(summary.Website)
+                $('#website').append(prep_link(summary.Website, "Website"))
+                $('#charity_navigator').append(prep_link(cn, "Charity Navigator"))
+                $('#propublica').append(prep_link(pp, "ProPublica"))
+                $('#guidestar').append(prep_link(cl, 'Guidestar'))
+            }); 
+
+            $.getJSON("data/grants.json", function (data) { 
+                if (data.hasOwnProperty(charity)){
+                    const grants = data[charity]
+                    for (let i=0; i<grants.length; i++){
+                        $('#funding_years').append("<b>".concat(grants[i].Year, "</b>: $", grants[i].Grant, "<br>"))
+                    }
+                }
+            })
+
+            $.getJSON("data/videos.json", function (data) {
+                if (data.hasOwnProperty(charity)){
+                    const videos = data[charity]
+                    var years = Object.keys(videos)
+                    years.sort((a,b)=>b-a)
+                    for (let i=0; i<years.length; i++){
+                        year = years[i]
+                        $('#tester').append(year_section(year, videos[year]))
+                    }
+                }            
+            })
+        }); 
+    </script>
+  </body>
+</html>
