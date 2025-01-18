@@ -159,7 +159,7 @@ def local_link(charity):
 
 def self_link(charity):
     if charity!="":
-        return f"<a href={charity}>Link</a>"
+        return f"<a href={make_website_link(charity)}>Link</a>"
     else:
         return ""
 
