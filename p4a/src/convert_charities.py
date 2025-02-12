@@ -4,6 +4,10 @@ import json
 import difflib
 from urllib.parse import quote
 import requests
+from datetime import datetime
+
+CURRENT_YEAR = datetime.now().year
+VIDEOS_THIS_YEAR = f"Videos this year"
 
 def make_website_link(link:str) -> str:
     if (pd.isna(link) or link==""):
@@ -14,42 +18,27 @@ def make_website_link(link:str) -> str:
     else:
         return link
     
-def lookup_category(code: str):
-    if code=="" or code is None:
-        return ""
-    return {'A': 'Arts, Culture & Humanities', 'B': 'Education', 'C': 'Environment', 'D': 'Animal-Related', 'E': 'Health Care', 'F': 'Mental Health & Crisis Intervention', 'G': 'Voluntary Health Associations & Medical Disciplines', 'H': 'Medical Research', 'I': 'Crime & Legal-Related', 'J': 'Employment', 'K': 'Food, Agriculture & Nutrition', 'L': 'Housing & Shelter', 'M': 'Public Safety, Disaster Preparedness & Relief', 'N': 'Recreation & Sports', 'O': 'Youth Development', 'P': 'Human Services', 'Q': 'International, Foreign Affairs & National Security', 'Y': 'Mutual & Membership Benefit', 'R': 'Civil Rights, Social Action & Advocacy', 'S': 'Community Improvement & Capacity Building', 'T': 'Philanthropy, Voluntarism & Grantmaking Foundations', 'U': 'Science & Technology', 'V': 'Social Science', 'W': 'Public & Societal Benefit', 'X': 'Religion-Related', 'Z': 'Unknown'}[code[0]]
-
-def propublica_data(ein: str):
-    if ein=="" or ein is None:
-        return {"category":"", "revenue":""}
-    url = f"https://projects.propublica.org/nonprofits/api/v2/organizations/{ein}.json"
-    g = requests.get(url)
-    try:
-        d = g.json()["organization"]
-        return {"category":lookup_category(d["ntee_code"]), "revenue":d["revenue_amount"]}
-    except:
-        return {"category":"", "revenue":""}
-    
 def import_videos(names: list[str]):
     f0 = pd.read_csv(Path(__file__).parent.parent / "data" / "videos.csv")
+    f0["views"] = f0["views"].fillna(0)
     current_year = f0.Year.max()
-    d = dict([n, {"Videos this year":0, "Videos since 2024":0}] for n in names)
+    d = dict([n, {VIDEOS_THIS_YEAR:0, "Videos since 2024":0}] for n in names)
     dl =  {}
     for i,row in f0.iterrows():
         name = row["Charity"]
         if name not in d:
-            print(i, name, row["year"], difflib.get_close_matches(name, names))
+            print(i, name, row["Year"], difflib.get_close_matches(name, names))
         else:
             if row["Year"]==current_year:
-                d[name]["Videos this year"] += 1
+                d[name][VIDEOS_THIS_YEAR] += 1
             d[name]["Videos since 2024"] += 1
             if name not in dl:
                 dl[name] = {}
             year = int(row["Year"])
             if year not in dl[name]:
-                dl[name][year] = {"Videos":[dict(row)], "featured":False}
+                dl[name][year] = {"Videos":{row["url"]:dict(row)}, "featured":False}
             else:
-                dl[name][year]["Videos"].append(dict(row))
+                dl[name][year]["Videos"][row["url"]] = dict(row)
     return d, dl
 
 def combine_dicts(dl, features):
@@ -57,10 +46,11 @@ def combine_dicts(dl, features):
         if cname not in dl:
             dl[cname] = {}
         for year in years:
-            if int(year) not in dl[cname]:
-                dl[cname][int(year)] = {"Videos":[], "featured":True}
+            yr = int(year)
+            if yr not in dl[cname]:
+                dl[cname][yr] = {"Videos":{}, "featured":True}
             else:
-                dl[cname][int(year)]["featured"] = True
+                dl[cname][yr]["featured"] = True
     return dl
 
 
@@ -91,10 +81,10 @@ def import_charities():
         most_recent_year = ""
         cname = row["Charity"].strip()
         names.append(cname)
-        for s in ["Passthrough", "EIN", "Website", "Tags"]:
+        for s in ["Passthrough", "EIN", "Website", "Tags", "Annual Revenue"]:
             if pd.isna(row[s]):
                 row[s] = ""
-        cd = {"Charity": cname, "Website": row["Website"], "Passthrough":row["Passthrough"], "EIN":row["EIN"], "Tags":row["Tags"]}
+        cd = {"Charity": cname, "Website": row["Website"], "Passthrough":row["Passthrough"], "EIN":row["EIN"], "Tags":row["Tags"], "Annual Revenue":row["Annual Revenue"]}
         features[cname] = []
         for year in years:
             ftag = f"{year}/Featured"
@@ -102,7 +92,7 @@ def import_charities():
                 if not pd.isna(row[ftag]):
                     cd["Last featured"] = year
                     features[cname].append(year)
-            if year==years[-1]:
+            if year==str(CURRENT_YEAR) or (year==str(CURRENT_YEAR-1) and datetime.now().month<6):
                 col = f"{year}/Pledged"
             else:
                 col = f"{year}/Form 990"
@@ -125,13 +115,6 @@ def import_charities():
         cd["Total grants"] = "${0:,}".format(int(funding))
         cd["Number of grants"] = num_grants
         cd["Most recent grant"] = most_recent_year
-        pp = propublica_data(row["EIN"])
-        if pp["category"]!="":
-            cd["Tags"] = cd["Tags"] + ";" + pp["category"]
-        if pp["revenue"]!="" and pp["revenue"] is not None:
-            cd["Annual revenue"] = "${0:,}".format(int(pp["revenue"]))
-        else:
-            cd["Annual revenue"] = ""
         charities.append(cd)
         cdict[cname] = cd
     vd, dl = import_videos(names)
@@ -148,20 +131,30 @@ def import_charities():
         json.dump(cdict, f)
     with open(Path(__file__).parent.parent / "data" / "grants.json", "w") as f: 
         json.dump(gdict, f)    
-    charitydf["Charity"] = [local_link(x) for x in charitydf["Charity"]]
-    charitydf["Website"] = [self_link(x) for x in charitydf["Website"]]    
-    charitydf.to_html(Path(__file__).parent / "templates" / "plain_table.html", index=False, render_links=False, table_id="charitytable", classes=[ "table", "stripe"], columns=["Charity", "Website", "Tags", "Annual revenue", "Total grants", "Number of grants", "Most recent grant", "Videos this year", "Videos since 2024", "Last featured"], na_rep="", float_format='${:,.2f}'.format, escape=False)
     charitydf.to_csv(Path(__file__).parent.parent / "data" / "charities_converted.csv")
+    charitydf["Charity"] = [local_link(x) for x in charitydf["Charity"]]
+    charitydf["Website"] = [self_link(x) for x in charitydf["Website"]]   
+    charitydf["Tags"] = [style_tags(x) for x in charitydf["Tags"]] 
+    html = charitydf.to_html(index=False, render_links=False, table_id="charitytable", classes=[ "table", "stripe"], columns=["Charity", "Tags", "Annual Revenue", "Total grants", "Number of grants", "Most recent grant", VIDEOS_THIS_YEAR], na_rep="", float_format='${:,.2f}'.format, escape=False)
+    with open(Path(__file__).parent / "templates" / "plain_table.html", "w", encoding="utf-8") as f:
+        f.write(html)
+    
 
 def local_link(charity):
     link = "charity_profile.html?charity=" + quote(charity)
-    return f"<a href={link}>{charity}</a>"
+    return f"<a href={link} class=lilbutton>{charity}</a>"
 
 def self_link(charity):
     if charity!="":
-        return f"<a href={make_website_link(charity)}>Link</a>"
+        return f"<a href={make_website_link(charity)}>Website</a>"
     else:
         return ""
+    
+def styled_tag(tag: str) -> str:
+    return f"<span class=liltag>{tag}</span>"
+
+def style_tags(tags: str) -> str:
+    return "".join([styled_tag(tag) for tag in tags.split("; ")])
 
 if __name__=="__main__":
     import_charities()

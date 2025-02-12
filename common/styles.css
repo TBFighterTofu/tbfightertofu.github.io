@@ -1,6 +1,6 @@
 body {
     background-color: white;
-    font-family: "Open Sans", verdana, arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 h1 {
@@ -47,12 +47,42 @@ h1 {
     color: #162a54;
 }
 
+.lilbutton {
+    float: left;
+    text-align: left;
+    border-radius: 10px;
+    padding: 2px 5px 3px 5px;
+    margin: 2px;
+    background-color: #bbd2ea;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.lilbutton:hover {
+    background-color: white;
+    color: #162a54;
+}
+
+.lilbutton:visited {
+    color: purple;
+}
+
 .charitytag {
     background-color: #f2d8ae;
     float: left;
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
+}
+
+.liltag {
+    background-color: #edf4d4;
+    float: left;
+    border-radius: 10px;
+    padding: 2px 5px 3px 5px;
+    margin: 2px;
+    font-size: 0.9em;
 }
 
 #tags {
@@ -81,10 +111,15 @@ h1 {
 
 .year_section {
     text-align: center;
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
-    padding-bottom: 40px;
+    margin-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: block;
+    background-color: #eeeeee;
+    box-shadow: 4px 4px #888888;
+    border-radius: 20px;
 }
 
 .video_div {
@@ -107,6 +142,26 @@ h1 {
 }
 
 .year_title {
-    width: 100%;
-    text-align: center;
+    background-color: #cccccc;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+}
+
+.filter-box {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 30%;
+    min-height: 10em;
+    vertical-align: middle;
+    background-color: #eeeeee;
+}
+
+details {
+    background-color: #eeeeee;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
 }

@@ -12,15 +12,17 @@
     <h1 id="page_title"></h1>
     <div class="outertags"><div id="tags"></div></div>
     <div class="outertags"><div id="tags">
-        <span id="website"></span>
-        <span id="charity_navigator"></span>
-        <span id="propublica"></span>
-        <span id="guidestar"></span>
+        <span id="vote" style="display:none"></span>
+        <span id="website" style="display:none"></span>
+        <span id="charity_navigator" style="display:none"></span>
+        <span id="propublica" style="display:none"></span>
+        <span id="guidestar" style="display:none"></span>
+        <span id="ukregister" style="display:none"></span>
     </div></div>
     <div class="subtitle">Annual revenue: <span id="revenue" class="stat"></span></div>
-    <div class="subtitle">Received&nbsp;<span id="num_grants" class="stat"></span>&nbsp;grants totaling <span id="total_grants" class="stat"></span><span id="last_grant" class="stat"></span>.&nbsp;<span id="guarantee" class="stat"></span></div>
+    <div class="subtitle">Received&nbsp;<span id="num_grants" class="stat"></span>&nbsp;totaling <span id="total_grants" class="stat"></span><span id="last_grant" class="stat"></span>.&nbsp;<span id="guarantee" class="stat"></span></div>
     <div class="subtitle"><span id="funding_years"></span></div>
-    <div class="subtitle"><span id="videos" class="stat"></span> videos this year, out of <span id="videos_all" class="stat"></span> total videos since 2024.</div>
+    <div class="subtitle"><span id="videos" class="stat"></span> this year, out of <span id="videos_all" class="stat"></span> since 2024.</div>
     <div class="subtitle"><span id="last_feature" class="stat"></span></div>
 
     <div id="tester"></div>
@@ -33,27 +35,39 @@
     </div>
     <script>
 
+        const ytlink = "https://www.youtube.com/watch?v="
+        const p4link = "https://projectforawesome.com/watch?v="
+
         function prep_link(link, title){
             return "<a class=navbutton href=".concat(link, ">", title, "</a>")
         }
 
+        function assign_span(id, link, title){
+            $(id).append(prep_link(link, title))
+            $(id).show()
+        }
+
         function video_div(d){
-            return '<a href='.concat(d['url'], '><div class="video_div"><img class="thumbnail" src="https://img.youtube.com/vi/', d['url'].replace("https://www.youtube.com/watch?v=", ""), '/hqdefault.jpg">', "<br><b>", d["Title"], "</b><br>", d["User"], "</div></a>" )
+            return '<a href='.concat(d['url'], '><div class="video_div"><img class="thumbnail" src="https://i.ytimg.com/vi/', d['url'].replace(ytlink, ""), '/mqdefault.jpg">', "<br><b>", d["Title"], "</b><br>", d["User"], "</div></a>" )
         }
 
         function year_section(year, d){
             console.log(year, d)
             h = ""
+            h = h.concat('<div class="year_section">')
             h = h.concat("<h2 class='year_title'>", year)
             if (d["featured"]){
-                h = h.concat("  Featured on stream/website")
+                h = h.concat("  *Featured*")
             }
             h = h.concat("</h2><br>")
-            h = h.concat('<div class="year_section">')
-            for (let i=0; i<d["Videos"].length; i++){
-                h = h.concat(video_div(d["Videos"][i]))
+            
+            for (const [url, di] of Object.entries(d["Videos"])){
+                h = h.concat(video_div(di))
             }
             h = h.concat("</div>")
+            if (year=="2025"){
+                h = h.replace(ytlink, p4link)
+            }
             return h
         }
 
@@ -76,33 +90,49 @@
                 const tags = summary.Tags.split(";").map(x=>"<div class=charitytag>".concat(x, "</div>")).join("")
                 $('#tags').append(tags)
                 $('#total_grants').append(summary["Total grants"])
-                $('#revenue').append(summary["Annual revenue"])
-                $('#num_grants').append(summary["Number of grants"])
+                if(summary["Annual revenue"]=="$0" || summary["Annual revenue"]==null){
+                    $('#revenue').append("Not found")
+                }
+                else{
+                    $('#revenue').append(summary["Annual revenue"])
+                }
+                $('#num_grants').append(String(summary["Number of grants"]).concat(" grant", summary["Number of grants"]!=1?"s":""))
                 if (summary["Most recent grant"]!="" && summary["Most recent grant"]!=null){
                     $('#last_grant').append(", most recently in ".concat(summary["Most recent grant"]))
                 }
-                $('#videos').append(summary["Videos this year"])
-                $('#videos_all').append(summary["Videos since 2024"])
+                $('#videos').append(String(summary["Videos this year"]).concat(" video", summary["Videos this year"]==1?"":"s"))
+                $('#videos_all').append(String(summary["Videos since 2024"]).concat(" video", summary["Videos since 2024"]==1?"":"s"))
                 if (summary["Last featured"]!="" && summary["Last featured"]!=null){
                     $('#last_feature').append("Last featured in ".concat(summary["Last featured"]))
                 }
                 
                 const ein = summary["EIN"]
-                if (ein!=""){
+                if (ein!="" && ein.includes("-")){
                     cn = "https://www.charitynavigator.org/ein/".concat(ein) 
                     pp = "https://projects.propublica.org/nonprofits/organizations/".concat(ein)
                     cl = "https://www.guidestar.org/profile/".concat(ein)
+                    assign_span('#charity_navigator', cn, "Charity Navigator")
+                    assign_span('#propublica', pp, "ProPublica")
+                    assign_span('#guidestar', cl, 'Guidestar')
                 }
-                else{
-                    ce = encodeURI(charity)
-                    cn = "https://www.charitynavigator.org/search?q=".concat(ce)
-                    pp = "https://projects.propublica.org/nonprofits/search?q=".concat(ce)
+                else if (ein.includes("UK") || ein.includes("England")){
+                    ur = "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/results/page/1/delta/20/keywords/".concat(ein.replace("UK", "").replace("England", "").replace(" ", ""))
+                    console.log(ein)
+                    console.log(ein.replace("UK", "").replace("England", ""))
+                    console.log(ur)
+                    assign_span('#ukregister', ur, "UK Register")
                 }
+                // else{
+                //     ce = encodeURI(charity)
+                //     cn = "https://www.charitynavigator.org/search?q=".concat(ce)
+                //     pp = "https://projects.propublica.org/nonprofits/search?q=".concat(ce)
+                //     cl = "https://www.guidestar.org/search?q=".concat(ce)
+                // }
                 console.log(summary.Website)
-                $('#website').append(prep_link(summary.Website, "Website"))
-                $('#charity_navigator').append(prep_link(cn, "Charity Navigator"))
-                $('#propublica').append(prep_link(pp, "ProPublica"))
-                $('#guidestar').append(prep_link(cl, 'Guidestar'))
+                if (summary.Website!="" && summary.Website!=null){
+                    assign_span("#website", summary.Website, "Website")
+                }
+                
             }); 
 
             $.getJSON("data/grants.json", function (data) { 
@@ -115,13 +145,18 @@
             })
 
             $.getJSON("data/videos.json", function (data) {
+                console.log(data)
                 if (data.hasOwnProperty(charity)){
                     const videos = data[charity]
+                    console.log(videos)
                     var years = Object.keys(videos)
                     years.sort((a,b)=>b-a)
                     for (let i=0; i<years.length; i++){
                         year = years[i]
                         $('#tester').append(year_section(year, videos[year]))
+                    }
+                    if (years[0]==2025){
+                        assign_span("#vote", Object.keys(videos[2025]["Videos"])[0].replace(ytlink, p4link), "Vote")
                     }
                 }            
             })

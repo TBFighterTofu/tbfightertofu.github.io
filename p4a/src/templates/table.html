@@ -3,74 +3,73 @@
   <head>
     <title>P4A Charities</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css"> -->
     <link rel="stylesheet" href="../common/styles.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <link href="https://cdn.datatables.net/v/dt/dt-2.0.3/datatables.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+    <script src="https://cdn.datatables.net/v/dt/dt-2.0.3/datatables.min.js"></script>
+    <meta charset="UTF-8">
+    
   </head>
   <body>
-    <div class="navbar"><a class="navbutton" href="../index.html">Home</a> <a class="navbutton" href="financials.html">Foundation to Decrease World Suck Financials</a></div>
+    <div class="navbar"><a class="navbutton" href="../index.html">Home</a> <a class="navbutton" href="financials.html">Foundation to Decrease World Suck Financials</a> <a class="navbutton" href="https://p4a.forbiddensteaks.com/2/">Perks/Donors <i class="fa fa-external-link"></i></a><a class="navbutton" href="https://www.futurephotons.io/p4a/live/">Fundraising Stats <i class="fa fa-external-link"></i></a></div>
     <div class="container">
       <h1>P4A Charities</h1>
-      <p>This list describes charities that have either received P4A grants, or had a video in the 2024 Project For Awesome.</p>
+      <p>This list describes charities that have either received P4A grants, or had a video in the 2024 or 2025 Project For Awesome. Last updated 10 February 2025.</p>
+      <div class="navbar">
+        <a class="navbutton" href="https://projectforawesome.com/featured">Featured Video <i class="fa fa-external-link"></i></a>
+        <a class="navbutton" href="https://projectforawesome.com/random">Random Video <i class="fa fa-external-link"></i></a>
+      </div>
       <details>
         <summary>Definitions</summary>
         <p><b>Annual revenue:</b> How much money the charity reported as revenue on their most recent Form 990.</p>
       <p><b>Total grants:</b> How much money the charity received from P4A over all years.</p>
       <p><b>Number of grants:</b> How many years the charity received money from P4A.</p>
       <p><b>Most recent grant:</b> The last year when the charity received money (not necessarily the year when P4A happened).</p>
-      <p><b>Videos this year:</b> Number of videos posted for this charity in the most recent year.</p>
+      <p><b>Videos in 2025:</b> Number of videos posted for this charity in 2025.</p>
       <p><b>Videos since 2024:</b> Total number of videos posted for this charity since 2024.</p>
       <p><b>Last featured:</b> The last year when a video for this charity was featured on the P4A website, starting in 2023.</p>
         </details>
-      
-      <hr>
+<!-- 
+      <div class="container">
+        <form class="filter-box">
+          <input type="checkbox" id="eligible" checked="true"> Only charities eligible for votes this year
+        </form>
+
+        <form class="filter-box">
+          <input type="radio" id="nogrants"> Only charities that have <b>never</b> received a grant<br/>
+          <input type="radio" id="yesgrants"> Only charities that have received a grant<br/>
+          <input type="radio" id="anygrants" checked="true"> All charities
+        </form>
+
+        <form class="filter-box">
+          Minimum annual revenue<br/>
+          <input type="text" class="numbersOnly" value="0" id="min-rev"> <br/>
+          Maximum annual revenue <br/>
+          <input type="text" class="numbersOnly" value="1000000000000" id="max-rev">
+        </form>
+      </div> -->
+
       ${table_content}
     </div>
-    <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/dataTables.bootstrap5.js"></script>
     <script>
+      jQuery('.numbersOnly').keyup(function () { 
+          this.value = this.value.replace(/[^0-9\.]/g,'');
+      });
+
       $(document).ready(function () {
 
-        $('#charitytable').DataTable({
-          order: [[4, 'desc']],
-          pageLength: 300,
-          fixedColumns: true,
-          columnDefs: [
-            {
-                targets: 0,
-                width: '100px'
-            },
-            {
-                targets: 1,
-                width: '100px'
-            },
-            {
-                targets: 2,
-                className: 'dt-body-left'
-            },
-            {
-                targets: 3,
-                className: 'dt-body-right'
-            },
-            {
-                targets: 4,
-                className: 'dt-body-right'
-            },
-            {
-                targets: 5,
-                className: 'dt-body-right'
-            },
-            {
-                targets: 6,
-                className: 'dt-body-right'
-            },
-            {
-                targets: 7,
-                className: 'dt-body-right'
-            },
-          ]
+        var table = $('#charitytable').DataTable({
+          order: [[3, 'desc']],
+          pageLength: 100
         });
-      });
+
+    });
+    
     </script>
   </body>
 </html>
