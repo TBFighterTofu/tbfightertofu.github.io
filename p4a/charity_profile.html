@@ -90,11 +90,11 @@
                 const tags = summary.Tags.split(";").map(x=>"<div class=charitytag>".concat(x, "</div>")).join("")
                 $('#tags').append(tags)
                 $('#total_grants').append(summary["Total grants"])
-                if(summary["Annual revenue"]=="$0" || summary["Annual revenue"]==null){
+                if(summary["Annual Revenue"]=="$0" || summary["Annual Revenue"]==null){
                     $('#revenue').append("Not found")
                 }
                 else{
-                    $('#revenue').append(summary["Annual revenue"])
+                    $('#revenue').append(summary["Annual Revenue"])
                 }
                 $('#num_grants').append(String(summary["Number of grants"]).concat(" grant", summary["Number of grants"]!=1?"s":""))
                 if (summary["Most recent grant"]!="" && summary["Most recent grant"]!=null){
