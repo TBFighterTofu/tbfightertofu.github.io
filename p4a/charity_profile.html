@@ -62,12 +62,14 @@
             h = h.concat("</h2><br>")
             
             for (const [url, di] of Object.entries(d["Videos"])){
-                h = h.concat(video_div(di))
+                vd = video_div(di)
+                if (year=="2025"){
+                    vd = vd.replace(ytlink, p4link)
+                }
+                h = h.concat(vd)
             }
             h = h.concat("</div>")
-            if (year=="2025"){
-                h = h.replace(ytlink, p4link)
-            }
+            
             return h
         }
 
