@@ -2,7 +2,7 @@ name: p4a_view_scraper
 
 on:
   schedule:
-    - cron: '0,30 * * * *' # runs every 30 minutes
+    - cron: '*/30 * * * *' # runs every 30 minutes
 
 jobs:
   build:
