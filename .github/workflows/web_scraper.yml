@@ -2,7 +2,7 @@ name: p4a_web_scraper
 
 on:
   schedule:
-    - cron: '*/15 * * * *' # runs every 15 minutes
+    - cron: '9,24,39,54 * * * *' # runs every 15 minutes
 
 jobs:
   build:
