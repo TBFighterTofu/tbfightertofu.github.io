@@ -68,9 +68,4 @@ def scrape_views():
     return views_df
 
 if __name__=="__main__":
-    while True:
-        try:
-            scrape_views()
-        except:
-            pass
-        time.sleep(60*15)
+    scrape_views()

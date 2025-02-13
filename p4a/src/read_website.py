@@ -96,13 +96,11 @@ def refresh_features():
         export_features_2(f1)
 
 if __name__=="__main__":
-    while True:
-        try:
-            refresh_votes()
-        except:
-            pass
-        try:
-            refresh_features()
-        except:
-            pass
-        time.sleep(60*5)
+    try:
+        refresh_votes()
+    except:
+        pass
+    try:
+        refresh_features()
+    except:
+        pass
