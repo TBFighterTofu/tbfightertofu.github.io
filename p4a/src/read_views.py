@@ -9,6 +9,7 @@ data_folder = Path(__file__).parent.parent / "data"
 video_file = data_folder / "videos.csv"
 all_views_file = data_folder / "all_views.json"
 views_json = data_folder / "views.json"
+last_views_json = data_folder / "last_views.json"
 
 def import_video_list():
     v = pd.read_csv(video_file)
@@ -64,6 +65,8 @@ def scrape_views():
     views_df.reset_index(inplace=True, drop=True)
     views_df.to_json(views_json, orient="records")
     print(timestamp, views_json)
+    new_dfs.to_json(last_views_json, orient="records")
+    print(timestamp, last_views_json)
     add_view_summary(new_dfs)
     return views_df
 

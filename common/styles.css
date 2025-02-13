@@ -47,6 +47,23 @@ h1 {
     color: #162a54;
 }
 
+.luckybutton {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    background-color: #bbd2ea;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+
+.luckybutton:hover {
+    background-color: white;
+    color: #162a54;
+}
+
 .lilbutton {
     float: left;
     text-align: left;
