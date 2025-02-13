@@ -22,7 +22,7 @@
     <div class="subtitle">Annual revenue: <span id="revenue" class="stat"></span></div>
     <div class="subtitle">Received&nbsp;<span id="num_grants" class="stat"></span>&nbsp;totaling <span id="total_grants" class="stat"></span><span id="last_grant" class="stat"></span>.&nbsp;<span id="guarantee" class="stat"></span></div>
     <div class="subtitle"><span id="funding_years"></span></div>
-    <div class="subtitle"><span id="videos" class="stat"></span> this year, out of <span id="videos_all" class="stat"></span> since 2024.</div>
+    <div class="subtitle"><span id="videos" class="stat"></span> this year, out of <span id="videos_all" class="stat"></span> found.</div>
     <div class="subtitle"><span id="last_feature" class="stat"></span></div>
 
     <div id="tester"></div>
@@ -47,11 +47,28 @@
             $(id).show()
         }
 
-        function video_div(d){
-            return '<a href='.concat(d['url'], '><div class="video_div"><img class="thumbnail" src="https://i.ytimg.com/vi/', d['url'].replace(ytlink, ""), '/mqdefault.jpg">', "<br><b>", d["Title"], "</b><br>", d["User"], "</div></a>" )
+        function video_div(d, features_web, features_stream){
+            console.log(features_web)
+            var vid_id = d["url"].replace(ytlink, "").replace(p4link, "")
+            var classes, fcap
+            if (features_stream.includes(vid_id)){
+                classes = "video_div featured_stream"
+                fcap = "Featured on stream"
+            }
+            else if (features_web.hasOwnProperty(vid_id)){
+                classes = "video_div featured_web"
+                var start_time = features_web[vid_id].start
+                var dt = new Date(start_time * 1000).toLocaleString()
+                fcap = "<br>Featured on web at<br>".concat(dt)
+            }
+            else{
+                classes = "video_div"
+                fcap = ""
+            }
+            return '<a href='.concat(d['url'], '><div class="', classes, '"><img class="thumbnail" src="https://i.ytimg.com/vi/', d['url'].replace(ytlink, ""), '/mqdefault.jpg">', "<br><b>", d["Title"], "</b><br>", d["User"], fcap, "</div></a>" )
         }
 
-        function year_section(year, d){
+        function year_section(year, d, features_web, features_stream){
             console.log(year, d)
             h = ""
             h = h.concat('<div class="year_section">')
@@ -62,7 +79,14 @@
             h = h.concat("</h2><br>")
             
             for (const [url, di] of Object.entries(d["Videos"])){
-                vd = video_div(di)
+                var vw
+                if (features_web.hasOwnProperty(year)){
+                    fw = features_web[String(year)]
+                }
+                else{
+                    fw = {}
+                }
+                vd = video_div(di, fw, features_stream)
                 if (year=="2025"){
                     vd = vd.replace(ytlink, p4link)
                 }
@@ -146,22 +170,33 @@
                 }
             })
 
-            $.getJSON("data/videos.json", function (data) {
-                console.log(data)
-                if (data.hasOwnProperty(charity)){
-                    const videos = data[charity]
+            var videoData, features_web;
+            $.when(
+                $.getJSON("data/videos.json", function(data) {
+                    videoData = data;
+                }),
+                $.getJSON("data/feature_times.json", function(data) {
+                    features_web = data;
+                })
+            ).then(function() {
+                console.log(videoData)
+                console.log(features_web)
+                var features_stream = []
+                if (videoData.hasOwnProperty(charity)){
+                    const videos = videoData[charity]
                     console.log(videos)
                     var years = Object.keys(videos)
                     years.sort((a,b)=>b-a)
                     for (let i=0; i<years.length; i++){
                         year = years[i]
-                        $('#tester').append(year_section(year, videos[year]))
+                        $('#tester').append(year_section(year, videos[year], features_web, features_stream))
                     }
                     if (years[0]==2025){
                         assign_span("#vote", Object.keys(videos[2025]["Videos"])[0].replace(ytlink, p4link), "Vote")
                     }
                 }            
-            })
+            });
+  
         }); 
     </script>
   </body>

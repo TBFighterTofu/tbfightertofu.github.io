@@ -132,6 +132,10 @@ h1 {
     vertical-align: top;
 }
 
+.featured_web{
+    background-color: #D3FF6B;
+}
+
 .thumbnail {
     width: 200px;
 }

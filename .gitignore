@@ -1,0 +1,4 @@
+.env
+server.py
+video_test_data.json
+__pycache__
