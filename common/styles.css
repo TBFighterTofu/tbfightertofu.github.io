@@ -104,6 +104,7 @@ h1 {
     padding: 2px 5px 3px 5px;
     margin: 2px;
     font-size: 0.9em;
+    text-decoration: none;
 }
 
 #tags {
@@ -179,7 +180,6 @@ h1 {
     margin: 10px;
     display: inline-block;
     width: 30%;
-    min-height: 10em;
     vertical-align: middle;
     background-color: #eeeeee;
 }
@@ -189,4 +189,8 @@ details {
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
+}
+
+#tag_header{
+    text-align: center;
 }

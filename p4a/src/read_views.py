@@ -71,4 +71,17 @@ def scrape_views():
     return views_df
 
 if __name__=="__main__":
-    scrape_views()
+    try:
+        scrape_views()
+    except:
+        pass
+    from read_website import refresh_votes, refresh_features
+    try:
+        refresh_votes()
+    except:
+        pass
+    try:
+        refresh_features()
+    except:
+        pass
+
