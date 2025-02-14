@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Votes and Views</title>
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+    <script src="../common/jquery-3.7.1.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../common/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="navbutton" href="../index.html">Home</a> 
+      <a class="navbutton" href="financials.html">Foundation to Decrease World Suck Financials</a>
+      <a class="navbutton" href="charity_table.html">P4A Charities</a> 
+      <a class="navbutton" href="roulette.html">Video Roulette</a> 
+      <a class="navbutton" href="votes.html">Votes and Views</a> 
+      <a class="navbutton" href="https://p4a.forbiddensteaks.com/2/">Perks/Donors <i class="fa fa-external-link"></i></a>
+      <a class="navbutton" href="https://www.futurephotons.io/p4a/live/">Fundraising Stats <i class="fa fa-external-link"></i></a>
+    </div>
+    <h1>Votes and Views</h1>
+    <div>
+        <h3 class="totals">
+          Charities: <span id="charities"></span>&emsp;&emsp;&emsp;&emsp;Videos: <span id="videos"></span>
+        </h3>
+    </div>
+    <div id="tester" style="width:100%;height:100%;min-height:600px"></div>
+    <script>
+        $(document).ready(function () { 
+  
+          const start_time = 1739552400
+          var votes, views, likes, comments
+          const marker_size = 10
+          const lw = 2
+          const mode = "lines+markers"
+          const colors = ["#BD4089",  "#143642", "#5DD39E","#809BCE"]
+
+          $.when(
+              $.getJSON("data/vote_count.json", function (data) {
+                var voteCount = data[data.length-1]["votes"].toLocaleString();
+                votes = {
+                  "x":data.map(x=>(x.timestamp/(x.timestamp>10**10?1000:1) - start_time)/60/60), 
+                  "y":data.map(x=>x.votes), 
+                  "line":{
+                    "color":colors[0], 
+                    "width":lw
+                  },
+                  "marker":{
+                    "color":colors[0],
+                    "symbol":"cross-open",
+                    "size":marker_size,
+                    "line":{"width":lw}
+                  },
+                  "mode":mode,
+                  "name":"Votes: ".concat(voteCount)
+                }
+              }),
+              $.getJSON("data/last_views.json", function (data) {
+                $('#videos').append(data.length);
+                var charities = new Set(data.map(x=>x.Charity));
+                $("#charities").append(charities.size)
+              }),
+              $.getJSON("data/all_views.json", function (data) {
+                var viewCount = data[data.length-1]["viewCount"].toLocaleString();
+                var likeCount = data[data.length-1]["likeCount"].toLocaleString();
+                var commentCount = data[data.length-1]["commentCount"].toLocaleString();
+                  views = {
+                    "x":data.map(x=>(x.Timestamp - start_time)/60/60),
+                    "y":data.map(x=>x.viewCount),
+                    "line":{
+                      "color":colors[1],
+                      "width":lw
+                    },
+                    "marker":{
+                      "color":colors[1],
+                      "symbol":"triangle-right-open",
+                      "size":marker_size,
+                      "line":{"width":lw}
+                    },
+                    "mode":mode,
+                    "name":"Views: ".concat(viewCount)
+                  };
+                  likes = {
+                    "x":data.map(x=>(x.Timestamp - start_time)/60/60),
+                    "y":data.map(x=>x.likeCount),
+                    "line":{
+                      "color":colors[2],
+                      "width":lw
+                    },
+                    "marker":{
+                      "color":colors[2],
+                      "symbol":"star-open",
+                      "size":marker_size,
+                      "line":{"width":lw}
+                    },
+                    "mode":mode,
+                    "yaxis":"y2",
+                    "name":"Likes: ".concat(likeCount)
+                  };
+                  comments = {
+                    "x":data.map(x=>(x.Timestamp - start_time)/60/60),
+                    "y":data.map(x=>x.commentCount),
+                    "line":{
+                      "color":colors[3],
+                      "width":lw
+                    },
+                    "marker":{
+                      "color":colors[3],
+                      "symbol":"square-open",
+                      "size":marker_size,
+                      "line":{"width":lw}
+                    },
+                    "mode":mode,
+                    "yaxis":"y2",
+                    "name":"Comments: ".concat(commentCount)
+                  };
+              })
+            ).then(function() {
+              make_plot()           
+            });
+
+          function make_plot(){
+            var dat = [comments, likes, views, votes]
+            var lay = {"xaxis":{
+                          "title":{"text":"Hour of P4A"},
+                          "zeroline":false,
+                          "showline":false,
+                          "tickmode":'array',
+                          "tickvals": [-72,-48, -24, 0, 24, 48, 72, 96, 120]
+                        },
+                        "yaxis2": {
+                          "title": {
+                            "text": 'Likes, comments'
+                          },
+                          "overlaying": 'y',
+                          "side": 'right',
+                          "zeroline":false,
+                          "rangemode":"tozero"
+                          },
+                           
+                        "yaxis":{
+                          "title":{"text":"Votes, views"},
+                          "showline":false,
+                          "rangemode":"tozero"
+                        },
+                        "legend": {
+                          "x": 0.5,
+                          "xanchor": 'center',
+                          "y": 1,
+                          "yanchor":"bottom",
+                          "orientation":"h",
+                          "font":{"size":20}
+                        },
+                        annotations: [
+                              {
+                                x: 0,
+                                y: 0,
+                                xref: 'x',
+                                yref: 'y',
+                                text: 'P4A start',
+                                showarrow: true,
+                                arrowcolor: "black",
+                                arrowsize: 2,
+                                ax: 0,
+                                ay: -400
+                              },
+                              {
+                                x: -72,
+                                y: 0,
+                                xref: 'x',
+                                yref: 'y',
+                                text: 'Voting start',
+                                showarrow: true,
+                                arrowcolor: "black",
+                                arrowsize: 2,
+                                ax: 0,
+                                ay: -400
+                              },
+                              {
+                                x: 48,
+                                y: 0,
+                                xref: 'x',
+                                yref: 'y',
+                                text: 'P4A end',
+                                showarrow: true,
+                                arrowcolor: "black",
+                                arrowsize: 2,
+                                ax: 0,
+                                ay: -400
+                              },
+                              {
+                                x: 120,
+                                y: 0,
+                                xref: 'x',
+                                yref: 'y',
+                                text: 'Voting end',
+                                showarrow: true,
+                                arrowcolor: "black",
+                                arrowsize: 2,
+                                ax: 0,
+                                ay: -400
+                              }
+                            ]
+                      }
+            TESTER = document.getElementById('tester');
+            Plotly.newPlot( TESTER, dat, lay, {responsive:true} );
+          }
+        }); 
+    </script>
+  </body>
+</html>

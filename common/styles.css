@@ -64,6 +64,10 @@ h1 {
     color: #162a54;
 }
 
+.luckybutton:visited{
+    color: purple;
+}
+
 .lilbutton {
     float: left;
     text-align: left;
