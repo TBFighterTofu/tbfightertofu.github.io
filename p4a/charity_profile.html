@@ -31,20 +31,29 @@
     <div class="subtitle">Received&nbsp;<span id="num_grants" class="stat"></span>&nbsp;totaling <span id="total_grants" class="stat"></span><span id="last_grant" class="stat"></span>.&nbsp;<span id="guarantee" class="stat"></span></div>
     <div class="subtitle"><span id="funding_years"></span></div>
     <div class="subtitle"><span id="videos" class="stat"></span> this year, out of <span id="videos_all" class="stat"></span> found.</div>
-    <div class="subtitle"><span id="last_feature" class="stat"></span></div>
-
     <div id="tester"></div>
+    <div id="plot" style="width:100%;min-height:420px"></div>
     <div class="textbox">
         <p>^Grant totals come from the Foundation to Decrease World Suck tax documents at <a href="https://fightworldsuck.org/#Grants">https://fightworldsuck.org/#Grants</a>.</p>
 
         <p>*Grant totals for the most recent year come from <a href="https://www.projectforawesome.com/">https://www.projectforawesome.com/</a>.</p>
         
         <p>Before 2020, P4A was in December, so grants were typically distributed the year after the revenue came in. Values represent the year when the transactions happened, not necessarily the P4A they correspond to.</p>
+
+        <p>Plots might have weird spikes if there are multiple videos. Some of the early data was collected poorly, so data points that were supposed to have the same timestamp had slightly different timestamps. However, there are some other videos that the YouTube API reported as having views that went up and down, which I don't understand at all.</p>
     </div>
     <script>
 
         const ytlink = "https://www.youtube.com/watch?v="
         const p4link = "https://projectforawesome.com/watch?v="
+        const start_time0 = 1739552400
+        var votes, views, likes, comments
+        const marker_size = 10
+        const lw = 2
+        const mode = "lines+markers"
+        const colors = ["#BD4089",  "#143642", "#5DD39E","#809BCE"]
+        const dy = -225
+        var annot = []
 
         function prep_link(link, title){
             return "<a class=navbutton href=".concat(link, ">", title, "</a>")
@@ -66,6 +75,19 @@
             else if (features_web.hasOwnProperty(vid_id)){
                 classes = "video_div featured_web"
                 var start_time = features_web[vid_id].start
+                annot.push({
+                                x: (start_time - start_time0)/60/60,
+                                y: 0,
+                                xref: 'x',
+                                yref: 'y',
+                                text: 'Featured',
+                                showarrow: true,
+                                arrowcolor: "#BD4089",
+                                bgcolor:"white",
+                                arrowsize: 2,
+                                ax: 0,
+                                ay: dy
+                              })
                 var dt = new Date(start_time * 1000).toLocaleString()
                 fcap = "<br>Featured on web at<br>".concat(dt)
             }
@@ -110,6 +132,7 @@
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const charity = decodeURI(urlParams.get('charity'))
+            
 
             if (charity=="Partners in Health" || charity=="Save the Children"){
                 $('#guarantee').append("Guaranteed funding in 2025.")
@@ -204,7 +227,126 @@
                     }
                 }            
             });
-  
+
+          $.when(
+              $.getJSON("data/views.json", function (data) {
+                data = data.filter(x=>x.Charity==charity)
+                console.log(data)
+                for (let i=0; i<data.length; i++){
+                    data[i].Timestamp = Math.round((data[i].Timestamp / (data[i].Timestamp>10**10?1000:1) - start_time0)/15)*15/60/60
+                }
+                console.log(data)
+                gb = Object.groupBy(data, x=>x.Timestamp)
+                timestamps = Object.keys(gb)
+                console.log(timestamps)
+                views = []
+                likes = []
+                comments = []
+                for (let i=0; i<timestamps.length; i++){
+                    ts = timestamps[i]
+                    views.push(gb[ts].reduce((partialSum, a) => partialSum + Number(a.viewCount), 0))
+                    likes.push(gb[ts].reduce((partialSum, a) => partialSum + Number(a.likeCount), 0))
+                    comments.push(gb[ts].reduce((partialSum, a) => partialSum + Number(a.commentCount), 0))
+                }
+                var viewCount = views[views.length-1];
+                var likeCount = likes[likes.length-1];
+                var commentCount = comments[comments.length-1];
+                  views = {
+                    "x":timestamps,
+                    "y":views,
+                    "line":{
+                      "color":colors[1],
+                      "width":lw
+                    },
+                    "marker":{
+                      "color":colors[1],
+                      "symbol":"triangle-right-open",
+                      "size":marker_size,
+                      "line":{"width":lw}
+                    },
+                    "mode":mode,
+                    "name":"Views: ".concat(viewCount)
+                  };
+                  likes = {
+                    "x":timestamps,
+                    "y":likes,
+                    "line":{
+                      "color":colors[2],
+                      "width":lw
+                    },
+                    "marker":{
+                      "color":colors[2],
+                      "symbol":"star-open",
+                      "size":marker_size,
+                      "line":{"width":lw}
+                    },
+                    "mode":mode,
+                    "yaxis":"y2",
+                    "name":"Likes: ".concat(likeCount)
+                  };
+                  comments = {
+                    "x":timestamps,
+                    "y":comments,
+                    "line":{
+                      "color":colors[3],
+                      "width":lw
+                    },
+                    "marker":{
+                      "color":colors[3],
+                      "symbol":"square-open",
+                      "size":marker_size,
+                      "line":{"width":lw}
+                    },
+                    "mode":mode,
+                    "yaxis":"y2",
+                    "name":"Comments: ".concat(commentCount)
+                  };
+              })
+            ).then(function() {
+              make_plot()           
+            });
+
+          function make_plot(){
+            var dat = [comments, likes, views]
+            xlist = [-72, 0, 48, 120]
+            llist = ["Voting start", "P4A start", "P4A end", "Voting end"]
+            for (let i=0; i<xlist.length; i++){
+              annot.push({"x": xlist[i], y: 0, xref: 'x', yref: 'y', text: llist[i], showarrow: true, arrowcolor: "black", bgcolor:"white", arrowsize: 2, ax: 0,ay: dy*(4-i)/4})
+            }
+            var lay = {"xaxis":{
+                          "title":{"text":"Hour of P4A"},
+                          "zeroline":false,
+                          "showline":false,
+                          "tickmode":'array',
+                          "tickvals": [-72, -60, -48,-36, -24,-12, 0,12, 24,36, 48,60, 72, 84, 96, 108, 120]
+                        },
+                        "yaxis2": {
+                          "title": {
+                            "text": 'Likes, comments'
+                          },
+                          "overlaying": 'y',
+                          "side": 'right',
+                          "zeroline":false,
+                          "rangemode":"tozero"
+                          }, 
+                        "yaxis":{
+                          "title":{"text":"Views"},
+                          "showline":false,
+                          "rangemode":"tozero"
+                        },
+                        "legend": {
+                          "x": 0.5,
+                          "xanchor": 'center',
+                          "y": 1,
+                          "yanchor":"bottom",
+                          "orientation":"h",
+                          "font":{"size":20}
+                        },
+                        annotations: annot
+                      }
+            TESTER = document.getElementById('plot');
+            Plotly.newPlot( TESTER, dat, lay, {responsive:true} );
+          }
         }); 
     </script>
   </body>

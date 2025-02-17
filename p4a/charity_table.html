@@ -69,10 +69,29 @@
       function style_tags(tags){
         return tags.split(";").map(x=>styled_tag(x)).join("")
       }
-
+      var data0, data1
 
       $(document).ready(function () {
-        $.getJSON("data/charities.json", function (data) {
+        $.when(
+          $.getJSON("data/charities.json", function (data) {
+            keys = Object.keys(data)
+            for (let i=0; i<keys.length; i++){
+              data[keys[i]]["Features"] = ""
+            }
+          data0 = data
+        }),
+        $.getJSON("data/features.json", function (data) {
+          data1 = data
+        })
+        ).then(function(){
+          data = data0
+          console.log(data)
+          for (const [key, val] of Object.entries(data1)){
+            if (data.hasOwnProperty(key)){
+              data[key]["Features"] = val.map(x=>String(x)).join(", ")
+            }
+          }
+          console.log(data)
           data = Object.values(data)
           for (let i=0; i<data.length; i++){
             data[i].Charity = format_charity(data[i].Charity)
@@ -106,7 +125,8 @@
               { data: "Total grants", title: "Total grants"},
               { data: "Number of grants", title: "Number of grants"},
               { data: "Most recent grant", title: "Most recent grant"},
-              { data: "Videos this year", title: "Videos in 2025"}
+              { data: "Videos this year", title: "Videos in 2025"},
+              { data: "Features", title: "Features"}
             ] ,
             order: [[3, 'desc']],
             pageLength: 100
