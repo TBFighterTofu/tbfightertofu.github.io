@@ -981,6 +981,18 @@
                 }
             },
             "featured": false
+        },
+        "2025": {
+            "Videos": {
+                "https://www.youtube.com/watch?v=ftkcd26hLvU": {
+                    "Year": 2025, 
+                    "Charity": "Drag Story Hour",
+                    "User": "Drag Story Hour",
+                    "Title": "Project for Awesome 2025 - Drag Story Hour",
+                    "url": "https://www.youtube.com/watch?v=ftkcd26hLvU",
+                    "views": 890
+                }
+            }
         }
     },
     "Earthjustice": {
