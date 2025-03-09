@@ -1,1 +1,222 @@
-{"actions": {"actions": [{"actionCode": "H11100", "actionDate": "2024-12-17", "committees": [{"name": "Foreign Affairs Committee", "systemCode": "hsfa00", "url": "https://api.congress.gov/v3/committee/house/hsfa00?format=json"}], "sourceSystem": {"code": 2, "name": "House floor actions"}, "text": "Referred to the House Committee on Foreign Affairs.", "type": "IntroReferral"}, {"actionCode": "Intro-H", "actionDate": "2024-12-17", "sourceSystem": {"code": 9, "name": "Library of Congress"}, "text": "Introduced in House", "type": "IntroReferral"}, {"actionCode": "1000", "actionDate": "2024-12-17", "sourceSystem": {"code": 9, "name": "Library of Congress"}, "text": "Introduced in House", "type": "IntroReferral"}, {"actionCode": "B00100", "actionDate": "2024-12-17", "sourceSystem": {"code": 9, "name": "Library of Congress"}, "text": "Sponsor introductory remarks on measure. (CR H7303)", "type": "IntroReferral"}], "pagination": {"count": 4}, "request": {"billNumber": "10457", "billType": "hr", "billUrl": "https://api.congress.gov/v3/bill/118/hr/10457?format=json", "congress": "118", "contentType": "application/json", "format": "json"}}, "cosponsors": {"cosponsors": [{"bioguideId": "M001137", "district": 5, "firstName": "Gregory", "fullName": "Rep. Meeks, Gregory W. [D-NY-5]", "isOriginalCosponsor": true, "lastName": "Meeks", "middleName": "W.", "party": "D", "sponsorshipDate": "2024-12-17", "state": "NY", "url": "https://api.congress.gov/v3/member/M001137?format=json"}, {"bioguideId": "K000385", "district": 2, "firstName": "Robin", "fullName": "Rep. Kelly, Robin L. [D-IL-2]", "isOriginalCosponsor": true, "lastName": "Kelly", "middleName": "L.", "party": "D", "sponsorshipDate": "2024-12-17", "state": "IL", "url": "https://api.congress.gov/v3/member/K000385?format=json"}], "pagination": {"count": 2, "countIncludingWithdrawnCosponsors": 2}, "request": {"billNumber": "10457", "billType": "hr", "billUrl": "https://api.congress.gov/v3/bill/118/hr/10457?format=json", "congress": "118", "contentType": "application/json", "format": "json"}}, "summaries": {"pagination": {"count": 0}, "request": {"billNumber": "10457", "billType": "hr", "billUrl": "https://api.congress.gov/v3/bill/118/hr/10457?format=json", "congress": "118", "contentType": "application/json", "format": "json"}, "summaries": []}, "titles": {"pagination": {"count": 3}, "request": {"billNumber": "10457", "billType": "hr", "billUrl": "https://api.congress.gov/v3/bill/118/hr/10457?format=json", "congress": "118", "contentType": "application/json", "format": "json"}, "titles": [{"title": "PEPFAR Extension Act of 2024", "titleType": "Display Title", "titleTypeCode": 45, "updateDate": "2025-01-24T09:38:20Z"}, {"billTextVersionCode": "IH", "billTextVersionName": "Introduced in House", "title": "PEPFAR Extension Act of 2024", "titleType": "Short Title(s) as Introduced", "titleTypeCode": 101, "updateDate": "2025-01-24T09:38:17Z"}, {"billTextVersionCode": "IH", "billTextVersionName": "Introduced in House", "title": "To amend the United States Leadership Against HIV/AIDS, Tuberculosis, and Malaria Act of 2003 to extend the President's Emergency Plan for AIDS Relief program.", "titleType": "Official Title as Introduced", "titleTypeCode": 6, "updateDate": "2025-01-24T09:33:20Z"}]}, "meta": {"bill": {"actions": {"count": 4, "url": "https://api.congress.gov/v3/bill/118/hr/10457/actions?format=json"}, "committees": {"count": 1, "url": "https://api.congress.gov/v3/bill/118/hr/10457/committees?format=json"}, "congress": 118, "cosponsors": {"count": 2, "countIncludingWithdrawnCosponsors": 2, "url": "https://api.congress.gov/v3/bill/118/hr/10457/cosponsors?format=json"}, "introducedDate": "2024-12-17", "latestAction": {"actionDate": "2024-12-17", "text": "Referred to the House Committee on Foreign Affairs."}, "number": "10457", "originChamber": "House", "originChamberCode": "H", "policyArea": {"name": "Health"}, "sponsors": [{"bioguideId": "L000551", "district": 12, "firstName": "Barbara", "fullName": "Rep. Lee, Barbara [D-CA-12]", "isByRequest": "N", "lastName": "Lee", "party": "D", "state": "CA", "url": "https://api.congress.gov/v3/member/L000551?format=json"}], "subjects": {"count": 1, "url": "https://api.congress.gov/v3/bill/118/hr/10457/subjects?format=json"}, "textVersions": {"count": 1, "url": "https://api.congress.gov/v3/bill/118/hr/10457/text?format=json"}, "title": "PEPFAR Extension Act of 2024", "titles": {"count": 3, "url": "https://api.congress.gov/v3/bill/118/hr/10457/titles?format=json"}, "type": "HR", "updateDate": "2025-01-30T14:26:17Z", "updateDateIncludingText": "2025-01-30T14:26:17Z"}, "request": {"billNumber": "10457", "billType": "hr", "congress": "118", "contentType": "application/json", "format": "json"}}}
+{
+    "actions": {
+        "actions": [
+            {
+                "actionCode": "H11100",
+                "actionDate": "2024-12-17",
+                "committees": [
+                    {
+                        "name": "Foreign Affairs Committee",
+                        "systemCode": "hsfa00",
+                        "url": "https://api.congress.gov/v3/committee/house/hsfa00?format=json"
+                    }
+                ],
+                "sourceSystem": {
+                    "code": 2,
+                    "name": "House floor actions"
+                },
+                "text": "Referred to the House Committee on Foreign Affairs.",
+                "type": "IntroReferral"
+            },
+            {
+                "actionCode": "Intro-H",
+                "actionDate": "2024-12-17",
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Introduced in House",
+                "type": "IntroReferral"
+            },
+            {
+                "actionCode": "1000",
+                "actionDate": "2024-12-17",
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Introduced in House",
+                "type": "IntroReferral"
+            },
+            {
+                "actionCode": "B00100",
+                "actionDate": "2024-12-17",
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Sponsor introductory remarks on measure. (CR H7303)",
+                "type": "IntroReferral"
+            }
+        ],
+        "pagination": {
+            "count": 4
+        },
+        "request": {
+            "billNumber": "10457",
+            "billType": "hr",
+            "billUrl": "https://api.congress.gov/v3/bill/118/hr/10457?format=json",
+            "congress": "118",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "cosponsors": {
+        "cosponsors": [
+            {
+                "bioguideId": "M001137",
+                "district": 5,
+                "firstName": "Gregory",
+                "fullName": "Rep. Meeks, Gregory W. [D-NY-5]",
+                "isOriginalCosponsor": true,
+                "lastName": "Meeks",
+                "middleName": "W.",
+                "party": "D",
+                "sponsorshipDate": "2024-12-17",
+                "state": "NY",
+                "url": "https://api.congress.gov/v3/member/M001137?format=json"
+            },
+            {
+                "bioguideId": "K000385",
+                "district": 2,
+                "firstName": "Robin",
+                "fullName": "Rep. Kelly, Robin L. [D-IL-2]",
+                "isOriginalCosponsor": true,
+                "lastName": "Kelly",
+                "middleName": "L.",
+                "party": "D",
+                "sponsorshipDate": "2024-12-17",
+                "state": "IL",
+                "url": "https://api.congress.gov/v3/member/K000385?format=json"
+            }
+        ],
+        "pagination": {
+            "count": 2,
+            "countIncludingWithdrawnCosponsors": 2
+        },
+        "request": {
+            "billNumber": "10457",
+            "billType": "hr",
+            "billUrl": "https://api.congress.gov/v3/bill/118/hr/10457?format=json",
+            "congress": "118",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "summaries": {
+        "pagination": {
+            "count": 0
+        },
+        "request": {
+            "billNumber": "10457",
+            "billType": "hr",
+            "billUrl": "https://api.congress.gov/v3/bill/118/hr/10457?format=json",
+            "congress": "118",
+            "contentType": "application/json",
+            "format": "json"
+        },
+        "summaries": []
+    },
+    "titles": {
+        "pagination": {
+            "count": 3
+        },
+        "request": {
+            "billNumber": "10457",
+            "billType": "hr",
+            "billUrl": "https://api.congress.gov/v3/bill/118/hr/10457?format=json",
+            "congress": "118",
+            "contentType": "application/json",
+            "format": "json"
+        },
+        "titles": [
+            {
+                "title": "PEPFAR Extension Act of 2024",
+                "titleType": "Display Title",
+                "titleTypeCode": 45,
+                "updateDate": "2025-01-24T09:38:20Z"
+            },
+            {
+                "billTextVersionCode": "IH",
+                "billTextVersionName": "Introduced in House",
+                "title": "PEPFAR Extension Act of 2024",
+                "titleType": "Short Title(s) as Introduced",
+                "titleTypeCode": 101,
+                "updateDate": "2025-01-24T09:38:17Z"
+            },
+            {
+                "billTextVersionCode": "IH",
+                "billTextVersionName": "Introduced in House",
+                "title": "To amend the United States Leadership Against HIV/AIDS, Tuberculosis, and Malaria Act of 2003 to extend the President's Emergency Plan for AIDS Relief program.",
+                "titleType": "Official Title as Introduced",
+                "titleTypeCode": 6,
+                "updateDate": "2025-01-24T09:33:20Z"
+            }
+        ]
+    },
+    "meta": {
+        "bill": {
+            "actions": {
+                "count": 4,
+                "url": "https://api.congress.gov/v3/bill/118/hr/10457/actions?format=json"
+            },
+            "committees": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/118/hr/10457/committees?format=json"
+            },
+            "congress": 118,
+            "cosponsors": {
+                "count": 2,
+                "countIncludingWithdrawnCosponsors": 2,
+                "url": "https://api.congress.gov/v3/bill/118/hr/10457/cosponsors?format=json"
+            },
+            "introducedDate": "2024-12-17",
+            "latestAction": {
+                "actionDate": "2024-12-17",
+                "text": "Referred to the House Committee on Foreign Affairs."
+            },
+            "number": "10457",
+            "originChamber": "House",
+            "originChamberCode": "H",
+            "policyArea": {
+                "name": "Health"
+            },
+            "sponsors": [
+                {
+                    "bioguideId": "L000551",
+                    "district": 12,
+                    "firstName": "Barbara",
+                    "fullName": "Rep. Lee, Barbara [D-CA-12]",
+                    "isByRequest": "N",
+                    "lastName": "Lee",
+                    "party": "D",
+                    "state": "CA",
+                    "url": "https://api.congress.gov/v3/member/L000551?format=json"
+                }
+            ],
+            "subjects": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/118/hr/10457/subjects?format=json"
+            },
+            "textVersions": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/118/hr/10457/text?format=json"
+            },
+            "title": "PEPFAR Extension Act of 2024",
+            "titles": {
+                "count": 3,
+                "url": "https://api.congress.gov/v3/bill/118/hr/10457/titles?format=json"
+            },
+            "type": "HR",
+            "updateDate": "2025-01-30T14:26:17Z",
+            "updateDateIncludingText": "2025-01-30T14:26:17Z"
+        },
+        "request": {
+            "billNumber": "10457",
+            "billType": "hr",
+            "congress": "118",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    }
+}

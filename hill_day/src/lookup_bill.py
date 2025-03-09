@@ -4,11 +4,31 @@ from typing import Literal
 import os
 from pathlib import Path
 import json
+from bs4 import BeautifulSoup
 
 API_KEY = os.environ.get('GOV_TOKEN')
 
 data_folder = Path(__file__).parent.parent / "data" / "bills"
 
+
+def strip_link(link: BeautifulSoup, d: dict):
+    vote = link.get("aria-label").split("Voted ")[-1]
+    id = link.get("href").split("?index=")[-1].replace("/Members/", "")
+    d[id] = vote
+
+def find_roll_calls(congress: int, bill_type: Literal["hr", "s"], bill_number: int) -> dict:
+    file = Path(__file__).parent.parent/"data"/"roll_calls"/f"{congress}_{bill_type}_{bill_number}.html"
+    if not file.exists():
+        return {}
+    else:
+        with open(file) as f:
+            text = f.read()
+        soup = BeautifulSoup(text, 'html.parser')
+        links = soup.find_all("a")
+        d = {}
+        for link in links:
+            strip_link(link, d)
+        return d
 
 def bill_data(congress: int, bill_type: Literal["hr", "s"], bill_number: int, subheader: str) -> dict:
     url = f"https://api.congress.gov/v3/bill/{congress}/{bill_type}/{bill_number}/{subheader}?api_key={API_KEY}&limit=250"
@@ -26,6 +46,7 @@ def bill_info(congress: int, bill_type: Literal["hr", "s"], bill_number: int) ->
     for s in ["actions", "cosponsors", "summaries", "titles"]:
         out[s] = bill_data(congress, bill_type, bill_number, s)
     out["meta"] = bill_meta(congress, bill_type, bill_number)
+    out["rolls"] = find_roll_calls(congress, bill_type, bill_number)
     with open(data_folder / f"{congress}_{bill_type}_{bill_number}.json", "w") as f:
         json.dump(out, f)
     return out

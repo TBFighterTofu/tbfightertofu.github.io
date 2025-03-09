@@ -49,7 +49,6 @@
             <div id="118_s_5278"></div>
             <div id="118_s_4797"></div>
             <div id="118_sres_684"></div>
-            <div id="118_hr_2940"></div>
             <div id="118_hr_6705"></div>
             <div id="118_hr_10457"></div>
             <div id="118_hr_6424"></div>
@@ -117,7 +116,10 @@
             <div id="h_20_29"></div>
             <div id="s_20_49"></div>
             <div id="s_20_21"></div>
-            
+        </div>
+        <h2>Dubious Bills</h2>
+        <div id="dubious">
+            <div id="118_hr_2940"></div>
         </div>
     </div>
 
@@ -137,19 +139,23 @@
         }
 
         function in_office(data, legislator){
-            var bill_date
-            if (data.summaries.summaries.length==0){
+            if (data.hasOwnProperty("meta")){
+                var bill_date = new Date(data.meta.bill.updateDate)
+            }
+            else if (data.summaries.summaries.length==0){
                 bill_date = new Date(data.actions.actions[0].updateDate)
             }
             else{
                 bill_date = new Date(data.summaries.summaries[0].updateDate)
             }
+            
             var bill_type = data.summaries.request.billType
             var terms = legislator.terms
             var start, end, bt0
             for (let i=terms.length-1; i>=0; i--){
                 start = new Date(terms[i].start)
                 end = new Date(terms[i].end)
+                console.log(bill_date, start, end, bill_type, terms[i].type, data.titles.titles[0].title)
                 if (start<bill_date && end>bill_date){
                     bt0 = bill_type.charAt(0)
                     return ((terms[i].type=="rep" && bt0 == "h") || (terms[i].type=="sen" && bt0 == "s"))
@@ -166,7 +172,6 @@
                 return ""
             }
             var summary = data.summaries.summaries
-            console.log(data)
             var meta = data.meta.bill
             h = ""
             h = h.concat('<details>')
@@ -192,15 +197,33 @@
                         else{
                             h = h.concat("&#x2705 Cosponsor")
                         }
-                        h = h.concat(" as of ", cs[i].sponsorshipDate, ": ")
+                        h = h.concat(" as of ", cs[i].sponsorshipDate, "")
                     }
                 }
             }
             if (!is_cosponsor){
-                h = h.concat("&#x274c; Not a cosponsor: ")
+                h = h.concat("&#x274c; Not a cosponsor")
             }
-            h = h.concat( "<a href=", "https://www.congress.gov/bill/", req.congress, "/", convert_type(req.billType), "/", req.billNumber, ">", meta.title, "</a> ", req.billType.toUpperCase().concat(".", req.billNumber, ", Congress ", req.congress,", ", new Date(data.meta.bill.introducedDate).toLocaleDateString(), "</summary>\n"))
-            h = h.concat(data.summaries.summaries[data.summaries.summaries.length-1].text, "</details>")
+            if (data.hasOwnProperty("rolls")){
+                if (data.rolls.hasOwnProperty(legislator.id.bioguide)){
+                    var vote = data.rolls[legislator.id.bioguide]
+                    if (vote=="Yea"){
+                        h = h.concat(", &#x2705 Voted Yea")
+                    }
+                    else if (vote=="Nay"){
+                        h = h.concat(", &#x274c; Voted Nay")
+                    }
+                    else{
+                        h = h.concat(", &#x26AB; ", vote)
+                    }
+                }
+            }
+            h = h.concat( ": <a href=", "https://www.congress.gov/bill/", req.congress, "/", convert_type(req.billType), "/", req.billNumber, ">", meta.title, "</a> ", req.billType.toUpperCase().concat(".", req.billNumber, ", Congress ", req.congress,", ", new Date(data.meta.bill.introducedDate).toLocaleDateString(), "</summary>\n"))
+            var summaries = data.summaries.summaries
+            if (summaries.length>0){
+                h = h.concat([data.summaries.summaries.length-1].text)
+            }
+            h - h.concat( "</details>")
             return h
         }
 

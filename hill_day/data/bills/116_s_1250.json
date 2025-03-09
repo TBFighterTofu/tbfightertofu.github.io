@@ -1,1 +1,279 @@
-{"actions": {"actions": [{"actionDate": "2019-04-30", "committees": [{"name": "Budget Committee", "systemCode": "ssbu00", "url": "https://api.congress.gov/v3/committee/senate/ssbu00?format=json"}], "sourceSystem": {"name": "Senate"}, "text": "Read twice and referred to the Committee on the Budget. (text: CR S2521-2522)", "type": "IntroReferral"}, {"actionCode": "10000", "actionDate": "2019-04-30", "sourceSystem": {"code": 9, "name": "Library of Congress"}, "text": "Introduced in Senate", "type": "IntroReferral"}], "pagination": {"count": 2}, "request": {"billNumber": "1250", "billType": "s", "billUrl": "https://api.congress.gov/v3/bill/116/s/1250?format=json", "congress": "116", "contentType": "application/json", "format": "json"}}, "cosponsors": {"cosponsors": [{"bioguideId": "B000944", "firstName": "Sherrod", "fullName": "Sen. Brown, Sherrod [D-OH]", "isOriginalCosponsor": true, "lastName": "Brown", "party": "D", "sponsorshipDate": "2019-04-30", "state": "OH", "url": "https://api.congress.gov/v3/member/B000944?format=json"}, {"bioguideId": "V000128", "firstName": "Chris", "fullName": "Sen. Van Hollen, Chris [D-MD]", "isOriginalCosponsor": true, "lastName": "Van Hollen", "party": "D", "sponsorshipDate": "2019-04-30", "state": "MD", "url": "https://api.congress.gov/v3/member/V000128?format=json"}, {"bioguideId": "C000141", "firstName": "Ben", "fullName": "Sen. Cardin, Benjamin L. [D-MD]", "isOriginalCosponsor": true, "lastName": "Cardin", "party": "D", "sponsorshipDate": "2019-04-30", "state": "MD", "url": "https://api.congress.gov/v3/member/C000141?format=json"}, {"bioguideId": "C001070", "firstName": "Bob", "fullName": "Sen. Casey, Robert P., Jr. [D-PA]", "isOriginalCosponsor": true, "lastName": "Casey", "party": "D", "sponsorshipDate": "2019-04-30", "state": "PA", "url": "https://api.congress.gov/v3/member/C001070?format=json"}, {"bioguideId": "M000133", "firstName": "Edward", "fullName": "Sen. Markey, Edward J. [D-MA]", "isOriginalCosponsor": true, "lastName": "Markey", "middleName": "J.", "party": "D", "sponsorshipDate": "2019-04-30", "state": "MA", "url": "https://api.congress.gov/v3/member/M000133?format=json"}, {"bioguideId": "B001230", "firstName": "Tammy", "fullName": "Sen. Baldwin, Tammy [D-WI]", "isOriginalCosponsor": true, "lastName": "Baldwin", "party": "D", "sponsorshipDate": "2019-04-30", "state": "WI", "url": "https://api.congress.gov/v3/member/B001230?format=json"}, {"bioguideId": "B001277", "firstName": "Richard", "fullName": "Sen. Blumenthal, Richard [D-CT]", "isOriginalCosponsor": true, "lastName": "Blumenthal", "party": "D", "sponsorshipDate": "2019-04-30", "state": "CT", "url": "https://api.congress.gov/v3/member/B001277?format=json"}, {"bioguideId": "K000367", "firstName": "Amy", "fullName": "Sen. Klobuchar, Amy [D-MN]", "isOriginalCosponsor": true, "lastName": "Klobuchar", "party": "D", "sponsorshipDate": "2019-04-30", "state": "MN", "url": "https://api.congress.gov/v3/member/K000367?format=json"}], "pagination": {"count": 8, "countIncludingWithdrawnCosponsors": 8}, "request": {"billNumber": "1250", "billType": "s", "billUrl": "https://api.congress.gov/v3/bill/116/s/1250?format=json", "congress": "116", "contentType": "application/json", "format": "json"}}, "summaries": {"pagination": {"count": 1}, "request": {"billNumber": "1250", "billType": "s", "billUrl": "https://api.congress.gov/v3/bill/116/s/1250?format=json", "congress": "116", "contentType": "application/json", "format": "json"}, "summaries": [{"actionDate": "2019-04-30", "actionDesc": "Introduced in Senate", "text": " <p><b>American Cures Act </b></p> <p>This bill requires certain adjustments to discretionary spending limits over FY2020-FY2024 to accommodate increases in appropriations for agencies that perform biomedical research. Adjustments are required for the National Institutes of Health, the Centers for Disease Control and Prevention, the Department of Defense health program, and the Department of Veterans Affairs medical and prosthetics research program. </p> <p>The bill also requires annual appropriations in FY2020-FY2024 for each of the programs and agencies referenced in this bill to be at least the amount appropriated for FY2019. </p> <p>The bill exempts appropriations provided pursuant to this bill from sequestration. Sequestration is a process of automatic, usually across-the-board spending reductions under which budgetary resources are permanently cancelled to enforce specific budget policy goals. </p>", "updateDate": "2019-07-23T22:52:12Z", "versionCode": "00"}]}, "titles": {"pagination": {"count": 3}, "request": {"billNumber": "1250", "billType": "s", "billUrl": "https://api.congress.gov/v3/bill/116/s/1250?format=json", "congress": "116", "contentType": "application/json", "format": "json"}, "titles": [{"title": "American Cures Act", "titleType": "Display Title", "titleTypeCode": 45, "updateDate": "2025-01-03T02:57:30Z"}, {"billTextVersionCode": "IS", "billTextVersionName": "Introduced in Senate", "title": "American Cures Act", "titleType": "Short Title(s) as Introduced", "titleTypeCode": 101, "updateDate": "2022-02-08T23:03:47Z"}, {"billTextVersionCode": "IS", "billTextVersionName": "Introduced in Senate", "title": "A bill to prioritize funding for an expanded and sustained national investment in biomedical research.", "titleType": "Official Title as Introduced", "titleTypeCode": 6, "updateDate": "2021-12-29T22:02:37Z"}]}, "meta": {"bill": {"actions": {"count": 2, "url": "https://api.congress.gov/v3/bill/116/s/1250/actions?format=json"}, "committees": {"count": 1, "url": "https://api.congress.gov/v3/bill/116/s/1250/committees?format=json"}, "congress": 116, "cosponsors": {"count": 8, "countIncludingWithdrawnCosponsors": 8, "url": "https://api.congress.gov/v3/bill/116/s/1250/cosponsors?format=json"}, "introducedDate": "2019-04-30", "latestAction": {"actionDate": "2019-04-30", "text": "Read twice and referred to the Committee on the Budget. (text: CR S2521-2522)"}, "number": "1250", "originChamber": "Senate", "originChamberCode": "S", "policyArea": {"name": "Health"}, "relatedBills": {"count": 1, "url": "https://api.congress.gov/v3/bill/116/s/1250/relatedbills?format=json"}, "sponsors": [{"bioguideId": "D000563", "firstName": "Richard", "fullName": "Sen. Durbin, Richard J. [D-IL]", "isByRequest": "N", "lastName": "Durbin", "middleName": "J.", "party": "D", "state": "IL", "url": "https://api.congress.gov/v3/member/D000563?format=json"}], "subjects": {"count": 17, "url": "https://api.congress.gov/v3/bill/116/s/1250/subjects?format=json"}, "summaries": {"count": 1, "url": "https://api.congress.gov/v3/bill/116/s/1250/summaries?format=json"}, "textVersions": {"count": 1, "url": "https://api.congress.gov/v3/bill/116/s/1250/text?format=json"}, "title": "American Cures Act", "titles": {"count": 3, "url": "https://api.congress.gov/v3/bill/116/s/1250/titles?format=json"}, "type": "S", "updateDate": "2025-01-14T18:22:18Z", "updateDateIncludingText": "2025-01-14T18:22:18Z"}, "request": {"billNumber": "1250", "billType": "s", "congress": "116", "contentType": "application/json", "format": "json"}}}
+{
+    "actions": {
+        "actions": [
+            {
+                "actionDate": "2019-04-30",
+                "committees": [
+                    {
+                        "name": "Budget Committee",
+                        "systemCode": "ssbu00",
+                        "url": "https://api.congress.gov/v3/committee/senate/ssbu00?format=json"
+                    }
+                ],
+                "sourceSystem": {
+                    "name": "Senate"
+                },
+                "text": "Read twice and referred to the Committee on the Budget. (text: CR S2521-2522)",
+                "type": "IntroReferral"
+            },
+            {
+                "actionCode": "10000",
+                "actionDate": "2019-04-30",
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Introduced in Senate",
+                "type": "IntroReferral"
+            }
+        ],
+        "pagination": {
+            "count": 2
+        },
+        "request": {
+            "billNumber": "1250",
+            "billType": "s",
+            "billUrl": "https://api.congress.gov/v3/bill/116/s/1250?format=json",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "cosponsors": {
+        "cosponsors": [
+            {
+                "bioguideId": "B000944",
+                "firstName": "Sherrod",
+                "fullName": "Sen. Brown, Sherrod [D-OH]",
+                "isOriginalCosponsor": true,
+                "lastName": "Brown",
+                "party": "D",
+                "sponsorshipDate": "2019-04-30",
+                "state": "OH",
+                "url": "https://api.congress.gov/v3/member/B000944?format=json"
+            },
+            {
+                "bioguideId": "V000128",
+                "firstName": "Chris",
+                "fullName": "Sen. Van Hollen, Chris [D-MD]",
+                "isOriginalCosponsor": true,
+                "lastName": "Van Hollen",
+                "party": "D",
+                "sponsorshipDate": "2019-04-30",
+                "state": "MD",
+                "url": "https://api.congress.gov/v3/member/V000128?format=json"
+            },
+            {
+                "bioguideId": "C000141",
+                "firstName": "Ben",
+                "fullName": "Sen. Cardin, Benjamin L. [D-MD]",
+                "isOriginalCosponsor": true,
+                "lastName": "Cardin",
+                "party": "D",
+                "sponsorshipDate": "2019-04-30",
+                "state": "MD",
+                "url": "https://api.congress.gov/v3/member/C000141?format=json"
+            },
+            {
+                "bioguideId": "C001070",
+                "firstName": "Bob",
+                "fullName": "Sen. Casey, Robert P., Jr. [D-PA]",
+                "isOriginalCosponsor": true,
+                "lastName": "Casey",
+                "party": "D",
+                "sponsorshipDate": "2019-04-30",
+                "state": "PA",
+                "url": "https://api.congress.gov/v3/member/C001070?format=json"
+            },
+            {
+                "bioguideId": "M000133",
+                "firstName": "Edward",
+                "fullName": "Sen. Markey, Edward J. [D-MA]",
+                "isOriginalCosponsor": true,
+                "lastName": "Markey",
+                "middleName": "J.",
+                "party": "D",
+                "sponsorshipDate": "2019-04-30",
+                "state": "MA",
+                "url": "https://api.congress.gov/v3/member/M000133?format=json"
+            },
+            {
+                "bioguideId": "B001230",
+                "firstName": "Tammy",
+                "fullName": "Sen. Baldwin, Tammy [D-WI]",
+                "isOriginalCosponsor": true,
+                "lastName": "Baldwin",
+                "party": "D",
+                "sponsorshipDate": "2019-04-30",
+                "state": "WI",
+                "url": "https://api.congress.gov/v3/member/B001230?format=json"
+            },
+            {
+                "bioguideId": "B001277",
+                "firstName": "Richard",
+                "fullName": "Sen. Blumenthal, Richard [D-CT]",
+                "isOriginalCosponsor": true,
+                "lastName": "Blumenthal",
+                "party": "D",
+                "sponsorshipDate": "2019-04-30",
+                "state": "CT",
+                "url": "https://api.congress.gov/v3/member/B001277?format=json"
+            },
+            {
+                "bioguideId": "K000367",
+                "firstName": "Amy",
+                "fullName": "Sen. Klobuchar, Amy [D-MN]",
+                "isOriginalCosponsor": true,
+                "lastName": "Klobuchar",
+                "party": "D",
+                "sponsorshipDate": "2019-04-30",
+                "state": "MN",
+                "url": "https://api.congress.gov/v3/member/K000367?format=json"
+            }
+        ],
+        "pagination": {
+            "count": 8,
+            "countIncludingWithdrawnCosponsors": 8
+        },
+        "request": {
+            "billNumber": "1250",
+            "billType": "s",
+            "billUrl": "https://api.congress.gov/v3/bill/116/s/1250?format=json",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "summaries": {
+        "pagination": {
+            "count": 1
+        },
+        "request": {
+            "billNumber": "1250",
+            "billType": "s",
+            "billUrl": "https://api.congress.gov/v3/bill/116/s/1250?format=json",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        },
+        "summaries": [
+            {
+                "actionDate": "2019-04-30",
+                "actionDesc": "Introduced in Senate",
+                "text": " <p><b>American Cures Act </b></p> <p>This bill requires certain adjustments to discretionary spending limits over FY2020-FY2024 to accommodate increases in appropriations for agencies that perform biomedical research. Adjustments are required for the National Institutes of Health, the Centers for Disease Control and Prevention, the Department of Defense health program, and the Department of Veterans Affairs medical and prosthetics research program. </p> <p>The bill also requires annual appropriations in FY2020-FY2024 for each of the programs and agencies referenced in this bill to be at least the amount appropriated for FY2019. </p> <p>The bill exempts appropriations provided pursuant to this bill from sequestration. Sequestration is a process of automatic, usually across-the-board spending reductions under which budgetary resources are permanently cancelled to enforce specific budget policy goals. </p>",
+                "updateDate": "2019-07-23T22:52:12Z",
+                "versionCode": "00"
+            }
+        ]
+    },
+    "titles": {
+        "pagination": {
+            "count": 3
+        },
+        "request": {
+            "billNumber": "1250",
+            "billType": "s",
+            "billUrl": "https://api.congress.gov/v3/bill/116/s/1250?format=json",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        },
+        "titles": [
+            {
+                "title": "American Cures Act",
+                "titleType": "Display Title",
+                "titleTypeCode": 45,
+                "updateDate": "2025-01-03T02:57:30Z"
+            },
+            {
+                "billTextVersionCode": "IS",
+                "billTextVersionName": "Introduced in Senate",
+                "title": "American Cures Act",
+                "titleType": "Short Title(s) as Introduced",
+                "titleTypeCode": 101,
+                "updateDate": "2022-02-08T23:03:47Z"
+            },
+            {
+                "billTextVersionCode": "IS",
+                "billTextVersionName": "Introduced in Senate",
+                "title": "A bill to prioritize funding for an expanded and sustained national investment in biomedical research.",
+                "titleType": "Official Title as Introduced",
+                "titleTypeCode": 6,
+                "updateDate": "2021-12-29T22:02:37Z"
+            }
+        ]
+    },
+    "meta": {
+        "bill": {
+            "actions": {
+                "count": 2,
+                "url": "https://api.congress.gov/v3/bill/116/s/1250/actions?format=json"
+            },
+            "committees": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/116/s/1250/committees?format=json"
+            },
+            "congress": 116,
+            "cosponsors": {
+                "count": 8,
+                "countIncludingWithdrawnCosponsors": 8,
+                "url": "https://api.congress.gov/v3/bill/116/s/1250/cosponsors?format=json"
+            },
+            "introducedDate": "2019-04-30",
+            "latestAction": {
+                "actionDate": "2019-04-30",
+                "text": "Read twice and referred to the Committee on the Budget. (text: CR S2521-2522)"
+            },
+            "number": "1250",
+            "originChamber": "Senate",
+            "originChamberCode": "S",
+            "policyArea": {
+                "name": "Health"
+            },
+            "relatedBills": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/116/s/1250/relatedbills?format=json"
+            },
+            "sponsors": [
+                {
+                    "bioguideId": "D000563",
+                    "firstName": "Richard",
+                    "fullName": "Sen. Durbin, Richard J. [D-IL]",
+                    "isByRequest": "N",
+                    "lastName": "Durbin",
+                    "middleName": "J.",
+                    "party": "D",
+                    "state": "IL",
+                    "url": "https://api.congress.gov/v3/member/D000563?format=json"
+                }
+            ],
+            "subjects": {
+                "count": 17,
+                "url": "https://api.congress.gov/v3/bill/116/s/1250/subjects?format=json"
+            },
+            "summaries": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/116/s/1250/summaries?format=json"
+            },
+            "textVersions": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/116/s/1250/text?format=json"
+            },
+            "title": "American Cures Act",
+            "titles": {
+                "count": 3,
+                "url": "https://api.congress.gov/v3/bill/116/s/1250/titles?format=json"
+            },
+            "type": "S",
+            "updateDate": "2025-01-14T18:22:18Z",
+            "updateDateIncludingText": "2025-01-14T18:22:18Z"
+        },
+        "request": {
+            "billNumber": "1250",
+            "billType": "s",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    }
+}
