@@ -1,0 +1,413 @@
+{
+    "actions": {
+        "actions": [
+            {
+                "actionDate": "2019-06-10",
+                "committees": [
+                    {
+                        "name": "Foreign Relations Committee",
+                        "systemCode": "ssfr00",
+                        "url": "https://api.congress.gov/v3/committee/senate/ssfr00?format=json"
+                    }
+                ],
+                "sourceSystem": {
+                    "name": "Senate"
+                },
+                "text": "Read twice and referred to the Committee on Foreign Relations. (Sponsor introductory remarks on measure: CR S3288)",
+                "type": "IntroReferral"
+            },
+            {
+                "actionCode": "10000",
+                "actionDate": "2019-06-10",
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Introduced in Senate",
+                "type": "IntroReferral"
+            }
+        ],
+        "pagination": {
+            "count": 2
+        },
+        "request": {
+            "billNumber": "1766",
+            "billType": "s",
+            "billUrl": "https://api.congress.gov/v3/bill/116/s/1766?format=json",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "cosponsors": {
+        "cosponsors": [
+            {
+                "bioguideId": "C001088",
+                "firstName": "Christopher",
+                "fullName": "Sen. Coons, Christopher A. [D-DE]",
+                "isOriginalCosponsor": true,
+                "lastName": "Coons",
+                "middleName": "A.",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "DE",
+                "url": "https://api.congress.gov/v3/member/C001088?format=json"
+            },
+            {
+                "bioguideId": "R000307",
+                "firstName": "PAT",
+                "fullName": "Sen. Roberts, Pat [R-KS]",
+                "isOriginalCosponsor": true,
+                "lastName": "ROBERTS",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "KS",
+                "url": "https://api.congress.gov/v3/member/R000307?format=json"
+            },
+            {
+                "bioguideId": "D000622",
+                "firstName": "Tammy",
+                "fullName": "Sen. Duckworth, Tammy [D-IL]",
+                "isOriginalCosponsor": true,
+                "lastName": "Duckworth",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "IL",
+                "url": "https://api.congress.gov/v3/member/D000622?format=json"
+            },
+            {
+                "bioguideId": "S001198",
+                "firstName": "Dan",
+                "fullName": "Sen. Sullivan, Dan [R-AK]",
+                "isOriginalCosponsor": true,
+                "lastName": "Sullivan",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "AK",
+                "url": "https://api.congress.gov/v3/member/S001198?format=json"
+            },
+            {
+                "bioguideId": "V000128",
+                "firstName": "Chris",
+                "fullName": "Sen. Van Hollen, Chris [D-MD]",
+                "isOriginalCosponsor": true,
+                "lastName": "Van Hollen",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "MD",
+                "url": "https://api.congress.gov/v3/member/V000128?format=json"
+            },
+            {
+                "bioguideId": "C001047",
+                "firstName": "Shelley",
+                "fullName": "Sen. Capito, Shelley Moore [R-WV]",
+                "isOriginalCosponsor": true,
+                "lastName": "Capito",
+                "middleName": "Moore",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "WV",
+                "url": "https://api.congress.gov/v3/member/C001047?format=json"
+            },
+            {
+                "bioguideId": "M000133",
+                "firstName": "Edward",
+                "fullName": "Sen. Markey, Edward J. [D-MA]",
+                "isOriginalCosponsor": true,
+                "lastName": "Markey",
+                "middleName": "J.",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "MA",
+                "url": "https://api.congress.gov/v3/member/M000133?format=json"
+            },
+            {
+                "bioguideId": "I000055",
+                "firstName": "Johnny",
+                "fullName": "Sen. Isakson, Johnny [R-GA]",
+                "isOriginalCosponsor": true,
+                "lastName": "Isakson",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "GA",
+                "url": "https://api.congress.gov/v3/member/I000055?format=json"
+            },
+            {
+                "bioguideId": "M001176",
+                "firstName": "Jeff",
+                "fullName": "Sen. Merkley, Jeff [D-OR]",
+                "isOriginalCosponsor": true,
+                "lastName": "Merkley",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "OR",
+                "url": "https://api.congress.gov/v3/member/M001176?format=json"
+            },
+            {
+                "bioguideId": "M000934",
+                "firstName": "Jerry",
+                "fullName": "Sen. Moran, Jerry [R-KS]",
+                "isOriginalCosponsor": true,
+                "lastName": "Moran",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "KS",
+                "url": "https://api.congress.gov/v3/member/M000934?format=json"
+            },
+            {
+                "bioguideId": "C000141",
+                "firstName": "Ben",
+                "fullName": "Sen. Cardin, Benjamin L. [D-MD]",
+                "isOriginalCosponsor": true,
+                "lastName": "Cardin",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "MD",
+                "url": "https://api.congress.gov/v3/member/C000141?format=json"
+            },
+            {
+                "bioguideId": "C001056",
+                "firstName": "John",
+                "fullName": "Sen. Cornyn, John [R-TX]",
+                "isOriginalCosponsor": true,
+                "lastName": "Cornyn",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "TX",
+                "url": "https://api.congress.gov/v3/member/C001056?format=json"
+            },
+            {
+                "bioguideId": "R000608",
+                "firstName": "Jacklyn",
+                "fullName": "Sen. Rosen, Jacky [D-NV]",
+                "isOriginalCosponsor": true,
+                "lastName": "Rosen",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "NV",
+                "url": "https://api.congress.gov/v3/member/R000608?format=json"
+            },
+            {
+                "bioguideId": "Y000064",
+                "firstName": "Todd",
+                "fullName": "Sen. Young, Todd [R-IN]",
+                "isOriginalCosponsor": true,
+                "lastName": "Young",
+                "middleName": "C.",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "IN",
+                "url": "https://api.congress.gov/v3/member/Y000064?format=json"
+            },
+            {
+                "bioguideId": "S000770",
+                "firstName": "Debbie",
+                "fullName": "Sen. Stabenow, Debbie [D-MI]",
+                "isOriginalCosponsor": true,
+                "lastName": "Stabenow",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "MI",
+                "url": "https://api.congress.gov/v3/member/S000770?format=json"
+            },
+            {
+                "bioguideId": "E000285",
+                "firstName": "MICHAEL",
+                "fullName": "Sen. Enzi, Michael B. [R-WY]",
+                "isOriginalCosponsor": true,
+                "lastName": "ENZI",
+                "middleName": "B.",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "WY",
+                "url": "https://api.congress.gov/v3/member/E000285?format=json"
+            },
+            {
+                "bioguideId": "W000779",
+                "firstName": "Ron",
+                "fullName": "Sen. Wyden, Ron [D-OR]",
+                "isOriginalCosponsor": true,
+                "lastName": "Wyden",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "OR",
+                "url": "https://api.congress.gov/v3/member/W000779?format=json"
+            },
+            {
+                "bioguideId": "C001096",
+                "firstName": "Kevin",
+                "fullName": "Sen. Cramer, Kevin [R-ND]",
+                "isOriginalCosponsor": true,
+                "lastName": "Cramer",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "ND",
+                "url": "https://api.congress.gov/v3/member/C001096?format=json"
+            },
+            {
+                "bioguideId": "M001169",
+                "firstName": "Christopher",
+                "fullName": "Sen. Murphy, Christopher [D-CT]",
+                "isOriginalCosponsor": true,
+                "lastName": "Murphy",
+                "middleName": "S.",
+                "party": "D",
+                "sponsorshipDate": "2019-06-10",
+                "state": "CT",
+                "url": "https://api.congress.gov/v3/member/M001169?format=json"
+            },
+            {
+                "bioguideId": "R000595",
+                "firstName": "Marco",
+                "fullName": "Sen. Rubio, Marco [R-FL]",
+                "isOriginalCosponsor": true,
+                "lastName": "Rubio",
+                "party": "R",
+                "sponsorshipDate": "2019-06-10",
+                "state": "FL",
+                "url": "https://api.congress.gov/v3/member/R000595?format=json"
+            }
+        ],
+        "pagination": {
+            "count": 31,
+            "countIncludingWithdrawnCosponsors": 31,
+            "next": "https://api.congress.gov/v3/bill/116/s/1766/cosponsors?offset=20&limit=20&format=json"
+        },
+        "request": {
+            "billNumber": "1766",
+            "billType": "s",
+            "billUrl": "https://api.congress.gov/v3/bill/116/s/1766?format=json",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "summaries": {
+        "pagination": {
+            "count": 1
+        },
+        "request": {
+            "billNumber": "1766",
+            "billType": "s",
+            "billUrl": "https://api.congress.gov/v3/bill/116/s/1766?format=json",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        },
+        "summaries": [
+            {
+                "actionDate": "2019-06-10",
+                "actionDesc": "Introduced in Senate",
+                "text": " <p><b>Reach Every Mother and Child Act of 2019</b></p> <p>This bill directs the President to establish and implement a five-year strategy to contribute toward ending preventable child and maternal deaths globally by 2030. </p> <p>The President shall designate a current U.S. Agency for International Development employee to serve as the Child and Maternal Survival Coordinator. The coordinator shall oversee (1) the five-year strategy, and (2) international maternal and child health and nutrition programs.</p>",
+                "updateDate": "2020-03-02T16:06:16Z",
+                "versionCode": "00"
+            }
+        ]
+    },
+    "titles": {
+        "pagination": {
+            "count": 3
+        },
+        "request": {
+            "billNumber": "1766",
+            "billType": "s",
+            "billUrl": "https://api.congress.gov/v3/bill/116/s/1766?format=json",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        },
+        "titles": [
+            {
+                "title": "Reach Every Mother and Child Act of 2019",
+                "titleType": "Display Title",
+                "titleTypeCode": 45,
+                "updateDate": "2025-01-03T03:03:16Z"
+            },
+            {
+                "billTextVersionCode": "IS",
+                "billTextVersionName": "Introduced in Senate",
+                "title": "Reach Every Mother and Child Act of 2019",
+                "titleType": "Short Title(s) as Introduced",
+                "titleTypeCode": 101,
+                "updateDate": "2022-02-08T23:03:58Z"
+            },
+            {
+                "billTextVersionCode": "IS",
+                "billTextVersionName": "Introduced in Senate",
+                "title": "A bill to implement policies to end preventable maternal, newborn, and child deaths globally.",
+                "titleType": "Official Title as Introduced",
+                "titleTypeCode": 6,
+                "updateDate": "2021-12-29T22:04:05Z"
+            }
+        ]
+    },
+    "meta": {
+        "bill": {
+            "actions": {
+                "count": 2,
+                "url": "https://api.congress.gov/v3/bill/116/s/1766/actions?format=json"
+            },
+            "committees": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/116/s/1766/committees?format=json"
+            },
+            "congress": 116,
+            "cosponsors": {
+                "count": 31,
+                "countIncludingWithdrawnCosponsors": 31,
+                "url": "https://api.congress.gov/v3/bill/116/s/1766/cosponsors?format=json"
+            },
+            "introducedDate": "2019-06-10",
+            "latestAction": {
+                "actionDate": "2019-06-10",
+                "text": "Read twice and referred to the Committee on Foreign Relations. (Sponsor introductory remarks on measure: CR S3288)"
+            },
+            "number": "1766",
+            "originChamber": "Senate",
+            "originChamberCode": "S",
+            "policyArea": {
+                "name": "International Affairs"
+            },
+            "sponsors": [
+                {
+                    "bioguideId": "C001035",
+                    "firstName": "Susan",
+                    "fullName": "Sen. Collins, Susan M. [R-ME]",
+                    "isByRequest": "N",
+                    "lastName": "Collins",
+                    "middleName": "M.",
+                    "party": "R",
+                    "state": "ME",
+                    "url": "https://api.congress.gov/v3/member/C001035?format=json"
+                }
+            ],
+            "subjects": {
+                "count": 14,
+                "url": "https://api.congress.gov/v3/bill/116/s/1766/subjects?format=json"
+            },
+            "summaries": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/116/s/1766/summaries?format=json"
+            },
+            "textVersions": {
+                "count": 1,
+                "url": "https://api.congress.gov/v3/bill/116/s/1766/text?format=json"
+            },
+            "title": "Reach Every Mother and Child Act of 2019",
+            "titles": {
+                "count": 3,
+                "url": "https://api.congress.gov/v3/bill/116/s/1766/titles?format=json"
+            },
+            "type": "S",
+            "updateDate": "2025-01-14T19:00:46Z",
+            "updateDateIncludingText": "2025-01-14T19:00:46Z"
+        },
+        "request": {
+            "billNumber": "1766",
+            "billType": "s",
+            "congress": "116",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    }
+}

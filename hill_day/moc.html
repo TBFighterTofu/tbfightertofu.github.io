@@ -1,0 +1,311 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <script src="../common/jquery-3.7.1.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../common/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+  <body>
+    <div class="navbar">
+        <a class="navbutton" href="moc_list.html">All Members</a> 
+      </div>
+    <h1 id="page_title"></h1>
+    <h1 id="moc_title"></h2>
+    <div class="outertags">
+        <div id="tags">
+            <span id="url" style="display:none"></span>
+            <span id="contact" style="display:none"></span>
+            <span id="twitter" style="display:none"></span>
+            <span id="facebook" style="display:none"></span>
+            <span id="instagram" style="display:none"></span>
+            <span id="youtube" style="display:none"></span>
+        </div>
+    </div>
+    <div class="outertags">
+        <div id="tags">
+            <span id="congress" style="display:none"></span>
+            <span id="govtrack" style="display:none"></span>
+            <span id="opensecrets" style="display:none"></span>
+        </div>
+    </div>
+    <div class="subtitle"><span id="reptype" class="stat"></span></div>
+    <div class="subtitle">Phone:&nbsp;<span id="phone" class="stat"></span></div>
+    <div class="subtitle">Address:&nbsp;<span id="address" class="stat"></span></div>
+    <div class="spacer" style="height:50px"></div>
+    <div style="max-width:1000px; margin:0 auto">
+        <h2>Bills</h2>
+        <div id="bills">
+            <div id="118_s_288"></div>
+            <div id="118_s_4879"></div>
+            <div id="118_s_5278"></div>
+            <div id="118_s_4797"></div>
+            <div id="118_sres_684"></div>
+            <div id="118_hr_1776"></div>
+            <div id="118_hr_2940"></div>
+            <div id="118_hr_6705"></div>
+            <div id="118_hr_10457"></div>
+            <div id="118_hr_6424"></div>
+            <div id="118_hres_1286"></div>
+            <div id="117_s_3386"></div>
+            <div id="117_s_1451"></div>
+            <div id="117_s_962"></div>
+            <div id="117_s_2586"></div>
+            <div id="117_sres_137"></div>
+            <div id="117_sres_569"></div>
+            <div id="117_hr_8654"></div>
+            <div id="117_hr_8057"></div>
+            <div id="117_hr_5857"></div>
+            <div id="117_hr_391"></div>
+            <div id="117_s_4662"></div>
+            <div id="116_s_2438"></div>
+            <div id="116_s_1766"></div>
+            <div id="116_s_1250"></div>
+            <div id="116_s_834"></div>
+            <div id="116_s_3829"></div>
+            <div id="116_s_2698"></div>
+            <div id="116_hr_4847"></div>
+            <div id="116_hr_2401"></div>
+            <div id="116_hr_3080"></div>
+            <div id="116_hr_3460"></div>
+            <div id="116_hr_826"></div>
+            <div id="116_sres_511"></div>
+            <div id="116_sres_318"></div>
+            <div id="116_sres_119"></div>
+            <div id="116_hres_189"></div>
+            <div id="116_hres_861"></div>
+            <div id="116_hres_517"></div>
+            <div id="115_hr_4022"></div>
+            <div id="115_s_640"></div>
+            <div id="115_sres_437"></div>
+            <div id="114_s_289"></div>
+            <div id="114_hr_2104"></div>
+            <div id="113_s_2115"></div>
+            <div id="113_sres_393"></div>
+            <div id="113_hres_133"></div>
+            <div id="111_sres_454"></div>
+            <div id="111_hres_1155"></div>
+            <div id="110_hr_4543"></div>
+            <div id="110_hr_1532"></div>
+            <div id="110_s_1551"></div>
+            <div id="110_hr_1567"></div>
+            <div id="107_s_1115"></div>
+            <div id="101_hr_4273"></div>
+        </div>
+        <h2>Letters</h2>
+        <div id="letters">
+            <div id="h_25_15"></div>
+            <div id="s_25_44"></div>
+            <div id="h_25_32"></div>
+            <div id="s_25_35"></div>
+            <div id="s_25_14"></div>
+            <div id="s_24_45"></div>
+            <div id="s_24_36"></div>
+            <div id="h_24_17"></div>
+            <div id="h_23_19"></div>
+            <div id="s_23_46"></div>
+            <div id="s_23_39"></div>
+            <div id="s_23_18"></div>
+            <div id="h_22_20"></div>
+            <div id="s_22_19"></div>
+            <div id="h_21_41"></div>
+            <div id="s_21_47"></div>
+            <div id="s_21_41"></div>
+            <div id="h_20_29"></div>
+            <div id="s_20_49"></div>
+            <div id="s_20_21"></div>
+            
+        </div>
+    </div>
+
+    <div class="spacer" style="height:50px"></div>
+
+    <div class="textbox">Legislator info comes from <a href="https://github.com/unitedstates/congress-legislators">https://github.com/unitedstates/congress-legislators</a>, downloaded 8 March 2025. <br>Bill info comes from the Congress.gov API (<a href="https://gpo.congress.gov/">https://gpo.congress.gov/</a>), downloaded 8 March 2025.</div>
+
+    <script>
+
+        function prep_link(link, title){
+            return "<a class=navbutton href=".concat(link, ">", title, "</a>")
+        }
+
+        function assign_span(id, link, title){
+            $(id).append(prep_link(link, title))
+            $(id).show()
+        }
+
+        function in_office(data, legislator){
+            var bill_date
+            if (data.summaries.summaries.length==0){
+                bill_date = new Date(data.actions.actions[0].updateDate)
+            }
+            else{
+                bill_date = new Date(data.summaries.summaries[0].updateDate)
+            }
+            var bill_type = data.summaries.request.billType
+            var terms = legislator.terms
+            var start, end, bt0
+            for (let i=terms.length-1; i>=0; i--){
+                start = new Date(terms[i].start)
+                end = new Date(terms[i].end)
+                if (start<bill_date && end>bill_date){
+                    bt0 = bill_type.charAt(0)
+                    return ((terms[i].type=="rep" && bt0 == "h") || (terms[i].type=="sen" && bt0 == "s"))
+                }
+            }
+        }
+
+        function convert_type(bill_type){
+            return {"hr":"house-bill", "h.res":"house-resolution", "s":"senate-bill", "s.res":"senate-resolution"}[bill_type]
+        }
+
+        function year_section(data, legislator){
+            if (!in_office(data, legislator)){
+                return ""
+            }
+            var summary = data.summaries.summaries
+            console.log(data)
+            var meta = data.meta.bill
+            h = ""
+            h = h.concat('<details>')
+            var req = data.summaries.request
+            h = h.concat("<summary>")
+            var meta = data.meta.bill
+            const s = meta.sponsors
+            var is_cosponsor = false
+            for (let i=0; i<s.length; i++){
+                if (s[i].bioguideId==legislator.id.bioguide){
+                    h = h.concat("&#x2705 Sponsor: ")
+                    is_cosponsor = true
+                }
+            }
+            if (!is_cosponsor){
+                const cs = data.cosponsors.cosponsors
+                for (let i=0; i<cs.length; i++){
+                    if (cs[i].bioguideId==legislator.id.bioguide){
+                        is_cosponsor = true
+                        if (cs[i].isOriginalCosponsor){
+                            h = h.concat("&#x2705 Original Cosponsor")
+                        }
+                        else{
+                            h = h.concat("&#x2705 Cosponsor")
+                        }
+                        h = h.concat(" as of ", cs[i].sponsorshipDate, ": ")
+                    }
+                }
+            }
+            if (!is_cosponsor){
+                h = h.concat("&#x274c; Not a cosponsor: ")
+            }
+            h = h.concat( "<a href=", "https://www.congress.gov/bill/", req.congress, "/", convert_type(req.billType), "/", req.billNumber, ">", meta.title, "</a> ", req.billType.toUpperCase().concat(".", req.billNumber, ", Congress ", req.congress,", ", new Date(data.meta.bill.introducedDate).toLocaleDateString(), "</summary>\n"))
+            h = h.concat(data.summaries.summaries[data.summaries.summaries.length-1].text, "</details>")
+            return h
+        }
+
+        function letter_section(data, legislator){
+            if (!in_office(data, legislator)){
+                return ""
+            }
+            var summary = data.summaries.summaries
+            var titles = data.titles.titles
+            h = ""
+            h = h.concat('<li>')
+            var req = data.summaries.request
+            const cs = data.cosponsors.cosponsors
+            var is_cosponsor = false
+            for (let i=0; i<cs.length; i++){
+                if (cs[i].bioguideId==legislator.id.bioguide){
+                    is_cosponsor = true
+                    h = h.concat("&#x2705 Signed: ")
+                }
+            }
+            if (!is_cosponsor){
+                h = h.concat("&#x274c; Not signed: ")
+            }
+            console.log(req)
+            h = h.concat( "<a href=", req.url, ">", titles[0].title, "</a> </li>")
+            return h
+        }
+
+        function capitalizeFirstLetter(val) {
+    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+}
+
+        function get_bills(legislator){
+            var bills = ['118_s_288', '118_s_4879', '118_s_5278', '118_s_4797', '118_sres_684', '118_hr_1776', '118_hr_2940', '118_hr_6705', '118_hr_10457', '118_hr_6424', '118_hres_1286', '117_s_3386', '117_s_1451', '117_s_962', '117_s_2586', '117_sres_137', '117_sres_569', '117_hr_8654', '117_hr_8057', '117_hr_5857', '117_hr_391', '117_s_4662', '116_s_2438', '116_s_1766', '116_s_1250', '116_s_834', '116_s_3829', '116_s_2698', '116_hr_4847', '116_hr_2401', '116_hr_3080', '116_hr_3460', '116_hr_826', '116_sres_511', '116_sres_318', '116_sres_119', '116_hres_189', '116_hres_861', '116_hres_517', '115_hr_4022', '115_s_640', '115_sres_437', '114_s_289', '114_hr_2104', '113_s_2115', '113_sres_393', '113_hres_133', '111_sres_454', '111_hres_1155', '110_hr_4543', '110_hr_1532', '110_s_1551', '110_hr_1567', '107_s_1115', '101_hr_4273']
+            for (let i=0; i<bills.length; i++){
+                $.getJSON("data/bills/".concat(bills[i], ".json"), function (data) {
+                $('#'.concat(bills[i])).append(year_section(data, legislator))
+                })
+            }
+        }
+
+        function get_letters(legislator){
+            var bills =  ["h_25_15","s_25_44","h_25_32","s_25_35","s_25_14","s_24_45","s_24_36","h_24_17","h_23_19","s_23_46","s_23_39","s_23_18","h_22_20","s_22_19","h_21_41","s_21_47","s_21_41","h_20_29","s_20_49","s_20_21"]
+            for (let i=0; i<bills.length; i++){
+                $.getJSON("data/dcl/".concat(bills[i], ".json"), function (data) {
+                $('#'.concat(bills[i])).append(letter_section(data, legislator))
+                })
+            }
+        }
+
+        $(document).ready(function () { 
+            // get charity name from the url params
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const bioguide = decodeURI(urlParams.get('bioguide'))
+            var legislator
+            var last_term
+            $.when(
+                $.getJSON("data/legislators-current.json", function (data) {
+                    for (let i=0; i<data.length; i++){
+                        if (data[i].id.bioguide==bioguide){
+                            legislator = data[i]
+                            last_term = legislator.terms[data[i].terms.length-1]
+                        }
+                    } 
+                    $('#page_title').append(legislator.name.official_full)
+                    $('#page_title').append(" (".concat(last_term.party[0], " - ", last_term.state, ")"))
+                    if (last_term.type=="sen"){
+                        $('#moc_title').append(capitalizeFirstLetter(last_term.state_rank).concat(" Senator"))
+                    }
+                    else if (last_term.type=="rep"){
+                        $('#moc_title').append("Representative from District ".concat(last_term.district))
+                    }
+                    assign_span('#url', last_term.url, "Website")
+                    assign_span('#govtrack', "https://www.govtrack.us/congress/members/".concat(legislator.name.first, "_", legislator.name.last, "/", legislator.id.govtrack), "GovTrack")
+                    assign_span('#opensecrets', "https://www.opensecrets.org/members-of-congress/summary?cid=".concat(legislator.id.opensecrets, "&cycle=2022"), "OpenSecrets")
+                    assign_span("#congress", "https://www.congress.gov/member/".concat(legislator.name.first.toLowerCase(), "-", legislator.name.last.toLowerCase(), "/", legislator.id.bioguide), "Congress.gov")
+                    if (last_term.hasOwnProperty("contact_form")){
+                        assign_span("#contact", last_term.contact_form, "Contact")
+                    }
+                    $('#phone').append(last_term.phone)
+                    $('#address').append(last_term.address)   
+                })
+            ).then(function (){
+                get_bills(legislator)
+                get_letters(legislator)
+            })
+
+            $.getJSON("data/legislators-social-media.json", function (data){
+                for (let i=0; i<data.length; i++){
+                    if (data[i].id.bioguide==bioguide){
+                        var social = data[i].social
+                        if (social.hasOwnProperty("twitter")){
+                            assign_span('#twitter', "https://twitter.com/".concat(social.twitter), "Twitter")
+                        }
+                        if (social.hasOwnProperty("facebook")){
+                            assign_span('#facebook', "https://facebook.com/".concat(social.facebook), "Facebook")
+                        }
+                        if (social.hasOwnProperty("instagram")){
+                            assign_span('#instagram', "https://instagram.com/".concat(social.instagram), "Instagram")
+                        }
+                        if (social.hasOwnProperty("youtube")){
+                            assign_span('#youtube', "https://youtube.com/@".concat(social.youtube), "YouTube")
+                        }
+                    }
+                }
+            });
+        }); 
+    </script>
+  </body>
+</html>
