@@ -11,7 +11,7 @@ data_folder = Path(__file__).parent.parent / "data" / "bills"
 
 
 def bill_data(congress: int, bill_type: Literal["hr", "s"], bill_number: int, subheader: str) -> dict:
-    url = f"https://api.congress.gov/v3/bill/{congress}/{bill_type}/{bill_number}/{subheader}?api_key={API_KEY}"
+    url = f"https://api.congress.gov/v3/bill/{congress}/{bill_type}/{bill_number}/{subheader}?api_key={API_KEY}&limit=250"
     g = requests.get(url)
     return g.json()
 
