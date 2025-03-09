@@ -139,6 +139,9 @@
         }
 
         function in_office(data, legislator){
+            if (!legislator.hasOwnProperty("id")){
+                return true
+            }
             if (data.hasOwnProperty("meta")){
                 var bill_date = new Date(data.meta.bill.updateDate)
             }
@@ -178,50 +181,55 @@
             var req = data.summaries.request
             h = h.concat("<summary>")
             var meta = data.meta.bill
-            const s = meta.sponsors
-            var is_cosponsor = false
-            for (let i=0; i<s.length; i++){
-                if (s[i].bioguideId==legislator.id.bioguide){
-                    h = h.concat("&#x2705 Sponsor: ")
-                    is_cosponsor = true
-                }
-            }
-            if (!is_cosponsor){
-                const cs = data.cosponsors.cosponsors
-                for (let i=0; i<cs.length; i++){
-                    if (cs[i].bioguideId==legislator.id.bioguide){
+            if (legislator.hasOwnProperty("id")){
+
+                
+                const s = meta.sponsors
+                var is_cosponsor = false
+                for (let i=0; i<s.length; i++){
+                    if (s[i].bioguideId==legislator.id.bioguide){
+                        h = h.concat("&#x2705 Sponsor: ")
                         is_cosponsor = true
-                        if (cs[i].isOriginalCosponsor){
-                            h = h.concat("&#x2705 Original Cosponsor")
+                    }
+                }
+                if (!is_cosponsor){
+                    const cs = data.cosponsors.cosponsors
+                    for (let i=0; i<cs.length; i++){
+                        if (cs[i].bioguideId==legislator.id.bioguide){
+                            is_cosponsor = true
+                            if (cs[i].isOriginalCosponsor){
+                                h = h.concat("&#x2705 Original Cosponsor")
+                            }
+                            else{
+                                h = h.concat("&#x2705 Cosponsor")
+                            }
+                            h = h.concat(" as of ", cs[i].sponsorshipDate, "")
+                        }
+                    }
+                }
+                if (!is_cosponsor){
+                    h = h.concat("&#x274c; Not a cosponsor")
+                }
+                if (data.hasOwnProperty("rolls")){
+                    if (data.rolls.hasOwnProperty(legislator.id.bioguide)){
+                        var vote = data.rolls[legislator.id.bioguide]
+                        if (vote=="Yea"){
+                            h = h.concat(", &#x2705 Voted Yea")
+                        }
+                        else if (vote=="Nay"){
+                            h = h.concat(", &#x274c; Voted Nay")
                         }
                         else{
-                            h = h.concat("&#x2705 Cosponsor")
+                            h = h.concat(", &#x26AB; ", vote)
                         }
-                        h = h.concat(" as of ", cs[i].sponsorshipDate, "")
                     }
                 }
+                h = h.concat(": ")
             }
-            if (!is_cosponsor){
-                h = h.concat("&#x274c; Not a cosponsor")
-            }
-            if (data.hasOwnProperty("rolls")){
-                if (data.rolls.hasOwnProperty(legislator.id.bioguide)){
-                    var vote = data.rolls[legislator.id.bioguide]
-                    if (vote=="Yea"){
-                        h = h.concat(", &#x2705 Voted Yea")
-                    }
-                    else if (vote=="Nay"){
-                        h = h.concat(", &#x274c; Voted Nay")
-                    }
-                    else{
-                        h = h.concat(", &#x26AB; ", vote)
-                    }
-                }
-            }
-            h = h.concat( ": <a href=", "https://www.congress.gov/bill/", req.congress, "/", convert_type(req.billType), "/", req.billNumber, ">", meta.title, "</a> ", req.billType.toUpperCase().concat(".", req.billNumber, ", Congress ", req.congress,", ", new Date(data.meta.bill.introducedDate).toLocaleDateString(), "</summary>\n"))
+            h = h.concat( "<a href=", "https://www.congress.gov/bill/", req.congress, "/", convert_type(req.billType), "/", req.billNumber, ">", meta.title, "</a> ", req.billType.toUpperCase().concat(".", req.billNumber, ", Congress ", req.congress,", ", new Date(data.meta.bill.introducedDate).toLocaleDateString(), "</summary>\n"))
             var summaries = data.summaries.summaries
             if (summaries.length>0){
-                h = h.concat([data.summaries.summaries.length-1].text)
+                h = h.concat(summaries[summaries.length-1].text)
             }
             h - h.concat( "</details>")
             return h
@@ -236,18 +244,19 @@
             h = ""
             h = h.concat('<li>')
             var req = data.summaries.request
-            const cs = data.cosponsors.cosponsors
-            var is_cosponsor = false
-            for (let i=0; i<cs.length; i++){
-                if (cs[i].bioguideId==legislator.id.bioguide){
-                    is_cosponsor = true
-                    h = h.concat("&#x2705 Signed: ")
+            if (legislator.hasOwnProperty("id")){                
+                const cs = data.cosponsors.cosponsors
+                var is_cosponsor = false
+                for (let i=0; i<cs.length; i++){
+                    if (cs[i].bioguideId==legislator.id.bioguide){
+                        is_cosponsor = true
+                        h = h.concat("&#x2705 Signed: ")
+                    }
+                }
+                if (!is_cosponsor){
+                    h = h.concat("&#x274c; Not signed: ")
                 }
             }
-            if (!is_cosponsor){
-                h = h.concat("&#x274c; Not signed: ")
-            }
-            console.log(req)
             h = h.concat( "<a href=", req.url, ">", titles[0].title, "</a> </li>")
             return h
         }
@@ -279,7 +288,7 @@
             const queryString = window.location.search;
             const urlParams = new URLSearchParams(queryString);
             const bioguide = decodeURI(urlParams.get('bioguide'))
-            var legislator
+            var legislator = {}
             var last_term
             $.when(
                 $.getJSON("data/legislators-current.json", function (data) {
@@ -289,23 +298,28 @@
                             last_term = legislator.terms[data[i].terms.length-1]
                         }
                     } 
-                    $('#page_title').append(legislator.name.official_full)
-                    $('#page_title').append(" (".concat(last_term.party[0], " - ", last_term.state, ")"))
-                    if (last_term.type=="sen"){
-                        $('#moc_title').append(capitalizeFirstLetter(last_term.state_rank).concat(" Senator"))
+                    if (!legislator.hasOwnProperty("name")){
+                        $('#page_title').append("All bills")
                     }
-                    else if (last_term.type=="rep"){
-                        $('#moc_title').append("Representative from District ".concat(last_term.district))
-                    }
-                    assign_span('#url', last_term.url, "Website")
-                    assign_span('#govtrack', "https://www.govtrack.us/congress/members/".concat(legislator.name.first, "_", legislator.name.last, "/", legislator.id.govtrack), "GovTrack")
-                    assign_span('#opensecrets', "https://www.opensecrets.org/members-of-congress/summary?cid=".concat(legislator.id.opensecrets, "&cycle=2022"), "OpenSecrets")
-                    assign_span("#congress", "https://www.congress.gov/member/".concat(legislator.name.first.toLowerCase(), "-", legislator.name.last.toLowerCase(), "/", legislator.id.bioguide), "Congress.gov")
-                    if (last_term.hasOwnProperty("contact_form")){
-                        assign_span("#contact", last_term.contact_form, "Contact")
-                    }
-                    $('#phone').append(last_term.phone)
-                    $('#address').append(last_term.address)   
+                    else{
+                        $('#page_title').append(legislator.name.official_full)
+                        $('#page_title').append(" (".concat(last_term.party[0], " - ", last_term.state, ")"))
+                        if (last_term.type=="sen"){
+                            $('#moc_title').append(capitalizeFirstLetter(last_term.state_rank).concat(" Senator"))
+                        }
+                        else if (last_term.type=="rep"){
+                            $('#moc_title').append("Representative from District ".concat(last_term.district))
+                        }
+                        assign_span('#url', last_term.url, "Website")
+                        assign_span('#govtrack', "https://www.govtrack.us/congress/members/".concat(legislator.name.first, "_", legislator.name.last, "/", legislator.id.govtrack), "GovTrack")
+                        assign_span('#opensecrets', "https://www.opensecrets.org/members-of-congress/summary?cid=".concat(legislator.id.opensecrets, "&cycle=2022"), "OpenSecrets")
+                        assign_span("#congress", "https://www.congress.gov/member/".concat(legislator.name.first.toLowerCase(), "-", legislator.name.last.toLowerCase(), "/", legislator.id.bioguide), "Congress.gov")
+                        if (last_term.hasOwnProperty("contact_form")){
+                            assign_span("#contact", last_term.contact_form, "Contact")
+                        }
+                        $('#phone').append(last_term.phone)
+                        $('#address').append(last_term.address)  
+                    } 
                 })
             ).then(function (){
                 get_bills(legislator)
