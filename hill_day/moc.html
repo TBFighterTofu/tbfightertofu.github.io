@@ -108,6 +108,7 @@
             <div id="s_24_36"></div>
             <div id="h_24_17"></div>
             <div id="h_23_19"></div>
+            <div id="h_23_01"></div>
             <div id="s_23_46"></div>
             <div id="s_23_39"></div>
             <div id="s_23_18"></div>
@@ -277,7 +278,7 @@
         }
 
         function get_letters(legislator){
-            var bills =  ["h_25_15","s_25_44","h_25_32","s_25_35","s_25_14","s_24_45","s_24_36","h_24_17","h_23_19","s_23_46","s_23_39","s_23_18","h_22_20","s_22_19","h_21_41","s_21_47","s_21_41","h_20_29","s_20_49","s_20_21"]
+            var bills =  ["h_25_15","s_25_44","h_25_32","s_25_35","s_25_14","s_24_45","s_24_36","h_24_17","h_23_19", "h_23_01", "s_23_46","s_23_39","s_23_18","h_22_20","s_22_19","h_21_41","s_21_47","s_21_41","h_20_29","s_20_49","s_20_21"]
             for (let i=0; i<bills.length; i++){
                 $.getJSON("data/dcl/".concat(bills[i], ".json"), function (data) {
                 $('#'.concat(bills[i])).append(letter_section(data, legislator))
