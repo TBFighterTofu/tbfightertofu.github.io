@@ -1,0 +1,307 @@
+{
+    "actions": {
+        "actions": [
+            {
+                "actionDate": "2025-03-14",
+                "recordedVotes": [
+                    {
+                        "chamber": "Senate",
+                        "congress": 119,
+                        "date": "2025-03-14T22:04:42Z",
+                        "rollNumber": 132,
+                        "sessionNumber": 1,
+                        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00132.xml"
+                    }
+                ],
+                "sourceSystem": {
+                    "code": 0,
+                    "name": "Senate"
+                },
+                "text": "Amendment SA 1266 not agreed to in Senate by Yea-Nay Vote. 27 - 73. Record Vote Number: 132.",
+                "type": "Floor"
+            },
+            {
+                "actionDate": "2025-03-14",
+                "sourceSystem": {
+                    "code": 0,
+                    "name": "Senate"
+                },
+                "text": "Amendment SA 1266 proposed by Senator Paul. (consideration: CR S1771)",
+                "type": "Floor"
+            },
+            {
+                "actionCode": "Intro-S",
+                "actionDate": "2025-03-12",
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "type": "IntroReferral"
+            },
+            {
+                "actionCode": "93000",
+                "actionDate": "2025-03-14",
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Senate amendment proposed (on the floor): Amendment SA 1266 proposed by Senator Paul.",
+                "type": "Floor"
+            },
+            {
+                "actionCode": "95000",
+                "actionDate": "2025-03-14",
+                "recordedVotes": [
+                    {
+                        "chamber": "Senate",
+                        "congress": 119,
+                        "date": "2025-03-14T22:04:42Z",
+                        "rollNumber": 132,
+                        "sessionNumber": 1,
+                        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00132.xml"
+                    }
+                ],
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Senate amendment not agreed to: Amendment SA 1266 not agreed to in Senate by Yea-Nay Vote. 27 - 73. Record Vote Number: 132.",
+                "type": "Floor"
+            },
+            {
+                "actionCode": "97000",
+                "actionDate": "2025-03-14",
+                "recordedVotes": [
+                    {
+                        "chamber": "Senate",
+                        "congress": 119,
+                        "date": "2025-03-14T22:04:42Z",
+                        "rollNumber": 132,
+                        "sessionNumber": 1,
+                        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00132.xml"
+                    }
+                ],
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Roll call votes on amendments in Senate: Amendment SA 1266 not agreed to in Senate by Yea-Nay Vote. 27 - 73. Record Vote Number: 132.",
+                "type": "Floor"
+            },
+            {
+                "actionCode": "91000",
+                "actionDate": "2025-03-12",
+                "sourceSystem": {
+                    "code": 9,
+                    "name": "Library of Congress"
+                },
+                "text": "Senate amendment submitted",
+                "type": "Floor"
+            }
+        ],
+        "pagination": {
+            "count": 7
+        },
+        "request": {
+            "amendmentNumber": "1266",
+            "amendmentType": "samdt",
+            "amendmentUrl": "https://api.congress.gov/v3/amendment/119/samdt/1266?format=json",
+            "congress": "119",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "cosponsors": {
+        "cosponsors": [],
+        "pagination": {
+            "count": 0,
+            "countIncludingWithdrawnCosponsors": 0
+        },
+        "request": {
+            "amendmentNumber": "1266",
+            "amendmentType": "samdt",
+            "amendmentUrl": "https://api.congress.gov/v3/amendment/119/samdt/1266?format=json",
+            "congress": "119",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "summaries": {
+        "error": "Unknown resource: amendment/119/samdt/1266/summaries"
+    },
+    "titles": {
+        "error": "Unknown resource: amendment/119/samdt/1266/titles"
+    },
+    "meta": {
+        "amendment": {
+            "actions": {
+                "count": 7,
+                "url": "https://api.congress.gov/v3/amendment/119/samdt/1266/actions?format=json"
+            },
+            "amendedBill": {
+                "congress": 119,
+                "number": "1968",
+                "originChamber": "House",
+                "originChamberCode": "H",
+                "title": "Full-Year Continuing Appropriations and Extensions Act, 2025",
+                "type": "HR",
+                "updateDateIncludingText": "2025-03-25",
+                "url": "https://api.congress.gov/v3/bill/119/hr/1968?format=json"
+            },
+            "chamber": "Senate",
+            "congress": 119,
+            "latestAction": {
+                "actionDate": "2025-03-14",
+                "links": [
+                    {
+                        "name": "Record Vote Number: 132",
+                        "url": "https://www.senate.gov/legislative/LIS/roll_call_votes/vote1191/vote_119_1_00132.htm"
+                    },
+                    {
+                        "name": "SA 1266",
+                        "url": "https://www.congress.gov/amendment/119th-congress/senate-amendment/1266"
+                    }
+                ],
+                "text": "Amendment SA 1266 not agreed to in Senate by Yea-Nay Vote. 27 - 73. Record Vote Number: 132."
+            },
+            "number": "1266",
+            "onBehalfOfSponsor": [
+                {
+                    "bioguideId": "P000603",
+                    "firstName": "Rand",
+                    "fullName": "Sen. Paul, Rand [R-KY]",
+                    "lastName": "Paul",
+                    "party": "R",
+                    "state": "KY",
+                    "type": "Proposed on behalf of",
+                    "url": "https://api.congress.gov/v3/member/P000603?format=json"
+                }
+            ],
+            "proposedDate": "2025-03-14T04:00:00Z",
+            "purpose": "To reduce the amount appropriated for the United States Agency for International Development.",
+            "sponsors": [
+                {
+                    "bioguideId": "P000603",
+                    "firstName": "Rand",
+                    "fullName": "Sen. Paul, Rand [R-KY]",
+                    "lastName": "Paul",
+                    "party": "R",
+                    "state": "KY",
+                    "url": "https://api.congress.gov/v3/member/P000603?format=json"
+                }
+            ],
+            "submittedDate": "2025-03-12T04:00:00Z",
+            "type": "SAMDT",
+            "updateDate": "2025-03-19T11:08:19Z"
+        },
+        "request": {
+            "amendmentNumber": "1266",
+            "amendmentType": "samdt",
+            "congress": "119",
+            "contentType": "application/json",
+            "format": "json"
+        }
+    },
+    "rolls": {
+        "A000382": "Nay",
+        "B001230": "Nay",
+        "B001299": "Yea",
+        "B001261": "Nay",
+        "B001267": "Nay",
+        "B001243": "Yea",
+        "B001277": "Nay",
+        "B001303": "Nay",
+        "B001288": "Nay",
+        "B001236": "Nay",
+        "B001319": "Yea",
+        "B001305": "Yea",
+        "C000127": "Nay",
+        "C001047": "Nay",
+        "C001075": "Nay",
+        "C001035": "Nay",
+        "C001088": "Nay",
+        "C001056": "Yea",
+        "C001113": "Nay",
+        "C001095": "Yea",
+        "C001096": "Nay",
+        "C000880": "Nay",
+        "C001098": "Yea",
+        "C001114": "Yea",
+        "D000618": "Yea",
+        "D000622": "Nay",
+        "D000563": "Nay",
+        "E000295": "Yea",
+        "F000479": "Nay",
+        "F000463": "Nay",
+        "G000574": "Nay",
+        "G000555": "Nay",
+        "G000359": "Nay",
+        "G000386": "Nay",
+        "H000601": "Yea",
+        "H001076": "Nay",
+        "H001089": "Yea",
+        "H001046": "Nay",
+        "H000273": "Nay",
+        "H001042": "Nay",
+        "H001061": "Nay",
+        "H001104": "Yea",
+        "H001079": "Nay",
+        "J000293": "Yea",
+        "J000312": "Yea",
+        "K000384": "Nay",
+        "K000377": "Nay",
+        "K000393": "Yea",
+        "K000394": "Nay",
+        "K000383": "Nay",
+        "K000367": "Nay",
+        "L000575": "Nay",
+        "L000577": "Yea",
+        "L000570": "Nay",
+        "L000571": "Yea",
+        "M000133": "Nay",
+        "M001198": "Yea",
+        "M000355": "Nay",
+        "M001243": "Nay",
+        "M001176": "Nay",
+        "M001244": "Yea",
+        "M000934": "Nay",
+        "M001242": "Yea",
+        "M001190": "Nay",
+        "M001153": "Nay",
+        "M001169": "Nay",
+        "M001111": "Nay",
+        "O000174": "Nay",
+        "P000145": "Nay",
+        "P000603": "Yea",
+        "P000595": "Nay",
+        "R000122": "Nay",
+        "R000618": "Nay",
+        "R000584": "Yea",
+        "R000608": "Nay",
+        "R000605": "Nay",
+        "S000033": "Nay",
+        "S001194": "Nay",
+        "S001150": "Nay",
+        "S001227": "Yea",
+        "S000148": "Nay",
+        "S001217": "Yea",
+        "S001184": "Nay",
+        "S001181": "Nay",
+        "S001232": "Yea",
+        "S001208": "Nay",
+        "S001203": "Nay",
+        "S001198": "Nay",
+        "T000250": "Nay",
+        "T000476": "Nay",
+        "T000278": "Yea",
+        "V000128": "Nay",
+        "W000805": "Nay",
+        "W000790": "Nay",
+        "W000817": "Nay",
+        "W000800": "Nay",
+        "W000802": "Nay",
+        "W000437": "Nay",
+        "W000779": "Nay",
+        "Y000064": "Nay"
+    }
+}
