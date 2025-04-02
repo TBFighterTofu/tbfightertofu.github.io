@@ -37,6 +37,9 @@
     <div class="subtitle">Address:&nbsp;<span id="address" class="stat"></span></div>
     <div class="spacer" style="height:50px"></div>
     <div style="max-width:1000px; margin:0 auto">
+        <h2 id="case_header">Tuberculosis cases</h2>
+        <span id="case_count"></span>
+        <div id="plot" style="width:100%;min-height:420px"></div>
         <h2>Letters</h2>
         <div id="letters">
             <div id="h_25_15"></div>
@@ -63,9 +66,6 @@
             <div id="s_20_49"></div>
             <div id="s_20_21"></div>
         </div>
-        <h2 id="case_header">Tuberculosis cases</h2>
-        <span id="case_count"></span>
-        <div id="plot" style="width:100%;min-height:420px"></div>
         <h2>Committees</h2>
         <div id="comms"></div>
 
@@ -81,6 +81,12 @@
             <div id="117_s_3386"></div>
             <div id="116_s_2438"></div>
             <div id="110_hr_1567"></div>
+        </div>
+        <h2>Paul Farmer Memorial Resolution</h2>
+        <div id="farmer">
+            <div id="118_sres_95"></div>
+            <div id="118_hres_204"></div>
+            <div id="117_hres_1373"></div>
         </div>
         <div id="results">
             <h2>RESULTS-supported bills</h2>
@@ -136,15 +142,21 @@
             <div id="107_s_1115"></div>
             <div id="101_hr_4273"></div>
         </div>
+
+        <h2>NIAID grants</h2>
+        <span id="grants"></span>
         
     </div>
 
     <div class="spacer" style="height:50px"></div>
 
     <div class="textbox">
-        Legislator info comes from <a href="https://github.com/unitedstates/congress-legislators">https://github.com/unitedstates/congress-legislators</a>, downloaded 8 March 2025. 
-        <br>Bill info comes from the Congress.gov API (<a href="https://gpo.congress.gov/">https://gpo.congress.gov/</a>), downloaded 8 March 2025.
-        <br>Case rates come from <a href="https://gis.cdc.gov/GRASP/NCHHSTPAtlas/tables.html">The CDC.</a>
+        <ul>
+            <li>Legislator info comes from <a href="https://github.com/unitedstates/congress-legislators">https://github.com/unitedstates/congress-legislators</a>, downloaded 8 March 2025.</li> 
+            <li>Bill info comes from the Congress.gov API (<a href="https://gpo.congress.gov/">https://gpo.congress.gov/</a>), downloaded 8 March 2025.</li>
+            <li>Case rates come from <a href="https://gis.cdc.gov/GRASP/NCHHSTPAtlas/tables.html">The CDC,</a> downloaded 28 March 2025.</li>
+            <li>Grant values come from <a href="https://report.nih.gov/award/index.cfm?ot=&fy=2024&state=USS,AL,AK,AZ,AR,CA,CO,CT,DE,DC,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VT,VA,WA,WV,WI,WY&ic=NIAID&fm=&orgid=&distr=&rfa=&om=n&pid=&view=statedetail#tab1">NIH RePORT</a>, downloaded 1 April 2025.</li>
+        </ul>
     </div>
 
     <script>
@@ -207,18 +219,31 @@
                 return ""
             }
             h = ""
-            h = h.concat('<details>')
-            h = h.concat("<summary>")
             var meta
             var billType
+            var summary_text = ""
+            if (data.summaries.hasOwnProperty("summaries")){
+                var summaries = data.summaries.summaries
+                if (summaries.length>0){
+                    summary_text = summaries[summaries.length-1].text
+                }
+            }
             if (data.meta.hasOwnProperty("amendment")){
                 meta = data.meta.amendment
                 billType = data.meta.request.amendmentType
+                h = h.concat('<details class=not-clickable>')
             }
             else{
                 meta = data.meta.bill
                 billType = data.summaries.request.billType
+                if (summary_text==""){
+                    h = h.concat('<details class=not-clickable>')
+                }
+                else{
+                    h = h.concat('<details>')
+                }
             }
+            h = h.concat("<summary>")
             var req = data.meta.request
             if (good){
                 yes_icon = "&#x2705"
@@ -278,13 +303,7 @@
             else{
                 h = h.concat( "<a href=", "https://www.congress.gov/bill/", req.congress, "/", convert_type(req.billType), "/", req.billNumber, ">", meta.title, "</a> ", req.billType.toUpperCase().concat(".", req.billNumber, ", Congress ", req.congress,", ", new Date(data.meta.bill.introducedDate).toLocaleDateString(), "</summary>\n"))
             }
-            if (data.summaries.hasOwnProperty("summaries")){
-                var summaries = data.summaries.summaries
-                if (summaries.length>0){
-                    h = h.concat(summaries[summaries.length-1].text)
-                }
-            }
-            
+            h = h.concat(summary_text)
             h = h.concat( "</details>")
             return h
         }
@@ -296,7 +315,7 @@
             var summary = data.summaries.summaries
             var titles = data.titles.titles
             h = ""
-            h = h.concat('<li>')
+            h = h.concat('<details class=not-clickable><summary>')
             var req = data.summaries.request
             if (legislator.hasOwnProperty("id")){                
                 const cs = data.cosponsors.cosponsors
@@ -311,7 +330,7 @@
                     h = h.concat("&#x274c; Not signed: ")
                 }
             }
-            h = h.concat( "<a href=", req.url, ">", titles[0].title, "</a> </li>")
+            h = h.concat( "<a href=", req.url, ">", titles[0].title, "</a> </summary></details>")
             return h
         }
 
@@ -321,10 +340,11 @@
 
         function get_bills(legislator){
             var end_tb = ["118_hr_1776", "118_s_288", "117_hr_8654", "117_s_3386", "116_s_2438", "110_hr_1567"]
+            var farmer = ["117_hres_1373", "118-hres_204", "118_sres_95"]
             var results = ['118_hres_1286', '117_hr_8057',  '116_hres_517', '116_hres_861', '115_hr_4022', '118_sres_684','117_s_1451','116_sres_511','116_s_1766', '116_sres_318',]
             var other = [ '118_s_4879', '118_s_5278', '118_s_4797', '118_hr_6705', '118_hr_10457', '118_hr_6424',  '117_s_962', '117_s_2586', '117_sres_137', '117_sres_569','117_hr_5857', '117_hr_391', '117_s_4662',  '116_s_1250', '116_s_834', '116_s_3829', '116_s_2698', '116_hr_4847', '116_hr_2401', '116_hr_3080', '116_hr_3460', '116_hr_826',   '116_sres_119',   '115_s_640', '115_sres_437', '114_s_289', '114_hr_2104', '113_s_2115', '113_sres_393', '113_hres_133', '111_sres_454', '111_hres_1155', '110_hr_1532', '110_s_1551',  '107_s_1115', '101_hr_4273']
             
-            var bills = end_tb.concat(results, other)
+            var bills = end_tb.concat(results, other, farmer)
             for (let i=0; i<bills.length; i++){
                 $.getJSON("data/bills/".concat(bills[i], ".json"), function (data) {
                 $('#'.concat(bills[i])).append(year_section(data, legislator, true))
@@ -437,17 +457,57 @@
 
         function get_committees(committees, committee_members, bioguide){
             var members
+            var found = false
             for (const [key, members] of Object.entries(committee_members)){
                 comm = find_committee(committees, key)
                 if (relevant_committee(comm)){
                     for (let j=0; j<members.length; j++){
                         if (members[j].bioguide == bioguide){
                             add_committee(members[j], comm)
+                            found = true
                         }
                     }
                 }
             }
+            if (!found){
+                $('#comms').append("<ul><li>No relevant committees found.</li></ul>")
+            }
         }
+
+        
+        function make_plot(case_line, rate_line){
+                var dat = [case_line, rate_line]
+                var lay = {"xaxis":{
+                            "title":{"text":"Year"},
+                            "zeroline":false,
+                            "showline":false
+                            },
+                            "yaxis2": {
+                            "title": {
+                                "text": 'Rate per 100,000'
+                            },
+                            "overlaying": 'y',
+                            "side": 'right',
+                            "zeroline":false,
+                            "rangemode":"tozero"
+                            }, 
+                            "yaxis":{
+                            "title":{"text":"Cases"},
+                            "showline":false,
+                            "rangemode":"tozero"
+                            },
+                            "legend": {
+                            "x": 0.5,
+                            "xanchor": 'center',
+                            "y": 1,
+                            "yanchor":"bottom",
+                            "orientation":"h",
+                            "font":{"size":20}
+                            }
+                        }
+                TESTER = document.getElementById('plot');
+                Plotly.newPlot( TESTER, dat, lay, {responsive:true} );
+            }
 
         $(document).ready(function () { 
             // get charity name from the url params
@@ -456,7 +516,7 @@
             const bioguide = decodeURI(urlParams.get('bioguide'))
             var legislator = {}
             var last_term
-            var cases, abbrevs
+            var cases, abbrevs, grants
             const marker_size = 10
             const lw = 2
             const mode = "lines+markers"
@@ -498,6 +558,9 @@
                 }),
                 $.getJSON("data/state_abbrevs.json", function (data) {
                     abbrevs = data
+                }),
+                $.getJSON("data/grants.json", function (data){
+                    grants = data
                 })
             ).then(function (){
                 get_bills(legislator)
@@ -536,6 +599,19 @@
                         "name":"Rate per 100,000"
                     };
                 make_plot(case_line, rate_line)
+                var key
+                if (last_term.type=="sen"){
+                    key = last_term.state
+                }
+                else{
+                    key = last_term.state.concat(last_term.district)
+                }
+                if (grants.hasOwnProperty(key)){
+                    $('#grants').append("<details class=not-clickable><summary>Fiscal Year 2024: ".concat(grants[key], "</summary></details>"))
+                }
+                else{
+                    $('#grants').append("<ul><li>None found</li></ul>")
+                }
             });
 
             var committee_members, committees
@@ -569,40 +645,6 @@
                     }
                 }
             }); 
-      
-            function make_plot(case_line, rate_line){
-                var dat = [case_line, rate_line]
-                var lay = {"xaxis":{
-                            "title":{"text":"Year"},
-                            "zeroline":false,
-                            "showline":false
-                            },
-                            "yaxis2": {
-                            "title": {
-                                "text": 'Rate per 100,000'
-                            },
-                            "overlaying": 'y',
-                            "side": 'right',
-                            "zeroline":false,
-                            "rangemode":"tozero"
-                            }, 
-                            "yaxis":{
-                            "title":{"text":"Cases"},
-                            "showline":false,
-                            "rangemode":"tozero"
-                            },
-                            "legend": {
-                            "x": 0.5,
-                            "xanchor": 'center',
-                            "y": 1,
-                            "yanchor":"bottom",
-                            "orientation":"h",
-                            "font":{"size":20}
-                            }
-                        }
-                TESTER = document.getElementById('plot');
-                Plotly.newPlot( TESTER, dat, lay, {responsive:true} );
-            }
         }); 
     </script>
   </body>
