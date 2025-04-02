@@ -13,6 +13,7 @@
       </div>
     <h1 id="page_title"></h1>
     <h1 id="moc_title"></h2>
+    <div class="subtitle"><span id="terms" class="stat"></span></div>
     <div class="outertags">
         <div id="tags">
             <span id="url" style="display:none"></span>
@@ -31,6 +32,7 @@
         </div>
     </div>
     <div class="subtitle"><span id="reptype" class="stat"></span></div>
+    
     <div class="subtitle">Phone:&nbsp;<span id="phone" class="stat"></span></div>
     <div class="subtitle">Address:&nbsp;<span id="address" class="stat"></span></div>
     <div class="spacer" style="height:50px"></div>
@@ -67,7 +69,7 @@
         <h2>Committees</h2>
         <div id="comms"></div>
 
-        <h2>Bad bills</h2>
+        <h2>Bills that reduce foreign aid</h2>
         <div id="bad_bills">
             <div id="119_samdt_1266"></div>
         </div>
@@ -314,8 +316,8 @@
         }
 
         function capitalizeFirstLetter(val) {
-    return String(val).charAt(0).toUpperCase() + String(val).slice(1);
-}
+            return String(val).charAt(0).toUpperCase() + String(val).slice(1);
+        }
 
         function get_bills(legislator){
             var end_tb = ["118_hr_1776", "118_s_288", "117_hr_8654", "117_s_3386", "116_s_2438", "110_hr_1567"]
@@ -344,6 +346,54 @@
                 $('#'.concat(bills[i])).append(letter_section(data, legislator))
                 })
             }
+        }
+
+        function get_terms(legislator){
+            if (legislator.hasOwnProperty("leadership_roles")){
+                var position = legislator.leadership_roles[legislator.leadership_roles.length - 1]
+                if (new Date(position.end) > new Date()){
+                    $('#moc_title').append("<br>",position.title)
+                }
+            }
+            var term
+            var title = ""
+            var new_title
+            var start_year
+            var end_year
+            for (let i=0; i<legislator.terms.length; i++){
+                term = legislator.terms[i]
+                if (term.type=="rep"){
+                    new_title = "House ".concat(term.party, ", ", term.state, " District ", term.district)
+                }
+                else{
+                    new_title = "Senate ".concat(term.party,  ", ", term.state)
+                }
+                new_start_year = term.start.split("-")[0]
+                new_end_year = term.end.split("-")[0]
+                if(title==""){
+                    // first term
+                    title = new_title
+                    start_year = new_start_year
+                    end_year = new_end_year
+                }
+                else if (new_title!=title){
+                    // changed positions
+                    $('#terms').append("".concat(start_year, " - ", end_year, ": ", title, "<br>"))
+                    title = new_title
+                    start_year = new_start_year
+                    end_year = new_end_year
+                }
+                else if (new_start_year!=end_year){
+                    // gap between terms
+                    $('#terms').append("".concat(start_year, " - ", end_year, ", "))
+                    start_year = new_start_year
+                    end_year = new_end_year
+                }
+                else{
+                    end_year = new_end_year
+                }
+            }
+            $('#terms').append("".concat(start_year, " - ", end_year, ": ", title, "<br>"))
         }
 
         function add_committee(member, comm){
@@ -452,6 +502,7 @@
             ).then(function (){
                 get_bills(legislator)
                 get_letters(legislator)
+                get_terms(legislator)
                 var state = abbrevs[last_term.state]
                 $('#case_header').append(" in ", state)
                 var case_rates = cases[state]
