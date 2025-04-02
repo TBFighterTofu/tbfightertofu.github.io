@@ -37,10 +37,10 @@
     <div class="subtitle">Address:&nbsp;<span id="address" class="stat"></span></div>
     <div class="spacer" style="height:50px"></div>
     <div style="max-width:1000px; margin:0 auto">
-        <h2 id="case_header">Tuberculosis cases</h2>
+        <h2 id="case_header">&#x1F4C9;Tuberculosis cases</h2>
         <span id="case_count"></span>
         <div id="plot" style="width:100%;min-height:420px"></div>
-        <h2>Letters</h2>
+        <h2>&#x2709;&#xFE0F;Letters</h2>
         <div id="letters">
             <div id="h_25_15"></div>
             <div id="s_25_44"></div>
@@ -66,14 +66,14 @@
             <div id="s_20_49"></div>
             <div id="s_20_21"></div>
         </div>
-        <h2>Committees</h2>
+        <h2>&#x1FA91;Committees</h2>
         <div id="comms"></div>
 
-        <h2>Bills that reduce foreign aid</h2>
+        <h2>&#x1F620;Bills that reduce foreign aid</h2>
         <div id="bad_bills">
             <div id="119_samdt_1266"></div>
         </div>
-        <h2>End TB Now Act</h2>
+        <h2>&#x2712;&#xFE0F;End TB Now Act</h2>
         <div id="endtbnow">
             <div id="118_hr_1776"></div>
             <div id="118_s_288"></div>
@@ -82,14 +82,14 @@
             <div id="116_s_2438"></div>
             <div id="110_hr_1567"></div>
         </div>
-        <h2>Paul Farmer Memorial Resolution</h2>
+        <h2>&#x2712;&#xFE0F;Paul Farmer Memorial Resolution</h2>
         <div id="farmer">
             <div id="118_sres_95"></div>
             <div id="118_hres_204"></div>
             <div id="117_hres_1373"></div>
         </div>
         <div id="results">
-            <h2>RESULTS-supported bills</h2>
+            <h2>&#x2712;&#xFE0F;RESULTS-supported bills</h2>
             <div id="118_hres_1286"></div>
             <div id="118_sres_684"></div>
             <div id="117_hr_8057"></div>
@@ -101,7 +101,7 @@
             <div id="115_hr_4022"></div>
             <div id="116_sres_318"></div>
         </div>
-        <h2>Other potentially relevant bills</h2>
+        <h2>&#x2712;&#xFE0F;Other potentially relevant bills</h2>
         <div id="bills">
             <div id="118_s_4879"></div>
             <div id="118_s_5278"></div>
@@ -143,7 +143,7 @@
             <div id="101_hr_4273"></div>
         </div>
 
-        <h2>NIAID grants</h2>
+        <h2>&#x1F52C;NIAID grants</h2>
         <span id="grants"></span>
         
     </div>
@@ -539,7 +539,8 @@
                             $('#moc_title').append(capitalizeFirstLetter(last_term.state_rank).concat(" Senator"))
                         }
                         else if (last_term.type=="rep"){
-                            $('#moc_title').append("Representative from District ".concat(last_term.district))
+                            $('#moc_title').append("Representative from District ".concat(last_term.district));
+                            $('#119_samdt_1266').append("<ul><li>None found</li></ul>")
                         }
                         assign_span('#url', last_term.url, "Website")
                         assign_span('#govtrack', "https://www.govtrack.us/congress/members/".concat(legislator.name.first, "_", legislator.name.last, "/", legislator.id.govtrack), "GovTrack")
@@ -607,7 +608,7 @@
                     key = last_term.state.concat(last_term.district)
                 }
                 if (grants.hasOwnProperty(key)){
-                    $('#grants').append("<details class=not-clickable><summary>Fiscal Year 2024: ".concat(grants[key], "</summary></details>"))
+                    $('#grants').append("<details class=not-clickable><summary>".concat(key," Fiscal Year 2024: ", grants[key], "</summary></details>"))
                 }
                 else{
                     $('#grants').append("<ul><li>None found</li></ul>")
