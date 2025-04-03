@@ -61,13 +61,6 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "K000367",
-                "last": "Klobuchar",
-                "first": "Amy",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
                 "bioguideId": "M000133",
                 "last": "Markey",
                 "first": "Ed",
@@ -75,9 +68,23 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "M001169",
-                "last": "Murphy",
-                "first": "Chris",
+                "bioguideId": "K000367",
+                "last": "Klobuchar",
+                "first": "Amy",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "K000383",
+                "last": "King",
+                "first": "Angus",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "I000055",
+                "last": "Isakson",
+                "first": "Johnny",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             },
@@ -96,13 +103,6 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "S001203",
-                "last": "Smith",
-                "first": "Tina",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
                 "bioguideId": "G000555",
                 "last": "Gillibrand",
                 "first": "Kirsten",
@@ -113,6 +113,13 @@
                 "bioguideId": "D000563",
                 "last": "Durbin",
                 "first": "Richard",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "H001076",
+                "last": "Hassan",
+                "first": "Maggie",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             },
@@ -180,6 +187,13 @@
                 "sponsorshipDate": ""
             },
             {
+                "bioguideId": "H001046",
+                "last": "Heinrich",
+                "first": "Martin",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
                 "bioguideId": "W000817",
                 "last": "Warren",
                 "first": "Elizabeth",
@@ -190,13 +204,6 @@
                 "bioguideId": "S000770",
                 "last": "Stabenow",
                 "first": "Debbie",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
-                "bioguideId": "Y000064",
-                "last": "Young",
-                "first": "Todd",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             },
@@ -222,13 +229,6 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "T000476",
-                "last": "Tillis",
-                "first": "Thom",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
                 "bioguideId": "M001176",
                 "last": "Merkley",
                 "first": "Jeff",
@@ -243,9 +243,9 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "B001135",
-                "last": "Burr",
-                "first": "Richard",
+                "bioguideId": "T000464",
+                "last": "Tester",
+                "first": "Jon",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             },
@@ -257,9 +257,9 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "H001046",
-                "last": "Heinrich",
-                "first": "Martin",
+                "bioguideId": "M001169",
+                "last": "Murphy",
+                "first": "Chris",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             }
@@ -269,12 +269,12 @@
         "request": {
             "billNumber": "",
             "billType": "s",
-            "url": "https://results.org/wp-content/uploads/Senate-FY21-Global-Fund-PEPFAR-Dear-Colleague-Letter-Final-Signed.pdf",
-            "congress": "FY21"
+            "url": "https://results.org/wp-content/uploads/HOUSE-FY20-Dear-Colleague-MCH-Gavi-Nutrition-Letter.pdf",
+            "congress": "FY20"
         },
         "summaries": [
             {
-                "updateDate": "2020-10-01",
+                "updateDate": "2019-10-01",
                 "text": ""
             }
         ]
@@ -282,7 +282,7 @@
     "titles": {
         "titles": [
             {
-                "title": "FY21 Senate Global Fund and PEPFAR Dear Colleague Letter"
+                "title": "FY20 Senate MCH, Gavi, and Nutrition Dear Colleague Letter"
             }
         ]
     }

@@ -1,0 +1,415 @@
+{
+    "actions": {
+        "actions": []
+    },
+    "cosponsors": {
+        "cosponsors": [
+            {
+                "bioguideId": "S001175",
+                "last": "Speier",
+                "first": "Jackie",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "L000570",
+                "last": "Luj\u00e1n",
+                "first": "Ben",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "V000130",
+                "last": "Vargas",
+                "first": "Juan",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "L000579",
+                "last": "Lowenthal",
+                "first": "Alan",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "B000574",
+                "last": "Blumenauer",
+                "first": "Earl",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "N000189",
+                "last": "Newhouse",
+                "first": "Dan",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "T000238",
+                "last": "Thornberry",
+                "first": "Mac",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "G000571",
+                "last": "Gabbard",
+                "first": "Tulsi",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "F000466",
+                "last": "Fitzpatrick",
+                "first": "Brian",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C001066",
+                "last": "Castor",
+                "first": "Kathy",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "L000397",
+                "last": "Lofgren",
+                "first": "Zoe",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000623",
+                "last": "DeSaulnier",
+                "first": "Mark",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000800",
+                "last": "Welch",
+                "first": "Peter",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001165",
+                "last": "Sires",
+                "first": "Albio",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "L000557",
+                "last": "Larson",
+                "first": "John",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "L000287",
+                "last": "Lewis",
+                "first": "John",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000822",
+                "last": "Watson Coleman",
+                "first": "Bonnie",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "P000610",
+                "last": "Plaskett",
+                "first": "Stacey",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C001051",
+                "last": "Carter",
+                "first": "John",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000191",
+                "last": "DeFazio",
+                "first": "Peter",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "L000551",
+                "last": "Lee",
+                "first": "Barbara",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "L000562",
+                "last": "Lynch",
+                "first": "Stephen",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C001118",
+                "last": "Cline",
+                "first": "Ben",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001192",
+                "last": "Stewart",
+                "first": "Chris",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "B001309",
+                "last": "Burchett",
+                "first": "Tim",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "G000551",
+                "last": "Grijalva",
+                "first": "Raul",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "G000576",
+                "last": "Grothman",
+                "first": "Glenn",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "J000032",
+                "last": "Jackson Lee",
+                "first": "Sheila",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001200",
+                "last": "Soto",
+                "first": "Darren",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001150",
+                "last": "Schiff",
+                "first": "Adam",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "Y000033",
+                "last": "Young",
+                "first": "Don",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001193",
+                "last": "Swalwell",
+                "first": "Eric",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "K000375",
+                "last": "Keating",
+                "first": "Bill",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C000984",
+                "last": "Cummings",
+                "first": "Elijah",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C001063",
+                "last": "Cuellar",
+                "first": "Henry",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "P000604",
+                "last": "Payne",
+                "first": "Donald",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "T000474",
+                "last": "Torres",
+                "first": "Norma",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C001067",
+                "last": "Clarke",
+                "first": "Yvette",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "N000002",
+                "last": "Nadler",
+                "first": "Jerrold",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "J000298",
+                "last": "Jayapal",
+                "first": "Pramila",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C001072",
+                "last": "Carson",
+                "first": "Andr\u00e9",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "P000096",
+                "last": "Pascrell",
+                "first": "Bill",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000197",
+                "last": "DeGette",
+                "first": "Diana",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "V000131",
+                "last": "Veasey",
+                "first": "Marc",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000610",
+                "last": "Deutch",
+                "first": "Ted",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000096",
+                "last": "Davis",
+                "first": "Danny",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "G000582",
+                "last": "Gonzalez-Colon",
+                "first": "Jenniffer",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "T000468",
+                "last": "Titus",
+                "first": "Dina",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "E000215",
+                "last": "Eshoo",
+                "first": "Anna",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "H001064",
+                "last": "Heck",
+                "first": "Denny",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "K000379",
+                "last": "Kennedy",
+                "first": "Joseph",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001145",
+                "last": "Schakowsky",
+                "first": "Janice",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000216",
+                "last": "DeLauro",
+                "first": "Rosa",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "H000324",
+                "last": "Hastings",
+                "first": "Alcee",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "E000179",
+                "last": "Engel",
+                "first": "Eliot",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            }
+        ]
+    },
+    "summaries": {
+        "request": {
+            "billNumber": "",
+            "billType": "h",
+            "url": "",
+            "congress": "FY18"
+        },
+        "summaries": [
+            {
+                "updateDate": "2017-10-01",
+                "text": ""
+            }
+        ]
+    },
+    "titles": {
+        "titles": [
+            {
+                "title": "FY18 House Global TB Dear Colleague Letter"
+            }
+        ]
+    }
+}

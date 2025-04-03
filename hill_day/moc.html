@@ -54,17 +54,44 @@
             <div id="FY23FSGTDCL"></div>
             <div id="FY23FSGFaPDCL"></div>
             <div id="FY23FHTDCL"></div>
-            <div id="FY23JLftUNHLMT"></div>
             <div id="FY22FSGTDCL"></div>
+            <div id="FY22FHMGaNDCL"></div>
             <div id="FY22FHGTDCL"></div>
             <div id="FY22FHGFaPDCL"></div>
             <div id="FY21FSMGaNDCL"></div>
+            <div id="FY21FSGTDCL"></div>
             <div id="FY21FSGFaPDCL"></div>
             <div id="FY21FHMGaNDCL"></div>
+            <div id="FY21FHGTDCL"></div>
             <div id="FY21FHGFaPDCL"></div>
+            <div id="FY20FSMGaNDCL"></div>
             <div id="FY20FSGTDCL"></div>
             <div id="FY20FSGFaPDCL"></div>
+            <div id="FY20FHMGaNDCL"></div>
             <div id="FY20FHGTDCL"></div>
+            <div id="FY20FHGFaPDCL"></div>
+            <div id="FY19FSMGaNDCL"></div>
+            <div id="FY19FSGTDCL"></div>
+            <div id="FY19FSGFaPDCL"></div>
+            <div id="FY19FHMGaNDCL"></div>
+            <div id="FY19FHGTDCL"></div>
+            <div id="FY19FHGFaPDCL"></div>
+            <div id="FY18FSMGaNDCL"></div>
+            <div id="FY18FSGTDCL"></div>
+            <div id="FY18FSGFaPDCL"></div>
+            <div id="FY18FHMGaNDCL"></div>
+            <div id="FY18FHGTDCL"></div>
+            <div id="FY18FHGFaPDCL"></div>
+            <div id="FY17FSMGaNDCL"></div>
+            <div id="FY17FSGTDCL"></div>
+            <div id="FY17FSGFaPDCL"></div>
+            <div id="FY17FHMGaNDCL"></div>
+            <div id="FY17FHGTDCL"></div>
+            <div id="FY17FHGFaPDCL"></div>
+            <div id="FY16FSMGaNDCL"></div>
+            <div id="FY16FHMGaNDCL"></div>
+            <div id="FY16FHGTDCL"></div>
+            <div id="FY16FHGFaPDCL"></div>
         </div>
         <h2>&#x1FA91;Committees</h2>
         <div id="comms"></div>
@@ -196,7 +223,6 @@
             else{
                 bill_type = data.meta.request.amendmentType
             }
-            
             var terms = legislator.terms
             var start, end, bt0
             for (let i=terms.length-1; i>=0; i--){
@@ -310,6 +336,7 @@
 
         function letter_section(data, legislator){
             if (!in_office(data, legislator)){
+                console.log('not in office')
                 return ""
             }
             var summary = data.summaries.summaries
@@ -330,7 +357,13 @@
                     h = h.concat("&#x274c; Not signed: ")
                 }
             }
-            h = h.concat( "<a href=", req.url, ">", titles[0].title, "</a> </summary></details>")
+            if (req.url!=""){
+                h = h.concat( "<a href=", req.url, ">", titles[0].title, "</a> </summary></details>")
+            }
+            else{
+                h = h.concat( titles[0].title, "</summary></details>")
+            }
+            
             return h
         }
 
@@ -360,31 +393,13 @@
         }
 
         function get_letters(legislator){
-            var bills =  ["FY22FHGFaPDCL",
-                        "FY21FHGFaPDCL",
-                        "FY25FHTDCl",
-                        "FY24FHTDCl",
-                        "FY23FHTDCL",
-                        "FY22FHGTDCL",
-                        "FY20FHGTDCL",
-                        "FY25FHMaGDCL",
-                        "FY21FHMGaNDCL",
-                        "FY25FSTDCL",
-                        "FY23FSGTDCL",
-                        "FY22FSGTDCL",
-                        "FY20FSGTDCL",
-                        "FY25FSMGaNDCL",
-                        "FY24FSMGaNDCL",
-                        "FY23FSMGaNDCL",
-                        "FY21FSMGaNDCL",
-                        "FY25FSGFaPDCL",
-                        "FY24FSGFaPDCL",
-                        "FY23FSGFaPDCL",
-                        "FY21FSGFaPDCL",
-                        "FY20FSGFaPDCL","FY23JLftUNHLMT"]
+            var bills = [ "FY25FSTDCL", "FY25FSMGaNDCL", "FY25FSGFaPDCL", "FY25FHTDCl", "FY25FHMaGDCL", "FY24FSMGaNDCL", "FY24FSGFaPDCL", "FY24FHTDCl", "FY23FSMGaNDCL", "FY23FSGTDCL", "FY23FSGFaPDCL", "FY23FHTDCL", "FY22FSGTDCL", "FY22FHMGaNDCL", "FY22FHGTDCL", "FY22FHGFaPDCL", "FY21FSMGaNDCL", "FY21FSGTDCL", "FY21FSGFaPDCL", "FY21FHMGaNDCL", "FY21FHGTDCL", "FY21FHGFaPDCL", "FY20FSMGaNDCL", "FY20FSGTDCL", "FY20FSGFaPDCL", "FY20FHMGaNDCL", "FY20FHGTDCL", "FY20FHGFaPDCL", "FY19FSMGaNDCL", "FY19FSGTDCL", "FY19FSGFaPDCL", "FY19FHMGaNDCL", "FY19FHGTDCL", "FY19FHGFaPDCL", "FY18FSMGaNDCL", "FY18FSGTDCL", "FY18FSGFaPDCL", "FY18FHMGaNDCL", "FY18FHGTDCL", "FY18FHGFaPDCL", "FY17FSMGaNDCL", "FY17FSGTDCL", "FY17FSGFaPDCL", "FY17FHMGaNDCL", "FY17FHGTDCL", "FY17FHGFaPDCL", "FY16FSMGaNDCL", "FY16FHMGaNDCL", "FY16FHGTDCL", "FY16FHGFaPDCL", "FY23JLftUNHLMT"];
             for (let i=0; i<bills.length; i++){
+                console.log(bills[i])
                 $.getJSON("data/dcl/".concat(bills[i], ".json"), function (data) {
-                $('#'.concat(bills[i])).append(letter_section(data, legislator))
+                    ls = letter_section(data, legislator);
+                    console.log(ls)
+                    $('#'.concat(bills[i])).append(ls)
                 })
             }
         }

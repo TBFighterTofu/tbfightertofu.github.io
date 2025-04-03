@@ -1,0 +1,135 @@
+{
+    "actions": {
+        "actions": []
+    },
+    "cosponsors": {
+        "cosponsors": [
+            {
+                "bioguideId": "B001230",
+                "last": "Baldwin",
+                "first": "Tammy",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "B000944",
+                "last": "Brown",
+                "first": "Sherrod",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C000127",
+                "last": "Cantwell",
+                "first": "Maria",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C000141",
+                "last": "Cardin",
+                "first": "Ben",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C001088",
+                "last": "Coons",
+                "first": "Chris",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000563",
+                "last": "Durbin",
+                "first": "Richard",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "G000555",
+                "last": "Gillibrand",
+                "first": "Kirsten",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "H001046",
+                "last": "Heinrich",
+                "first": "Martin",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "H001042",
+                "last": "Hirono",
+                "first": "Mazie",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "M000133",
+                "last": "Markey",
+                "first": "Ed",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "M000639",
+                "last": "Menendez",
+                "first": "Bob",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S000148",
+                "last": "Schumer",
+                "first": "Chuck",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000817",
+                "last": "Warren",
+                "first": "Elizabeth",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000802",
+                "last": "Whitehouse",
+                "first": "Sheldon",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000779",
+                "last": "Wyden",
+                "first": "Ron",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            }
+        ]
+    },
+    "summaries": {
+        "request": {
+            "billNumber": "",
+            "billType": "s",
+            "url": "",
+            "congress": "FY17"
+        },
+        "summaries": [
+            {
+                "updateDate": "2016-10-01",
+                "text": ""
+            }
+        ]
+    },
+    "titles": {
+        "titles": [
+            {
+                "title": "FY17 Senate Global TB Dear Colleague Letter"
+            }
+        ]
+    }
+}

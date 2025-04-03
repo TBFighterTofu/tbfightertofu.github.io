@@ -75,9 +75,16 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "M001169",
-                "last": "Murphy",
-                "first": "Chris",
+                "bioguideId": "K000383",
+                "last": "King",
+                "first": "Angus",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "I000055",
+                "last": "Isakson",
+                "first": "Johnny",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             },
@@ -113,6 +120,13 @@
                 "bioguideId": "D000563",
                 "last": "Durbin",
                 "first": "Richard",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "H001076",
+                "last": "Hassan",
+                "first": "Maggie",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             },
@@ -173,9 +187,9 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "P000595",
-                "last": "Peters",
-                "first": "Gary",
+                "bioguideId": "H001046",
+                "last": "Heinrich",
+                "first": "Martin",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             },
@@ -194,37 +208,9 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "Y000064",
-                "last": "Young",
-                "first": "Todd",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
-                "bioguideId": "S001191",
-                "last": "Sinema",
-                "first": "Kyrsten",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
-                "bioguideId": "H001075",
-                "last": "Harris",
-                "first": "Kamala",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
-                "bioguideId": "R000608",
-                "last": "Rosen",
-                "first": "Jacky",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
-                "bioguideId": "T000476",
-                "last": "Tillis",
-                "first": "Thom",
+                "bioguideId": "H001061",
+                "last": "Hoeven",
+                "first": "John",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             },
@@ -243,13 +229,6 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "B001135",
-                "last": "Burr",
-                "first": "Richard",
-                "isOriginalCosponsor": true,
-                "sponsorshipDate": ""
-            },
-            {
                 "bioguideId": "F000062",
                 "last": "Feinstein",
                 "first": "Dianne",
@@ -257,9 +236,9 @@
                 "sponsorshipDate": ""
             },
             {
-                "bioguideId": "H001046",
-                "last": "Heinrich",
-                "first": "Martin",
+                "bioguideId": "M001169",
+                "last": "Murphy",
+                "first": "Chris",
                 "isOriginalCosponsor": true,
                 "sponsorshipDate": ""
             }
@@ -269,12 +248,12 @@
         "request": {
             "billNumber": "",
             "billType": "s",
-            "url": "https://results.org/wp-content/uploads/Senate-FY21-Global-Fund-PEPFAR-Dear-Colleague-Letter-Final-Signed.pdf",
-            "congress": "FY21"
+            "url": "https://www.worldvisionadvocacy.org/wp-content/uploads/2017/04/SENATE_FY2018_Dear_Colleague_MCH__Nutrition_Letter1.pdf",
+            "congress": "FY18"
         },
         "summaries": [
             {
-                "updateDate": "2020-10-01",
+                "updateDate": "2017-10-01",
                 "text": ""
             }
         ]
@@ -282,7 +261,7 @@
     "titles": {
         "titles": [
             {
-                "title": "FY21 Senate Global Fund and PEPFAR Dear Colleague Letter"
+                "title": "FY18 Senate MCH, Gavi, and Nutrition Dear Colleague Letter"
             }
         ]
     }
