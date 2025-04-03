@@ -42,29 +42,29 @@
         <div id="plot" style="width:100%;min-height:420px"></div>
         <h2>&#x2709;&#xFE0F;Letters</h2>
         <div id="letters">
-            <div id="h_25_15"></div>
-            <div id="s_25_44"></div>
-            <div id="h_25_32"></div>
-            <div id="s_25_35"></div>
-            <div id="s_25_14"></div>
-            <div id="s_24_45"></div>
-            <div id="s_24_36"></div>
-            <div id="s_24_2"></div>
-            <div id="h_24_17"></div>
-            <div id="h_24_6"></div>
-            <div id="h_23_19"></div>
-            <div id="h_23_01"></div>
-            <div id="s_23_46"></div>
-            <div id="s_23_39"></div>
-            <div id="s_23_18"></div>
-            <div id="h_22_20"></div>
-            <div id="s_22_19"></div>
-            <div id="h_21_41"></div>
-            <div id="s_21_47"></div>
-            <div id="s_21_41"></div>
-            <div id="h_20_29"></div>
-            <div id="s_20_49"></div>
-            <div id="s_20_21"></div>
+            <div id="FY25FSTDCL"></div>
+            <div id="FY25FSMGaNDCL"></div>
+            <div id="FY25FSGFaPDCL"></div>
+            <div id="FY25FHTDCl"></div>
+            <div id="FY25FHMaGDCL"></div>
+            <div id="FY24FSMGaNDCL"></div>
+            <div id="FY24FSGFaPDCL"></div>
+            <div id="FY24FHTDCl"></div>
+            <div id="FY23FSMGaNDCL"></div>
+            <div id="FY23FSGTDCL"></div>
+            <div id="FY23FSGFaPDCL"></div>
+            <div id="FY23FHTDCL"></div>
+            <div id="FY23JLftUNHLMT"></div>
+            <div id="FY22FSGTDCL"></div>
+            <div id="FY22FHGTDCL"></div>
+            <div id="FY22FHGFaPDCL"></div>
+            <div id="FY21FSMGaNDCL"></div>
+            <div id="FY21FSGFaPDCL"></div>
+            <div id="FY21FHMGaNDCL"></div>
+            <div id="FY21FHGFaPDCL"></div>
+            <div id="FY20FSGTDCL"></div>
+            <div id="FY20FSGFaPDCL"></div>
+            <div id="FY20FHGTDCL"></div>
         </div>
         <h2>&#x1FA91;Committees</h2>
         <div id="comms"></div>
@@ -360,7 +360,28 @@
         }
 
         function get_letters(legislator){
-            var bills =  ["h_25_15","s_25_44","h_25_32","s_25_35","s_25_14","s_24_45","s_24_36","h_24_17","h_23_19", "h_23_01", "s_23_46","s_23_39","s_23_18","h_22_20","s_22_19","h_21_41","s_21_47","s_21_41","h_20_29","s_20_49","s_20_21", "h_24_6", "s_24_2"]
+            var bills =  ["FY22FHGFaPDCL",
+                        "FY21FHGFaPDCL",
+                        "FY25FHTDCl",
+                        "FY24FHTDCl",
+                        "FY23FHTDCL",
+                        "FY22FHGTDCL",
+                        "FY20FHGTDCL",
+                        "FY25FHMaGDCL",
+                        "FY21FHMGaNDCL",
+                        "FY25FSTDCL",
+                        "FY23FSGTDCL",
+                        "FY22FSGTDCL",
+                        "FY20FSGTDCL",
+                        "FY25FSMGaNDCL",
+                        "FY24FSMGaNDCL",
+                        "FY23FSMGaNDCL",
+                        "FY21FSMGaNDCL",
+                        "FY25FSGFaPDCL",
+                        "FY24FSGFaPDCL",
+                        "FY23FSGFaPDCL",
+                        "FY21FSGFaPDCL",
+                        "FY20FSGFaPDCL","FY23JLftUNHLMT"]
             for (let i=0; i<bills.length; i++){
                 $.getJSON("data/dcl/".concat(bills[i], ".json"), function (data) {
                 $('#'.concat(bills[i])).append(letter_section(data, legislator))

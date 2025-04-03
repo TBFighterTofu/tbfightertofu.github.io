@@ -196,9 +196,7 @@ details {
     cursor: pointer;
 }
 
-.not-clickable{
-    pointer-events: none;
-}
+
 
 .not-clickable > summary {
     list-style-type: circle;

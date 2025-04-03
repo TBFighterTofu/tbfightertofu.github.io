@@ -1,0 +1,318 @@
+{
+    "actions": {
+        "actions": []
+    },
+    "cosponsors": {
+        "cosponsors": [
+            {
+                "bioguideId": "B001230",
+                "last": "Baldwin",
+                "full": "Tammy Baldwin",
+                "first": "Tammy",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "B001277",
+                "last": "Blumenthal",
+                "full": "Richard Blumenthal",
+                "first": "Richard",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "B001288",
+                "last": "Booker",
+                "full": "Cory A. Booker",
+                "first": "Cory",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "B000944",
+                "last": "Brown",
+                "full": "Sherrod Brown",
+                "first": "Sherrod",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C000127",
+                "last": "Cantwell",
+                "full": "Maria Cantwell",
+                "first": "Maria",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C000141",
+                "last": "Cardin",
+                "full": "Benjamin L. Cardin",
+                "first": "Ben",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C000174",
+                "last": "Carper",
+                "full": "Thomas R. Carper",
+                "first": "Thomas",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "C001070",
+                "last": "Casey",
+                "full": "Robert P. Casey, Jr.",
+                "first": "Bob",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000622",
+                "last": "Duckworth",
+                "full": "Tammy Duckworth",
+                "first": "Tammy",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "D000563",
+                "last": "Durbin",
+                "full": "Richard J. Durbin",
+                "first": "Richard",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "G000555",
+                "last": "Gillibrand",
+                "full": "Kirsten E. Gillibrand",
+                "first": "Kirsten",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "H001046",
+                "last": "Heinrich",
+                "full": "Martin Heinrich",
+                "first": "Martin",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "H001042",
+                "last": "Hirono",
+                "full": "Mazie K. Hirono",
+                "first": "Mazie",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "K000384",
+                "last": "Kaine",
+                "full": "Tim Kaine",
+                "first": "Tim",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "K000377",
+                "last": "Kelly",
+                "full": "Mark Kelly",
+                "first": "Mark",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "K000383",
+                "last": "King",
+                "full": "Angus S. King, Jr.",
+                "first": "Angus",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "K000367",
+                "last": "Klobuchar",
+                "full": "Amy Klobuchar",
+                "first": "Amy",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "L000570",
+                "last": "Lujan",
+                "full": "Ben Ray Luj\u00e1n",
+                "first": "Ben",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "M000133",
+                "last": "Markey",
+                "full": "Edward J. Markey",
+                "first": "Ed",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "M000639",
+                "last": "Menendez",
+                "full": "Robert Menendez",
+                "first": "Bob",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "M001176",
+                "last": "Merkley",
+                "full": "Jeff Merkley",
+                "first": "Jeff",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "M001169",
+                "last": "Murphy",
+                "full": "Christopher Murphy",
+                "first": "Chris",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "O000174",
+                "last": "Ossoff",
+                "full": "Jon Ossoff",
+                "first": "Jon",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "P000145",
+                "last": "Padilla",
+                "full": "Alex Padilla",
+                "first": "Alex",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "R000122",
+                "last": "Reed",
+                "full": "Jack Reed",
+                "first": "Jack",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "R000608",
+                "last": "Rosen",
+                "full": "Jacky Rosen",
+                "first": "Jacky",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S000033",
+                "last": "Sanders",
+                "full": "Bernard Sanders",
+                "first": "Bernie",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001181",
+                "last": "Shaheen",
+                "full": "Jeanne Shaheen",
+                "first": "Jeanne",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001191",
+                "last": "Sinema",
+                "full": "Kyrsten Sinema",
+                "first": "Kyrsten",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S001203",
+                "last": "Smith",
+                "full": "Tina Smith",
+                "first": "Tina",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "S000770",
+                "last": "Stabenow",
+                "full": "Debbie Stabenow",
+                "first": "Debbie",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "V000128",
+                "last": "Van Hollen",
+                "full": "Chris Van Hollen",
+                "first": "Chris",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000790",
+                "last": "Warnock",
+                "full": "Raphael G. Warnock",
+                "first": "Raphael",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000817",
+                "last": "Warren",
+                "full": "Elizabeth Warren",
+                "first": "Elizabeth",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000800",
+                "last": "Welch",
+                "full": "Peter Welch",
+                "first": "Peter",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            },
+            {
+                "bioguideId": "W000779",
+                "last": "Wyden",
+                "full": "Ron Wyden",
+                "first": "Ron",
+                "isOriginalCosponsor": true,
+                "sponsorshipDate": ""
+            }
+        ]
+    },
+    "summaries": {
+        "request": {
+            "billNumber": "",
+            "billType": "s",
+            "url": "https://results.org/wp-content/uploads/FY25-Senate-Global-Fund-PEPFAR-Dear-Colleague.pdf",
+            "congress": "FY25"
+        },
+        "summaries": [
+            {
+                "updateDate": "2024-10-01",
+                "text": ""
+            }
+        ]
+    },
+    "titles": {
+        "titles": [
+            {
+                "title": "FY25 Senate Global Fund and PEPFAR Dear Colleague Letter"
+            }
+        ]
+    }
+}
