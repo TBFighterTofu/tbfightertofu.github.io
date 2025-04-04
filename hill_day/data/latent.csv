@@ -1,0 +1,817 @@
+Grouping,Area,Pop. size (N),Persons with LTBI (95%CI),Column %,LTBI % (95%CI)
+Total estimated number of persons with LTBI, US ,"312,295,448","8,561,899 (8,307,006 to 8,844,338)",100%,2.7 (2.7 to 2.8)
+With solid organ transplant (SOT), US ,NA,"1,917 (1,859 to 1,981)",0%,
+With HIV coinfection but not SOT, US ,NA,"30,402 (29,479 to 31,442)",0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, US ,NA,"22,743 (22,062 to 23,503)",0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", US ,NA,"106,774 (103,529 to 110,437)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), US ,NA,"843,471 (818,644 to 870,682)",10%,
+None of the below medical risk factors reported, US ,NA,"7,556,592 (7,331,433 to 7,806,292)",88%,
+1–14 years, US ,"57,107,672","139,237 (127,973 to 151,578)",2%,0.2 (0.2 to 0.3)
+15–24 years, US ,"43,055,372","545,179 (519,882 to 573,366)",6%,1.3 (1.2 to 1.3)
+25–44 years, US ,"82,924,976","2,973,250 (2,893,700 to 3,057,523)",35%,3.6 (3.5 to 3.7)
+45–64 years, US ,"83,213,466","3,479,157 (3,382,813 to 3,581,179)",41%,4.2 (4.1 to 4.3)
+65+ years, US ,"45,993,962","1,425,075 (1,382,639 to 1,480,692)",17%,3.1 (3.0 to 3.2)
+Non-Hispanic white, US ,"193,404,794","2,429,041 (2,353,947 to 2,515,189)",28%,1.3 (1.2 to 1.3)
+Non-Hispanic black, US ,"38,068,868","1,484,262 (1,436,650 to 1,540,632)",17%,3.9 (3.8 to 4.0)
+Hispanic, US ,"54,613,248","2,377,515 (2,309,683 to 2,449,565)",28%,4.4 (4.2 to 4.5)
+Asian or other race/ethnicity, US ,"26,208,537","2,271,080 (2,206,726 to 2,338,952)",27%,8.7 (8.4 to 8.9)
+Total estimated number of persons with LTBI, AK ,"685,910","32,601 (31,588 to 33,750)",100%,4.8 (4.6 to 4.9)
+With solid organ transplant (SOT), AK ,NA,0,0%,
+With HIV coinfection but not SOT, AK ,NA,15 (15 to 15),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, AK ,NA,38 (37 to 40),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", AK ,NA,0,0%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), AK ,NA,"1,076 (1,045 to 1,108)",3%,
+None of the below medical risk factors reported, AK ,NA,"31,472 (30,491 to 32,587)",97%,
+1–14 years, AK ,"146,015",0,0%,0.0 (0.0 to 0.0)
+15–24 years, AK ,"96,806","1,424 (1,351 to 1,506)",4%,1.5 (1.4 to 1.6)
+25–44 years, AK ,"195,504","6,417 (6,195 to 6,656)",20%,3.3 (3.2 to 3.4)
+45–64 years, AK ,"180,852","17,997 (17,474 to 18,552)",55%,10.0 (9.7 to 10.3)
+65+ years, AK ,"66,733","6,764 (6,568 to 7,037)",21%,10.1 (9.8 to 10.5)
+Non-Hispanic white, AK ,"391,864","4,418 (4,279 to 4,580)",14%,1.1 (1.1 to 1.2)
+Non-Hispanic black, AK ,"16,741",633 (613 to 656),2%,3.8 (3.7 to 3.9)
+Hispanic, AK ,"58,175",426 (412 to 443),1%,0.7 (0.7 to 0.8)
+Asian or other race/ethnicity, AK ,"219,130","27,124 (26,284 to 28,072)",83%,12.4 (12.0 to 12.8)
+Total estimated number of persons with LTBI, AL ,"4,709,370","109,345 (106,049 to 113,340)",100%,2.3 (2.3 to 2.4)
+With solid organ transplant (SOT), AL ,NA,48 (47 to 50),0%,
+With HIV coinfection but not SOT, AL ,NA,278 (269 to 289),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, AL ,NA,204 (198 to 212),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", AL ,NA,"1,914 (1,854 to 1,988)",2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), AL ,NA,"6,199 (6,014 to 6,421)",6%,
+None of the below medical risk factors reported, AL ,NA,"100,702 (97,667 to 104,382)",92%,
+1–14 years, AL ,"849,917",733 (687 to 800),1%,0.1 (0.1 to 0.1)
+15–24 years, AL ,"670,520","3,814 (3,628 to 4,022)",3%,0.6 (0.5 to 0.6)
+25–44 years, AL ,"1,212,082","26,467 (25,651 to 27,340)",24%,2.2 (2.1 to 2.3)
+45–64 years, AL ,"1,260,860","46,328 (44,951 to 47,792)",42%,3.7 (3.6 to 3.8)
+65+ years, AL ,"715,991","32,003 (31,133 to 33,386)",29%,4.5 (4.3 to 4.7)
+Non-Hispanic white, AL ,"3,138,718","40,342 (39,093 to 41,892)",37%,1.3 (1.2 to 1.3)
+Non-Hispanic black, AL ,"1,245,631","46,249 (44,812 to 48,044)",42%,3.7 (3.6 to 3.9)
+Hispanic, AL ,"186,683","16,172 (15,740 to 16,634)",15%,8.7 (8.4 to 8.9)
+Asian or other race/ethnicity, AL ,"138,339","6,581 (6,404 to 6,771)",6%,4.8 (4.6 to 4.9)
+Total estimated number of persons with LTBI, AR ,"2,858,387","85,874 (83,123 to 89,179)",100%,3.0 (2.9 to 3.1)
+With solid organ transplant (SOT), AR ,NA,0,0%,
+With HIV coinfection but not SOT, AR ,NA,160 (155 to 166),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, AR ,NA,50 (49 to 52),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", AR ,NA,823 (796 to 856),1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), AR ,NA,"6,432 (6,219 to 6,681)",7%,
+None of the below medical risk factors reported, AR ,NA,"78,410 (75,905 to 81,424)",91%,
+1–14 years, AR ,"547,319","3,405 (3,127 to 3,707)",4%,0.6 (0.6 to 0.7)
+15–24 years, AR ,"370,152","5,222 (4,963 to 5,514)",6%,1.4 (1.3 to 1.5)
+25–44 years, AR ,"737,069","20,100 (19,500 to 20,740)",23%,2.7 (2.6 to 2.8)
+45–64 years, AR ,"741,701","32,338 (31,397 to 33,337)",38%,4.4 (4.2 to 4.5)
+65+ years, AR ,"462,146","24,809 (24,135 to 25,882)",29%,5.4 (5.2 to 5.6)
+Non-Hispanic white, AR ,"2,068,744","37,474 (36,282 to 38,993)",44%,1.8 (1.8 to 1.9)
+Non-Hispanic black, AR ,"453,587","19,203 (18,587 to 19,987)",22%,4.2 (4.1 to 4.4)
+Hispanic, AR ,"193,038","12,640 (12,242 to 13,062)",15%,6.5 (6.3 to 6.8)
+Asian or other race/ethnicity, AR ,"143,019","16,557 (16,013 to 17,138)",19%,11.6 (11.2 to 12.0)
+Total estimated number of persons with LTBI, AZ ,"6,550,609","186,566 (180,916 to 192,868)",100%,2.8 (2.8 to 2.9)
+With solid organ transplant (SOT), AZ ,NA,51 (49 to 53),0%,
+With HIV coinfection but not SOT, AZ ,NA,628 (609 to 650),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, AZ ,NA,424 (411 to 439),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", AZ ,NA,"1,224 (1,186 to 1,268)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), AZ ,NA,"17,643 (17,104 to 18,256)",9%,
+None of the below medical risk factors reported, AZ ,NA,"166,597 (161,557 to 172,202)",89%,
+1–14 years, AZ ,"1,223,891","4,615 (4,235 to 5,023)",2%,0.4 (0.3 to 0.4)
+15–24 years, AZ ,"915,881","17,577 (16,796 to 18,442)",9%,1.9 (1.8 to 2.0)
+25–44 years, AZ ,"1,733,477","69,017 (67,221 to 70,914)",37%,4.0 (3.9 to 4.1)
+45–64 years, AZ ,"1,711,663","63,314 (61,560 to 65,172)",34%,3.7 (3.6 to 3.8)
+65+ years, AZ ,"965,697","32,043 (31,103 to 33,316)",17%,3.3 (3.2 to 3.4)
+Non-Hispanic white, AZ ,"3,213,282","47,991 (46,480 to 49,763)",26%,1.5 (1.4 to 1.5)
+Non-Hispanic black, AZ ,"264,641","10,968 (10,631 to 11,352)",6%,4.1 (4.0 to 4.3)
+Hispanic, AZ ,"2,526,082","91,590 (88,897 to 94,473)",49%,3.6 (3.5 to 3.7)
+Asian or other race/ethnicity, AZ ,"546,603","36,018 (34,908 to 37,280)",19%,6.6 (6.4 to 6.8)
+Total estimated number of persons with LTBI, CA ,"38,287,327","1,722,575 (1,671,633 to 1,777,341)",100%,4.5 (4.4 to 4.6)
+With solid organ transplant (SOT), CA ,NA,482 (468 to 498),0%,
+With HIV coinfection but not SOT, CA ,NA,"4,143 (4,015 to 4,284)",0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, CA ,NA,"7,396 (7,183 to 7,622)",0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", CA ,NA,"24,264 (23,556 to 25,020)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), CA ,NA,"245,204 (238,172 to 252,629)",14%,
+None of the below medical risk factors reported, CA ,NA,"1,441,085 (1,398,240 to 1,487,288)",84%,
+1–14 years, CA ,"7,190,073","16,966 (15,673 to 18,479)",1%,0.2 (0.2 to 0.3)
+15–24 years, CA ,"5,652,440","103,474 (98,295 to 109,296)",6%,1.8 (1.7 to 1.9)
+25–44 years, CA ,"10,647,768","528,650 (514,613 to 543,512)",31%,5.0 (4.8 to 5.1)
+45–64 years, CA ,"9,908,948","776,150 (755,262 to 798,231)",45%,7.8 (7.6 to 8.1)
+65+ years, CA ,"4,888,098","297,335 (287,791 to 307,824)",17%,6.1 (5.9 to 6.3)
+Non-Hispanic white, CA ,"15,042,936","322,845 (312,569 to 334,344)",19%,2.1 (2.1 to 2.2)
+Non-Hispanic black, CA ,"2,057,292","92,299 (89,028 to 96,148)",5%,4.5 (4.3 to 4.7)
+Hispanic, CA ,"14,571,010","614,435 (596,614 to 633,377)",36%,4.2 (4.1 to 4.3)
+Asian or other race/ethnicity, CA ,"6,616,087","692,996 (673,422 to 713,473)",40%,10.5 (10.2 to 10.8)
+Total estimated number of persons with LTBI, CO ,"5,292,527","69,932 (67,926 to 72,139)",100%,1.3 (1.3 to 1.4)
+With solid organ transplant (SOT), CO ,NA,24 (23 to 25),0%,
+With HIV coinfection but not SOT, CO ,NA,183 (178 to 189),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, CO ,NA,292 (284 to 302),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", CO ,NA,553 (537 to 574),1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), CO ,NA,"7,816 (7,593 to 8,054)",11%,
+None of the below medical risk factors reported, CO ,NA,"61,063 (59,310 to 62,995)",87%,
+1–14 years, CO ,"970,122",694 (637 to 755),1%,0.1 (0.1 to 0.1)
+15–24 years, CO ,"711,480","3,717 (3,558 to 3,892)",5%,0.5 (0.5 to 0.5)
+25–44 years, CO ,"1,518,953","25,825 (25,158 to 26,530)",37%,1.7 (1.7 to 1.7)
+45–64 years, CO ,"1,355,390","26,858 (26,124 to 27,634)",38%,2.0 (1.9 to 2.0)
+65+ years, CO ,"736,582","12,839 (12,449 to 13,327)",18%,1.7 (1.7 to 1.8)
+Non-Hispanic white, CO ,"3,716,393","21,345 (20,708 to 22,084)",31%,0.6 (0.6 to 0.6)
+Non-Hispanic black, CO ,"204,212","10,162 (9,863 to 10,497)",15%,5.0 (4.8 to 5.1)
+Hispanic, CO ,"1,091,936","22,418 (21,789 to 23,088)",32%,2.1 (2.0 to 2.1)
+Asian or other race/ethnicity, CO ,"279,987","16,008 (15,566 to 16,469)",23%,5.7 (5.6 to 5.9)
+Total estimated number of persons with LTBI, CT ,"3,536,587","61,955 (60,220 to 63,872)",100%,1.8 (1.7 to 1.8)
+With solid organ transplant (SOT), CT ,NA,0,0%,
+With HIV coinfection but not SOT, CT ,NA,233 (226 to 240),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, CT ,NA,163 (158 to 168),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", CT ,NA,174 (169 to 180),0%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), CT ,NA,"4,222 (4,108 to 4,343)",7%,
+None of the below medical risk factors reported, CT ,NA,"57,164 (55,560 to 58,941)",92%,
+1–14 years, CT ,"585,226",67 (63 to 73),0%,0.0 (0.0 to 0.0)
+15–24 years, CT ,"473,755","4,283 (4,098 to 4,488)",7%,0.9 (0.9 to 0.9)
+25–44 years, CT ,"887,590","28,200 (27,477 to 28,963)",46%,3.2 (3.1 to 3.3)
+45–64 years, CT ,"1,094,855","19,900 (19,360 to 20,471)",32%,1.8 (1.8 to 1.9)
+65+ years, CT ,"495,161","9,505 (9,223 to 9,877)",15%,1.9 (1.9 to 2.0)
+Non-Hispanic white, CT ,"2,513,029","26,188 (25,450 to 27,010)",42%,1.0 (1.0 to 1.1)
+Non-Hispanic black, CT ,"310,286","7,719 (7,481 to 8,006)",12%,2.5 (2.4 to 2.6)
+Hispanic, CT ,"468,168","14,766 (14,363 to 15,201)",24%,3.2 (3.1 to 3.2)
+Asian or other race/ethnicity, CT ,"245,103","13,281 (12,926 to 13,655)",21%,5.4 (5.3 to 5.6)
+Total estimated number of persons with LTBI, DC ,"648,422","29,188 (28,376 to 30,133)",100%,4.5 (4.4 to 4.6)
+With solid organ transplant (SOT), DC ,NA,0,0%,
+With HIV coinfection but not SOT, DC ,NA,382 (371 to 395),1%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, DC ,NA,101 (98 to 105),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", DC ,NA,829 (805 to 861),3%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), DC ,NA,"1,493 (1,448 to 1,549)",5%,
+None of the below medical risk factors reported, DC ,NA,"26,384 (25,655 to 27,224)",90%,
+1–14 years, DC ,"92,053",44 (42 to 48),0%,0.0 (0.0 to 0.1)
+15–24 years, DC ,"81,167","1,342 (1,284 to 1,407)",5%,1.7 (1.6 to 1.7)
+25–44 years, DC ,"256,810","13,125 (12,780 to 13,491)",45%,5.1 (5.0 to 5.3)
+45–64 years, DC ,"142,590","8,400 (8,169 to 8,645)",29%,5.9 (5.7 to 6.1)
+65+ years, DC ,"75,802","6,276 (6,102 to 6,542)",22%,8.3 (8.1 to 8.6)
+Non-Hispanic white, DC ,"238,032","5,409 (5,259 to 5,578)",19%,2.3 (2.2 to 2.3)
+Non-Hispanic black, DC ,"304,318","17,089 (16,601 to 17,682)",59%,5.6 (5.5 to 5.8)
+Hispanic, DC ,"68,597","4,701 (4,579 to 4,830)",16%,6.9 (6.7 to 7.0)
+Asian or other race/ethnicity, DC ,"37,475","1,989 (1,937 to 2,043)",7%,5.3 (5.2 to 5.5)
+Total estimated number of persons with LTBI, DE ,"919,822","19,434 (18,854 to 20,101)",100%,2.1 (2.0 to 2.2)
+With solid organ transplant (SOT), DE ,NA,0,0%,
+With HIV coinfection but not SOT, DE ,NA,109 (105 to 113),1%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, DE ,NA,79 (77 to 82),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", DE ,NA,613 (594 to 637),3%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), DE ,NA,"1,395 (1,354 to 1,440)",7%,
+None of the below medical risk factors reported, DE ,NA,"17,239 (16,724 to 17,829)",89%,
+1–14 years, DE ,"163,342",369 (339 to 402),2%,0.2 (0.2 to 0.2)
+15–24 years, DE ,"115,522","1,353 (1,293 to 1,420)",7%,1.2 (1.1 to 1.2)
+25–44 years, DE ,"234,108","9,083 (8,837 to 9,344)",47%,3.9 (3.8 to 4.0)
+45–64 years, DE ,"253,487","4,608 (4,477 to 4,747)",24%,1.8 (1.8 to 1.9)
+65+ years, DE ,"153,363","4,021 (3,907 to 4,188)",21%,2.6 (2.5 to 2.7)
+Non-Hispanic white, DE ,"581,838","6,099 (5,907 to 6,329)",31%,1.0 (1.0 to 1.1)
+Non-Hispanic black, DE ,"184,898","4,549 (4,405 to 4,727)",23%,2.5 (2.4 to 2.6)
+Hispanic, DE ,"95,410","4,300 (4,181 to 4,427)",22%,4.5 (4.4 to 4.6)
+Asian or other race/ethnicity, DE ,"57,676","4,486 (4,362 to 4,617)",23%,7.8 (7.6 to 8.0)
+Total estimated number of persons with LTBI, FL ,"19,477,695","587,214 (569,784 to 606,616)",100%,3.0 (2.9 to 3.1)
+With solid organ transplant (SOT), FL ,NA,128 (125 to 133),0%,
+With HIV coinfection but not SOT, FL ,NA,"4,699 (4,559 to 4,854)",1%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, FL ,NA,"1,230 (1,193 to 1,273)",0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", FL ,NA,"14,737 (14,292 to 15,241)",3%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), FL ,NA,"44,771 (43,456 to 46,221)",8%,
+None of the below medical risk factors reported, FL ,NA,"521,648 (506,160 to 538,893)",89%,
+1–14 years, FL ,"3,088,605","7,313 (6,719 to 7,960)",1%,0.2 (0.2 to 0.3)
+15–24 years, FL ,"2,489,511","30,829 (29,384 to 32,441)",5%,1.2 (1.2 to 1.3)
+25–44 years, FL ,"4,806,873","191,433 (186,174 to 197,017)",33%,4.0 (3.9 to 4.1)
+45–64 years, FL ,"5,567,775","269,688 (262,113 to 277,715)",46%,4.8 (4.7 to 5.0)
+65+ years, FL ,"3,524,931","87,951 (85,394 to 91,483)",15%,2.5 (2.4 to 2.6)
+Non-Hispanic white, FL ,"10,821,856","205,142 (198,844 to 212,357)",35%,1.9 (1.8 to 2.0)
+Non-Hispanic black, FL ,"3,034,566","143,832 (139,348 to 149,016)",24%,4.7 (4.6 to 4.9)
+Hispanic, FL ,"4,857,166","173,414 (168,571 to 178,515)",30%,3.6 (3.5 to 3.7)
+Asian or other race/ethnicity, FL ,"764,107","64,826 (63,021 to 66,728)",11%,8.5 (8.2 to 8.7)
+Total estimated number of persons with LTBI, GA ,"9,848,721","293,659 (284,689 to 303,725)",100%,3.0 (2.9 to 3.1)
+With solid organ transplant (SOT), GA ,NA,48 (47 to 50),0%,
+With HIV coinfection but not SOT, GA ,NA,"1,931 (1,871 to 1,999)",1%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, GA ,NA,736 (713 to 763),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", GA ,NA,"2,564 (2,484 to 2,656)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), GA ,NA,"24,985 (24,218 to 25,846)",9%,
+None of the below medical risk factors reported, GA ,NA,"263,394 (255,356 to 272,411)",90%,
+1–14 years, GA ,"1,963,597","6,118 (5,621 to 6,660)",2%,0.3 (0.3 to 0.3)
+15–24 years, GA ,"1,249,290","13,850 (13,155 to 14,632)",5%,1.1 (1.1 to 1.2)
+25–44 years, GA ,"2,823,980","108,850 (105,762 to 112,136)",37%,3.9 (3.7 to 4.0)
+45–64 years, GA ,"2,542,332","121,508 (118,049 to 125,177)",41%,4.8 (4.6 to 4.9)
+65+ years, GA ,"1,269,522","43,332 (42,101 to 45,119)",15%,3.4 (3.3 to 3.6)
+Non-Hispanic white, GA ,"5,271,999","61,921 (59,978 to 64,156)",21%,1.2 (1.1 to 1.2)
+Non-Hispanic black, GA ,"3,033,513","114,510 (110,791 to 118,876)",39%,3.8 (3.7 to 3.9)
+Hispanic, GA ,"938,043","56,690 (55,087 to 58,369)",19%,6.0 (5.9 to 6.2)
+Asian or other race/ethnicity, GA ,"605,167","60,537 (58,833 to 62,324)",21%,10.0 (9.7 to 10.3)
+Total estimated number of persons with LTBI, HI ,"1,351,085","102,989 (99,910 to 106,332)",100%,7.6 (7.4 to 7.9)
+With solid organ transplant (SOT), HI ,NA,0,0%,
+With HIV coinfection but not SOT, HI ,NA,13 (13 to 13),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, HI ,NA,381 (370 to 393),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", HI ,NA,"1,026 (995 to 1,058)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), HI ,NA,"22,155 (21,500 to 22,860)",22%,
+None of the below medical risk factors reported, HI ,NA,"79,414 (77,033 to 82,008)",77%,
+1–14 years, HI ,"251,279","2,297 (2,109 to 2,501)",2%,0.9 (0.8 to 1.0)
+15–24 years, HI ,"194,445","8,009 (7,642 to 8,417)",8%,4.1 (3.9 to 4.3)
+25–44 years, HI ,"337,225","28,133 (27,419 to 28,887)",27%,8.3 (8.1 to 8.6)
+45–64 years, HI ,"344,958","46,226 (44,990 to 47,532)",45%,13.4 (13.0 to 13.8)
+65+ years, HI ,"223,178","18,323 (17,750 to 18,994)",18%,8.2 (8.0 to 8.5)
+Non-Hispanic white, HI ,"253,910","6,653 (6,435 to 6,909)",6%,2.6 (2.5 to 2.7)
+Non-Hispanic black, HI ,"29,691",953 (919 to 994),1%,3.2 (3.1 to 3.3)
+Hispanic, HI ,"121,047","1,357 (1,319 to 1,396)",1%,1.1 (1.1 to 1.2)
+Asian or other race/ethnicity, HI ,"946,437","94,026 (91,237 to 97,034)",91%,9.9 (9.6 to 10.3)
+Total estimated number of persons with LTBI, IA ,"3,032,750","49,744 (48,325 to 51,294)",100%,1.6 (1.6 to 1.7)
+With solid organ transplant (SOT), IA ,NA,0,0%,
+With HIV coinfection but not SOT, IA ,NA,100 (97 to 103),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, IA ,NA,64 (62 to 67),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", IA ,NA,"1,111 (1,076 to 1,150)",2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), IA ,NA,"2,539 (2,469 to 2,615)",5%,
+None of the below medical risk factors reported, IA ,NA,"45,930 (44,621 to 47,360)",92%,
+1–14 years, IA ,"562,247",545 (502 to 593),1%,0.1 (0.1 to 0.1)
+15–24 years, IA ,"393,630","3,779 (3,616 to 3,958)",8%,1.0 (0.9 to 1.0)
+25–44 years, IA ,"770,561","24,217 (23,604 to 24,863)",49%,3.1 (3.1 to 3.2)
+45–64 years, IA ,"821,717","16,351 (15,893 to 16,837)",33%,2.0 (1.9 to 2.0)
+65+ years, IA ,"484,595","4,852 (4,709 to 5,043)",10%,1.0 (1.0 to 1.0)
+Non-Hispanic white, IA ,"2,676,252","23,133 (22,443 to 23,907)",47%,0.9 (0.8 to 0.9)
+Non-Hispanic black, IA ,"90,433","5,289 (5,137 to 5,455)",11%,5.8 (5.7 to 6.0)
+Hispanic, IA ,"152,796","6,378 (6,205 to 6,562)",13%,4.2 (4.1 to 4.3)
+Asian or other race/ethnicity, IA ,"113,269","14,944 (14,539 to 15,370)",30%,13.2 (12.8 to 13.6)
+Total estimated number of persons with LTBI, ID ,"1,590,141","10,863 (10,492 to 11,275)",100%,0.7 (0.7 to 0.7)
+With solid organ transplant (SOT), ID ,NA,0,0%,
+With HIV coinfection but not SOT, ID ,NA,28 (27 to 29),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, ID ,NA,24 (24 to 25),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", ID ,NA,0,0%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), ID ,NA,678 (659 to 701),6%,
+None of the below medical risk factors reported, ID ,NA,"10,133 (9,783 to 10,521)",93%,
+1–14 years, ID ,"330,753","1,103 (1,011 to 1,201)",10%,0.3 (0.3 to 0.4)
+15–24 years, ID ,"258,136",925 (886 to 969),9%,0.4 (0.3 to 0.4)
+25–44 years, ID ,"378,948","3,658 (3,566 to 3,756)",34%,1.0 (0.9 to 1.0)
+45–64 years, ID ,"412,101","3,100 (3,014 to 3,190)",29%,0.8 (0.7 to 0.8)
+65+ years, ID ,"210,203","2,076 (2,016 to 2,159)",19%,1.0 (1.0 to 1.0)
+Non-Hispanic white, ID ,"1,306,131","3,539 (3,416 to 3,680)",33%,0.3 (0.3 to 0.3)
+Non-Hispanic black, ID ,"13,245","1,056 (1,022 to 1,095)",10%,8.0 (7.7 to 8.3)
+Hispanic, ID ,"201,685","4,275 (4,128 to 4,433)",39%,2.1 (2.0 to 2.2)
+Asian or other race/ethnicity, ID ,"69,079","1,994 (1,926 to 2,067)",18%,2.9 (2.8 to 3.0)
+Total estimated number of persons with LTBI, IL ,"12,624,271","305,800 (296,687 to 315,832)",100%,2.4 (2.4 to 2.5)
+With solid organ transplant (SOT), IL ,NA,77 (75 to 79),0%,
+With HIV coinfection but not SOT, IL ,NA,864 (837 to 893),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, IL ,NA,698 (677 to 721),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", IL ,NA,"4,102 (3,980 to 4,236)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), IL ,NA,"26,253 (25,482 to 27,090)",9%,
+None of the below medical risk factors reported, IL ,NA,"273,806 (265,636 to 282,812)",90%,
+1–14 years, IL ,"2,299,087","4,520 (4,141 to 4,919)",1%,0.2 (0.2 to 0.2)
+15–24 years, IL ,"1,688,942","20,614 (19,658 to 21,678)",7%,1.2 (1.2 to 1.3)
+25–44 years, IL ,"3,450,222","102,683 (99,959 to 105,567)",34%,3.0 (2.9 to 3.1)
+45–64 years, IL ,"3,299,125","125,233 (121,774 to 128,896)",41%,3.8 (3.7 to 3.9)
+65+ years, IL ,"1,886,895","52,750 (51,156 to 54,771)",17%,2.8 (2.7 to 2.9)
+Non-Hispanic white, IL ,"8,139,013","94,478 (91,628 to 97,655)",31%,1.2 (1.1 to 1.2)
+Non-Hispanic black, IL ,"1,643,545","56,693 (54,829 to 58,929)",19%,3.4 (3.3 to 3.6)
+Hispanic, IL ,"1,988,409","76,965 (74,772 to 79,274)",25%,3.9 (3.8 to 4.0)
+Asian or other race/ethnicity, IL ,"853,306","77,665 (75,458 to 79,974)",25%,9.1 (8.8 to 9.4)
+Total estimated number of persons with LTBI, IN ,"6,367,165","105,440 (102,278 to 109,014)",100%,1.7 (1.6 to 1.7)
+With solid organ transplant (SOT), IN ,NA,28 (27 to 29),0%,
+With HIV coinfection but not SOT, IN ,NA,262 (254 to 270),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, IN ,NA,192 (187 to 199),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", IN ,NA,"1,714 (1,659 to 1,779)",2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), IN ,NA,"7,883 (7,649 to 8,151)",7%,
+None of the below medical risk factors reported, IN ,NA,"95,361 (92,502 to 98,586)",90%,
+1–14 years, IN ,"1,211,725","1,492 (1,368 to 1,624)",1%,0.1 (0.1 to 0.1)
+15–24 years, IN ,"864,775","9,737 (9,318 to 10,199)",9%,1.1 (1.1 to 1.2)
+25–44 years, IN ,"1,692,446","41,325 (40,214 to 42,503)",39%,2.4 (2.4 to 2.5)
+45–64 years, IN ,"1,624,909","34,547 (33,561 to 35,593)",33%,2.1 (2.1 to 2.2)
+65+ years, IN ,"973,310","18,339 (17,817 to 19,095)",17%,1.9 (1.8 to 2.0)
+Non-Hispanic white, IN ,"5,009,801","43,285 (41,932 to 44,899)",41%,0.9 (0.8 to 0.9)
+Non-Hispanic black, IN ,"592,927","14,492 (14,039 to 15,025)",14%,2.4 (2.4 to 2.5)
+Hispanic, IN ,"536,437","20,229 (19,650 to 20,841)",19%,3.8 (3.7 to 3.9)
+Asian or other race/ethnicity, IN ,"228,000","27,434 (26,657 to 28,250)",26%,12.0 (11.7 to 12.4)
+Total estimated number of persons with LTBI, KS ,"2,815,359","36,808 (35,708 to 38,033)",100%,1.3 (1.3 to 1.4)
+With solid organ transplant (SOT), KS ,NA,0,0%,
+With HIV coinfection but not SOT, KS ,NA,68 (66 to 71),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, KS ,NA,91 (88 to 94),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", KS ,NA,258 (250 to 268),1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), KS ,NA,"3,372 (3,271 to 3,487)",9%,
+None of the below medical risk factors reported, KS ,NA,"33,019 (32,033 to 34,114)",90%,
+1–14 years, KS ,"552,515",823 (755 to 896),2%,0.1 (0.1 to 0.2)
+15–24 years, KS ,"417,049","3,543 (3,401 to 3,699)",10%,0.8 (0.8 to 0.9)
+25–44 years, KS ,"703,578","13,575 (13,215 to 13,957)",37%,1.9 (1.9 to 2.0)
+45–64 years, KS ,"751,527","12,981 (12,624 to 13,360)",35%,1.7 (1.7 to 1.8)
+65+ years, KS ,"390,690","5,885 (5,714 to 6,122)",16%,1.5 (1.5 to 1.6)
+Non-Hispanic white, KS ,"2,127,809","12,852 (12,452 to 13,336)",35%,0.6 (0.6 to 0.6)
+Non-Hispanic black, KS ,"151,489","3,986 (3,867 to 4,116)",11%,2.6 (2.6 to 2.7)
+Hispanic, KS ,"318,897","8,595 (8,342 to 8,863)",23%,2.7 (2.6 to 2.8)
+Asian or other race/ethnicity, KS ,"217,164","11,375 (11,047 to 11,717)",31%,5.2 (5.1 to 5.4)
+Total estimated number of persons with LTBI, KY ,"4,246,357","78,229 (75,839 to 81,021)",100%,1.8 (1.8 to 1.9)
+With solid organ transplant (SOT), KY ,NA,17 (17 to 18),0%,
+With HIV coinfection but not SOT, KY ,NA,196 (190 to 203),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, KY ,NA,296 (286 to 307),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", KY ,NA,"2,668 (2,587 to 2,769)",3%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), KY ,NA,"5,498 (5,329 to 5,700)",7%,
+None of the below medical risk factors reported, KY ,NA,"69,554 (67,430 to 72,024)",89%,
+1–14 years, KY ,"771,634","2,206 (2,022 to 2,401)",3%,0.3 (0.3 to 0.3)
+15–24 years, KY ,"568,706","4,240 (4,061 to 4,438)",5%,0.7 (0.7 to 0.8)
+25–44 years, KY ,"1,101,504","23,950 (23,284 to 24,658)",31%,2.2 (2.1 to 2.2)
+45–64 years, KY ,"1,122,259","28,546 (27,721 to 29,421)",36%,2.5 (2.5 to 2.6)
+65+ years, KY ,"682,254","19,286 (18,752 to 20,103)",25%,2.8 (2.7 to 2.9)
+Non-Hispanic white, KY ,"3,594,475","46,395 (44,967 to 48,149)",59%,1.3 (1.3 to 1.3)
+Non-Hispanic black, KY ,"322,842","8,734 (8,467 to 9,043)",11%,2.7 (2.6 to 2.8)
+Hispanic, KY ,"179,161","12,444 (12,071 to 12,837)",16%,6.9 (6.7 to 7.2)
+Asian or other race/ethnicity, KY ,"149,878","10,656 (10,335 to 10,991)",14%,7.1 (6.9 to 7.3)
+Total estimated number of persons with LTBI, LA ,"4,497,533","124,565 (120,668 to 129,001)",100%,2.8 (2.7 to 2.9)
+With solid organ transplant (SOT), LA ,NA,15 (15 to 16),0%,
+With HIV coinfection but not SOT, LA ,NA,373 (361 to 387),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, LA ,NA,254 (246 to 263),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", LA ,NA,"1,422 (1,376 to 1,476)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), LA ,NA,"9,348 (9,061 to 9,672)",8%,
+None of the below medical risk factors reported, LA ,NA,"113,153 (109,609 to 117,188)",91%,
+1–14 years, LA ,"871,944","1,612 (1,487 to 1,756)",1%,0.2 (0.2 to 0.2)
+15–24 years, LA ,"628,334","5,828 (5,507 to 6,193)",5%,0.9 (0.9 to 1.0)
+25–44 years, LA ,"1,195,826","31,883 (30,898 to 32,939)",26%,2.7 (2.6 to 2.8)
+45–64 years, LA ,"1,244,791","65,064 (63,161 to 67,086)",52%,5.2 (5.1 to 5.4)
+65+ years, LA ,"556,638","20,177 (19,616 to 21,028)",16%,3.6 (3.5 to 3.8)
+Non-Hispanic white, LA ,"2,611,599","40,998 (39,671 to 42,544)",33%,1.6 (1.5 to 1.6)
+Non-Hispanic black, LA ,"1,414,640","45,537 (44,044 to 47,292)",37%,3.2 (3.1 to 3.3)
+Hispanic, LA ,"263,743","20,878 (20,293 to 21,493)",17%,7.9 (7.7 to 8.1)
+Asian or other race/ethnicity, LA ,"207,551","17,152 (16,661 to 17,673)",14%,8.3 (8.0 to 8.5)
+Total estimated number of persons with LTBI, MA ,"6,570,043","190,904 (185,314 to 196,942)",100%,2.9 (2.8 to 3.0)
+With solid organ transplant (SOT), MA ,NA,15 (14 to 15),0%,
+With HIV coinfection but not SOT, MA ,NA,768 (745 to 792),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, MA ,NA,498 (483 to 516),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", MA ,NA,"1,569 (1,522 to 1,624)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), MA ,NA,"9,079 (8,811 to 9,372)",5%,
+None of the below medical risk factors reported, MA ,NA,"178,975 (173,739 to 184,624)",94%,
+1–14 years, MA ,"1,063,755","4,272 (3,924 to 4,651)",2%,0.4 (0.4 to 0.4)
+15–24 years, MA ,"927,772","14,062 (13,466 to 14,720)",7%,1.5 (1.5 to 1.6)
+25–44 years, MA ,"1,753,594","82,583 (80,466 to 84,818)",43%,4.7 (4.6 to 4.8)
+45–64 years, MA ,"1,784,694","65,385 (63,624 to 67,247)",34%,3.7 (3.6 to 3.8)
+65+ years, MA ,"1,040,228","24,601 (23,834 to 25,506)",13%,2.4 (2.3 to 2.5)
+Non-Hispanic white, MA ,"4,768,392","78,272 (75,940 to 80,828)",41%,1.6 (1.6 to 1.7)
+Non-Hispanic black, MA ,"485,179","27,845 (27,004 to 28,777)",15%,5.7 (5.6 to 5.9)
+Hispanic, MA ,"705,386","31,407 (30,502 to 32,370)",16%,4.5 (4.3 to 4.6)
+Asian or other race/ethnicity, MA ,"611,084","53,380 (51,867 to 54,968)",28%,8.7 (8.5 to 9.0)
+Total estimated number of persons with LTBI, MD ,"5,887,891","192,972 (187,451 to 198,989)",100%,3.3 (3.2 to 3.4)
+With solid organ transplant (SOT), MD ,NA,36 (35 to 37),0%,
+With HIV coinfection but not SOT, MD ,NA,"1,093 (1,062 to 1,127)",1%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, MD ,NA,377 (367 to 389),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", MD ,NA,"1,610 (1,563 to 1,663)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), MD ,NA,"15,070 (14,641 to 15,537)",8%,
+None of the below medical risk factors reported, MD ,NA,"174,786 (169,784 to 180,236)",91%,
+1–14 years, MD ,"1,089,800","2,983 (2,732 to 3,246)",2%,0.3 (0.3 to 0.3)
+15–24 years, MD ,"778,172","13,431 (12,883 to 14,031)",7%,1.7 (1.7 to 1.8)
+25–44 years, MD ,"1,552,590","81,475 (79,416 to 83,647)",42%,5.2 (5.1 to 5.4)
+45–64 years, MD ,"1,668,981","71,623 (69,663 to 73,697)",37%,4.3 (4.2 to 4.4)
+65+ years, MD ,"798,348","23,460 (22,757 to 24,368)",12%,2.9 (2.9 to 3.1)
+Non-Hispanic white, MD ,"3,162,681","33,677 (32,685 to 34,808)",17%,1.1 (1.0 to 1.1)
+Non-Hispanic black, MD ,"1,699,844","54,629 (53,009 to 56,469)",28%,3.2 (3.1 to 3.3)
+Hispanic, MD ,"494,772","47,600 (46,277 to 48,983)",25%,9.6 (9.4 to 9.9)
+Asian or other race/ethnicity, MD ,"530,594","57,066 (55,480 to 58,729)",30%,10.8 (10.5 to 11.1)
+Total estimated number of persons with LTBI, ME ,"1,291,735","17,302 (16,742 to 17,925)",100%,1.3 (1.3 to 1.4)
+With solid organ transplant (SOT), ME ,NA,0,0%,
+With HIV coinfection but not SOT, ME ,NA,76 (73 to 78),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, ME ,NA,0,0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", ME ,NA,448 (435 to 464),3%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), ME ,NA,845 (822 to 878),5%,
+None of the below medical risk factors reported, ME ,NA,"14,975 (14,482 to 15,509)",87%,
+1–14 years, ME ,"206,456","1,419 (1,294 to 1,544)",8%,0.7 (0.6 to 0.7)
+15–24 years, ME ,"138,314",923 (889 to 960),5%,0.7 (0.6 to 0.7)
+25–44 years, ME ,"305,070","7,167 (6,985 to 7,358)",41%,2.3 (2.3 to 2.4)
+45–64 years, ME ,"400,308","4,461 (4,337 to 4,593)",26%,1.1 (1.1 to 1.1)
+65+ years, ME ,"241,587","3,332 (3,237 to 3,470)",19%,1.4 (1.3 to 1.4)
+Non-Hispanic white, ME ,"1,186,822","7,489 (7,261 to 7,760)",43%,0.6 (0.6 to 0.7)
+Non-Hispanic black, ME ,"16,980","4,892 (4,725 to 5,067)",28%,28.8 (27.8 to 29.8)
+Hispanic, ME ,"18,653","1,477 (1,425 to 1,530)",9%,7.9 (7.6 to 8.2)
+Asian or other race/ethnicity, ME ,"69,281","2,486 (2,401 to 2,572)",14%,3.6 (3.5 to 3.7)
+Total estimated number of persons with LTBI, MI ,"9,773,864","130,823 (126,893 to 135,307)",100%,1.3 (1.3 to 1.4)
+With solid organ transplant (SOT), MI ,NA,59 (57 to 61),0%,
+With HIV coinfection but not SOT, MI ,NA,322 (312 to 334),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, MI ,NA,271 (263 to 281),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", MI ,NA,"1,525 (1,479 to 1,580)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), MI ,NA,"10,636 (10,322 to 10,986)",8%,
+None of the below medical risk factors reported, MI ,NA,"118,010 (114,462 to 122,065)",90%,
+1–14 years, MI ,"1,673,840","2,396 (2,191 to 2,607)",2%,0.1 (0.1 to 0.2)
+15–24 years, MI ,"1,315,414","8,133 (7,759 to 8,549)",6%,0.6 (0.6 to 0.6)
+25–44 years, MI ,"2,431,259","39,750 (38,687 to 40,876)",30%,1.6 (1.6 to 1.7)
+45–64 years, MI ,"2,871,213","49,965 (48,558 to 51,455)",38%,1.7 (1.7 to 1.8)
+65+ years, MI ,"1,482,138","30,580 (29,698 to 31,820)",23%,2.1 (2.0 to 2.1)
+Non-Hispanic white, MI ,"7,323,930","65,622 (63,652 to 67,850)",50%,0.9 (0.9 to 0.9)
+Non-Hispanic black, MI ,"1,321,779","30,115 (29,167 to 31,306)",23%,2.3 (2.2 to 2.4)
+Hispanic, MI ,"569,642","8,683 (8,431 to 8,950)",7%,1.5 (1.5 to 1.6)
+Asian or other race/ethnicity, MI ,"558,511","26,403 (25,643 to 27,202)",20%,4.7 (4.6 to 4.9)
+Total estimated number of persons with LTBI, MN ,"5,356,379","145,129 (140,605 to 149,996)",100%,2.7 (2.6 to 2.8)
+With solid organ transplant (SOT), MN ,NA,30 (29 to 31),0%,
+With HIV coinfection but not SOT, MN ,NA,459 (445 to 474),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, MN ,NA,357 (346 to 368),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", MN ,NA,"3,110 (3,011 to 3,222)",2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), MN ,NA,"9,267 (8,972 to 9,586)",6%,
+None of the below medical risk factors reported, MN ,NA,"131,906 (127,801 to 136,314)",91%,
+1–14 years, MN ,"995,675","8,376 (7,680 to 9,116)",6%,0.8 (0.8 to 0.9)
+15–24 years, MN ,"684,502","14,075 (13,497 to 14,707)",10%,2.1 (2.0 to 2.1)
+25–44 years, MN ,"1,442,223","64,317 (62,695 to 66,027)",44%,4.5 (4.3 to 4.6)
+45–64 years, MN ,"1,415,050","44,556 (43,354 to 45,826)",31%,3.1 (3.1 to 3.2)
+65+ years, MN ,"818,929","13,806 (13,379 to 14,319)",10%,1.7 (1.6 to 1.7)
+Non-Hispanic white, MN ,"4,221,952","34,190 (33,077 to 35,444)",24%,0.8 (0.8 to 0.8)
+Non-Hispanic black, MN ,"306,808","49,260 (47,736 to 50,879)",34%,16.1 (15.6 to 16.6)
+Hispanic, MN ,"291,930","15,319 (14,851 to 15,815)",11%,5.2 (5.1 to 5.4)
+Asian or other race/ethnicity, MN ,"535,690","46,360 (44,941 to 47,857)",32%,8.7 (8.4 to 8.9)
+Total estimated number of persons with LTBI, MO ,"5,877,353","93,334 (90,568 to 96,559)",100%,1.6 (1.5 to 1.6)
+With solid organ transplant (SOT), MO ,NA,0,0%,
+With HIV coinfection but not SOT, MO ,NA,248 (241 to 256),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, MO ,NA,262 (254 to 272),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", MO ,NA,"3,058 (2,964 to 3,176)",3%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), MO ,NA,"7,014 (6,799 to 7,277)",8%,
+None of the below medical risk factors reported, MO ,NA,"82,751 (80,310 to 85,577)",89%,
+1–14 years, MO ,"1,050,140","1,323 (1,216 to 1,441)",1%,0.1 (0.1 to 0.1)
+15–24 years, MO ,"803,880","6,790 (6,501 to 7,107)",7%,0.8 (0.8 to 0.9)
+25–44 years, MO ,"1,525,188","30,717 (29,875 to 31,610)",33%,2.0 (2.0 to 2.1)
+45–64 years, MO ,"1,562,865","33,206 (32,268 to 34,201)",36%,2.1 (2.1 to 2.2)
+65+ years, MO ,"935,280","21,299 (20,708 to 22,200)",23%,2.3 (2.2 to 2.4)
+Non-Hispanic white, MO ,"4,760,995","48,640 (47,193 to 50,355)",52%,1.0 (1.0 to 1.1)
+Non-Hispanic black, MO ,"681,011","19,211 (18,619 to 19,942)",21%,2.8 (2.7 to 2.9)
+Hispanic, MO ,"212,279","7,911 (7,687 to 8,148)",8%,3.7 (3.6 to 3.8)
+Asian or other race/ethnicity, MO ,"223,068","17,573 (17,069 to 18,113)",19%,7.9 (7.7 to 8.1)
+Total estimated number of persons with LTBI, MS ,"2,927,297","67,430 (65,379 to 69,957)",100%,2.3 (2.2 to 2.4)
+With solid organ transplant (SOT), MS ,NA,13 (12 to 13),0%,
+With HIV coinfection but not SOT, MS ,NA,271 (263 to 282),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, MS ,NA,0,0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", MS ,NA,210 (204 to 218),0%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), MS ,NA,"6,876 (6,666 to 7,138)",10%,
+None of the below medical risk factors reported, MS ,NA,"60,060 (58,234 to 62,307)",89%,
+1–14 years, MS ,"561,064",436 (402 to 475),1%,0.1 (0.1 to 0.1)
+15–24 years, MS ,"422,664","1,793 (1,706 to 1,892)",3%,0.4 (0.4 to 0.4)
+25–44 years, MS ,"749,785","13,800 (13,342 to 14,292)",20%,1.8 (1.8 to 1.9)
+45–64 years, MS ,"802,188","27,764 (26,936 to 28,643)",41%,3.5 (3.4 to 3.6)
+65+ years, MS ,"391,596","23,637 (22,992 to 24,655)",35%,6.0 (5.9 to 6.3)
+Non-Hispanic white, MS ,"1,683,510","21,046 (20,399 to 21,851)",31%,1.3 (1.2 to 1.3)
+Non-Hispanic black, MS ,"1,073,759","37,306 (36,155 to 38,761)",55%,3.5 (3.4 to 3.6)
+Hispanic, MS ,"102,694","5,141 (5,000 to 5,291)",8%,5.0 (4.9 to 5.2)
+Asian or other race/ethnicity, MS ,"67,333","3,936 (3,825 to 4,054)",6%,5.8 (5.7 to 6.0)
+Total estimated number of persons with LTBI, MT ,"993,782","7,069 (6,860 to 7,344)",100%,0.7 (0.7 to 0.7)
+With solid organ transplant (SOT), MT ,NA,0,0%,
+With HIV coinfection but not SOT, MT ,NA,47 (45 to 48),1%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, MT ,NA,36 (35 to 37),1%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", MT ,NA,179 (173 to 186),3%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), MT ,NA,316 (307 to 329),4%,
+None of the below medical risk factors reported, MT ,NA,"5,985 (5,809 to 6,220)",85%,
+1–14 years, MT ,"168,901",0,0%,0.0 (0.0 to 0.0)
+15–24 years, MT ,"138,425",256 (247 to 267),4%,0.2 (0.2 to 0.2)
+25–44 years, MT ,"240,364",875 (844 to 909),12%,0.4 (0.4 to 0.4)
+45–64 years, MT ,"287,632","2,438 (2,364 to 2,516)",34%,0.8 (0.8 to 0.9)
+65+ years, MT ,"158,460","3,500 (3,405 to 3,652)",50%,2.2 (2.1 to 2.3)
+Non-Hispanic white, MT ,"898,548","4,115 (3,993 to 4,276)",58%,0.5 (0.4 to 0.5)
+Non-Hispanic black, MT ,"5,920",521 (506 to 541),7%,8.8 (8.5 to 9.1)
+Hispanic, MT ,"34,329",35 (34 to 36),0%,0.1 (0.1 to 0.1)
+Asian or other race/ethnicity, MT ,"54,985","1,891 (1,837 to 1,968)",27%,3.4 (3.3 to 3.6)
+Total estimated number of persons with LTBI, NC ,"9,724,438","204,154 (197,995 to 211,233)",100%,2.1 (2.0 to 2.2)
+With solid organ transplant (SOT), NC ,NA,63 (61 to 65),0%,
+With HIV coinfection but not SOT, NC ,NA,861 (834 to 892),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, NC ,NA,683 (662 to 709),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", NC ,NA,"3,372 (3,266 to 3,497)",2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), NC ,NA,"19,940 (19,335 to 20,642)",10%,
+None of the below medical risk factors reported, NC ,NA,"179,235 (173,837 to 185,427)",88%,
+1–14 years, NC ,"1,769,488","3,454 (3,176 to 3,760)",2%,0.2 (0.2 to 0.2)
+15–24 years, NC ,"1,440,305","10,441 (9,920 to 11,026)",5%,0.7 (0.7 to 0.8)
+25–44 years, NC ,"2,409,855","72,767 (70,751 to 74,907)",36%,3.0 (2.9 to 3.1)
+45–64 years, NC ,"2,663,369","75,998 (73,818 to 78,312)",37%,2.9 (2.8 to 2.9)
+65+ years, NC ,"1,441,421","41,495 (40,329 to 43,228)",20%,2.9 (2.8 to 3.0)
+Non-Hispanic white, NC ,"6,032,397","54,137 (52,471 to 56,096)",27%,0.9 (0.9 to 0.9)
+Non-Hispanic black, NC ,"2,074,676","68,397 (66,207 to 71,070)",34%,3.3 (3.2 to 3.4)
+Hispanic, NC ,"928,467","44,669 (43,415 to 45,993)",22%,4.8 (4.7 to 5.0)
+Asian or other race/ethnicity, NC ,"688,899","36,951 (35,902 to 38,074)",18%,5.4 (5.2 to 5.5)
+Total estimated number of persons with LTBI, ND ,"721,846","14,809 (14,319 to 15,355)",100%,2.1 (2.0 to 2.1)
+With solid organ transplant (SOT), ND ,NA,0,0%,
+With HIV coinfection but not SOT, ND ,NA,42 (41 to 44),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, ND ,NA,28 (27 to 29),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", ND ,NA,0,0%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), ND ,NA,783 (754 to 815),5%,
+None of the below medical risk factors reported, ND ,NA,"13,956 (13,497 to 14,467)",94%,
+1–14 years, ND ,"134,886","934 (859 to 1,017)",6%,0.7 (0.6 to 0.8)
+15–24 years, ND ,"98,325","1,828 (1,743 to 1,922)",12%,1.9 (1.8 to 2.0)
+25–44 years, ND ,"211,934","5,333 (5,194 to 5,480)",36%,2.5 (2.5 to 2.6)
+45–64 years, ND ,"181,439","5,225 (5,075 to 5,384)",35%,2.9 (2.8 to 3.0)
+65+ years, ND ,"95,262","1,490 (1,448 to 1,553)",10%,1.6 (1.5 to 1.6)
+Non-Hispanic white, ND ,"636,637","4,211 (4,068 to 4,376)",28%,0.7 (0.6 to 0.7)
+Non-Hispanic black, ND ,"13,893","3,360 (3,251 to 3,480)",23%,24.2 (23.4 to 25.1)
+Hispanic, ND ,"21,801","1,333 (1,278 to 1,391)",9%,6.1 (5.9 to 6.4)
+Asian or other race/ethnicity, ND ,"49,514","5,906 (5,722 to 6,108)",40%,11.9 (11.6 to 12.3)
+Total estimated number of persons with LTBI, NE ,"1,858,001","29,120 (28,276 to 30,062)",100%,1.6 (1.5 to 1.6)
+With solid organ transplant (SOT), NE ,NA,0,0%,
+With HIV coinfection but not SOT, NE ,NA,14 (13 to 14),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, NE ,NA,61 (59 to 64),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", NE ,NA,454 (439 to 473),2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), NE ,NA,"1,518 (1,474 to 1,567)",5%,
+None of the below medical risk factors reported, NE ,NA,"27,072 (26,289 to 27,944)",93%,
+1–14 years, NE ,"368,878",523 (482 to 569),2%,0.1 (0.1 to 0.2)
+15–24 years, NE ,"261,203","2,674 (2,558 to 2,802)",9%,1.0 (1.0 to 1.1)
+25–44 years, NE ,"481,392","14,233 (13,865 to 14,622)",49%,3.0 (2.9 to 3.0)
+45–64 years, NE ,"483,823","7,965 (7,751 to 8,190)",27%,1.6 (1.6 to 1.7)
+65+ years, NE ,"262,705","3,726 (3,620 to 3,879)",13%,1.4 (1.4 to 1.5)
+Non-Hispanic white, NE ,"1,467,176","9,870 (9,567 to 10,228)",34%,0.7 (0.7 to 0.7)
+Non-Hispanic black, NE ,"80,166","2,949 (2,863 to 3,047)",10%,3.7 (3.6 to 3.8)
+Hispanic, NE ,"209,891","9,301 (9,038 to 9,587)",32%,4.4 (4.3 to 4.6)
+Asian or other race/ethnicity, NE ,"100,768","6,999 (6,808 to 7,200)",24%,6.9 (6.8 to 7.1)
+Total estimated number of persons with LTBI, NH ,"1,310,694","15,690 (15,229 to 16,196)",100%,1.2 (1.2 to 1.2)
+With solid organ transplant (SOT), NH ,NA,0,0%,
+With HIV coinfection but not SOT, NH ,NA,45 (44 to 46),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, NH ,NA,25 (25 to 26),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", NH ,NA,53 (51 to 54),0%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), NH ,NA,495 (479 to 512),3%,
+None of the below medical risk factors reported, NH ,NA,"15,072 (14,630 to 15,557)",96%,
+1–14 years, NH ,"202,057",645 (588 to 702),4%,0.3 (0.3 to 0.3)
+15–24 years, NH ,"183,572","1,062 (1,022 to 1,106)",7%,0.6 (0.6 to 0.6)
+25–44 years, NH ,"313,168","7,450 (7,268 to 7,641)",47%,2.4 (2.3 to 2.4)
+45–64 years, NH ,"406,867","4,431 (4,309 to 4,559)",28%,1.1 (1.1 to 1.1)
+65+ years, NH ,"205,030","2,102 (2,042 to 2,188)",13%,1.0 (1.0 to 1.1)
+Non-Hispanic white, NH ,"1,203,676","7,252 (7,040 to 7,495)",46%,0.6 (0.6 to 0.6)
+Non-Hispanic black, NH ,"16,761","1,377 (1,335 to 1,421)",9%,8.2 (8.0 to 8.5)
+Hispanic, NH ,"37,002","1,580 (1,532 to 1,632)",10%,4.3 (4.1 to 4.4)
+Asian or other race/ethnicity, NH ,"53,255","5,481 (5,323 to 5,646)",35%,10.3 (10.0 to 10.6)
+Total estimated number of persons with LTBI, NJ ,"8,871,533","289,823 (281,583 to 298,846)",100%,3.3 (3.2 to 3.4)
+With solid organ transplant (SOT), NJ ,NA,68 (66 to 70),0%,
+With HIV coinfection but not SOT, NJ ,NA,"1,124 (1,091 to 1,159)",0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, NJ ,NA,633 (615 to 653),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", NJ ,NA,"5,476 (5,315 to 5,662)",2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), NJ ,NA,"27,159 (26,392 to 27,992)",9%,
+None of the below medical risk factors reported, NJ ,NA,"255,364 (248,104 to 263,310)",88%,
+1–14 years, NJ ,"1,592,321","4,012 (3,685 to 4,367)",1%,0.3 (0.2 to 0.3)
+15–24 years, NJ ,"1,212,343","18,179 (17,409 to 19,026)",6%,1.5 (1.4 to 1.6)
+25–44 years, NJ ,"2,287,166","114,908 (112,017 to 117,957)",40%,5.0 (4.9 to 5.2)
+45–64 years, NJ ,"2,499,376","110,995 (108,000 to 114,161)",38%,4.4 (4.3 to 4.6)
+65+ years, NJ ,"1,280,327","41,729 (40,473 to 43,335)",14%,3.3 (3.2 to 3.4)
+Non-Hispanic white, NJ ,"5,153,095","65,086 (63,176 to 67,265)",22%,1.3 (1.2 to 1.3)
+Non-Hispanic black, NJ ,"1,174,001","34,242 (33,192 to 35,516)",12%,2.9 (2.8 to 3.0)
+Hispanic, NJ ,"1,656,606","94,809 (92,173 to 97,608)",33%,5.7 (5.6 to 5.9)
+Asian or other race/ethnicity, NJ ,"887,832","95,686 (93,043 to 98,458)",33%,10.8 (10.5 to 11.1)
+Total estimated number of persons with LTBI, NM ,"2,009,142","48,139 (46,729 to 49,769)",100%,2.4 (2.3 to 2.5)
+With solid organ transplant (SOT), NM ,NA,34 (33 to 35),0%,
+With HIV coinfection but not SOT, NM ,NA,154 (149 to 159),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, NM ,NA,308 (299 to 319),1%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", NM ,NA,263 (256 to 272),1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), NM ,NA,"6,690 (6,495 to 6,915)",14%,
+None of the below medical risk factors reported, NM ,NA,"40,690 (39,496 to 42,068)",85%,
+1–14 years, NM ,"394,606",389 (357 to 424),1%,0.1 (0.1 to 0.1)
+15–24 years, NM ,"284,783","2,030 (1,944 to 2,125)",4%,0.7 (0.7 to 0.7)
+25–44 years, NM ,"502,015","12,500 (12,156 to 12,865)",26%,2.5 (2.4 to 2.6)
+45–64 years, NM ,"496,474","19,904 (19,341 to 20,500)",41%,4.0 (3.9 to 4.1)
+65+ years, NM ,"331,264","13,316 (12,931 to 13,855)",28%,4.0 (3.9 to 4.2)
+Non-Hispanic white, NM ,"807,382","11,350 (11,009 to 11,767)",24%,1.4 (1.4 to 1.5)
+Non-Hispanic black, NM ,"35,708","987 (958 to 1,024)",2%,2.8 (2.7 to 2.9)
+Hispanic, NM ,"857,100","23,589 (22,913 to 24,320)",49%,2.8 (2.7 to 2.8)
+Asian or other race/ethnicity, NM ,"308,952","12,213 (11,849 to 12,658)",25%,4.0 (3.8 to 4.1)
+Total estimated number of persons with LTBI, NV ,"2,790,052","71,379 (69,217 to 73,729)",100%,2.6 (2.5 to 2.6)
+With solid organ transplant (SOT), NV ,NA,8 (7 to 8),0%,
+With HIV coinfection but not SOT, NV ,NA,296 (287 to 306),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, NV ,NA,91 (89 to 94),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", NV ,NA,538 (520 to 558),1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), NV ,NA,"9,462 (9,186 to 9,757)",13%,
+None of the below medical risk factors reported, NV ,NA,"60,985 (59,127 to 63,007)",85%,
+1–14 years, NV ,"520,205","1,682 (1,537 to 1,830)",2%,0.3 (0.3 to 0.4)
+15–24 years, NV ,"355,046","4,141 (3,933 to 4,375)",6%,1.2 (1.1 to 1.2)
+25–44 years, NV ,"788,818","25,792 (25,103 to 26,521)",36%,3.3 (3.2 to 3.4)
+45–64 years, NV ,"723,903","29,713 (28,900 to 30,573)",42%,4.1 (4.0 to 4.2)
+65+ years, NV ,"402,080","10,052 (9,744 to 10,431)",14%,2.5 (2.4 to 2.6)
+Non-Hispanic white, NV ,"1,402,638","18,884 (18,273 to 19,580)",26%,1.3 (1.3 to 1.4)
+Non-Hispanic black, NV ,"243,984","7,922 (7,669 to 8,210)",11%,3.2 (3.1 to 3.4)
+Hispanic, NV ,"766,251","20,336 (19,740 to 20,967)",28%,2.7 (2.6 to 2.7)
+Asian or other race/ethnicity, NV ,"377,180","24,237 (23,535 to 24,972)",34%,6.4 (6.2 to 6.6)
+Total estimated number of persons with LTBI, NY ,"19,485,078","706,551 (686,257 to 728,482)",100%,3.6 (3.5 to 3.7)
+With solid organ transplant (SOT), NY ,NA,185 (179 to 191),0%,
+With HIV coinfection but not SOT, NY ,NA,"2,623 (2,544 to 2,711)",0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, NY ,NA,"1,207 (1,171 to 1,246)",0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", NY ,NA,"8,234 (7,997 to 8,489)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), NY ,NA,"63,860 (62,033 to 65,829)",9%,
+None of the below medical risk factors reported, NY ,NA,"630,443 (612,333 to 650,016)",89%,
+1–14 years, NY ,"3,269,627","9,088 (8,331 to 9,891)",1%,0.3 (0.3 to 0.3)
+15–24 years, NY ,"2,653,153","47,861 (45,795 to 50,141)",7%,1.8 (1.7 to 1.9)
+25–44 years, NY ,"5,361,174","278,992 (271,886 to 286,489)",39%,5.2 (5.1 to 5.3)
+45–64 years, NY ,"5,156,746","279,970 (272,413 to 287,959)",40%,5.4 (5.3 to 5.6)
+65+ years, NY ,"3,044,378","90,641 (87,833 to 94,002)",13%,3.0 (2.9 to 3.1)
+Non-Hispanic white, NY ,"11,085,200","200,746 (194,883 to 207,177)",28%,1.8 (1.8 to 1.9)
+Non-Hispanic black, NY ,"2,632,969","97,955 (94,892 to 101,502)",14%,3.7 (3.6 to 3.9)
+Hispanic, NY ,"3,450,459","181,405 (176,326 to 186,768)",26%,5.3 (5.1 to 5.4)
+Asian or other race/ethnicity, NY ,"2,316,450","226,444 (220,155 to 233,035)",32%,9.8 (9.5 to 10.1)
+Total estimated number of persons with LTBI, OH ,"11,401,254","150,727 (146,174 to 155,941)",100%,1.3 (1.3 to 1.4)
+With solid organ transplant (SOT), OH ,NA,35 (34 to 36),0%,
+With HIV coinfection but not SOT, OH ,NA,454 (441 to 470),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, OH ,NA,200 (194 to 208),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", OH ,NA,"1,697 (1,644 to 1,762)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), OH ,NA,"9,530 (9,241 to 9,863)",6%,
+None of the below medical risk factors reported, OH ,NA,"138,811 (134,621 to 143,602)",92%,
+1–14 years, OH ,"2,038,982","4,120 (3,766 to 4,482)",3%,0.2 (0.2 to 0.2)
+15–24 years, OH ,"1,517,837","9,584 (9,157 to 10,056)",6%,0.6 (0.6 to 0.7)
+25–44 years, OH ,"2,865,347","56,625 (55,133 to 58,204)",38%,2.0 (1.9 to 2.0)
+45–64 years, OH ,"3,127,131","46,887 (45,555 to 48,299)",31%,1.5 (1.5 to 1.5)
+65+ years, OH ,"1,851,957","33,512 (32,563 to 34,899)",22%,1.8 (1.8 to 1.9)
+Non-Hispanic white, OH ,"9,124,804","65,955 (63,931 to 68,365)",44%,0.7 (0.7 to 0.7)
+Non-Hispanic black, OH ,"1,367,399","37,937 (36,781 to 39,306)",25%,2.8 (2.7 to 2.9)
+Hispanic, OH ,"361,164","9,052 (8,784 to 9,335)",6%,2.5 (2.4 to 2.6)
+Asian or other race/ethnicity, OH ,"547,889","37,783 (36,678 to 38,936)",25%,6.9 (6.7 to 7.1)
+Total estimated number of persons with LTBI, OK ,"3,698,557","63,521 (61,435 to 65,942)",100%,1.7 (1.7 to 1.8)
+With solid organ transplant (SOT), OK ,NA,6 (6 to 6),0%,
+With HIV coinfection but not SOT, OK ,NA,33 (32 to 34),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, OK ,NA,77 (75 to 80),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", OK ,NA,"1,045 (1,010 to 1,089)",2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), OK ,NA,"7,349 (7,107 to 7,631)",12%,
+None of the below medical risk factors reported, OK ,NA,"55,010 (53,205 to 57,102)",87%,
+1–14 years, OK ,"763,532","2,660 (2,437 to 2,895)",4%,0.3 (0.3 to 0.4)
+15–24 years, OK ,"509,835","5,663 (5,376 to 5,986)",9%,1.1 (1.1 to 1.2)
+25–44 years, OK ,"962,890","14,833 (14,412 to 15,282)",23%,1.5 (1.5 to 1.6)
+45–64 years, OK ,"922,512","25,579 (24,836 to 26,369)",40%,2.8 (2.7 to 2.9)
+65+ years, OK ,"539,788","14,785 (14,374 to 15,410)",23%,2.7 (2.7 to 2.9)
+Non-Hispanic white, OK ,"2,508,039","23,660 (22,882 to 24,624)",37%,0.9 (0.9 to 1.0)
+Non-Hispanic black, OK ,"274,944","6,797 (6,571 to 7,071)",11%,2.5 (2.4 to 2.6)
+Hispanic, OK ,"399,997","13,850 (13,398 to 14,326)",22%,3.5 (3.3 to 3.6)
+Asian or other race/ethnicity, OK ,"515,577","19,213 (18,584 to 19,921)",30%,3.7 (3.6 to 3.9)
+Total estimated number of persons with LTBI, OR ,"3,913,760","68,216 (66,171 to 70,465)",100%,1.7 (1.7 to 1.8)
+With solid organ transplant (SOT), OR ,NA,15 (14 to 15),0%,
+With HIV coinfection but not SOT, OR ,NA,192 (186 to 199),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, OR ,NA,123 (119 to 127),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", OR ,NA,"1,001 (972 to 1,034)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), OR ,NA,"5,936 (5,760 to 6,128)",9%,
+None of the below medical risk factors reported, OR ,NA,"60,949 (59,119 to 62,961)",89%,
+1–14 years, OR ,"661,941","1,337 (1,222 to 1,455)",2%,0.2 (0.2 to 0.2)
+15–24 years, OR ,"511,750","4,508 (4,304 to 4,734)",7%,0.9 (0.8 to 0.9)
+25–44 years, OR ,"1,045,482","22,892 (22,278 to 23,542)",34%,2.2 (2.1 to 2.3)
+45–64 years, OR ,"977,141","28,350 (27,571 to 29,174)",42%,2.9 (2.8 to 3.0)
+65+ years, OR ,"717,446","11,130 (10,796 to 11,560)",16%,1.6 (1.5 to 1.6)
+Non-Hispanic white, OR ,"2,963,456","27,964 (27,086 to 28,972)",41%,0.9 (0.9 to 1.0)
+Non-Hispanic black, OR ,"73,510","4,755 (4,612 to 4,912)",7%,6.5 (6.3 to 6.7)
+Hispanic, OR ,"476,550","13,081 (12,704 to 13,481)",19%,2.7 (2.7 to 2.8)
+Asian or other race/ethnicity, OR ,"400,244","22,416 (21,769 to 23,100)",33%,5.6 (5.4 to 5.8)
+Total estimated number of persons with LTBI, PA ,"12,501,093","203,884 (197,940 to 210,636)",100%,1.6 (1.6 to 1.7)
+With solid organ transplant (SOT), PA ,NA,80 (78 to 82),0%,
+With HIV coinfection but not SOT, PA ,NA,"983 (953 to 1,017)",0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, PA ,NA,795 (772 to 823),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", PA ,NA,"2,800 (2,716 to 2,902)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), PA ,NA,"14,777 (14,344 to 15,274)",7%,
+None of the below medical risk factors reported, PA ,NA,"184,449 (179,078 to 190,538)",90%,
+1–14 years, PA ,"2,080,004","2,100 (1,925 to 2,285)",1%,0.1 (0.1 to 0.1)
+15–24 years, PA ,"1,735,132","11,118 (10,632 to 11,655)",5%,0.6 (0.6 to 0.7)
+25–44 years, PA ,"3,078,665","66,092 (64,335 to 67,952)",32%,2.1 (2.1 to 2.2)
+45–64 years, PA ,"3,455,256","81,867 (79,569 to 84,301)",40%,2.4 (2.3 to 2.4)
+65+ years, PA ,"2,152,036","42,708 (41,479 to 44,443)",21%,2.0 (1.9 to 2.1)
+Non-Hispanic white, PA ,"9,653,214","76,099 (73,839 to 78,742)",37%,0.8 (0.8 to 0.8)
+Non-Hispanic black, PA ,"1,305,505","45,395 (44,012 to 47,073)",22%,3.5 (3.4 to 3.6)
+Hispanic, PA ,"925,850","22,167 (21,538 to 22,852)",11%,2.4 (2.3 to 2.5)
+Asian or other race/ethnicity, PA ,"616,524","60,223 (58,552 to 61,970)",30%,9.8 (9.5 to 10.1)
+Total estimated number of persons with LTBI, RI ,"1,036,882","19,196 (18,636 to 19,811)",100%,1.9 (1.8 to 1.9)
+With solid organ transplant (SOT), RI ,NA,0,0%,
+With HIV coinfection but not SOT, RI ,NA,77 (75 to 80),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, RI ,NA,154 (149 to 159),1%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", RI ,NA,287 (278 to 297),1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), RI ,NA,"1,713 (1,661 to 1,771)",9%,
+None of the below medical risk factors reported, RI ,NA,"16,965 (16,473 to 17,504)",88%,
+1–14 years, RI ,"155,263",500 (461 to 545),3%,0.3 (0.3 to 0.4)
+15–24 years, RI ,"157,640","1,282 (1,235 to 1,333)",7%,0.8 (0.8 to 0.8)
+25–44 years, RI ,"260,215","7,317 (7,132 to 7,512)",38%,2.8 (2.7 to 2.9)
+45–64 years, RI ,"310,899","6,382 (6,207 to 6,566)",33%,2.1 (2.0 to 2.1)
+65+ years, RI ,"152,865","3,715 (3,601 to 3,855)",19%,2.4 (2.4 to 2.5)
+Non-Hispanic white, RI ,"799,106","6,353 (6,168 to 6,571)",33%,0.8 (0.8 to 0.8)
+Non-Hispanic black, RI ,"58,840","2,359 (2,289 to 2,436)",12%,4.0 (3.9 to 4.1)
+Hispanic, RI ,"123,726","6,299 (6,117 to 6,492)",33%,5.1 (4.9 to 5.2)
+Asian or other race/ethnicity, RI ,"55,210","4,185 (4,062 to 4,313)",22%,7.6 (7.4 to 7.8)
+Total estimated number of persons with LTBI, SC ,"4,711,246","102,360 (99,197 to 106,169)",100%,2.2 (2.1 to 2.3)
+With solid organ transplant (SOT), SC ,NA,8 (8 to 8),0%,
+With HIV coinfection but not SOT, SC ,NA,423 (410 to 438),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, SC ,NA,371 (360 to 385),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", SC ,NA,"1,031 (999 to 1,072)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), SC ,NA,"7,961 (7,709 to 8,266)",8%,
+None of the below medical risk factors reported, SC ,NA,"92,567 (89,712 to 96,000)",90%,
+1–14 years, SC ,"875,302","2,167 (2,023 to 2,363)",2%,0.2 (0.2 to 0.3)
+15–24 years, SC ,"561,287","4,130 (3,936 to 4,345)",4%,0.7 (0.7 to 0.8)
+25–44 years, SC ,"1,254,648","25,233 (24,445 to 26,078)",25%,2.0 (1.9 to 2.1)
+45–64 years, SC ,"1,275,105","43,236 (41,952 to 44,602)",42%,3.4 (3.3 to 3.5)
+65+ years, SC ,"744,904","27,594 (26,840 to 28,781)",27%,3.7 (3.6 to 3.9)
+Non-Hispanic white, SC ,"3,030,765","27,775 (26,900 to 28,844)",27%,0.9 (0.9 to 1.0)
+Non-Hispanic black, SC ,"1,277,240","54,068 (52,344 to 56,212)",53%,4.2 (4.1 to 4.4)
+Hispanic, SC ,"264,718","11,680 (11,358 to 12,021)",11%,4.4 (4.3 to 4.5)
+Asian or other race/ethnicity, SC ,"138,524","8,837 (8,595 to 9,092)",9%,6.4 (6.2 to 6.6)
+Total estimated number of persons with LTBI, SD ,"833,422","11,939 (11,581 to 12,344)",100%,1.4 (1.4 to 1.5)
+With solid organ transplant (SOT), SD ,NA,0,0%,
+With HIV coinfection but not SOT, SD ,NA,54 (52 to 56),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, SD ,NA,104 (99 to 109),1%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", SD ,NA,219 (212 to 226),2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), SD ,NA,"1,087 (1,049 to 1,132)",9%,
+None of the below medical risk factors reported, SD ,NA,"10,476 (10,168 to 10,822)",88%,
+1–14 years, SD ,"163,581",67 (63 to 73),1%,0.0 (0.0 to 0.0)
+15–24 years, SD ,"112,905","986 (935 to 1,043)",8%,0.9 (0.8 to 0.9)
+25–44 years, SD ,"213,610","4,000 (3,899 to 4,107)",34%,1.9 (1.8 to 1.9)
+45–64 years, SD ,"209,305","5,186 (5,032 to 5,349)",43%,2.5 (2.4 to 2.6)
+65+ years, SD ,"134,021","1,701 (1,653 to 1,772)",14%,1.3 (1.2 to 1.3)
+Non-Hispanic white, SD ,"704,863","2,057 (1,997 to 2,127)",17%,0.3 (0.3 to 0.3)
+Non-Hispanic black, SD ,"15,395","1,960 (1,909 to 2,014)",16%,12.7 (12.4 to 13.1)
+Hispanic, SD ,"17,922","1,067 (1,038 to 1,098)",9%,6.0 (5.8 to 6.1)
+Asian or other race/ethnicity, SD ,"95,241","6,855 (6,637 to 7,105)",57%,7.2 (7.0 to 7.5)
+Total estimated number of persons with LTBI, TN ,"6,413,302","122,627 (118,973 to 126,979)",100%,1.9 (1.9 to 2.0)
+With solid organ transplant (SOT), TN ,NA,61 (59 to 63),0%,
+With HIV coinfection but not SOT, TN ,NA,625 (606 to 648),1%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, TN ,NA,301 (292 to 313),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", TN ,NA,"3,059 (2,965 to 3,174)",2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), TN ,NA,"10,862 (10,534 to 11,255)",9%,
+None of the below medical risk factors reported, TN ,NA,"107,720 (104,517 to 111,526)",88%,
+1–14 years, TN ,"1,154,382","1,325 (1,219 to 1,443)",1%,0.1 (0.1 to 0.1)
+15–24 years, TN ,"842,163","6,962 (6,636 to 7,325)",6%,0.8 (0.8 to 0.9)
+25–44 years, TN ,"1,709,743","37,500 (36,449 to 38,618)",31%,2.2 (2.1 to 2.3)
+45–64 years, TN ,"1,679,585","43,583 (42,327 to 44,916)",36%,2.6 (2.5 to 2.7)
+65+ years, TN ,"1,027,429","33,257 (32,342 to 34,677)",27%,3.2 (3.1 to 3.4)
+Non-Hispanic white, TN ,"4,744,326","54,026 (52,380 to 56,070)",44%,1.1 (1.1 to 1.2)
+Non-Hispanic black, TN ,"1,086,095","32,886 (31,866 to 34,154)",27%,3.0 (2.9 to 3.1)
+Hispanic, TN ,"381,468","20,543 (19,973 to 21,142)",17%,5.4 (5.2 to 5.5)
+Asian or other race/ethnicity, TN ,"201,414","15,172 (14,754 to 15,613)",12%,7.5 (7.3 to 7.8)
+Total estimated number of persons with LTBI, TX ,"26,312,984","1,081,749 (1,048,925 to 1,118,032)",100%,4.1 (4.0 to 4.2)
+With solid organ transplant (SOT), TX ,NA,181 (175 to 187),0%,
+With HIV coinfection but not SOT, TX ,NA,"4,235 (4,103 to 4,384)",0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, TX ,NA,"1,784 (1,729 to 1,846)",0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", TX ,NA,"3,838 (3,716 to 3,977)",0%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), TX ,NA,"116,020 (112,537 to 119,847)",11%,
+None of the below medical risk factors reported, TX ,NA,"955,691 (926,664 to 987,792)",88%,
+1–14 years, TX ,"5,574,109","16,378 (15,097 to 17,835)",2%,0.3 (0.3 to 0.3)
+15–24 years, TX ,"3,872,510","78,724 (74,896 to 83,013)",7%,2.0 (1.9 to 2.1)
+25–44 years, TX ,"7,387,921","388,667 (377,904 to 400,098)",36%,5.3 (5.1 to 5.4)
+45–64 years, TX ,"6,315,600","459,995 (447,110 to 473,649)",43%,7.3 (7.1 to 7.5)
+65+ years, TX ,"3,162,844","137,986 (133,918 to 143,437)",13%,4.4 (4.2 to 4.5)
+Non-Hispanic white, TX ,"11,598,725","205,844 (199,129 to 213,562)",19%,1.8 (1.7 to 1.8)
+Non-Hispanic black, TX ,"3,142,693","183,295 (177,145 to 190,470)",17%,5.8 (5.6 to 6.1)
+Hispanic, TX ,"9,993,580","537,482 (521,881 to 554,273)",50%,5.4 (5.2 to 5.5)
+Asian or other race/ethnicity, TX ,"1,577,985","155,129 (150,769 to 159,727)",14%,9.8 (9.6 to 10.1)
+Total estimated number of persons with LTBI, UT ,"2,886,635","28,507 (27,630 to 29,448)",100%,1.0 (1.0 to 1.0)
+With solid organ transplant (SOT), UT ,NA,9 (9 to 9),0%,
+With HIV coinfection but not SOT, UT ,NA,110 (106 to 113),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, UT ,NA,67 (65 to 69),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", UT ,NA,346 (336 to 356),1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), UT ,NA,"3,051 (2,957 to 3,149)",11%,
+None of the below medical risk factors reported, UT ,NA,"24,925 (24,158 to 25,751)",87%,
+1–14 years, UT ,"727,778","1,624 (1,489 to 1,767)",6%,0.2 (0.2 to 0.2)
+15–24 years, UT ,"423,188","1,620 (1,549 to 1,699)",6%,0.4 (0.4 to 0.4)
+25–44 years, UT ,"863,561","12,067 (11,766 to 12,384)",42%,1.4 (1.4 to 1.4)
+45–64 years, UT ,"555,025","10,554 (10,266 to 10,858)",37%,1.9 (1.8 to 2.0)
+65+ years, UT ,"317,083","2,642 (2,560 to 2,740)",9%,0.8 (0.8 to 0.9)
+Non-Hispanic white, UT ,"2,342,591","8,929 (8,651 to 9,240)",31%,0.4 (0.4 to 0.4)
+Non-Hispanic black, UT ,"36,563","1,283 (1,245 to 1,322)",5%,3.5 (3.4 to 3.6)
+Hispanic, UT ,"354,915","11,940 (11,578 to 12,318)",42%,3.4 (3.3 to 3.5)
+Asian or other race/ethnicity, UT ,"152,567","6,355 (6,157 to 6,568)",22%,4.2 (4.0 to 4.3)
+Total estimated number of persons with LTBI, VA ,"8,158,576","205,027 (198,979 to 211,683)",100%,2.5 (2.4 to 2.6)
+With solid organ transplant (SOT), VA ,NA,74 (72 to 77),0%,
+With HIV coinfection but not SOT, VA ,NA,562 (546 to 581),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, VA ,NA,677 (657 to 700),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", VA ,NA,"1,289 (1,250 to 1,332)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), VA ,NA,"17,179 (16,680 to 17,719)",8%,
+None of the below medical risk factors reported, VA ,NA,"185,247 (179,774 to 191,273)",90%,
+1–14 years, VA ,"1,460,023","6,470 (5,931 to 7,042)",3%,0.4 (0.4 to 0.5)
+15–24 years, VA ,"1,130,886","10,654 (10,204 to 11,148)",5%,0.9 (0.9 to 1.0)
+25–44 years, VA ,"2,228,059","85,392 (83,191 to 87,716)",42%,3.8 (3.7 to 3.9)
+45–64 years, VA ,"2,230,112","71,448 (69,510 to 73,496)",35%,3.2 (3.1 to 3.3)
+65+ years, VA ,"1,109,496","31,064 (30,142 to 32,281)",15%,2.8 (2.7 to 2.9)
+Non-Hispanic white, VA ,"5,168,017","58,744 (56,973 to 60,760)",29%,1.1 (1.1 to 1.2)
+Non-Hispanic black, VA ,"1,536,845","38,446 (37,255 to 39,856)",19%,2.5 (2.4 to 2.6)
+Hispanic, VA ,"680,552","42,943 (41,720 to 44,220)",21%,6.3 (6.1 to 6.5)
+Asian or other race/ethnicity, VA ,"773,161","64,895 (63,031 to 66,847)",32%,8.4 (8.2 to 8.6)
+Total estimated number of persons with LTBI, VT ,"609,762","5,361 (5,214 to 5,521)",100%,0.9 (0.9 to 0.9)
+With solid organ transplant (SOT), VT ,NA,0,0%,
+With HIV coinfection but not SOT, VT ,NA,250 (244 to 256),5%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, VT ,NA,35 (34 to 36),1%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", VT ,NA,170 (165 to 175),3%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), VT ,NA,139 (136 to 143),3%,
+None of the below medical risk factors reported, VT ,NA,"3,031 (2,953 to 3,113)",57%,
+1–14 years, VT ,"90,091",0,0%,0.0 (0.0 to 0.0)
+15–24 years, VT ,"70,981",256 (247 to 267),5%,0.4 (0.3 to 0.4)
+25–44 years, VT ,"160,088","2,958 (2,883 to 3,038)",55%,1.8 (1.8 to 1.9)
+45–64 years, VT ,"187,077","1,791 (1,738 to 1,846)",33%,1.0 (0.9 to 1.0)
+65+ years, VT ,"101,525",356 (346 to 371),7%,0.4 (0.3 to 0.4)
+Non-Hispanic white, VT ,"574,200",585 (570 to 602),11%,0.1 (0.1 to 0.1)
+Non-Hispanic black, VT ,"6,714",557 (543 to 572),10%,8.3 (8.1 to 8.5)
+Hispanic, VT ,"7,904",374 (365 to 383),7%,4.7 (4.6 to 4.8)
+Asian or other race/ethnicity, VT ,"20,944","2,109 (2,054 to 2,166)",39%,10.1 (9.8 to 10.3)
+Total estimated number of persons with LTBI, WA ,"6,996,775","191,411 (185,783 to 197,491)",100%,2.7 (2.7 to 2.8)
+With solid organ transplant (SOT), WA ,NA,16 (16 to 17),0%,
+With HIV coinfection but not SOT, WA ,NA,369 (358 to 380),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, WA ,NA,562 (544 to 582),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", WA ,NA,"2,177 (2,114 to 2,245)",1%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), WA ,NA,"18,461 (17,928 to 19,032)",10%,
+None of the below medical risk factors reported, WA ,NA,"169,825 (164,823 to 175,235)",89%,
+1–14 years, WA ,"1,250,083","2,742 (2,526 to 2,986)",1%,0.2 (0.2 to 0.2)
+15–24 years, WA ,"949,666","15,017 (14,334 to 15,777)",8%,1.6 (1.5 to 1.7)
+25–44 years, WA ,"1,875,365","79,408 (77,347 to 81,586)",41%,4.2 (4.1 to 4.4)
+45–64 years, WA ,"1,907,037","70,934 (68,998 to 72,982)",37%,3.7 (3.6 to 3.8)
+65+ years, WA ,"1,014,624","23,309 (22,578 to 24,159)",12%,2.3 (2.2 to 2.4)
+Non-Hispanic white, WA ,"4,875,131","55,023 (53,304 to 56,940)",29%,1.1 (1.1 to 1.2)
+Non-Hispanic black, WA ,"268,916","20,036 (19,432 to 20,699)",10%,7.5 (7.2 to 7.7)
+Hispanic, WA ,"931,060","33,348 (32,413 to 34,329)",17%,3.6 (3.5 to 3.7)
+Asian or other race/ethnicity, WA ,"921,670","83,004 (80,634 to 85,524)",43%,9.0 (8.7 to 9.3)
+Total estimated number of persons with LTBI, WI ,"5,662,759","51,671 (50,141 to 53,369)",100%,0.9 (0.9 to 0.9)
+With solid organ transplant (SOT), WI ,NA,8 (8 to 8),0%,
+With HIV coinfection but not SOT, WI ,NA,120 (116 to 124),0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, WI ,NA,193 (187 to 199),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", WI ,NA,826 (803 to 852),2%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), WI ,NA,"3,382 (3,282 to 3,494)",7%,
+None of the below medical risk factors reported, WI ,NA,"47,142 (45,745 to 48,691)",91%,
+1–14 years, WI ,"979,477",569 (527 to 620),1%,0.1 (0.1 to 0.1)
+15–24 years, WI ,"818,608","2,849 (2,711 to 3,004)",6%,0.3 (0.3 to 0.4)
+25–44 years, WI ,"1,376,507","17,767 (17,292 to 18,270)",34%,1.3 (1.3 to 1.3)
+45–64 years, WI ,"1,605,815","22,260 (21,630 to 22,928)",43%,1.4 (1.3 to 1.4)
+65+ years, WI ,"882,352","8,226 (7,981 to 8,547)",16%,0.9 (0.9 to 1.0)
+Non-Hispanic white, WI ,"4,650,253","18,375 (17,804 to 19,035)",36%,0.4 (0.4 to 0.4)
+Non-Hispanic black, WI ,"321,052","7,551 (7,311 to 7,830)",15%,2.4 (2.3 to 2.4)
+Hispanic, WI ,"449,791","10,498 (10,205 to 10,806)",20%,2.3 (2.3 to 2.4)
+Asian or other race/ethnicity, WI ,"241,662","15,248 (14,821 to 15,698)",30%,6.3 (6.1 to 6.5)
+Total estimated number of persons with LTBI, WV ,"1,803,618","15,997 (15,512 to 16,577)",100%,0.9 (0.9 to 0.9)
+With solid organ transplant (SOT), WV ,NA,12 (12 to 13),0%,
+With HIV coinfection but not SOT, WV ,NA,0,0%,
+With end-stage renal disease (ESRD) but not SOT or HIV coinfection, WV ,NA,70 (68 to 72),0%,
+"With immunosuppressive therapy (e.g., TNF-alpha blocker users) but not SOT or HIV coinfection or ESRD", WV ,NA,562 (546 to 583),4%,
+With diabetes but not SOT or HIV coinfection or ESRD or immunosuppressive (TNF-alpha blocker users), WV ,NA,"2,007 (1,944 to 2,084)",13%,
+None of the below medical risk factors reported, WV ,NA,"13,345 (12,943 to 13,826)",83%,
+1–14 years, WV ,"290,732",323 (294 to 351),2%,0.1 (0.1 to 0.1)
+15–24 years, WV ,"232,095",462 (444 to 480),3%,0.2 (0.2 to 0.2)
+25–44 years, WV ,"447,200","2,500 (2,427 to 2,577)",16%,0.6 (0.5 to 0.6)
+45–64 years, WV ,"512,718","7,789 (7,558 to 8,034)",49%,1.5 (1.5 to 1.6)
+65+ years, WV ,"320,873","4,924 (4,788 to 5,134)",31%,1.5 (1.5 to 1.6)
+Non-Hispanic white, WV ,"1,665,742","11,636 (11,279 to 12,075)",73%,0.7 (0.7 to 0.7)
+Non-Hispanic black, WV ,"59,350","1,576 (1,531 to 1,631)",10%,2.7 (2.6 to 2.7)
+Hispanic, WV ,"21,170",402 (387 to 417),3%,1.9 (1.8 to 2.0)
+Asian or other race/ethnicity, WV ,"57,356","2,383 (2,316 to 2,453)",15%,4.2 (4.0 to 4.3)
