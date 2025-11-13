@@ -595,8 +595,8 @@
       {
         "name": "Oversight and Investigations",
         "thomas_id": "15",
-        "address": "1331 LHOB; Washington, DC 20515",
-        "phone": "(202) 225-2761"
+        "address": "1330 LHOB; Washington, DC 20515",
+        "phone": "(202) 225-0500"
       }
     ],
     "address": "1324A LHOB; Washington, DC 20515-6201",
@@ -1009,7 +1009,7 @@
   },
   {
     "type": "joint",
-    "name": "Joint Committee on the Library",
+    "name": "Joint Committee of Congress on the Library",
     "url": "https://cha.house.gov/jointcommittees/joint-committee-library",
     "thomas_id": "JSLC",
     "house_committee_id": "JL",
@@ -1324,7 +1324,7 @@
       },
       {
         "thomas_id": "36",
-        "name": "Coast Gaurd, Maritime, and Fisheries"
+        "name": "Coast Guard, Maritime, and Fisheries"
       },
       {
         "thomas_id": "37",
@@ -1670,6 +1670,6 @@
     "house_committee_id": "ZT",
     "name": "House Task Force on the Attempted Assassination of Donald J. Trump",
     "address": "4440 OHOB; Washington, DC 20515",
-    "phone": "(202) (771) 245-4408"
+    "phone": "(771) 245-4408"
   }
 ]

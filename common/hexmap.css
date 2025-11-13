@@ -1,0 +1,24 @@
+.hexstate polygon {
+  fill: hsl(211, 53%, 70%);
+  stroke: white;
+  stroke-width: 2;
+}
+
+.hexstate:hover polygon {
+  fill: hsl(211, 38%, 57%);
+}
+
+.selected polygon {
+  fill: hsl(348, 26%, 49%);
+}
+
+.selected:hover polygon {
+  fill: hsl(348, 26%, 49%);
+}
+
+.hexstate text {
+  text-anchor: middle;
+  alignment-baseline: middle;
+  dominant-baseline: middle;
+  font-size: 2em;
+}/*# sourceMappingURL=hexmap.css.map */

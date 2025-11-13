@@ -159,6 +159,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Democratic Steering Committee Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -259,6 +264,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Democratic Outreach Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -542,6 +552,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Majority Whip",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -1071,6 +1086,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Minority Whip",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -1890,6 +1910,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Democratic Conference Vice Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -2382,6 +2407,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Democratic Conference Secretary",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -3753,6 +3783,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Republican Policy Committee Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -5002,7 +5037,7 @@
         "title": "Assistant House Minority Leader",
         "chamber": "house",
         "start": "2021-01-03",
-        "end": "2025-01-03"
+        "end": "2024-03-20"
       }
     ],
     "terms": [
@@ -5535,159 +5570,6 @@
         "address": "2207 Rayburn House Office Building Washington DC 20515-3604",
         "office": "2207 Rayburn House Office Building",
         "phone": "202-225-6165"
-      }
-    ]
-  },
-  {
-    "id": {
-      "bioguide": "C001078",
-      "thomas": "01959",
-      "govtrack": 412272,
-      "opensecrets": "N00029891",
-      "votesmart": 95078,
-      "fec": [
-        "H8VA11062"
-      ],
-      "cspan": 1015936,
-      "wikipedia": "Gerry Connolly",
-      "house_history": 11817,
-      "maplight": 754,
-      "icpsr": 20952,
-      "wikidata": "Q1514859",
-      "google_entity_id": "kg:/m/04f40kn",
-      "ballotpedia": "Gerald Connolly",
-      "pictorial": 13309
-    },
-    "name": {
-      "first": "Gerald",
-      "middle": "E.",
-      "last": "Connolly",
-      "nickname":"Gerry",
-      "official_full": "Gerald E. Connolly"
-    },
-    "bio": {
-      "birthday": "1950-03-30",
-      "gender": "M"
-    },
-    "terms": [
-      {
-        "type": "rep",
-        "start": "2009-01-06",
-        "end": "2011-01-03",
-        "state": "VA",
-        "district": 11,
-        "party": "Democrat",
-        "url": "http://connolly.house.gov"
-      },
-      {
-        "type": "rep",
-        "start": "2011-01-05",
-        "end": "2013-01-03",
-        "state": "VA",
-        "district": 11,
-        "party": "Democrat",
-        "url": "http://connolly.house.gov",
-        "address": "424 Cannon HOB; Washington DC 20515-4611",
-        "phone": "202-225-1492",
-        "fax": "202-225-3071",
-        "contact_form": "https://forms.house.gov/connolly/contact-form.shtml",
-        "office": "424 Cannon House Office Building"
-      },
-      {
-        "type": "rep",
-        "start": "2013-01-03",
-        "end": "2015-01-03",
-        "state": "VA",
-        "party": "Democrat",
-        "district": 11,
-        "url": "http://connolly.house.gov",
-        "address": "424 Cannon HOB; Washington DC 20515-4611",
-        "phone": "202-225-1492",
-        "fax": "202-225-3071",
-        "contact_form": "https://forms.house.gov/connolly/contact-form.shtml",
-        "office": "424 Cannon House Office Building",
-        "rss_url": "http://connolly.house.gov/common/rss//index.cfm?rss=44"
-      },
-      {
-        "type": "rep",
-        "start": "2015-01-06",
-        "end": "2017-01-03",
-        "state": "VA",
-        "party": "Democrat",
-        "district": 11,
-        "url": "http://connolly.house.gov",
-        "address": "2238 Rayburn HOB; Washington DC 20515-4611",
-        "phone": "202-225-1492",
-        "fax": "202-225-3071",
-        "contact_form": "https://forms.house.gov/connolly/contact-form.shtml",
-        "office": "2238 Rayburn House Office Building",
-        "rss_url": "http://connolly.house.gov/common/rss//index.cfm?rss=44"
-      },
-      {
-        "type": "rep",
-        "start": "2017-01-03",
-        "end": "2019-01-03",
-        "state": "VA",
-        "district": 11,
-        "party": "Democrat",
-        "phone": "202-225-1492",
-        "url": "https://connolly.house.gov",
-        "rss_url": "http://connolly.house.gov/common/rss//index.cfm?rss=44",
-        "address": "2238 Rayburn House Office Building; Washington DC 20515-4611",
-        "office": "2238 Rayburn House Office Building",
-        "fax": "202-225-3071"
-      },
-      {
-        "type": "rep",
-        "start": "2019-01-03",
-        "end": "2021-01-03",
-        "state": "VA",
-        "district": 11,
-        "party": "Democrat",
-        "phone": "202-225-1492",
-        "address": "2238 Rayburn House Office Building Washington DC 20515-4611",
-        "office": "2238 Rayburn House Office Building",
-        "url": "https://connolly.house.gov",
-        "rss_url": "http://connolly.house.gov/common/rss//index.cfm?rss=44"
-      },
-      {
-        "type": "rep",
-        "start": "2021-01-03",
-        "end": "2023-01-03",
-        "state": "VA",
-        "district": 11,
-        "party": "Democrat",
-        "url": "https://connolly.house.gov",
-        "rss_url": "http://connolly.house.gov/common/rss//index.cfm?rss=44",
-        "address": "2238 Rayburn House Office Building Washington DC 20515-4611",
-        "office": "2238 Rayburn House Office Building",
-        "phone": "202-225-1492"
-      },
-      {
-        "type": "rep",
-        "start": "2023-01-03",
-        "end": "2025-01-03",
-        "state": "VA",
-        "district": 11,
-        "party": "Democrat",
-        "url": "https://connolly.house.gov",
-        "rss_url": "http://connolly.house.gov/common/rss//index.cfm?rss=44",
-        "address": "2265 Rayburn House Office Building Washington DC 20515-4611",
-        "office": "2265 Rayburn House Office Building",
-        "phone": "202-225-1492"
-      },
-      {
-        "type": "rep",
-        "start": "2025-01-03",
-        "end": "2027-01-03",
-        "state": "VA",
-        "district": 11,
-        "party": "Democrat",
-        "url": "https://connolly.house.gov",
-        "rss_url": "http://connolly.house.gov/common/rss//index.cfm?rss=44",
-        "address": "2265 Rayburn House Office Building Washington DC 20515-4611",
-        "office": "2265 Rayburn House Office Building",
-        "phone": "202-225-1492"
       }
     ]
   },
@@ -8265,6 +8147,11 @@
         "chamber": "senate",
         "start": "2021-01-03",
         "end": "2021-01-20"
+      },
+      {
+        "title": "President Pro Tempore of the Senate",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "bio": {
@@ -8881,185 +8768,6 @@
         "address": "2110 Rayburn House Office Building Washington DC 20515-4609",
         "office": "2110 Rayburn House Office Building",
         "phone": "202-225-3861"
-      }
-    ]
-  },
-  {
-    "id": {
-      "bioguide": "G000551",
-      "thomas": "01708",
-      "govtrack": 400162,
-      "opensecrets": "N00025284",
-      "votesmart": 28253,
-      "fec": [
-        "H2AZ07070"
-      ],
-      "cspan": 1003551,
-      "wikipedia": "Ra\u00fal Grijalva",
-      "house_history": 14261,
-      "ballotpedia": "Raul Grijalva",
-      "maplight": 268,
-      "icpsr": 20305,
-      "wikidata": "Q946606",
-      "google_entity_id": "kg:/m/024s1z",
-      "pictorial": 12912
-    },
-    "name": {
-      "first": "Ra\u00fal",
-      "middle": "M.",
-      "last": "Grijalva",
-      "official_full": "Ra\u00fal M. Grijalva"
-    },
-    "bio": {
-      "birthday": "1948-02-19",
-      "gender": "M"
-    },
-    "terms": [
-      {
-        "type": "rep",
-        "start": "2003-01-07",
-        "end": "2005-01-03",
-        "state": "AZ",
-        "district": 7,
-        "party": "Democrat",
-        "url": "http://www.house.gov/grijalva"
-      },
-      {
-        "type": "rep",
-        "start": "2005-01-04",
-        "end": "2007-01-03",
-        "state": "AZ",
-        "district": 7,
-        "party": "Democrat",
-        "url": "http://www.house.gov/grijalva"
-      },
-      {
-        "type": "rep",
-        "start": "2007-01-04",
-        "end": "2009-01-03",
-        "state": "AZ",
-        "district": 7,
-        "party": "Democrat",
-        "url": "http://www.house.gov/grijalva"
-      },
-      {
-        "type": "rep",
-        "start": "2009-01-06",
-        "end": "2011-01-03",
-        "state": "AZ",
-        "district": 7,
-        "party": "Democrat",
-        "url": "http://www.house.gov/grijalva"
-      },
-      {
-        "type": "rep",
-        "start": "2011-01-05",
-        "end": "2013-01-03",
-        "state": "AZ",
-        "district": 7,
-        "party": "Democrat",
-        "url": "http://www.house.gov/grijalva",
-        "address": "1511 Longworth HOB; Washington DC 20515-0307",
-        "phone": "202-225-2435",
-        "fax": "202-225-1541",
-        "contact_form": "http://grijalva.house.gov/?sectionid=49&amp;sectiontree=2,49",
-        "office": "1511 Longworth House Office Building"
-      },
-      {
-        "type": "rep",
-        "start": "2013-01-03",
-        "end": "2015-01-03",
-        "state": "AZ",
-        "party": "Democrat",
-        "district": 3,
-        "url": "http://grijalva.house.gov",
-        "address": "1511 Longworth HOB; Washington DC 20515-0303",
-        "phone": "202-225-2435",
-        "fax": "202-225-1541",
-        "contact_form": "https://grijalvaforms.house.gov/email-raul",
-        "office": "1511 Longworth House Office Building",
-        "rss_url": "http://grijalva.house.gov/common/rss/?rss=13"
-      },
-      {
-        "type": "rep",
-        "start": "2015-01-06",
-        "end": "2017-01-03",
-        "state": "AZ",
-        "party": "Democrat",
-        "district": 3,
-        "url": "http://grijalva.house.gov",
-        "address": "1511 Longworth HOB; Washington DC 20515-0303",
-        "phone": "202-225-2435",
-        "fax": "202-225-1541",
-        "contact_form": "https://grijalvaforms.house.gov/email-raul",
-        "office": "1511 Longworth House Office Building",
-        "rss_url": "http://grijalva.house.gov/common/rss/?rss=13"
-      },
-      {
-        "type": "rep",
-        "start": "2017-01-03",
-        "end": "2019-01-03",
-        "state": "AZ",
-        "district": 3,
-        "party": "Democrat",
-        "phone": "202-225-2435",
-        "url": "https://grijalva.house.gov",
-        "rss_url": "http://grijalva.house.gov/common/rss/?rss=13",
-        "address": "1511 Longworth House Office Building; Washington DC 20515-0303",
-        "office": "1511 Longworth House Office Building",
-        "fax": "202-225-1541"
-      },
-      {
-        "type": "rep",
-        "start": "2019-01-03",
-        "end": "2021-01-03",
-        "state": "AZ",
-        "district": 3,
-        "party": "Democrat",
-        "phone": "202-225-2435",
-        "address": "1511 Longworth House Office Building Washington DC 20515-0303",
-        "office": "1511 Longworth House Office Building",
-        "url": "https://grijalva.house.gov",
-        "rss_url": "http://grijalva.house.gov/common/rss/?rss=13"
-      },
-      {
-        "type": "rep",
-        "start": "2021-01-03",
-        "end": "2023-01-03",
-        "state": "AZ",
-        "district": 3,
-        "party": "Democrat",
-        "url": "https://grijalva.house.gov",
-        "rss_url": "http://grijalva.house.gov/common/rss/?rss=13",
-        "address": "1511 Longworth House Office Building Washington DC 20515-0303",
-        "office": "1511 Longworth House Office Building",
-        "phone": "202-225-2435"
-      },
-      {
-        "type": "rep",
-        "start": "2023-01-03",
-        "end": "2025-01-03",
-        "state": "AZ",
-        "district": 7,
-        "party": "Democrat",
-        "url": "https://grijalva.house.gov",
-        "rss_url": "http://grijalva.house.gov/common/rss/?rss=13",
-        "address": "1203 Longworth House Office Building Washington DC 20515-0307",
-        "office": "1203 Longworth House Office Building",
-        "phone": "202-225-2435"
-      },
-      {
-        "type": "rep",
-        "start": "2025-01-03",
-        "end": "2027-01-03",
-        "state": "AZ",
-        "district": 7,
-        "party": "Democrat",
-        "url": "https://grijalva.house.gov",
-        "rss_url": "http://grijalva.house.gov/common/rss/?rss=13",
-        "address": "1203 Longworth House Office Building Washington DC 20515-0307",
-        "office": "1203 Longworth House Office Building",
-        "phone": "202-225-2435"
       }
     ]
   },
@@ -10942,7 +10650,6 @@
       "first": "William",
       "last": "Keating",
       "official_full": "William R. Keating",
-      "nickname":"Bill",
       "middle": "R."
     },
     "bio": {
@@ -11233,6 +10940,13 @@
       "birthday": "1968-03-04",
       "gender": "M"
     },
+    "leadership_roles": [
+      {
+        "title": "Senate Republican Conference Vice Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
+      }
+    ],
     "terms": [
       {
         "type": "rep",
@@ -14469,6 +14183,13 @@
       "birthday": "1973-08-03",
       "gender": "M"
     },
+    "leadership_roles": [
+      {
+        "title": "Senate Democratic Conference Deputy Secretary",
+        "chamber": "senate",
+        "start": "2025-01-03"
+      }
+    ],
     "terms": [
       {
         "type": "rep",
@@ -16902,6 +16623,11 @@
         "chamber": "house",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "House Majority Leader",
+        "chamber": "house",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -17240,7 +16966,8 @@
       "opensecrets": "N00009585",
       "votesmart": 9489,
       "fec": [
-        "H0CA27085"
+        "H0CA27085",
+        "S4CA00555"
       ],
       "cspan": 90167,
       "wikipedia": "Adam Schiff",
@@ -17430,7 +17157,8 @@
         "url": "https://www.schiff.senate.gov",
         "address": "112 Hart Senate Office Building Washington DC 20510",
         "office": "112 Hart Senate Office Building",
-        "phone": "202-224-3841"
+        "phone": "202-224-3841",
+        "fax": "202-228-0026"
       }
     ]
   },
@@ -17497,6 +17225,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Minority Leader",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -18347,6 +18080,13 @@
       "birthday": "1965-09-19",
       "gender": "M"
     },
+    "leadership_roles": [
+      {
+        "title": "Senate Republican Committee Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
+      }
+    ],
     "terms": [
       {
         "type": "rep",
@@ -19594,7 +19334,8 @@
         "rss_url": "http://chrissmith.house.gov/news/rss.aspx",
         "address": "2373 Rayburn House Office Building Washington DC 20515-3004",
         "office": "2373 Rayburn House Office Building",
-        "phone": "202-225-3765"
+        "phone": "202-225-3765",
+        "fax": "202-225-7768"
       }
     ]
   },
@@ -20403,6 +20144,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Majority Leader",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -21870,7 +21616,8 @@
       "votesmart": 51272,
       "fec": [
         "H6VT00160",
-        "H8VT00034"
+        "H8VT00034",
+        "S2VT00235"
       ],
       "cspan": 1019990,
       "wikipedia": "Peter Welch",
@@ -22004,8 +21751,8 @@
         "party": "Democrat",
         "url": "https://www.welch.senate.gov",
         "contact_form": "https://www.welch.senate.gov/email-peter/",
-        "address": "124 Russell Senate Office Building Washington DC 20510",
-        "office": "124 Russell Senate Office Building",
+        "address": "115 Russell Senate Office Building Washington DC 20510",
+        "office": "115 Russell Senate Office Building",
         "phone": "202-224-4242"
       }
     ]
@@ -23522,6 +23269,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Democratic Conference Deputy Secretary",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -23899,6 +23651,13 @@
       "gender": "M",
       "birthday": "1977-05-13"
     },
+    "leadership_roles": [
+      {
+        "title": "Senate Republican Conference Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
+      }
+    ],
     "terms": [
       {
         "type": "rep",
@@ -24448,7 +24207,7 @@
       "govtrack": 412516,
       "bioguide": "B001285",
       "thomas": "02106",
-      "cspan": 79783,
+      "cspan": 67561,
       "votesmart": 59904,
       "wikipedia": "Julia Brownley",
       "fec": [
@@ -24576,7 +24335,7 @@
       "govtrack": 412519,
       "bioguide": "R000599",
       "thomas": "02109",
-      "cspan": 79727,
+      "cspan": 67721,
       "votesmart": 136407,
       "wikipedia": "Raul Ruiz (politician)",
       "fec": [
@@ -25458,6 +25217,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Democratic Conference Vice Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -25933,7 +25697,8 @@
         "rss_url": "http://hudson.house.gov/rss.xml",
         "address": "2112 Rayburn House Office Building Washington DC 20515-3309",
         "office": "2112 Rayburn House Office Building",
-        "phone": "202-225-3715"
+        "phone": "202-225-3715",
+        "fax": "202-225-4036"
       }
     ]
   },
@@ -26296,6 +26061,11 @@
         "chamber": "house",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "House Minority Leader",
+        "chamber": "house",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -26659,7 +26429,8 @@
       "votesmart": 135898,
       "wikipedia": "Markwayne Mullin",
       "fec": [
-        "H2OK02083"
+        "H2OK02083",
+        "S2OK00186"
       ],
       "opensecrets": "N00033410",
       "ballotpedia": "Markwayne Mullin",
@@ -27977,6 +27748,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Democratic Strategic Communications Committee Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -28067,6 +27843,11 @@
         "chamber": "house",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "House Minority Whip",
+        "chamber": "house",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -28742,7 +28523,8 @@
       "bioguide": "G000574",
       "lis": "S432",
       "fec": [
-        "H4AZ07043"
+        "H4AZ07043",
+        "S4AZ00139"
       ],
       "govtrack": 412612,
       "opensecrets": "N00036097",
@@ -28836,8 +28618,8 @@
         "state_rank": "junior",
         "party": "Democrat",
         "url": "https://www.gallego.senate.gov",
-        "address": "188 Russell Senate Office Building Washington DC 20510",
-        "office": "188 Russell Senate Office Building",
+        "address": "302 Hart Senate Office Building Washington DC 20510",
+        "office": "302 Hart Senate Office Building",
         "phone": "202-224-4521"
       }
     ]
@@ -28987,6 +28769,11 @@
         "chamber": "house",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "House Democratic Caucus Chair",
+        "chamber": "house",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -29094,6 +28881,13 @@
       "gender": "M",
       "birthday": "1969-03-29"
     },
+    "leadership_roles": [
+      {
+        "title": "House Democratic Caucus Vice Chair",
+        "chamber": "house",
+        "start": "2025-01-03"
+      }
+    ],
     "terms": [
       {
         "type": "rep",
@@ -30052,6 +29846,11 @@
         "chamber": "house",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "House Majority Whip",
+        "chamber": "house",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -31399,7 +31198,8 @@
         "contact_form": "https://www.tillis.senate.gov/public/index.cfm/email-me",
         "address": "113 Dirksen Senate Office Building Washington DC 20510",
         "office": "113 Dirksen Senate Office Building",
-        "phone": "202-224-6342"
+        "phone": "202-224-6342",
+        "fax": "202-228-2563"
       }
     ]
   },
@@ -32147,6 +31947,11 @@
         "chamber": "senate",
         "start": "2023-01-03",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Senate Democratic Outreach Vice Chair",
+        "chamber": "senate",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -32845,7 +32650,8 @@
       "wikidata": "Q26899141",
       "votesmart": 173249,
       "fec": [
-        "H6DE00206"
+        "H6DE00206",
+        "S4DE00060"
       ],
       "opensecrets": "N00038414",
       "maplight": 2201,
@@ -33390,7 +33196,8 @@
       "wikidata": "Q16146788",
       "votesmart": 116801,
       "fec": [
-        "H6IN03229"
+        "H6IN03229",
+        "S4IN00196"
       ],
       "opensecrets": "N00037185",
       "maplight": 2214,
@@ -33467,8 +33274,8 @@
         "state_rank": "junior",
         "party": "Republican",
         "url": "https://www.banks.senate.gov",
-        "address": "B85 Russell Senate Office Building Washington DC 20510",
-        "office": "B85 Russell Senate Office Building",
+        "address": "303 Hart Senate Office Building Washington DC 20510",
+        "office": "303 Hart Senate Office Building",
         "phone": "202-224-4814"
       }
     ]
@@ -33671,6 +33478,11 @@
         "chamber": "house",
         "start": "2023-10-25",
         "end": "2025-01-03"
+      },
+      {
+        "title": "Speaker of the House",
+        "chamber": "house",
+        "start": "2025-01-03"
       }
     ],
     "terms": [
@@ -33730,8 +33542,8 @@
         "district": 4,
         "party": "Republican",
         "url": "https://mikejohnson.house.gov",
-        "address": "568 Cannon House Office Building Washington DC 20515-1804",
-        "office": "568 Cannon House Office Building",
+        "address": "521 Cannon House Office Building Washington DC 20515-1804",
+        "office": "521 Cannon House Office Building",
         "phone": "202-225-2777"
       }
     ]
@@ -33925,7 +33737,8 @@
       "wikidata": "Q27733792",
       "votesmart": 171489,
       "fec": [
-        "H6NC13129"
+        "H6NC13129",
+        "S2NC00505"
       ],
       "opensecrets": "N00039551",
       "maplight": 2224,
@@ -33991,8 +33804,8 @@
         "party": "Republican",
         "url": "https://www.budd.senate.gov",
         "contact_form": "https://www.budd.senate.gov/contact/",
-        "address": "304 Russell Senate Office Building Washington DC 20510",
-        "office": "304 Russell Senate Office Building",
+        "address": "354 Russell Senate Office Building Washington DC 20510",
+        "office": "354 Russell Senate Office Building",
         "phone": "202-224-3154"
       }
     ]
@@ -35162,7 +34975,8 @@
       "bioguide": "C001114",
       "lis": "S431",
       "fec": [
-        "H8UT03238"
+        "H8UT03238",
+        "S4UT00282"
       ],
       "govtrack": 412740,
       "opensecrets": "N00041221",
@@ -35243,8 +35057,8 @@
         "state_rank": "junior",
         "party": "Republican",
         "url": "https://www.curtis.senate.gov",
-        "address": "B11 Russell Senate Office Building Washington DC 20510",
-        "office": "B11 Russell Senate Office Building",
+        "address": "502 Hart Senate Office Building Washington DC 20510",
+        "office": "502 Hart Senate Office Building",
         "phone": "202-224-5251"
       }
     ]
@@ -35602,6 +35416,13 @@
       "gender": "M",
       "birthday": "1961-12-04"
     },
+    "leadership_roles": [
+      {
+        "title": "House Republican Policy Committee Chair",
+        "chamber": "house",
+        "start": "2025-01-03"
+      }
+    ],
     "terms": [
       {
         "type": "rep",
@@ -35944,7 +35765,7 @@
       "govtrack": 412559,
       "bioguide": "H001066",
       "thomas": "02147",
-      "cspan": 79614,
+      "cspan": 67777,
       "votesmart": 44064,
       "wikipedia": "Steven Horsford",
       "fec": [
@@ -36289,6 +36110,19 @@
       "gender": "M",
       "birthday": "1984-05-13"
     },
+    "leadership_roles": [
+      {
+        "title": "Assistant House Minority Leader",
+        "chamber": "house",
+        "start": "2024-03-20",
+        "end": "2025-01-03"
+      },
+      {
+        "title": "Assistant House Minority Leader",
+        "chamber": "house",
+        "start": "2025-01-03"
+      }
+    ],
     "terms": [
       {
         "type": "rep",
@@ -37260,7 +37094,8 @@
       "bioguide": "S001208",
       "lis": "S436",
       "fec": [
-        "H8MI08102"
+        "H8MI08102",
+        "S4MI00470"
       ],
       "govtrack": 412784,
       "wikipedia": "Elissa Slotkin",
@@ -37327,8 +37162,8 @@
         "state_rank": "junior",
         "party": "Democrat",
         "url": "https://www.slotkin.senate.gov",
-        "address": "825B Hart Senate Office Building Washington DC 20510",
-        "office": "825b Hart Senate Office Building",
+        "address": "291 Russell Senate Office Building Washington DC 20510",
+        "office": "291 Russell Senate Office Building",
         "phone": "202-224-4822"
       }
     ]
@@ -37958,7 +37793,8 @@
       "bioguide": "K000394",
       "lis": "S426",
       "fec": [
-        "H8NJ03206"
+        "H8NJ03206",
+        "S4NJ00466"
       ],
       "govtrack": 412797,
       "wikipedia": "Andy Kim (politician)",
@@ -38039,8 +37875,8 @@
         "state_rank": "junior",
         "party": "Democrat",
         "url": "https://www.kim.senate.gov",
-        "address": "B40D Dirksen Senate Office Building Washington DC 20510",
-        "office": "B40d Dirksen Senate Office Building",
+        "address": "520 Hart Senate Office Building Washington DC 20510",
+        "office": "520 Hart Senate Office Building",
         "phone": "202-224-4744"
       }
     ]
@@ -38961,83 +38797,6 @@
   },
   {
     "id": {
-      "bioguide": "G000590",
-      "fec": [
-        "H8TN07076"
-      ],
-      "govtrack": 412819,
-      "wikipedia": "Mark Green (Tennessee politician)",
-      "wikidata": "Q16224587",
-      "opensecrets": "N00041873",
-      "google_entity_id": "kg:/m/09rx6jq",
-      "votesmart": 139030,
-      "icpsr": 21926,
-      "ballotpedia": "Mark Green (Tennessee)",
-      "pictorial": 13255
-    },
-    "name": {
-      "first": "Mark",
-      "middle": "E.",
-      "last": "Green",
-      "official_full": "Mark E. Green"
-    },
-    "bio": {
-      "gender": "M",
-      "birthday": "1964-11-08"
-    },
-    "terms": [
-      {
-        "type": "rep",
-        "start": "2019-01-03",
-        "end": "2021-01-03",
-        "state": "TN",
-        "district": 7,
-        "party": "Republican",
-        "phone": "202-225-2811",
-        "address": "533 Cannon House Office Building Washington DC 20515-4207",
-        "office": "533 Cannon House Office Building",
-        "url": "https://markgreen.house.gov"
-      },
-      {
-        "type": "rep",
-        "start": "2021-01-03",
-        "end": "2023-01-03",
-        "state": "TN",
-        "district": 7,
-        "party": "Republican",
-        "url": "https://markgreen.house.gov",
-        "address": "2446 Rayburn House Office Building Washington DC 20515-4207",
-        "office": "2446 Rayburn House Office Building",
-        "phone": "202-225-2811"
-      },
-      {
-        "type": "rep",
-        "start": "2023-01-03",
-        "end": "2025-01-03",
-        "state": "TN",
-        "district": 7,
-        "party": "Republican",
-        "url": "https://markgreen.house.gov",
-        "address": "2446 Rayburn House Office Building Washington DC 20515-4207",
-        "office": "2446 Rayburn House Office Building",
-        "phone": "202-225-2811"
-      },
-      {
-        "type": "rep",
-        "start": "2025-01-03",
-        "end": "2027-01-03",
-        "state": "TN",
-        "district": 7,
-        "party": "Republican",
-        "url": "https://markgreen.house.gov",
-        "address": "2446 Rayburn House Office Building Washington DC 20515-4207",
-        "office": "2446 Rayburn House Office Building",
-        "phone": "202-225-2811"
-      }
-    ]
-  },
-  {
-    "id": {
       "bioguide": "C001120",
       "fec": [
         "H8TX02166"
@@ -39908,8 +39667,8 @@
         "party": "Republican",
         "url": "https://www.hawley.senate.gov",
         "contact_form": "https://www.hawley.senate.gov/contact-senator-hawley",
-        "address": "115 Russell Senate Office Building Washington DC 20510",
-        "office": "115 Russell Senate Office Building",
+        "address": "381 Russell Senate Office Building Washington DC 20510",
+        "office": "381 Russell Senate Office Building",
         "phone": "202-224-6154"
       }
     ]
@@ -40939,7 +40698,7 @@
         "address": "455 Russell Senate Office Building Washington DC 20510",
         "office": "455 Russell Senate Office Building",
         "phone": "202-224-4124",
-        "fax": "202-225\u20130562"
+        "fax": "202-225-0562"
       }
     ]
   },
@@ -40982,7 +40741,7 @@
         "address": "316 Hart Senate Office Building Washington DC 20510",
         "office": "316 Hart Senate Office Building",
         "phone": "202-224-5941",
-        "fax": "202-224\u20133115"
+        "fax": "202-224-3115"
       }
     ]
   },
@@ -42382,6 +42141,13 @@
       "gender": "F",
       "birthday": "1966-04-07"
     },
+    "leadership_roles": [
+      {
+        "title": "House Republican Conference Chair",
+        "chamber": "house",
+        "start": "2025-01-03"
+      }
+    ],
     "terms": [
       {
         "type": "rep",
@@ -42917,7 +42683,8 @@
         "url": "https://bentz.house.gov",
         "address": "409 Cannon House Office Building Washington DC 20515-3702",
         "office": "409 Cannon House Office Building",
-        "phone": "202-225-6730"
+        "phone": "202-225-6730",
+        "fax": "202-225-5774"
       }
     ]
   },
@@ -43849,7 +43616,7 @@
         "address": "717 Hart Senate Office Building Washington DC 20510",
         "office": "717 Hart Senate Office Building",
         "phone": "202-224-3643",
-        "fax": "202-228\u20130724"
+        "fax": "202-228-0724"
       }
     ]
   },
@@ -44733,8 +44500,8 @@
         "party": "Republican",
         "url": "https://www.britt.senate.gov",
         "contact_form": "https://www.britt.senate.gov/contact/",
-        "address": "502 Hart Senate Office Building Washington DC 20510",
-        "office": "502 Hart Senate Office Building",
+        "address": "416 Russell Senate Office Building Washington DC 20510",
+        "office": "416 Russell Senate Office Building",
         "phone": "202-224-5744"
       }
     ]
@@ -44775,8 +44542,8 @@
         "party": "Republican",
         "url": "https://www.schmitt.senate.gov",
         "contact_form": "https://www.schmitt.senate.gov/contact/",
-        "address": "387 Russell Senate Office Building Washington DC 20510",
-        "office": "387 Russell Senate Office Building",
+        "address": "404 Russell Senate Office Building Washington DC 20510",
+        "office": "404 Russell Senate Office Building",
         "phone": "202-224-5721"
       }
     ]
@@ -47202,7 +46969,8 @@
         "url": "https://hoyle.house.gov",
         "address": "1620 Longworth House Office Building Washington DC 20515-3704",
         "office": "1620 Longworth House Office Building",
-        "phone": "202-225-6416"
+        "phone": "202-225-6416",
+        "fax": "202-225-0032"
       },
       {
         "type": "rep",
@@ -48375,7 +48143,6 @@
       "first": "Thomas",
       "middle": "R.",
       "last": "Suozzi",
-      "nickname":"Tom",
       "official_full": "Thomas R. Suozzi"
     },
     "bio": {
@@ -48450,6 +48217,7 @@
     "id": {
       "bioguide": "K000402",
       "govtrack": 456957,
+      "opensecrets": "N00054366",
       "wikipedia": "Tim Kennedy (politician)",
       "wikidata": "Q7807373",
       "votesmart": 91670,
@@ -48503,6 +48271,7 @@
         "H4CA20181"
       ],
       "govtrack": 456958,
+      "opensecrets": "N00054216",
       "wikipedia": "Vince Fong",
       "wikidata": "Q27916201",
       "ballotpedia": "Vince Fong",
@@ -48552,6 +48321,7 @@
         "H4OH06165"
       ],
       "govtrack": 456959,
+      "opensecrets": "N00054190",
       "wikipedia": "Michael Rulli",
       "wikidata": "Q63170062",
       "votesmart": 179016,
@@ -48602,6 +48372,7 @@
         "H4NJ10176"
       ],
       "govtrack": 456962,
+      "opensecrets": "N00055172",
       "wikipedia": "LaMonica McIver",
       "wikidata": "Q130323710",
       "votesmart": 186801,
@@ -48652,6 +48423,7 @@
         "H4WI08119"
       ],
       "govtrack": 456963,
+      "opensecrets": "N00055013",
       "wikipedia": "Tony Wied",
       "wikidata": "Q131033476",
       "ballotpedia": "Tony Wied",
@@ -48698,6 +48470,10 @@
       "bioguide": "F000110",
       "thomas": "00379",
       "govtrack": 404067,
+      "opensecrets": "N00005398",
+      "fec": [
+        "H4LA06211"
+      ],
       "wikipedia": "Cleo Fields",
       "house_history": 13112,
       "icpsr": 29354,
@@ -48846,7 +48622,8 @@
     "id": {
       "bioguide": "C001123",
       "fec": [
-        "H8CA39174"
+        "H8CA39174",
+        "H4CA31170"
       ],
       "govtrack": 412757,
       "opensecrets": "N00041464",
@@ -48902,6 +48679,7 @@
         "S4MD00327"
       ],
       "govtrack": 456965,
+      "opensecrets": "N00053033",
       "wikipedia": "Angela Alsobrooks",
       "wikidata": "Q58755148"
     },
@@ -48926,8 +48704,8 @@
         "party": "Democrat",
         "url": "https://www.alsobrooks.senate.gov",
         "contact_form": "https://alsobrooks.senate.gov/",
-        "address": "B40E Dirksen Senate Office Building Washington DC 20510",
-        "office": "B40e Dirksen Senate Office Building",
+        "address": "374 Russell Senate Office Building Washington DC 20510",
+        "office": "374 Russell Senate Office Building",
         "phone": "202-224-4524"
       }
     ]
@@ -48940,6 +48718,7 @@
         "S4MT00183"
       ],
       "govtrack": 456966,
+      "opensecrets": "N00053174",
       "wikipedia": "Tim Sheehy (American politician)",
       "wikidata": "Q124433916"
     },
@@ -48963,8 +48742,8 @@
         "state_rank": "junior",
         "party": "Republican",
         "url": "https://www.sheehy.senate.gov",
-        "address": "G55 Dirksen Senate Office Building Washington DC 20510",
-        "office": "G55 Dirksen Senate Office Building",
+        "address": "124 Russell Senate Office Building Washington DC 20510",
+        "office": "124 Russell Senate Office Building",
         "phone": "202-224-2644"
       }
     ]
@@ -48977,6 +48756,7 @@
         "S4OH00192"
       ],
       "govtrack": 456967,
+      "opensecrets": "N00048437",
       "wikipedia": "Bernie Moreno",
       "wikidata": "Q124858476"
     },
@@ -48999,8 +48779,8 @@
         "state_rank": "senior",
         "party": "Republican",
         "url": "https://www.moreno.senate.gov",
-        "address": "B33 Russell Senate Office Building Washington DC 20510",
-        "office": "B33 Russell Senate Office Building",
+        "address": "284 Russell Senate Office Building Washington DC 20510",
+        "office": "284 Russell Senate Office Building",
         "phone": "202-224-2315"
       }
     ]
@@ -49013,6 +48793,7 @@
         "S2PA00661"
       ],
       "govtrack": 456968,
+      "opensecrets": "N00050244",
       "wikipedia": "Dave McCormick",
       "wikidata": "Q5234544"
     },
@@ -49037,8 +48818,8 @@
         "party": "Republican",
         "url": "https://www.mccormick.senate.gov",
         "contact_form": "https://mccormick.senate.gov/",
-        "address": "B40C Dirksen Senate Office Building Washington DC 20510",
-        "office": "B40c Dirksen Senate Office Building",
+        "address": "702 Hart Senate Office Building Washington DC 20510",
+        "office": "702 Hart Senate Office Building",
         "phone": "202-224-6324"
       }
     ]
@@ -49050,6 +48831,7 @@
         "H2AK01083"
       ],
       "govtrack": 456970,
+      "opensecrets": "N00049408",
       "wikipedia": "Nick Begich III",
       "wikidata": "Q113676482"
     },
@@ -49086,6 +48868,7 @@
         "H4AL02170"
       ],
       "govtrack": 456971,
+      "opensecrets": "N00053909",
       "wikipedia": "Shomari Figures",
       "wikidata": "Q129431158"
     },
@@ -49121,6 +48904,7 @@
         "H4AZ03109"
       ],
       "govtrack": 456972,
+      "opensecrets": "N00052497",
       "wikipedia": "Yassamin Ansari",
       "wikidata": "Q122226202"
     },
@@ -49155,6 +48939,7 @@
         "H4AZ08108"
       ],
       "govtrack": 456973,
+      "opensecrets": "N00053795",
       "wikipedia": "Abraham Hamadeh",
       "wikidata": "Q124307977"
     },
@@ -49190,6 +48975,7 @@
         "H4CA12154"
       ],
       "govtrack": 456974,
+      "opensecrets": "N00052195",
       "wikipedia": "Lateefah Simon",
       "wikidata": "Q6495426"
     },
@@ -49225,6 +49011,7 @@
         "H2CA13115"
       ],
       "govtrack": 456975,
+      "opensecrets": "N00050061",
       "wikipedia": "Adam Gray",
       "wikidata": "Q3000097"
     },
@@ -49260,6 +49047,7 @@
         "H4CA16197"
       ],
       "govtrack": 456976,
+      "opensecrets": "N00054265",
       "wikipedia": "Sam Liccardo",
       "wikidata": "Q16731481"
     },
@@ -49295,6 +49083,7 @@
         "H4CA27111"
       ],
       "govtrack": 456977,
+      "opensecrets": "N00052205",
       "wikipedia": "George T. Whitesides",
       "wikidata": "Q3511804"
     },
@@ -49330,6 +49119,7 @@
         "H4CA29141"
       ],
       "govtrack": 456978,
+      "opensecrets": "N00054215",
       "wikipedia": "Luz Rivas",
       "wikidata": "Q54861699"
     },
@@ -49365,6 +49155,7 @@
         "H4CA30149"
       ],
       "govtrack": 456979,
+      "opensecrets": "N00052209",
       "wikipedia": "Laura Friedman",
       "wikidata": "Q6498920"
     },
@@ -49400,6 +49191,7 @@
         "H4CA45170"
       ],
       "govtrack": 456980,
+      "opensecrets": "N00053582",
       "wikipedia": "Derek Tran",
       "wikidata": "Q131339671"
     },
@@ -49435,6 +49227,7 @@
         "H4CA47085"
       ],
       "govtrack": 456981,
+      "opensecrets": "N00040866",
       "wikipedia": "Dave Min",
       "wikidata": "Q31213321"
     },
@@ -49445,7 +49238,7 @@
       "official_full": "Dave Min"
     },
     "bio": {
-      "gender": "F",
+      "gender": "M",
       "birthday": "1976-03-05"
     },
     "terms": [
@@ -49470,6 +49263,7 @@
         "H4CO03357"
       ],
       "govtrack": 456982,
+      "opensecrets": "N00053367",
       "wikipedia": "Jeff Hurd (politician)",
       "wikidata": "Q131101500"
     },
@@ -49505,6 +49299,7 @@
         "H6CO05142"
       ],
       "govtrack": 456983,
+      "opensecrets": "N00028132",
       "wikipedia": "Jeff Crank",
       "wikidata": "Q27663361"
     },
@@ -49540,6 +49335,7 @@
         "H4CO08034"
       ],
       "govtrack": 456984,
+      "opensecrets": "N00053312",
       "wikipedia": "Gabe Evans",
       "wikidata": "Q115458993"
     },
@@ -49574,6 +49370,7 @@
         "H4DE00045"
       ],
       "govtrack": 456985,
+      "opensecrets": "N00052698",
       "wikipedia": "Sarah McBride",
       "wikidata": "Q17011236"
     },
@@ -49609,6 +49406,7 @@
         "H4FL08168"
       ],
       "govtrack": 456986,
+      "opensecrets": "N00033076",
       "wikipedia": "Mike Haridopolos",
       "wikidata": "Q6847137"
     },
@@ -49644,6 +49442,7 @@
         "H4GA03126"
       ],
       "govtrack": 456987,
+      "opensecrets": "N00055118",
       "wikipedia": "Brian Jack",
       "wikidata": "Q86493775"
     },
@@ -49679,6 +49478,7 @@
         "H4IN06185"
       ],
       "govtrack": 456988,
+      "opensecrets": "N00054651",
       "wikipedia": "Jefferson Shreve",
       "wikidata": "Q130979817"
     },
@@ -49714,6 +49514,7 @@
         "H4IN08249"
       ],
       "govtrack": 456989,
+      "opensecrets": "N00054523",
       "wikipedia": "Mark Messmer",
       "wikidata": "Q6768869"
     },
@@ -49748,6 +49549,7 @@
         "H4KS02164"
       ],
       "govtrack": 456990,
+      "opensecrets": "N00055179",
       "wikipedia": "Derek Schmidt",
       "wikidata": "Q5262335"
     },
@@ -49783,6 +49585,7 @@
         "H4MD02232"
       ],
       "govtrack": 456991,
+      "opensecrets": "N00054814",
       "wikipedia": "Johnny Olszewski",
       "wikidata": "Q6217866"
     },
@@ -49819,6 +49622,7 @@
         "H4MD03156"
       ],
       "govtrack": 456992,
+      "opensecrets": "N00053710",
       "wikipedia": "Sarah Elfreth",
       "wikidata": "Q61970401"
     },
@@ -49854,6 +49658,7 @@
         "H4MD06340"
       ],
       "govtrack": 456993,
+      "opensecrets": "N00053899",
       "wikipedia": "April McClain-Delaney",
       "wikidata": "Q125935301"
     },
@@ -49889,6 +49694,7 @@
         "H2MI07123"
       ],
       "govtrack": 456994,
+      "opensecrets": "N00049596",
       "wikipedia": "Tom Barrett (Michigan politician)",
       "wikidata": "Q18684588"
     },
@@ -49924,6 +49730,7 @@
         "H4MI08218"
       ],
       "govtrack": 456995,
+      "opensecrets": "N00054163",
       "wikipedia": "Kristen McDonald Rivet",
       "wikidata": "Q115227000"
     },
@@ -49959,6 +49766,7 @@
         "H4MN03118"
       ],
       "govtrack": 456996,
+      "opensecrets": "N00053930",
       "wikipedia": "Kelly Morrison",
       "wikidata": "Q58416636"
     },
@@ -49994,6 +49802,7 @@
         "H4MO01134"
       ],
       "govtrack": 456997,
+      "opensecrets": "N00053042",
       "wikipedia": "Wesley Bell",
       "wikidata": "Q23806350"
     },
@@ -50026,9 +49835,11 @@
     "id": {
       "bioguide": "O000177",
       "fec": [
-        "H8MO09146"
+        "H8MO09146",
+        "H4MO03221"
       ],
       "govtrack": 456998,
+      "opensecrets": "N00030025",
       "wikipedia": "Bob Onder",
       "wikidata": "Q27064117"
     },
@@ -50075,7 +49886,8 @@
       "official_full": "Kimberlyn King-Hinds"
     },
     "bio": {
-      "gender": "F"
+      "gender": "F",
+      "birthday": "1975-04-10"
     },
     "terms": [
       {
@@ -50099,6 +49911,7 @@
         "H4MT02098"
       ],
       "govtrack": 457000,
+      "opensecrets": "N00041283",
       "wikipedia": "Troy Downing",
       "wikidata": "Q103158011"
     },
@@ -50134,6 +49947,7 @@
         "H4NC06177"
       ],
       "govtrack": 457001,
+      "opensecrets": "N00054055",
       "wikipedia": "Addison McDowell",
       "wikidata": "Q130979819"
     },
@@ -50166,9 +49980,11 @@
     "id": {
       "bioguide": "H001102",
       "fec": [
-        "H6NC09200"
+        "H6NC09200",
+        "H4NC08066"
       ],
       "govtrack": 457002,
+      "opensecrets": "N00035491",
       "wikipedia": "Mark Harris (North Carolina politician)",
       "wikidata": "Q55622212"
     },
@@ -50204,6 +50020,7 @@
         "H2NC13243"
       ],
       "govtrack": 457003,
+      "opensecrets": "N00050144",
       "wikipedia": "Pat Harrigan",
       "wikidata": "Q131179069"
     },
@@ -50238,6 +50055,7 @@
         "H4NC13116"
       ],
       "govtrack": 457004,
+      "opensecrets": "N00053743",
       "wikipedia": "Brad Knott",
       "wikidata": "Q130979816"
     },
@@ -50272,6 +50090,7 @@
         "H4NC14015"
       ],
       "govtrack": 457005,
+      "opensecrets": "N00053948",
       "wikipedia": "Tim Moore (North Carolina politician)",
       "wikidata": "Q7804002"
     },
@@ -50307,6 +50126,7 @@
         "H4ND00061"
       ],
       "govtrack": 457006,
+      "opensecrets": "N00054800",
       "wikipedia": "Julie Fedorchak",
       "wikidata": "Q37824664"
     },
@@ -50342,6 +50162,7 @@
         "H4NH02399"
       ],
       "govtrack": 457007,
+      "opensecrets": "N00055218",
       "wikipedia": "Maggie Goodlander",
       "wikidata": "Q126718734"
     },
@@ -50377,6 +50198,7 @@
         "H4NJ03080"
       ],
       "govtrack": 457008,
+      "opensecrets": "N00026951",
       "wikipedia": "Herb Conaway",
       "wikidata": "Q14596151"
     },
@@ -50413,6 +50235,7 @@
         "H4NJ09194"
       ],
       "govtrack": 457009,
+      "opensecrets": "N00055613",
       "wikipedia": "Nellie Pou",
       "wikidata": "Q6990132"
     },
@@ -50448,6 +50271,7 @@
         "H4NY04158"
       ],
       "govtrack": 457010,
+      "opensecrets": "N00050425",
       "wikipedia": "Laura Gillen",
       "wikidata": "Q131105202"
     },
@@ -50483,6 +50307,7 @@
         "H4NY16087"
       ],
       "govtrack": 457011,
+      "opensecrets": "N00054136",
       "wikipedia": "George Latimer (New York politician)",
       "wikidata": "Q5544169"
     },
@@ -50518,6 +50343,7 @@
         "H8NY22177"
       ],
       "govtrack": 457012,
+      "opensecrets": "N00049916",
       "wikipedia": "Josh Riley",
       "wikidata": "Q113988129"
     },
@@ -50553,6 +50379,7 @@
         "H4NY22085"
       ],
       "govtrack": 457013,
+      "opensecrets": "N00053112",
       "wikipedia": "John Mannion (American politician)",
       "wikidata": "Q106089566"
     },
@@ -50588,6 +50415,7 @@
         "H4OH02248"
       ],
       "govtrack": 457014,
+      "opensecrets": "N00054098",
       "wikipedia": "David Taylor (Ohio politician)",
       "wikidata": "Q131123679"
     },
@@ -50623,6 +50451,7 @@
         "H4OR03192"
       ],
       "govtrack": 457015,
+      "opensecrets": "N00054144",
       "wikipedia": "Maxine Dexter",
       "wikidata": "Q96777172"
     },
@@ -50658,6 +50487,7 @@
         "H4OR05304"
       ],
       "govtrack": 457016,
+      "opensecrets": "N00052777",
       "wikipedia": "Janelle Bynum",
       "wikidata": "Q28507879"
     },
@@ -50693,6 +50523,7 @@
         "H8PA15195"
       ],
       "govtrack": 457017,
+      "opensecrets": "N00041866",
       "wikipedia": "Ryan Mackenzie",
       "wikidata": "Q7384273"
     },
@@ -50728,6 +50559,7 @@
         "H4PA08124"
       ],
       "govtrack": 457018,
+      "opensecrets": "N00053588",
       "wikipedia": "Rob Bresnahan",
       "wikidata": "Q130963821"
     },
@@ -50764,6 +50596,7 @@
         "H4PR01010"
       ],
       "govtrack": 457019,
+      "opensecrets": "N00052286",
       "wikipedia": "Pablo Hern\u00e1ndez Rivera",
       "wikidata": "Q130997176"
     },
@@ -50798,6 +50631,7 @@
         "H4SC01313"
       ],
       "govtrack": 457020,
+      "opensecrets": "N00054222",
       "wikipedia": "Sheri Biggs",
       "wikidata": "Q130979821"
     },
@@ -50833,6 +50667,7 @@
         "H4TX12065"
       ],
       "govtrack": 457021,
+      "opensecrets": "N00053861",
       "wikipedia": "Craig Goldman",
       "wikidata": "Q16199453"
     },
@@ -50868,6 +50703,7 @@
         "H4TX26149"
       ],
       "govtrack": 457023,
+      "opensecrets": "N00054402",
       "wikipedia": "Brandon Gill",
       "wikidata": "Q124753679"
     },
@@ -50903,6 +50739,7 @@
         "H4TX32089"
       ],
       "govtrack": 457024,
+      "opensecrets": "N00052806",
       "wikipedia": "Julie Johnson (politician)",
       "wikidata": "Q64753063"
     },
@@ -50938,6 +50775,7 @@
         "H4UT03260"
       ],
       "govtrack": 457025,
+      "opensecrets": "N00043086",
       "wikipedia": "Mike Kennedy (politician)",
       "wikidata": "Q16730723"
     },
@@ -50970,9 +50808,11 @@
     "id": {
       "bioguide": "M001239",
       "fec": [
-        "H4VA05071"
+        "H2VA07196",
+        "H0VA07133"
       ],
       "govtrack": 457026,
+      "opensecrets": "N00045930",
       "wikipedia": "John McGuire (Virginia politician)",
       "wikidata": "Q47545631"
     },
@@ -51009,6 +50849,7 @@
         "H4VA07234"
       ],
       "govtrack": 457027,
+      "opensecrets": "N00054112",
       "wikipedia": "Eugene Vindman",
       "wikidata": "Q112610369"
     },
@@ -51044,6 +50885,7 @@
         "H4VA10279"
       ],
       "govtrack": 457028,
+      "opensecrets": "N00054085",
       "wikipedia": "Suhas Subramanyam",
       "wikidata": "Q83250082"
     },
@@ -51078,6 +50920,7 @@
         "H4WA05234"
       ],
       "govtrack": 457029,
+      "opensecrets": "N00033716",
       "wikipedia": "Michael Baumgartner",
       "wikidata": "Q6828508"
     },
@@ -51113,6 +50956,7 @@
         "H4WA06117"
       ],
       "govtrack": 457030,
+      "opensecrets": "N00054078",
       "wikipedia": "Emily Randall",
       "wikidata": "Q60473885"
     },
@@ -51148,6 +50992,7 @@
         "H4WV02205"
       ],
       "govtrack": 457031,
+      "opensecrets": "N00051965",
       "wikipedia": "Riley Moore",
       "wikidata": "Q93769958"
     },
@@ -51184,6 +51029,7 @@
         "S4WV00332"
       ],
       "govtrack": 456969,
+      "opensecrets": "N00053062",
       "wikipedia": "Jim Justice",
       "wikidata": "Q20684288"
     },
@@ -51219,6 +51065,9 @@
       "bioguide": "H001104",
       "lis": "S438",
       "govtrack": 457032,
+      "fec": [
+        "S6OH00304"
+      ],
       "wikipedia": "Jon Husted",
       "wikidata": "Q6270269"
     },
@@ -51244,8 +51093,8 @@
         "party": "Republican",
         "state_rank": "junior",
         "url": "https://www.husted.senate.gov",
-        "address": "198 Russell Senate Office Building Washington DC 20510",
-        "office": "198 Russell Senate Office Building",
+        "address": "304 Russell Senate Office Building Washington DC 20510",
+        "office": "304 Russell Senate Office Building",
         "phone": "202-224-3353"
       }
     ]
@@ -51255,6 +51104,9 @@
       "bioguide": "M001244",
       "lis": "S439",
       "govtrack": 457033,
+      "fec": [
+        "S6FL00640"
+      ],
       "wikipedia": "Ashley Moody",
       "wikidata": "Q58333626"
     },
@@ -51280,9 +51132,126 @@
         "party": "Republican",
         "state_rank": "junior",
         "url": "https://www.moody.senate.gov",
-        "address": "B40B Dirksen Senate Office Building Washington DC 20510",
-        "office": "B40b Dirksen Senate Office Building",
+        "address": "387 Russell Senate Office Building Washington DC 20510",
+        "office": "387 Russell Senate Office Building",
         "phone": "202-224-3041"
+      }
+    ]
+  },
+  {
+    "id": {
+      "bioguide": "P000622",
+      "fec": [
+        "H6FL01390"
+      ],
+      "votesmart": 67909,
+      "cspan": 135015,
+      "wikipedia": "Jimmy Patronis",
+      "wikidata": "Q6201036",
+      "govtrack": 457034,
+      "ballotpedia": "Jimmy Patronis",
+      "house_history": 36507226671,
+      "google_entity_id": "kg:/m/03d5p39"
+    },
+    "name": {
+      "first": "Jimmy",
+      "middle": "Theo",
+      "last": "Patronis",
+      "suffix": "Jr.",
+      "official_full": "Jimmy Patronis"
+    },
+    "bio": {
+      "gender": "M",
+      "birthday": "1972-04-13"
+    },
+    "terms": [
+      {
+        "type": "rep",
+        "start": "2025-04-02",
+        "end": "2027-01-03",
+        "state": "FL",
+        "district": 1,
+        "party": "Republican",
+        "url": "https://patronis.house.gov",
+        "contact_form": "https://patronis.house.gov/contact/email-me",
+        "address": "2021 Rayburn House Office Building Washington DC 20515-0901",
+        "office": "2021 Rayburn House Office Building",
+        "phone": "202-225-4136"
+      }
+    ]
+  },
+  {
+    "id": {
+      "bioguide": "F000484",
+      "fec": [
+        "H6FL06258"
+      ],
+      "votesmart": 172909,
+      "wikipedia": "Randy Fine",
+      "wikidata": "Q59240328",
+      "govtrack": 457035,
+      "ballotpedia": "Randy Fine",
+      "house_history": 36507226672,
+      "google_entity_id": "kg:/g/11fhvxds1p"
+    },
+    "name": {
+      "first": "Randall",
+      "middle": "Adam",
+      "nickname": "Randy",
+      "last": "Fine",
+      "official_full": "Randy Fine"
+    },
+    "bio": {
+      "gender": "M",
+      "birthday": "1974-04-20"
+    },
+    "terms": [
+      {
+        "type": "rep",
+        "start": "2025-04-02",
+        "end": "2027-01-03",
+        "state": "FL",
+        "district": 6,
+        "party": "Republican",
+        "url": "https://fine.house.gov",
+        "contact_form": "hhttps://fine.house.gov/address_authentication?form=/contact/email-me",
+        "address": "244 Cannon House Office Building Washington DC 20515-0906",
+        "office": "244 Cannon House Office Building",
+        "phone": "202-225-2706"
+      }
+    ]
+  },
+  {
+    "id": {
+      "bioguide": "W000831",
+      "fec": [
+        "H6VA11066"
+      ],
+      "govtrack": 457036,
+      "wikipedia": "James Walkinshaw",
+      "wikidata": "Q135132001",
+      "ballotpedia": "James Walkinshaw"
+    },
+    "name": {
+      "first": "James",
+      "middle": "R.",
+      "last": "Walkinshaw"
+    },
+    "bio": {
+      "gender": "M",
+      "birthday": "1982-10-22"
+    },
+    "terms": [
+      {
+        "type": "rep",
+        "start": "2025-09-10",
+        "end": "2027-01-03",
+        "state": "VA",
+        "district": 11,
+        "party": "Democrat",
+        "address": "2265 Rayburn House Office Building Washington DC 20515-4611",
+        "office": "2265 Rayburn House Office Building",
+        "phone": "202-225-1492"
       }
     ]
   }
