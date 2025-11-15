@@ -20,13 +20,12 @@ function make_row(legislator){
     new_dict.title = new_dict.title.concat(") ")
     new_dict.html = prep_link("moc.html?bioguide=".concat(legislator.id.bioguide), new_dict.title, last_term.state).concat("")
     new_dict.body = last_term.type
+    new_dict.state = last_term.state
     return new_dict
 }
 
-function filter_states(group){
-    let state = group.id;
+function filter_states_id(state) {
     var elems = document.querySelectorAll(".legislatorbutton");
-    console.log(elems);
     [].forEach.call(elems, function(el) {
         let el_state = $(el).attr("state")
         if (el_state === state){
@@ -37,15 +36,32 @@ function filter_states(group){
     });
 }
 
-async function add_legislators() {
+function filter_states(group){
+    let state = group.id;
+    filter_states_id(state);
+}
+
+async function add_legislators(state) {
     $.getJSON("data/legislators-current.json", function (data) {
         var ll = data.map(x=>make_row(x))
         var sens = ll.filter(x=>x.body=="sen")
         var reps = ll.filter(x=>x.body=="rep")
         reps.sort((a, b) => a.sortval.localeCompare(b.sortval));
         sens.sort((a, b) => a.sortval.localeCompare(b.sortval));
-        $('#senator_links').append(sens.map(x=>x.html).join(""))
-        $('#house_links').append(reps.map(x=>x.html).join(""))
+        for (let i=0; i<sens.length; i++){
+            let html = $(sens[i].html)
+            if (state!=null && sens[i].state!=state){
+                html.hide();
+            }
+            $('#senator_links').append(html)
+        }
+        for (let i=0; i<reps.length; i++){
+            let html = $(reps[i].html)
+            if (state!=null && reps[i].state!=state){
+                html.hide();
+            }
+            $('#house_links').append(html)
+        }
     });
     return
 }
@@ -54,12 +70,12 @@ async function initialize_state(hexmap) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
     const state = decodeURI(urlParams.get('state'));
-    console.log(state)
     if (state!=null){
-        let group = hexmap.selectState(state);
+        let group = hexmap.selectState(state.toUpperCase());
         console.log(group);
         filter_states(group);
     }
+    return state
 }
 
 $(document).ready(function () { 
@@ -70,9 +86,11 @@ $(document).ready(function () {
         el.addEventListener("click", (event)=>{filter_states(el)})
     });
 
+    initialize_state(hexmap).then((r)=>{
+        console.log(r);
+        add_legislators(r);
+    })
     
-    add_legislators().then(setTimeout(()=>{
-        initialize_state(hexmap)
-    }, 10))
+    
     
 })
