@@ -106,6 +106,12 @@ class HexMap{
         group.classList.add("selected");
     }
 
+    selectState(state){
+        let group = $("#".concat(state))[0]
+        this.selectHexGroup(group);
+        return group;
+    }
+
     // individual hex calculations
     getHexGroup(svg, x, y, r, state, width) {
         var svgNS  = svg.namespaceURI, // svgNS for creating svg elements

@@ -8,6 +8,12 @@ h1 {
     text-align: center;
 }
 
+.usmap {
+    width:100%;
+    max-width: 800px;
+    margin:auto;
+}
+
 .textbox {
     margin-bottom: 50px;
     margin-left: auto;
@@ -42,6 +48,7 @@ h1 {
     text-decoration: none;
     border-radius: 10px;
     color: black;
+    float:left;
 }
 
 .navbutton:hover {

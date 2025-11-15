@@ -26,6 +26,7 @@ function make_row(legislator){
 function filter_states(group){
     let state = group.id;
     var elems = document.querySelectorAll(".legislatorbutton");
+    console.log(elems);
     [].forEach.call(elems, function(el) {
         let el_state = $(el).attr("state")
         if (el_state === state){
@@ -36,6 +37,31 @@ function filter_states(group){
     });
 }
 
+async function add_legislators() {
+    $.getJSON("data/legislators-current.json", function (data) {
+        var ll = data.map(x=>make_row(x))
+        var sens = ll.filter(x=>x.body=="sen")
+        var reps = ll.filter(x=>x.body=="rep")
+        reps.sort((a, b) => a.sortval.localeCompare(b.sortval));
+        sens.sort((a, b) => a.sortval.localeCompare(b.sortval));
+        $('#senator_links').append(sens.map(x=>x.html).join(""))
+        $('#house_links').append(reps.map(x=>x.html).join(""))
+    });
+    return
+}
+
+async function initialize_state(hexmap) {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const state = decodeURI(urlParams.get('state'));
+    console.log(state)
+    if (state!=null){
+        let group = hexmap.selectState(state);
+        console.log(group);
+        filter_states(group);
+    }
+}
+
 $(document).ready(function () { 
     let hexmap = new HexMap($("#map"));
     var elems = document.querySelectorAll(".hexstate");
@@ -44,13 +70,9 @@ $(document).ready(function () {
         el.addEventListener("click", (event)=>{filter_states(el)})
     });
 
-    $.getJSON("data/legislators-current.json", function (data) {
-                var ll = data.map(x=>make_row(x))
-                var sens = ll.filter(x=>x.body=="sen")
-                var reps = ll.filter(x=>x.body=="rep")
-                reps.sort((a, b) => a.sortval.localeCompare(b.sortval));
-                sens.sort((a, b) => a.sortval.localeCompare(b.sortval));
-                $('#senator_links').append(sens.map(x=>x.html).join(""))
-                $('#house_links').append(reps.map(x=>x.html).join(""))
-            });
+    
+    add_legislators().then(setTimeout(()=>{
+        initialize_state(hexmap)
+    }, 10))
+    
 })
