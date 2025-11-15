@@ -98,6 +98,9 @@ class HexMap{
     }
 
     selectHexGroup(group){
+        if (group==null){
+            return;
+        }
         var elems = document.querySelectorAll(".hexstate");
 
         [].forEach.call(elems, function(el) {

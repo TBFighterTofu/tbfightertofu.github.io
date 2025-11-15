@@ -36,7 +36,11 @@ function filter_states_id(state) {
     });
 }
 
+
 function filter_states(group){
+    if (group==null){
+        return;
+    }
     let state = group.id;
     filter_states_id(state);
 }
@@ -50,14 +54,14 @@ async function add_legislators(state) {
         sens.sort((a, b) => a.sortval.localeCompare(b.sortval));
         for (let i=0; i<sens.length; i++){
             let html = $(sens[i].html)
-            if (state!=null && sens[i].state!=state){
+            if (state && sens[i].state!=state){
                 html.hide();
             }
             $('#senator_links').append(html)
         }
         for (let i=0; i<reps.length; i++){
             let html = $(reps[i].html)
-            if (state!=null && reps[i].state!=state){
+            if (state && reps[i].state!=state){
                 html.hide();
             }
             $('#house_links').append(html)
@@ -69,10 +73,10 @@ async function add_legislators(state) {
 async function initialize_state(hexmap) {
     const queryString = window.location.search;
     const urlParams = new URLSearchParams(queryString);
-    const state = decodeURI(urlParams.get('state'));
-    if (state!=null){
-        let group = hexmap.selectState(state.toUpperCase());
-        console.log(group);
+    let state = decodeURI(urlParams.get('state', ""));
+    if (state){
+        state = state.toUpperCase();
+        let group = hexmap.selectState(state);
         filter_states(group);
     }
     return state
@@ -87,7 +91,9 @@ $(document).ready(function () {
     });
 
     initialize_state(hexmap).then((r)=>{
-        console.log(r);
+        if (r=="NULL"){
+            r = null;
+        }
         add_legislators(r);
     })
     
