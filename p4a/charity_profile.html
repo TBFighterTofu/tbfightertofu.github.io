@@ -65,7 +65,6 @@
         }
 
         function video_div(d, features_web, features_stream){
-            console.log(features_web)
             var vid_id = d["url"].replace(ytlink, "").replace(p4link, "")
             var classes, fcap
             if (features_stream.includes(vid_id)){
@@ -99,7 +98,6 @@
         }
 
         function year_section(year, d, features_web, features_stream){
-            console.log(year, d)
             h = ""
             h = h.concat('<div class="year_section">')
             h = h.concat("<h2 class='year_title'>", year)
@@ -117,7 +115,7 @@
                     fw = {}
                 }
                 vd = video_div(di, fw, features_stream)
-                if (year=="2025"){
+                if (year=="2026"){
                     vd = vd.replace(ytlink, p4link)
                 }
                 h = h.concat(vd)
@@ -135,7 +133,7 @@
             
 
             if (charity=="Partners in Health" || charity=="Save the Children"){
-                $('#guarantee').append("Guaranteed funding in 2025.")
+                $('#guarantee').append("Guaranteed funding in 2026.")
             }
 
             $('#page_title').append(charity)
@@ -143,7 +141,7 @@
             // FETCHING DATA FROM JSON FILE 
             $.getJSON("data/charities.json", function (data) { 
                 const summary = data[charity]
-                
+
                 const tags = summary.Tags.split(";").map(x=>"<div class=charitytag>".concat(x, "</div>")).join("")
                 $('#tags').append(tags)
                 $('#total_grants').append(summary["Total grants"])
@@ -158,7 +156,7 @@
                     $('#last_grant').append(", most recently in ".concat(summary["Most recent grant"]))
                 }
                 $('#videos').append(String(summary["Videos this year"]).concat(" video", summary["Videos this year"]==1?"":"s"))
-                $('#videos_all').append(String(summary["Videos since 2024"]).concat(" video", summary["Videos since 2024"]==1?"":"s"))
+                $('#videos_all').append(String(summary["All Videos"]).concat(" video", summary["All Videos"]==1?"":"s"))
                 if (summary["Last featured"]!="" && summary["Last featured"]!=null){
                     $('#last_feature').append("Last featured in ".concat(summary["Last featured"]))
                 }
@@ -174,9 +172,6 @@
                 }
                 else if (ein.includes("UK") || ein.includes("England")){
                     ur = "https://register-of-charities.charitycommission.gov.uk/en/charity-search/-/results/page/1/delta/20/keywords/".concat(ein.replace("UK", "").replace("England", "").replace(" ", ""))
-                    console.log(ein)
-                    console.log(ein.replace("UK", "").replace("England", ""))
-                    console.log(ur)
                     assign_span('#ukregister', ur, "UK Register")
                 }
                 // else{
@@ -185,7 +180,6 @@
                 //     pp = "https://projects.propublica.org/nonprofits/search?q=".concat(ce)
                 //     cl = "https://www.guidestar.org/search?q=".concat(ce)
                 // }
-                console.log(summary.Website)
                 if (summary.Website!="" && summary.Website!=null){
                     assign_span("#website", summary.Website, "Website")
                 }
@@ -210,20 +204,17 @@
                     features_web = data;
                 })
             ).then(function() {
-                console.log(videoData)
-                console.log(features_web)
                 var features_stream = []
                 if (videoData.hasOwnProperty(charity)){
                     const videos = videoData[charity]
-                    console.log(videos)
                     var years = Object.keys(videos)
                     years.sort((a,b)=>b-a)
                     for (let i=0; i<years.length; i++){
                         year = years[i]
                         $('#tester').append(year_section(year, videos[year], features_web, features_stream))
                     }
-                    if (years[0]==2025){
-                        assign_span("#vote", Object.keys(videos[2025]["Videos"])[0].replace(ytlink, p4link), "Vote")
+                    if (years[0]==2026){
+                        assign_span("#vote", Object.keys(videos[2026]["Videos"])[0].replace(ytlink, p4link), "Vote")
                     }
                 }            
             });
@@ -231,14 +222,11 @@
           $.when(
               $.getJSON("data/views.json", function (data) {
                 data = data.filter(x=>x.Charity==charity)
-                console.log(data)
                 for (let i=0; i<data.length; i++){
                     data[i].Timestamp = Math.round((data[i].Timestamp / (data[i].Timestamp>10**10?1000:1) - start_time0)/15)*15/60/60
                 }
-                console.log(data)
                 gb = Object.groupBy(data, x=>x.Timestamp)
                 timestamps = Object.keys(gb)
-                console.log(timestamps)
                 views = []
                 likes = []
                 comments = []

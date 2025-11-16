@@ -1,202 +1,234 @@
 ,legal,rs,category,title,x,year,Amount
-0,1.0,revenue,Revenue,P4A Income,2011 revenue,2011^,67951.84
-1,1.0,revenue,Revenue,P4A Income,2012 revenue,2012^,32923.04
-2,1.0,revenue,Revenue,Sales,2012 revenue,2012^,3837.6
-3,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2012 spending,2012^,-1245.94
-4,1.0,spending,Perk costs,Shipping supplies,2012 spending,2012^,-865.0
-5,1.0,spending,Grants,P4A Grants,2012 spending,2012^,-74951.95
-6,1.0,revenue,Revenue,Paypal other,2013 revenue,2013^,168000.0
-7,1.0,revenue,Revenue,DFTBA Royalty,2013 revenue,2013^,6985.2
-8,1.0,revenue,Revenue,P4A Income,2013 revenue,2013^,217628.37
-9,1.0,revenue,Revenue,Individual Giving,2013 revenue,2013^,50000.0
-10,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2013 spending,2013^,-15.0
-11,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2013 spending,2013^,-120.4
-12,1.0,spending,Perk costs,Perk Purchase ,2013 spending,2013^,-13076.65
-13,1.0,spending,Perk costs,Postage,2013 spending,2013^,-23645.71
-14,1.0,spending,P4A costs,Office supplies,2013 spending,2013^,-666.94
-15,1.0,spending,Business expenses,Bank Charges ,2013 spending,2013^,-36.0
-16,1.0,spending,Grants,P4A Grants,2013 spending,2013^,-364500.0
-17,1.0,spending,Perk costs,Shipping supplies,2013 spending,2013^,-4875.41
-18,1.0,spending,Perk costs,Printing,2013 spending,2013^,-14546.32
-19,1.0,revenue,Revenue,Vlogbrothers donation,2014 revenue,2014^,40255.71
-20,1.0,revenue,Revenue,Other fundraising,2014 revenue,2014^,30359.41
-21,1.0,revenue,Revenue,P4A Income,2014 revenue,2014^,662352.06
-22,1.0,revenue,Revenue,P4A Matching Funds,2014 revenue,2014^,100000.0
-23,1.0,revenue,Revenue,Paypal other,2014 revenue,2014^,54674.59
-24,1.0,revenue,Revenue,Discounts/refunds given,2014 revenue,2014^,-500.0
-25,1.0,revenue,Revenue,Individual Giving,2014 revenue,2014^,111199.94
-26,1.0,revenue,Revenue,DFTBA Royalty,2014 revenue,2014^,507.0
-27,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2014 spending,2014^,-40163.09
-28,1.0,spending,Grants,P4A Grants,2014 spending,2014^,-775446.8
-29,1.0,spending,Business expenses,Depreciation expense,2014 spending,2014^,-2503.89
-30,1.0,spending,Business expenses,Bank Charges ,2014 spending,2014^,-38.73
-31,1.0,spending,P4A costs,Website/Tech fees,2014 spending,2014^,-17.1
-32,1.0,spending,P4A costs,Travel,2014 spending,2014^,-136.18
-33,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2014 spending,2014^,-1504.11
-34,1.0,spending,Perk costs,Postage,2014 spending,2014^,-681.8
-35,1.0,spending,P4A costs,Other supplies,2014 spending,2014^,-7.99
-36,1.0,spending,P4A costs,Office supplies,2014 spending,2014^,-97.58
-37,1.0,spending,Perk costs,Shipping supplies,2014 spending,2014^,-8187.78
-38,1.0,spending,Perk costs,Perk Purchase ,2014 spending,2014^,-20632.86
-39,1.0,spending,Perk costs,Printing,2014 spending,2014^,-12205.75
-40,1.0,spending,Grants,Other grants,2014 spending,2014^,-114933.33
-41,1.0,revenue,Revenue,P4A Matching Funds,2015 revenue,2015^,200000.0
-42,1.0,revenue,Revenue,P4A Income,2015 revenue,2015^,730741.6
-43,1.0,revenue,Revenue,DFTBA Royalty,2015 revenue,2015^,887.9
-44,1.0,revenue,Revenue,Other fundraising,2015 revenue,2015^,2760.0
-45,1.0,revenue,Revenue,Individual Giving,2015 revenue,2015^,317495.25
-46,1.0,revenue,Revenue,Vlogbrothers donation,2015 revenue,2015^,63358.5
-47,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2015 spending,2015^,-51687.43
-48,1.0,spending,Credit card fees,Paypal Fees ,2015 spending,2015^,-1158.74
-49,1.0,spending,Business expenses,Depreciation expense,2015 spending,2015^,-55.0
-50,1.0,spending,Credit card fees,Shopify Fees,2015 spending,2015^,-427.94
-51,1.0,spending,Business expenses,Bank Charges ,2015 spending,2015^,-82.44
-52,1.0,spending,Perk costs,Postage,2015 spending,2015^,-45.08
-53,1.0,spending,Perk costs,Perk Purchase ,2015 spending,2015^,-10380.43
-54,1.0,spending,Perk costs,Printing,2015 spending,2015^,-96.8
-55,1.0,spending,Business expenses,Taxes & Licenses,2015 spending,2015^,-15.0
-56,1.0,spending,Perk costs,Cost of Goods Sold ,2015 spending,2015^,-2497.81
-57,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2015 spending,2015^,-3625.77
-58,1.0,spending,Grants,P4A Grants,2015 spending,2015^,-984336.72
-59,1.0,spending,Perk costs,Shipping supplies,2015 spending,2015^,-3609.63
-60,1.0,revenue,Revenue,DFTBA Royalty,2016 revenue,2016^,558.71
-61,1.0,revenue,Revenue,P4A Matching Funds,2016 revenue,2016^,141688.1
-62,1.0,revenue,Revenue,Individual Giving,2016 revenue,2016^,124733.05
-63,1.0,revenue,Revenue,P4A Income,2016 revenue,2016^,1485705.26
-64,1.0,revenue,Revenue,Vlogbrothers donation,2016 revenue,2016^,59158.79
-65,1.0,spending,P4A costs,Office supplies,2016 spending,2016^,-560.7
-66,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2016 spending,2016^,-3428.26
-67,1.0,spending,Grants,P4A Grants,2016 spending,2016^,-1090864.34
-68,1.0,spending,Perk costs,Printing,2016 spending,2016^,-23.6
-69,1.0,spending,P4A costs,Subcontractors - Foreign ,2016 spending,2016^,-400.0
-70,1.0,spending,Perk costs,Shipping supplies,2016 spending,2016^,-578.65
-71,1.0,spending,Credit card fees,Paypal Fees ,2016 spending,2016^,-1812.02
-72,1.0,spending,Business expenses,Taxes & Licenses,2016 spending,2016^,-20.0
-73,1.0,spending,Business expenses,Bank Charges ,2016 spending,2016^,-30.0
-74,1.0,spending,Business expenses,Legal & Professional Fees,2016 spending,2016^,-2983.75
-75,1.0,spending,Perk costs,Postage,2016 spending,2016^,-162.19
-76,1.0,spending,Credit card fees,Shopify Fees,2016 spending,2016^,-96.13
-77,1.0,spending,Business expenses,Depreciation expense,2016 spending,2016^,-110.0
-78,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2016 spending,2016^,-43101.83
-79,1.0,spending,Perk costs,Perk Purchase ,2016 spending,2016^,-23011.58
-80,1.0,revenue,Revenue,Individual Giving,2017 revenue,2017^,139568.74
-81,1.0,revenue,Revenue,P4A Matching Funds,2017 revenue,2017^,50000.0
-82,1.0,revenue,Revenue,DFTBA Royalty,2017 revenue,2017^,2345.99
-83,1.0,revenue,Revenue,Sales,2017 revenue,2017^,345.0
-84,1.0,revenue,Revenue,Vlogbrothers donation,2017 revenue,2017^,133525.22
-85,1.0,revenue,Revenue,P4A Income,2017 revenue,2017^,1185.28
-86,1.0,spending,P4A costs,Office supplies,2017 spending,2017^,-507.75
-87,1.0,spending,Perk costs,Printing,2017 spending,2017^,-60.48
-88,1.0,spending,Grants,P4A Grants,2017 spending,2017^,-1010845.86
-89,1.0,spending,Business expenses,Taxes & Licenses,2017 spending,2017^,-20.0
-90,1.0,spending,Business expenses,Legal & Professional Fees,2017 spending,2017^,-5125.0
-91,1.0,spending,Perk costs,Postage,2017 spending,2017^,-211.15
-92,1.0,spending,Business expenses,Depreciation expense,2017 spending,2017^,-110.0
-93,1.0,spending,Credit card fees,Paypal Fees ,2017 spending,2017^,-1842.69
-94,1.0,spending,Business expenses,Bank Charges ,2017 spending,2017^,-60.43
-95,1.0,spending,P4A costs,Supplies ,2017 spending,2017^,-58.5
-96,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2017 spending,2017^,-3726.42
-97,1.0,spending,Perk costs,Perk Purchase ,2017 spending,2017^,-21061.33
-98,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2017 spending,2017^,-53554.99
-99,1.0,revenue,Revenue,DFTBA Royalty,2018 revenue,2018^,28275.12
-100,1.0,revenue,Revenue,Discounts/refunds given,2018 revenue,2018^,-210.0
-101,1.0,revenue,Revenue,Individual Giving,2018 revenue,2018^,143190.45
-102,1.0,revenue,Revenue,P4A Income,2018 revenue,2018^,1544713.6
-103,1.0,revenue,Revenue,Vlogbrothers donation,2018 revenue,2018^,48477.96
-104,1.0,spending,Perk costs,Postage,2018 spending,2018^,-278.55
-105,1.0,spending,Credit card fees,Paypal Fees ,2018 spending,2018^,-2002.53
-106,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2018 spending,2018^,-3678.87
-107,1.0,spending,Perk costs,Shipping supplies,2018 spending,2018^,-1786.93
-108,1.0,spending,Perk costs,Perk Purchase ,2018 spending,2018^,-20904.55
-109,1.0,spending,Business expenses,Depreciation expense,2018 spending,2018^,-110.0
-110,1.0,spending,Credit card fees,IndieGogo fees,2018 spending,2018^,-134280.36
-111,1.0,spending,Business expenses,Bank Charges ,2018 spending,2018^,-40.0
-112,1.0,spending,P4A costs,Office supplies,2018 spending,2018^,-557.75
-113,1.0,spending,P4A costs,Supplies ,2018 spending,2018^,-89.47
-114,1.0,spending,Perk costs,Printing,2018 spending,2018^,-190.74
-115,1.0,spending,Business expenses,Legal & Professional Fees,2018 spending,2018^,-2496.0
-116,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2018 spending,2018^,-34974.32
-117,1.0,spending,Business expenses,Taxes & Licenses,2018 spending,2018^,-35.0
-118,1.0,spending,Grants,P4A Grants,2018 spending,2018^,-933233.71
-119,1.0,revenue,Revenue,Vlogbrothers donation,2019 revenue,2019^,23474.26
-120,1.0,revenue,Revenue,P4A Income,2019 revenue,2019^,741018.4
-121,1.0,revenue,Revenue,Individual Giving,2019 revenue,2019^,116361.79
-122,1.0,revenue,Revenue,DFTBA Royalty,2019 revenue,2019^,48624.24
-123,1.0,spending,Perk costs,Perk Purchase ,2019 spending,2019^,-24395.91
-124,1.0,spending,P4A costs,Supplies ,2019 spending,2019^,-80.82
-125,1.0,spending,Credit card fees,Merchant fees,2019 spending,2019^,-103.21
-126,1.0,spending,Business expenses,Depreciation expense,2019 spending,2019^,-110.0
-127,1.0,spending,Credit card fees,Paypal Fees ,2019 spending,2019^,-1313.71
-128,1.0,spending,Grants,P4A Grants,2019 spending,2019^,-833610.06
-129,1.0,spending,Business expenses,Legal & Professional Fees,2019 spending,2019^,-1150.0
-130,1.0,spending,Business expenses,Taxes & Licenses,2019 spending,2019^,-20.0
-131,1.0,spending,Credit card fees,IndieGogo fees,2019 spending,2019^,-65541.66
-132,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2019 spending,2019^,-1798.77
-133,1.0,spending,P4A costs,Subcontractors,2019 spending,2019^,-720.0
-134,1.0,spending,Perk costs,Postage,2019 spending,2019^,-213.9
-135,1.0,spending,P4A costs,Office supplies,2019 spending,2019^,-559.0
-136,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2019 spending,2019^,-28627.11
-137,1.0,revenue,Revenue,DFTBA Royalty,2020 revenue,2020^,1317.33
-138,1.0,revenue,Revenue,Individual Giving,2020 revenue,2020^,103692.8
-139,1.0,revenue,Revenue,Vlogbrothers donation,2020 revenue,2020^,3678.28
-140,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2020 spending,2020^,-1493.66
-141,1.0,spending,Credit card fees,IndieGogo fees,2020 spending,2020^,-1.33
-142,1.0,spending,Perk costs,Shipping supplies,2020 spending,2020^,-2156.95
-143,1.0,spending,Credit card fees,Paypal Fees ,2020 spending,2020^,-1302.79
-144,1.0,spending,P4A costs,Supplies ,2020 spending,2020^,-28.78
-145,1.0,spending,Business expenses,Depreciation expense,2020 spending,2020^,-55.0
-146,1.0,spending,Perk costs,Postage,2020 spending,2020^,-123.43
-147,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2020 spending,2020^,-29003.15
-148,1.0,spending,Business expenses,Legal & Professional Fees,2020 spending,2020^,-1150.0
-149,1.0,spending,P4A costs,Subcontractors,2020 spending,2020^,-2570.0
-150,1.0,spending,Perk costs,Perk Purchase ,2020 spending,2020^,-14334.1
-151,1.0,spending,Grants,P4A Grants,2020 spending,2020^,-780106.06
-152,1.0,spending,Business expenses,Taxes & Licenses,2020 spending,2020^,-20.0
-153,1.0,revenue,Revenue,DFTBA Royalty,2021 revenue,2021^,11640.08
-154,1.0,revenue,Revenue,P4A Matching Funds,2021 revenue,2021^,31192.0
-155,1.0,revenue,Revenue,P4A Income,2021 revenue,2021^,971230.24
-156,1.0,revenue,Revenue,Individual Giving,2021 revenue,2021^,912065.08
-157,1.0,spending,Perk costs,Shipping supplies,2021 spending,2021^,-2039.73
-158,1.0,spending,Business expenses,Taxes & Licenses,2021 spending,2021^,-20.0
-159,1.0,spending,Credit card fees,Amazon Fees,2021 spending,2021^,-1847.8
-160,1.0,spending,Credit card fees,Paypal Fees ,2021 spending,2021^,-56453.37
-161,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2021 spending,2021^,-57209.3
-162,1.0,spending,Business expenses,Legal & Professional Fees,2021 spending,2021^,-1160.0
-163,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2021 spending,2021^,-1459.32
-164,1.0,spending,Credit card fees,Merchant fees,2021 spending,2021^,-171.1
-165,1.0,spending,P4A costs,Office supplies,2021 spending,2021^,-696.36
-166,1.0,spending,Business expenses,Bank Charges ,2021 spending,2021^,-2310.62
-167,1.0,spending,Perk costs,Perk Purchase ,2021 spending,2021^,-43124.39
-168,1.0,spending,Credit card fees,Stripe Fees ,2021 spending,2021^,-78552.67
-169,1.0,spending,P4A costs,Supplies ,2021 spending,2021^,-63.63
-170,1.0,spending,P4A costs,Subcontractors,2021 spending,2021^,-800.0
-171,1.0,spending,Perk costs,Postage,2021 spending,2021^,-163.85
-172,1.0,spending,Grants,P4A Grants,2021 spending,2021^,-1695186.52
-173,1.0,revenue,Revenue,P4A Matching Funds,2022 revenue,2022^,324390.96
-174,1.0,revenue,Revenue,P4A Income,2022 revenue,2022^,1964449.08
-175,1.0,revenue,Revenue,DFTBA Royalty,2022 revenue,2022^,10520.08
-176,1.0,revenue,Revenue,Individual Giving,2022 revenue,2022^,213748.29
-177,1.0,spending,Business expenses,Legal & Professional Fees,2022 spending,2022^,-3267.5
-178,1.0,spending,Credit card fees,Paypal Fees ,2022 spending,2022^,-70018.79
-179,1.0,spending,Credit card fees,Stripe Fees ,2022 spending,2022^,-118559.91
-180,1.0,spending,Business expenses,Taxes & Licenses,2022 spending,2022^,-20.0
-181,1.0,spending,P4A costs,Subcontractors,2022 spending,2022^,-1682.5
-182,1.0,spending,P4A costs,Supplies ,2022 spending,2022^,-767.61
-183,1.0,spending,Perk costs,Perk Purchase ,2022 spending,2022^,-98955.39
-184,1.0,spending,Business expenses,Bank Charges ,2022 spending,2022^,-85.0
-185,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2022 spending,2022^,-1362.49
-186,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2022 spending,2022^,-112595.39
-187,1.0,spending,P4A costs,Subcontractors - Foreign ,2022 spending,2022^,-4381.69
-188,1.0,spending,Grants,P4A Grants,2022 spending,2022^,-2033759.3
-189,1.0,revenue,Revenue,DFTBA Royalty,2023 revenue,2023^,4858.93
-190,1.0,revenue,Revenue,Interest earned,2023 revenue,2023^,296.0
-191,1.0,revenue,Revenue,P4A Income,2023 revenue,2023^,2563668.0
-192,1.0,spending,Business expenses,Legal & Professional Fees,2023 spending,2023^,-3563.25
-193,1.0,spending,Credit card fees,Stripe Fees ,2023 spending,2023^,-171986.0
-194,1.0,spending,P4A costs,Subcontractors,2023 spending,2023^,-38654.0
-195,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2023 spending,2023^,-3547.0
-196,1.0,spending,Perk costs,Cost of Goods Sold ,2023 spending,2023^,-41420.0
-197,1.0,spending,Grants,P4A Grants,2023 spending,2023^,-2094256.0
-198,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2023 spending,2023^,-97145.0
-199,1.0,revenue,Revenue,P4A Income,2024 revenue (Website),2024*,3530889.0
-200,1.0,spending,Grants,P4A Grants,2024 spending (Pledged),2024*,-2526605.93
+0,1.0,revenue,Revenue,P4A Income,2011 revenue,2011,67951.84
+1,1.0,revenue,Revenue,P4A Income,2012 revenue,2012,32923.04
+2,1.0,revenue,Revenue,P4A Income,2013 revenue,2013,217628.37
+3,1.0,revenue,Revenue,P4A Income,2014 revenue,2014,662352.06
+4,1.0,revenue,Revenue,P4A Income,2015 revenue,2015,730741.6
+5,1.0,revenue,Revenue,P4A Income,2016 revenue,2016,1485705.26
+6,1.0,revenue,Revenue,P4A Income,2017 revenue,2017,1185.28
+7,1.0,revenue,Revenue,P4A Income,2018 revenue,2018,1544713.6
+8,1.0,revenue,Revenue,P4A Income,2019 revenue,2019,741018.4
+9,1.0,revenue,Revenue,P4A Income,2021 revenue,2021,971230.24
+10,1.0,revenue,Revenue,P4A Income,2022 revenue,2022,1964449.08
+11,1.0,revenue,Revenue,P4A Income,2023 revenue,2023,2563668.0
+12,1.0,revenue,Revenue,P4A Income,2024 revenue,2024,2881501.0
+13,1.0,revenue,Revenue,P4A Income,"2025 revenue (Website, Excluding external donors)",2025,2989918.0
+14,0.0,revenue,Revenue,External Donors,2015 revenue,2015,350000.0
+15,0.0,revenue,Revenue,External Donors,2016 revenue,2016,800000.0
+16,0.0,revenue,Revenue,External Donors,2017 revenue,2017,713500.0
+17,0.0,revenue,Revenue,External Donors,2018 revenue,2018,554022.0
+18,0.0,revenue,Revenue,External Donors,2019 revenue,2019,386606.0
+19,0.0,revenue,Revenue,External Donors,2021 revenue,2021,300000.0
+20,0.0,revenue,Revenue,External Donors,2022 revenue,2022,600000.0
+21,0.0,revenue,Revenue,External Donors,2023 revenue,2023,400000.0
+22,0.0,revenue,Revenue,External Donors,2024 revenue,2024,700000.0
+23,0.0,revenue,Revenue,External Donors,2025 revenue,2025,750000.0
+24,1.0,revenue,Revenue,Sales,2012 revenue,2012,3837.6
+25,1.0,revenue,Revenue,Individual Giving,2013 revenue,2013,50000.0
+26,1.0,revenue,Revenue,Paypal other,2013 revenue,2013,168000.0
+27,1.0,revenue,Revenue,DFTBA Royalty,2013 revenue,2013,6985.2
+28,1.0,revenue,Revenue,Vlogbrothers donation,2014 revenue,2014,40255.71
+29,1.0,revenue,Revenue,Paypal other,2014 revenue,2014,54674.59
+30,1.0,revenue,Revenue,P4A Matching Funds,2014 revenue,2014,100000.0
+31,1.0,revenue,Revenue,Other fundraising,2014 revenue,2014,30359.41
+32,1.0,revenue,Revenue,DFTBA Royalty,2014 revenue,2014,507.0
+33,1.0,revenue,Revenue,Individual Giving,2014 revenue,2014,111199.94
+34,1.0,revenue,Revenue,P4A Matching Funds,2015 revenue,2015,200000.0
+35,1.0,revenue,Revenue,Other fundraising,2015 revenue,2015,2760.0
+36,1.0,revenue,Revenue,Vlogbrothers donation,2015 revenue,2015,63358.5
+37,1.0,revenue,Revenue,Individual Giving,2015 revenue,2015,317495.25
+38,1.0,revenue,Revenue,DFTBA Royalty,2015 revenue,2015,887.9
+39,1.0,revenue,Revenue,Vlogbrothers donation,2016 revenue,2016,59158.79
+40,1.0,revenue,Revenue,P4A Matching Funds,2016 revenue,2016,141688.1
+41,1.0,revenue,Revenue,Individual Giving,2016 revenue,2016,124733.05
+42,1.0,revenue,Revenue,DFTBA Royalty,2016 revenue,2016,558.71
+43,1.0,revenue,Revenue,P4A Matching Funds,2017 revenue,2017,50000.0
+44,1.0,revenue,Revenue,Sales,2017 revenue,2017,345.0
+45,1.0,revenue,Revenue,DFTBA Royalty,2017 revenue,2017,2345.99
+46,1.0,revenue,Revenue,Vlogbrothers donation,2017 revenue,2017,133525.22
+47,1.0,revenue,Revenue,Individual Giving,2017 revenue,2017,139568.74
+48,1.0,revenue,Revenue,Vlogbrothers donation,2018 revenue,2018,48477.96
+49,1.0,revenue,Revenue,Individual Giving,2018 revenue,2018,143190.45
+50,1.0,revenue,Revenue,DFTBA Royalty,2018 revenue,2018,28275.12
+51,1.0,revenue,Revenue,Vlogbrothers donation,2019 revenue,2019,23474.26
+52,1.0,revenue,Revenue,Individual Giving,2019 revenue,2019,116361.79
+53,1.0,revenue,Revenue,DFTBA Royalty,2019 revenue,2019,48624.24
+54,1.0,revenue,Revenue,Vlogbrothers donation,2020 revenue,2020,3678.28
+55,1.0,revenue,Revenue,Individual Giving,2020 revenue,2020,103692.8
+56,1.0,revenue,Revenue,DFTBA Royalty,2020 revenue,2020,1317.33
+57,1.0,revenue,Revenue,DFTBA Royalty,2021 revenue,2021,11640.08
+58,1.0,revenue,Revenue,Individual Giving,2021 revenue,2021,912065.08
+59,1.0,revenue,Revenue,P4A Matching Funds,2021 revenue,2021,31192.0
+60,1.0,revenue,Revenue,DFTBA Royalty,2022 revenue,2022,10520.08
+61,1.0,revenue,Revenue,P4A Matching Funds,2022 revenue,2022,324390.96
+62,1.0,revenue,Revenue,Individual Giving,2022 revenue,2022,213748.29
+63,1.0,revenue,Revenue,Interest earned,2023 revenue,2023,296.0
+64,1.0,revenue,Revenue,DFTBA Royalty,2023 revenue,2023,4858.93
+65,1.0,revenue,Revenue,Interest earned,2024 revenue,2024,40835.0
+66,1.0,revenue,Revenue,Other fundraising,2024 revenue,2024,25098.0
+67,1.0,revenue,Revenue,DFTBA Royalty,2024 revenue,2024,166.0
+68,1.0,spending,Grants,P4A Grants,2012 spending,2012,-74951.95
+69,1.0,spending,Grants,P4A Grants,2013 spending,2013,-364500.0
+70,1.0,spending,Grants,P4A Grants,2014 spending,2014,-775446.8
+71,1.0,spending,Grants,P4A Grants,2015 spending,2015,-984336.72
+72,1.0,spending,Grants,P4A Grants,2016 spending,2016,-1090864.34
+73,1.0,spending,Grants,P4A Grants,2017 spending,2017,-1010845.86
+74,1.0,spending,Grants,P4A Grants,2018 spending,2018,-933233.71
+75,1.0,spending,Grants,P4A Grants,2019 spending,2019,-833610.06
+76,1.0,spending,Grants,P4A Grants,2020 spending,2020,-780106.06
+77,1.0,spending,Grants,P4A Grants,2021 spending,2021,-1695186.52
+78,1.0,spending,Grants,P4A Grants,2022 spending,2022,-2033759.3
+79,1.0,spending,Grants,P4A Grants,2023 spending,2023,-2094256.0
+80,1.0,spending,Grants,P4A Grants,2024 spending,2024,-2558145.0
+81,1.0,spending,Grants,P4A Grants,2025 spending (Pledged),2025,-2549054.0
+82,0.0,spending,Grants,External Donors,2015 spending,2015,-350000.0
+83,0.0,spending,Grants,External Donors,2016 spending,2016,-800000.0
+84,0.0,spending,Grants,External Donors,2017 spending,2017,-713500.0
+85,0.0,spending,Grants,External Donors,2018 spending,2018,-554022.0
+86,0.0,spending,Grants,External Donors,2019 spending,2019,-386606.0
+87,0.0,spending,Grants,External Donors,2021 spending,2021,-300000.0
+88,0.0,spending,Grants,External Donors,2022 spending,2022,-600000.0
+89,0.0,spending,Grants,External Donors,2023 spending,2023,-400000.0
+90,0.0,spending,Grants,External Donors,2024 spending,2024,-700000.0
+91,0.0,spending,Grants,External Donors,2025 spending,2025,-750000.0
+92,1.0,spending,Perk costs,Shipping supplies,2012 spending,2012,-865.0
+93,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2012 spending,2012,-1245.94
+94,1.0,spending,Business expenses,Bank Charges ,2013 spending,2013,-36.0
+95,1.0,spending,Perk costs,Postage,2013 spending,2013,-23645.71
+96,1.0,spending,Perk costs,Printing,2013 spending,2013,-14546.32
+97,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2013 spending,2013,-15.0
+98,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2013 spending,2013,-120.4
+99,1.0,spending,P4A costs,Office supplies,2013 spending,2013,-666.94
+100,1.0,spending,Perk costs,Perk Purchase ,2013 spending,2013,-13076.65
+101,1.0,spending,Perk costs,Shipping supplies,2013 spending,2013,-4875.41
+102,1.0,revenue,Revenue,Discounts/refunds given,2014 revenue,2014,-500.0
+103,1.0,spending,Perk costs,Postage,2014 spending,2014,-681.8
+104,1.0,spending,Perk costs,Printing,2014 spending,2014,-12205.75
+105,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2014 spending,2014,-40163.09
+106,1.0,spending,P4A costs,Office supplies,2014 spending,2014,-97.58
+107,1.0,spending,P4A costs,Other supplies,2014 spending,2014,-7.99
+108,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2014 spending,2014,-1504.11
+109,1.0,spending,P4A costs,Travel,2014 spending,2014,-136.18
+110,1.0,spending,P4A costs,Website/Tech fees,2014 spending,2014,-17.1
+111,1.0,spending,Business expenses,Bank Charges ,2014 spending,2014,-38.73
+112,1.0,spending,Business expenses,Depreciation expense,2014 spending,2014,-2503.89
+113,1.0,spending,Perk costs,Shipping supplies,2014 spending,2014,-8187.78
+114,1.0,spending,Perk costs,Perk Purchase ,2014 spending,2014,-20632.86
+115,1.0,spending,Grants,Other grants,2014 spending,2014,-114933.33
+116,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2015 spending,2015,-51687.43
+117,1.0,spending,Perk costs,Shipping supplies,2015 spending,2015,-3609.63
+118,1.0,spending,Credit card fees,Shopify Fees,2015 spending,2015,-427.94
+119,1.0,spending,Business expenses,Depreciation expense,2015 spending,2015,-55.0
+120,1.0,spending,Business expenses,Taxes & Licenses,2015 spending,2015,-15.0
+121,1.0,spending,Perk costs,Printing,2015 spending,2015,-96.8
+122,1.0,spending,Credit card fees,Paypal Fees ,2015 spending,2015,-1158.74
+123,1.0,spending,Perk costs,Postage,2015 spending,2015,-45.08
+124,1.0,spending,Perk costs,Cost of Goods Sold ,2015 spending,2015,-2497.81
+125,1.0,spending,Business expenses,Bank Charges ,2015 spending,2015,-82.44
+126,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2015 spending,2015,-3625.77
+127,1.0,spending,Perk costs,Perk Purchase ,2015 spending,2015,-10380.43
+128,1.0,spending,Business expenses,Legal & Professional Fees,2016 spending,2016,-2983.75
+129,1.0,spending,P4A costs,Subcontractors - Foreign ,2016 spending,2016,-400.0
+130,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2016 spending,2016,-43101.83
+131,1.0,spending,Business expenses,Bank Charges ,2016 spending,2016,-30.0
+132,1.0,spending,Business expenses,Depreciation expense,2016 spending,2016,-110.0
+133,1.0,spending,Perk costs,Perk Purchase ,2016 spending,2016,-23011.58
+134,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2016 spending,2016,-3428.26
+135,1.0,spending,Perk costs,Printing,2016 spending,2016,-23.6
+136,1.0,spending,P4A costs,Office supplies,2016 spending,2016,-560.7
+137,1.0,spending,Perk costs,Postage,2016 spending,2016,-162.19
+138,1.0,spending,Business expenses,Taxes & Licenses,2016 spending,2016,-20.0
+139,1.0,spending,Perk costs,Shipping supplies,2016 spending,2016,-578.65
+140,1.0,spending,Credit card fees,Paypal Fees ,2016 spending,2016,-1812.02
+141,1.0,spending,Credit card fees,Shopify Fees,2016 spending,2016,-96.13
+142,1.0,spending,P4A costs,Supplies ,2017 spending,2017,-58.5
+143,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2017 spending,2017,-53554.99
+144,1.0,spending,Perk costs,Postage,2017 spending,2017,-211.15
+145,1.0,spending,Credit card fees,Paypal Fees ,2017 spending,2017,-1842.69
+146,1.0,spending,Perk costs,Printing,2017 spending,2017,-60.48
+147,1.0,spending,Perk costs,Perk Purchase ,2017 spending,2017,-21061.33
+148,1.0,spending,Business expenses,Taxes & Licenses,2017 spending,2017,-20.0
+149,1.0,spending,Business expenses,Bank Charges ,2017 spending,2017,-60.43
+150,1.0,spending,P4A costs,Office supplies,2017 spending,2017,-507.75
+151,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2017 spending,2017,-3726.42
+152,1.0,spending,Business expenses,Depreciation expense,2017 spending,2017,-110.0
+153,1.0,spending,Business expenses,Legal & Professional Fees,2017 spending,2017,-5125.0
+154,1.0,revenue,Revenue,Discounts/refunds given,2018 revenue,2018,-210.0
+155,1.0,spending,Perk costs,Postage,2018 spending,2018,-278.55
+156,1.0,spending,Credit card fees,Paypal Fees ,2018 spending,2018,-2002.53
+157,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2018 spending,2018,-3678.87
+158,1.0,spending,P4A costs,Supplies ,2018 spending,2018,-89.47
+159,1.0,spending,Business expenses,Bank Charges ,2018 spending,2018,-40.0
+160,1.0,spending,Business expenses,Legal & Professional Fees,2018 spending,2018,-2496.0
+161,1.0,spending,Business expenses,Taxes & Licenses,2018 spending,2018,-35.0
+162,1.0,spending,Credit card fees,IndieGogo fees,2018 spending,2018,-134280.36
+163,1.0,spending,P4A costs,Office supplies,2018 spending,2018,-557.75
+164,1.0,spending,Perk costs,Printing,2018 spending,2018,-190.74
+165,1.0,spending,Perk costs,Perk Purchase ,2018 spending,2018,-20904.55
+166,1.0,spending,Perk costs,Shipping supplies,2018 spending,2018,-1786.93
+167,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2018 spending,2018,-34974.32
+168,1.0,spending,Business expenses,Depreciation expense,2018 spending,2018,-110.0
+169,1.0,spending,Business expenses,Taxes & Licenses,2019 spending,2019,-20.0
+170,1.0,spending,Credit card fees,Merchant fees,2019 spending,2019,-103.21
+171,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2019 spending,2019,-1798.77
+172,1.0,spending,P4A costs,Supplies ,2019 spending,2019,-80.82
+173,1.0,spending,Perk costs,Postage,2019 spending,2019,-213.9
+174,1.0,spending,Business expenses,Legal & Professional Fees,2019 spending,2019,-1150.0
+175,1.0,spending,Business expenses,Depreciation expense,2019 spending,2019,-110.0
+176,1.0,spending,P4A costs,Subcontractors,2019 spending,2019,-720.0
+177,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2019 spending,2019,-28627.11
+178,1.0,spending,Perk costs,Perk Purchase ,2019 spending,2019,-24395.91
+179,1.0,spending,Credit card fees,IndieGogo fees,2019 spending,2019,-65541.66
+180,1.0,spending,P4A costs,Office supplies,2019 spending,2019,-559.0
+181,1.0,spending,Credit card fees,Paypal Fees ,2019 spending,2019,-1313.71
+182,1.0,spending,P4A costs,Supplies ,2020 spending,2020,-28.78
+183,1.0,spending,Business expenses,Depreciation expense,2020 spending,2020,-55.0
+184,1.0,spending,Credit card fees,Paypal Fees ,2020 spending,2020,-1302.79
+185,1.0,spending,Business expenses,Legal & Professional Fees,2020 spending,2020,-1150.0
+186,1.0,spending,Business expenses,Taxes & Licenses,2020 spending,2020,-20.0
+187,1.0,spending,P4A costs,Subcontractors,2020 spending,2020,-2570.0
+188,1.0,spending,Perk costs,Perk Purchase ,2020 spending,2020,-14334.1
+189,1.0,spending,Credit card fees,IndieGogo fees,2020 spending,2020,-1.33
+190,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2020 spending,2020,-1493.66
+191,1.0,spending,Perk costs,Shipping supplies,2020 spending,2020,-2156.95
+192,1.0,spending,Perk costs,Postage,2020 spending,2020,-123.43
+193,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2020 spending,2020,-29003.15
+194,1.0,spending,P4A costs,Subcontractors,2021 spending,2021,-800.0
+195,1.0,spending,Credit card fees,Merchant fees,2021 spending,2021,-171.1
+196,1.0,spending,Perk costs,Shipping supplies,2021 spending,2021,-2039.73
+197,1.0,spending,Credit card fees,Amazon Fees,2021 spending,2021,-1847.8
+198,1.0,spending,Credit card fees,Paypal Fees ,2021 spending,2021,-56453.37
+199,1.0,spending,P4A costs,Office supplies,2021 spending,2021,-696.36
+200,1.0,spending,Business expenses,Legal & Professional Fees,2021 spending,2021,-1160.0
+201,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2021 spending,2021,-57209.3
+202,1.0,spending,Perk costs,Perk Purchase ,2021 spending,2021,-43124.39
+203,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2021 spending,2021,-1459.32
+204,1.0,spending,Business expenses,Taxes & Licenses,2021 spending,2021,-20.0
+205,1.0,spending,P4A costs,Supplies ,2021 spending,2021,-63.63
+206,1.0,spending,Perk costs,Postage,2021 spending,2021,-163.85
+207,1.0,spending,Credit card fees,Stripe Fees ,2021 spending,2021,-78552.67
+208,1.0,spending,Business expenses,Bank Charges ,2021 spending,2021,-2310.62
+209,1.0,spending,Business expenses,Taxes & Licenses,2022 spending,2022,-20.0
+210,1.0,spending,Business expenses,Legal & Professional Fees,2022 spending,2022,-3267.5
+211,1.0,spending,Perk costs,Perk Purchase ,2022 spending,2022,-98955.39
+212,1.0,spending,Credit card fees,Stripe Fees ,2022 spending,2022,-118559.91
+213,1.0,spending,P4A costs,Subcontractors,2022 spending,2022,-1682.5
+214,1.0,spending,Credit card fees,Paypal Fees ,2022 spending,2022,-70018.79
+215,1.0,spending,P4A costs,Subcontractors - Foreign ,2022 spending,2022,-4381.69
+216,1.0,spending,P4A costs,Supplies ,2022 spending,2022,-767.61
+217,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2022 spending,2022,-112595.39
+218,1.0,spending,Business expenses,Bank Charges ,2022 spending,2022,-85.0
+219,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2022 spending,2022,-1362.49
+220,1.0,spending,Credit card fees,Stripe Fees ,2023 spending,2023,-171986.0
+221,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2023 spending,2023,-3547.0
+222,1.0,spending,Business expenses,Legal & Professional Fees,2023 spending,2023,-3563.25
+223,1.0,spending,Perk costs,Cost of Goods Sold ,2023 spending,2023,-41420.0
+224,1.0,spending,P4A costs,Subcontractors,2023 spending,2023,-38654.0
+225,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2023 spending,2023,-97145.0
+226,1.0,spending,Perk costs,Shipping and Fulfillment Expense ,2024 spending,2024,-99873.0
+227,1.0,spending,P4A costs,Other supplies,2024 spending,2024,-1255.0
+228,1.0,spending,Credit card fees,Merchant fees,2024 spending,2024,-157586.0
+229,1.0,spending,P4A costs,Subcontractors,2024 spending,2024,-112107.0
+230,1.0,spending,Perk costs,Cost of Goods Sold ,2024 spending,2024,-74658.0
+231,1.0,spending,Business expenses,Legal & Professional Fees,2024 spending,2024,-9833.0
+232,1.0,spending,P4A costs,"Software, Services & Subscriptions ",2024 spending,2024,-4301.0

@@ -22,7 +22,7 @@ def import_videos(names: list[str]):
     f0 = pd.read_csv(Path(__file__).parent.parent / "data" / "videos.csv")
     f0["views"] = f0["views"].fillna(0)
     current_year = f0.Year.max()
-    d = dict([n, {VIDEOS_THIS_YEAR:0, "Videos since 2024":0}] for n in names)
+    d = dict([n, {VIDEOS_THIS_YEAR:0, "All Videos":0}] for n in names)
     dl =  {}
     for i,row in f0.iterrows():
         name = row["Charity"]
@@ -31,7 +31,7 @@ def import_videos(names: list[str]):
         else:
             if row["Year"]==current_year:
                 d[name][VIDEOS_THIS_YEAR] += 1
-            d[name]["Videos since 2024"] += 1
+            d[name]["All Videos"] += 1
             if name not in dl:
                 dl[name] = {}
             year = int(row["Year"])
@@ -55,19 +55,11 @@ def combine_dicts(dl, features):
 
 
 def import_charities():
-    f0 = pd.read_csv(Path(__file__).parent.parent / "data" / "charities.csv", header=[0,1,2])
-    columns = []
+    f0 = pd.read_csv(Path(__file__).parent.parent / "data" / "charities.csv", header=[0])
     years = []
-    year = ""
     for key in f0.keys():
-        if "Unnamed" not in key[0] and len(key[0])==4 and key[0][0]=="2":
-            year = key[0]
-            years.append(year)
-        if "Unnamed" in key[1]:
-            columns.append(key[0])
-        else:
-            columns.append(year+"/"+key[1])
-    f0.columns = columns
+        if "Pledged" in key:
+            years.append(key.split(" ")[0])
     charities = []
     names = []
     grants = []
@@ -87,17 +79,17 @@ def import_charities():
         cd = {"Charity": cname, "Website": row["Website"], "Passthrough":row["Passthrough"], "EIN":row["EIN"], "Tags":row["Tags"], "Annual Revenue":row["Annual Revenue"]}
         features[cname] = []
         for year in years:
-            ftag = f"{year}/Featured"
+            ftag = f"{year} Featured"
             if ftag in row:
                 if not pd.isna(row[ftag]):
                     cd["Last featured"] = year
                     features[cname].append(year)
             if year==str(CURRENT_YEAR) or (year==str(CURRENT_YEAR-1) and datetime.now().month<6):
-                col = f"{year}/Pledged"
+                col = f"{year} Pledged"
             else:
-                col = f"{year}/Form 990"
+                col = f"{year} Form 990"
                 if col not in row:
-                    col = f"{year}/Pledged"
+                    col = f"{year} Pledged"
             val = row[col]
             if not pd.isna(val):
                 if isinstance(val, str):
@@ -123,7 +115,7 @@ def import_charities():
         json.dump(dlo, f)
     for charity in charities:
         charity["Videos this year"] = vd[charity["Charity"]]["Videos this year"]
-        charity["Videos since 2024"] = vd[charity["Charity"]]["Videos since 2024"]
+        charity["All Videos"] = vd[charity["Charity"]]["All Videos"]
     charitydf = pd.DataFrame(charities)
     charitydf.sort_values(by=["Total grants", "Most recent grant"], ascending=False, ignore_index=True, inplace=True)
 
