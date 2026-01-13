@@ -2,7 +2,7 @@ import pandas as pd
 from pathlib import Path
 import json
 
-DATA_FOLDER = Path(__file__).parent.parent / "data"
+DATA_FOLDER = Path(__file__).parent.parent / "data" / "grants"
 
 def key(row):
     if pd.isna(row.State) or row.State=="":

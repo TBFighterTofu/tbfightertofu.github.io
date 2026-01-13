@@ -46,7 +46,7 @@ function filter_states(group){
 }
 
 async function add_legislators(state) {
-    $.getJSON("data/legislators-current.json", function (data) {
+    $.getJSON("data/members/legislators-current.json", function (data) {
         var ll = data.map(x=>make_row(x))
         var sens = ll.filter(x=>x.body=="sen")
         var reps = ll.filter(x=>x.body=="rep")

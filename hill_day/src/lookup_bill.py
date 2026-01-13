@@ -6,11 +6,13 @@ from pathlib import Path
 import json
 from bs4 import BeautifulSoup
 from xml.etree import ElementTree
+from dotenv import load_dotenv, dotenv_values 
 
+load_dotenv() 
 API_KEY = os.environ.get('GOV_TOKEN')
 
 data_folder = Path(__file__).parent.parent / "data" / "bills"
-LEGFOLDER = Path(__file__).parent.parent / "data"
+LEGFOLDER = Path(__file__).parent.parent / "data" / "members"
 with open(LEGFOLDER / "legislators-current.json") as f:
     LEGISLATORS = json.load(f)
 with open(LEGFOLDER / "legislators-historical.json") as f:
@@ -37,8 +39,15 @@ def find_roll_calls(congress: int, bill_type: Literal["hr", "s"], bill_number: i
             strip_link(link, d)
         return d
     
-def find_bioguide(member: ElementTree) -> str:
-    lis = member.find("lis_member_id").text
+def find_bioguide(member: ElementTree.Element) -> str:
+    lid_member = member.find("lis_member_id")
+    if lid_member is not None:
+        lis = lid_member.text
+    else:
+        print(member.keys())
+        nameid = member.find("name-id")
+        if nameid is not None:
+            return nameid.text
     for lgroup in [LEGISLATORS, LEGISLATORS_H]:
         for legislator in lgroup:
             if "lis" in legislator["id"]:
@@ -52,12 +61,22 @@ def extract_rolls(out: dict) -> None:
     out["rolls"] = {}
     for action in out["actions"]["actions"]:
         if "recordedVotes" in action:
-            url = action["recordedVotes"][0]["url"]
-            response = requests.get(url)
-            tree = ElementTree.fromstring(response.content)
-            members = tree.find("members")
-            for member in members:
-                out["rolls"][find_bioguide(member)] = member.find("vote_cast").text
+            action_text = action["text"]
+            if action_text.startswith("Passed"):
+                url = action["recordedVotes"][0]["url"]
+                response = requests.get(url)
+                # print(response.content[:1000])
+                tree = ElementTree.fromstring(response.content)
+                members = tree.find("members")
+                if members is not None:
+                    for member in members:
+                        out["rolls"][find_bioguide(member)] = member.find("vote_cast").text
+                else:
+                    tree = tree.find("vote-data")
+                    members = tree.findall("recorded-vote")
+                    if members is not None:
+                        for member in members:
+                            out["rolls"][(member.find("legislator")).get("name-id")] = member.find("vote").text
 
 def ba(bill_type):
     if "amdt" in bill_type:
@@ -102,7 +121,7 @@ if __name__=="__main__":
             #  (118, 'sres', 743),
             #  (118, 'sres', 684), 
             #  (118, 'sres', 258),
-            (118, 'sres', 95),
+            # (118, 'sres', 95),
 
             #  (118, 'hr', 1776), 
             #  (118, 'hr', 2940),
@@ -114,7 +133,7 @@ if __name__=="__main__":
             #  (118, 'hres', 1314),
             #  (118, 'hres', 1286),
             #  (118, 'hres', 526),
-            (118, 'hres', 204),
+            # (118, 'hres', 204),
              
             #  (117, 's', 4662),
             #  (117, 's', 4486),
@@ -136,7 +155,7 @@ if __name__=="__main__":
 
             #  (117, 'hres', 490),
             #  (117, 'hres', 1195),
-            (117, 'hres', 1373),
+            # (117, 'hres', 1373),
 
             #  (116, 's', 4819),
             #  (116, 's', 3829),
@@ -191,6 +210,7 @@ if __name__=="__main__":
             #  (107, 's', 1115),
 
             #  (101, 'hr', 4273),
+            (119, "hr", 4)
              ]
     for b in blist:
         congress = b[0]
@@ -199,3 +219,4 @@ if __name__=="__main__":
         fname = data_folder / f"{congress}_{bill_type}_{bill_number}.json"
         # if not fname.exists():
         bill_info(congress, bill_type, bill_number)
+

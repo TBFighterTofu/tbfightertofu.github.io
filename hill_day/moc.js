@@ -146,7 +146,6 @@ function year_section(data, legislator, good){
 
 function letter_section(data, legislator){
     if (!in_office(data, legislator)){
-        console.log('not in office')
         return ""
     }
     var summary = data.summaries.summaries
@@ -194,7 +193,7 @@ function get_bills(legislator){
         })
     }
 
-    var bad = ["119_samdt_1266"]
+    var bad = ["119_samdt_1266", "119_hr_4"]
     for (let i=0; i<bad.length; i++){
         $.getJSON("data/bills/".concat(bad[i], ".json"), function (data) {
         $('#'.concat(bad[i])).append(year_section(data, legislator, false))
@@ -203,12 +202,10 @@ function get_bills(legislator){
 }
 
 function get_letters(legislator){
-    var bills = [ "FY25FSTDCL", "FY25FSMGaNDCL", "FY25FSGFaPDCL", "FY25FHTDCl", "FY25FHMaGDCL", "FY24FSMGaNDCL", "FY24FSGFaPDCL", "FY24FHTDCl", "FY23FSMGaNDCL", "FY23FSGTDCL", "FY23FSGFaPDCL", "FY23FHTDCL", "FY22FSGTDCL", "FY22FHMGaNDCL", "FY22FHGTDCL", "FY22FHGFaPDCL", "FY21FSMGaNDCL", "FY21FSGTDCL", "FY21FSGFaPDCL", "FY21FHMGaNDCL", "FY21FHGTDCL", "FY21FHGFaPDCL", "FY20FSMGaNDCL", "FY20FSGTDCL", "FY20FSGFaPDCL", "FY20FHMGaNDCL", "FY20FHGTDCL", "FY20FHGFaPDCL", "FY19FSMGaNDCL", "FY19FSGTDCL", "FY19FSGFaPDCL", "FY19FHMGaNDCL", "FY19FHGTDCL", "FY19FHGFaPDCL", "FY23JLftUNHLMT"];
+    var bills = ["FY26FSPGFDC", "FY26FSMaCHNaGDC", "FY26FSGTDC", "FY26FHTDC", "FY26FHMaCHNaGDC", "FY26FHGFtFATaMDC", "FY25FSTDCL", "FY25FSMGaNDCL", "FY25FSGFaPDCL", "FY25FHTDCl", "FY25FHMaGDCL", "FY24FSMGaNDCL", "FY24FSGFaPDCL", "FY24FHTDCl", "FY23FSMGaNDCL", "FY23FSGTDCL", "FY23FSGFaPDCL", "FY23FHTDCL", "FY22FSGTDCL", "FY22FHMGaNDCL", "FY22FHGTDCL", "FY22FHGFaPDCL", "FY21FSMGaNDCL", "FY21FSGTDCL", "FY21FSGFaPDCL", "FY21FHMGaNDCL", "FY21FHGTDCL", "FY21FHGFaPDCL", "FY20FSMGaNDCL", "FY20FSGTDCL", "FY20FSGFaPDCL", "FY20FHMGaNDCL", "FY20FHGTDCL", "FY20FHGFaPDCL", "FY19FSMGaNDCL", "FY19FSGTDCL", "FY19FSGFaPDCL", "FY19FHMGaNDCL", "FY19FHGTDCL", "FY19FHGFaPDCL", "FY23JLftUNHLMT"];
     for (let i=0; i<bills.length; i++){
-        console.log(bills[i])
         $.getJSON("data/dcl/".concat(bills[i], ".json"), function (data) {
             ls = letter_section(data, legislator);
-            console.log(ls)
             $('#'.concat(bills[i])).append(ls)
         })
     }
@@ -368,7 +365,7 @@ $(document).ready(function () {
     const mode = "lines+markers"
     const colors = ["#BD4089",  "#143642", "#5DD39E","#809BCE"]
     $.when(
-        $.getJSON("data/legislators-current.json", function (data) {
+        $.getJSON("data/members/legislators-current.json", function (data) {
             for (let i=0; i<data.length; i++){
                 if (data[i].id.bioguide==bioguide){
                     legislator = data[i]
@@ -386,7 +383,6 @@ $(document).ready(function () {
                 }
                 else if (last_term.type=="rep"){
                     $('#moc_title').append("Representative from District ".concat(last_term.district));
-                    $('#119_samdt_1266').append("<ul><li>None found</li></ul>")
                 }
                 assign_span('#url', last_term.url, "Website")
                 assign_span('#govtrack', "https://www.govtrack.us/congress/members/".concat(legislator.name.first, "_", legislator.name.last, "/", legislator.id.govtrack), "GovTrack")
@@ -406,18 +402,31 @@ $(document).ready(function () {
         $.getJSON("data/state_abbrevs.json", function (data) {
             abbrevs = data
         }),
-        $.getJSON("data/grants.json", function (data){
+        $.getJSON("data/grants/grants.json", function (data){
             grants = data
         })
     ).then(function (){
         get_bills(legislator)
         get_letters(legislator)
         get_terms(legislator)
-        var state = abbrevs[last_term.state]
+        var state_code = last_term.state
+        var state = abbrevs[state_code]
         $('#case_header').append(" in ", state)
-        var case_rates = cases[state]
+        var case_rates = cases[state_code]
         var years = case_rates.Year.length
         $('#case_count').append("In ".concat(case_rates.Year[years-1], ", there were <b>", case_rates.Cases[years-1], " active </b> cases, or <b>", case_rates["Rate per 100000"][years-1], " active </b> cases per 100,000 people."))
+        if (case_rates.counties!=null) {
+            var formatted_counties = []
+            for (const [key, val] of Object.entries(case_rates.counties)){
+                formatted_counties.push("<li>".concat(key, ": <b>", val, "</b></li>"))
+            }
+            formatted_counties.sort()
+            $('#counties').append("Known county case rates in 2023: ")
+            $('#countylist').append("<ul>".concat(formatted_counties.join("\n"), "</ul>"))
+        } else {
+            $('#counties').append("No county-level case rates found. ")
+        }
+        
         $('#latent_count').append("".concat(state, " has <b>", case_rates.latent_cases, " latent</b> TB cases, or <b>", (case_rates.latent_pct*1000).toLocaleString(), " latent</b> TB cases per 100,000 people."))
         var case_line = {
                 "x":case_rates.Year,
@@ -464,17 +473,17 @@ $(document).ready(function () {
 
     var committee_members, committees
     $.when(
-        $.getJSON("data/committees-current.json", function (data){
+        $.getJSON("data/members/committees-current.json", function (data){
             committees = data
         }),
-        $.getJSON("data/committee-membership-current.json", function(data){
+        $.getJSON("data/members/committee-membership-current.json", function(data){
             committee_members = data
         })
     ).then(function (){
         get_committees(committees, committee_members, bioguide)
     });
 
-    $.getJSON("data/legislators-social-media.json", function (data){
+    $.getJSON("data/members/legislators-social-media.json", function (data){
         for (let i=0; i<data.length; i++){
             if (data[i].id.bioguide==bioguide){
                 var social = data[i].social
