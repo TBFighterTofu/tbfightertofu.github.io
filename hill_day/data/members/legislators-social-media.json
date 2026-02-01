@@ -1401,22 +1401,6 @@
   },
   {
     "id": {
-      "bioguide": "G000551",
-      "thomas": "01708",
-      "govtrack": 400162
-    },
-    "social": {
-      "twitter": "RepRaulGrijalva",
-      "facebook": "Rep.Grijalva",
-      "youtube": "raulgrijalvaaz07",
-      "youtube_id": "UC8JZLnXS21bhNbcvpoM8O7g",
-      "twitter_id": "28602948",
-      "mastodon": "@RepRaulGrijalva@mastodon.social",
-      "instagram": "repraulgrijalva"
-    }
-  },
-  {
-    "id": {
       "bioguide": "G000386",
       "thomas": "00457",
       "govtrack": 300048
@@ -1607,21 +1591,6 @@
       "youtube_id": "UCfcbYOvdEXZNelM8T05nK-w",
       "twitter_id": "193732179",
       "instagram": "repjudychu"
-    }
-  },
-  {
-    "id": {
-      "bioguide": "C001078",
-      "thomas": "01959",
-      "govtrack": 412272
-    },
-    "social": {
-      "twitter": "GerryConnolly",
-      "facebook": "CongressmanGerryConnolly",
-      "youtube": "repconnolly",
-      "youtube_id": "UC4WG9PlmoOeSLIuyVjs-RSA",
-      "twitter_id": "78445977",
-      "instagram": "repgerryconnolly"
     }
   },
   {
@@ -2539,21 +2508,6 @@
       "youtube_id": "UCdJhDw-YbdH0RHfWK0sIfiw",
       "twitter_id": "1908143071",
       "instagram": "repguthrie"
-    }
-  },
-  {
-    "id": {
-      "bioguide": "L000578",
-      "thomas": "02100",
-      "govtrack": 412510
-    },
-    "social": {
-      "twitter": "RepLaMalfa",
-      "youtube": "RepLaMalfa",
-      "youtube_id": "UCUzz1XDn862fxirervSB2Yw",
-      "facebook": "RepLaMalfa",
-      "twitter_id": "1069124515",
-      "instagram": "repdouglamalfa"
     }
   },
   {
@@ -3979,18 +3933,6 @@
   },
   {
     "id": {
-      "bioguide": "G000590"
-    },
-    "social": {
-      "twitter": "RepMarkGreen",
-      "twitter_id": "1080477288955826176",
-      "facebook": "RepMarkGreenTN",
-      "instagram": "repmarkgreen",
-      "youtube": "UC5kpqepPIdUNaMtfGb-7MwA"
-    }
-  },
-  {
-    "id": {
       "bioguide": "G000592"
     },
     "social": {
@@ -4059,16 +4001,6 @@
       "facebook": "RepAyannaPressley",
       "instagram": "RepAyannaPressley",
       "youtube": "UCkhjut8oXdxN7HGg5eRT9Fw"
-    }
-  },
-  {
-    "id": {
-      "bioguide": "S001207"
-    },
-    "social": {
-      "twitter": "RepSherrill",
-      "twitter_id": "1080569698536878081",
-      "facebook": "RepMikieSherrill"
     }
   },
   {
@@ -4610,18 +4542,6 @@
       "twitter": "RepAshleyHinson",
       "twitter_id": "1340783304304410625",
       "facebook": "RepAshleyHinson"
-    }
-  },
-  {
-    "id": {
-      "bioguide": "G000596",
-      "govtrack": 456814
-    },
-    "social": {
-      "twitter": "RepMTG",
-      "twitter_id": "1344356576786866176",
-      "facebook": "RepMTGreene",
-      "instagram": "repmtg"
     }
   },
   {

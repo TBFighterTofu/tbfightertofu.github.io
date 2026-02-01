@@ -61,8 +61,16 @@ def convert():
                 out[state]["counties"] = {}
             out[state]["counties"][row["Geography"]] = cases
 
+    for filename in ["by_age", "by_comorbidity", "by_evaluation_reason", "by_incarceration", "by_recent_transmission", "outbreaks"]:
+        df = pd.read_csv(CASEFOLDER / f"2024_{filename}.csv", index_col = 0)
+        df.fillna(0, inplace = True)
+        for state, row in df.iterrows():
+            abbrev = lookup_abbrev(state)
+            if abbrev is not None:
+                out[abbrev][filename] = row.to_dict()
+
     with open(CASEFOLDER / "cases.json", "w") as f:
-        json.dump(out, f)
+        json.dump(out, f, indent = 4)
 
 if __name__=="__main__":
     convert()

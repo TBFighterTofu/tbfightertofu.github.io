@@ -23,21 +23,33 @@
     --accent-bg-low-opacity: rgba(188, 28, 26, 0.2);
     --accent-fg: #d7211e;
     --accent-green: #42aa8b;
+    --accent-green-hover:  #5ec3a5;
     --accent-light-blue: #1e91ce;
+    --accent-pale-blue: #a1cfe8;
     --accent-blue: #003049;
     --accent-yellow: #fdbf4a;
+    --accent-yellow-hover: #f5d497;
     box-sizing: border-box;
 }
 
 
 body {
-    background-color: var(--bg);
+    background-color: var(--accent-blue);
     font-family: "Atkinson Hyperlegible", sans-serif;
 }
 
 
+a:link {
+    color: var(--fg);
+    font-weight: bold;
+}
+
+a:visited{
+    color: var(--fg)
+}
+
 h1 {
-    color: black;
+    color: var(--fg);
     text-align: center;
 }
 
@@ -61,6 +73,11 @@ h1 {
     padding: 3rem 4rem;
     border-radius: 0.5rem;
     border: var(--aside-border);
+}
+
+.text-section {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .textbox {
@@ -93,97 +110,31 @@ h1 {
     text-align: center;
     padding: 10px;
     margin: 10px;
-    background-color: #bbd2ea;
+    background-color: var(--accent-yellow);
     text-decoration: none;
     border-radius: 10px;
-    color: black;
-    float:left;
+    color: var(--fg);
+    float: left;
+    font-weight:normal !important;
 }
 
 .navbutton:hover {
-    background-color: white;
-    color: #162a54;
+    background-color: var(--accent-yellow-hover);
+    color: var(--fg);
 }
 
-.luckybutton {
-    float: left;
-    text-align: center;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-    background-color: #bbd2ea;
-    text-decoration: none;
-    border-radius: 10px;
-    color: black;
-}
-
-.luckybutton:hover {
-    background-color: white;
-    color: #162a54;
-}
-
-.luckybutton:visited{
-    color: purple;
-}
-
-.lilbutton {
-    float: left;
-    text-align: left;
-    border-radius: 10px;
-    padding: 2px 5px 3px 5px;
-    margin: 2px;
-    background-color: #bbd2ea;
-    text-decoration: none;
-    color: black;
-    width: 100%;
-}
-
-.lilbutton:hover {
-    background-color: white;
-    color: #162a54;
-}
-
-.lilbutton:visited {
-    color: purple;
-}
-
-.charitytag {
-    background-color: #f2d8ae;
-    float: left;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
-}
-
-.liltag {
-    background-color: #edf4d4;
-    float: left;
-    border-radius: 10px;
-    padding: 2px 5px 3px 5px;
-    margin: 2px;
-    font-size: 0.9em;
-    text-decoration: none;
-}
-
-#tags {
-    margin: 0 auto;
-    float: left;
+.legislatorbutton {
+    background-color: var(--accent-pale-blue);
+    font-weight: normal !important;
 }
 
 .outertags {
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-top: 20px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.linkstack {
-    float:left
-}
 
 .subtitle {
     text-align: center;
@@ -208,29 +159,6 @@ h1 {
     border-radius: 20px;
 }
 
-.video_div {
-    width: 200px;
-    margin: 0 auto;
-    text-align: center;
-    display: inline-block;
-    font-size: 12px;
-    padding: 10px;
-    vertical-align: top;
-}
-
-.featured_web{
-    background-color: #D3FF6B;
-}
-
-.thumbnail {
-    width: 200px;
-}
-
-#tester {
-    width: 100%;
-    
-}
-
 .year_title {
     background-color: #cccccc;
     margin: 20px;
@@ -249,7 +177,7 @@ h1 {
 }
 
 details {
-    background-color: #eeeeee;
+    background-color: var(--bg2);
     padding: 10px;
     margin: 10px;
     border-radius: 5px;
@@ -259,8 +187,6 @@ details {
     pointer-events: auto;
     cursor: pointer;
 }
-
-
 
 .not-clickable > summary {
     list-style-type: circle;

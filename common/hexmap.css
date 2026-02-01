@@ -1,19 +1,19 @@
 .hexstate polygon {
-  fill: hsl(211, 53%, 70%);
+  fill: #a1cfe8;
   stroke: white;
   stroke-width: 2;
 }
 
 .hexstate:hover polygon {
-  fill: hsl(211, 38%, 57%);
+  fill:#78c8f3;
 }
 
 .selected polygon {
-  fill: hsl(348, 26%, 49%);
+  fill: #1e91ce;
 }
 
 .selected:hover polygon {
-  fill: hsl(348, 26%, 49%);
+  fill: #1e91ce;
 }
 
 .hexstate text {

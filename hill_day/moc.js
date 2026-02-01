@@ -182,7 +182,7 @@ function capitalizeFirstLetter(val) {
 
 function get_bills(legislator){
     var end_tb = ["118_hr_1776", "118_s_288", "117_hr_8654", "117_s_3386", "116_s_2438", "110_hr_1567"]
-    var farmer = ["117_hres_1373", "118-hres_204", "118_sres_95"]
+    var farmer = ["117_hres_1373", "118_hres_204", "118_sres_95"]
     var results = ['118_hres_1286', '117_hr_8057',  '116_hres_517', '116_hres_861', '115_hr_4022', '118_sres_684','117_s_1451','116_sres_511','116_s_1766', '116_sres_318',]
     var other = [ '118_s_4879', '118_s_5278', '118_s_4797', '118_hr_6705', '118_hr_10457', '118_hr_6424',  '117_s_962', '117_s_2586', '117_sres_137', '117_sres_569','117_hr_5857', '117_hr_391', '117_s_4662',  '116_s_1250', '116_s_834', '116_s_3829', '116_s_2698', '116_hr_4847', '116_hr_2401', '116_hr_3080', '116_hr_3460', '116_hr_826',   '116_sres_119',   '115_s_640', '115_sres_437', '114_s_289', '114_hr_2104', '113_s_2115', '113_sres_393', '113_hres_133', '111_sres_454', '111_hres_1155', '110_hr_1532', '110_s_1551',  '107_s_1115', '101_hr_4273']
     
@@ -299,7 +299,6 @@ function relevant_committee(comm){
 }
 
 function get_committees(committees, committee_members, bioguide){
-    var members
     var found = false
     for (const [key, members] of Object.entries(committee_members)){
         comm = find_committee(committees, key)
@@ -317,40 +316,228 @@ function get_committees(committees, committee_members, bioguide){
     }
 }
 
+function make_cases_plot(case_rates){
+    const marker_size = 10
+    const lw = 2
+    const mode = "lines+markers"
+    const colors = ["#bc1c1a",  "#003049", "#42aa8b","#1e91ce"]
+    const case_line = {
+            "x":case_rates.Year,
+            "y":case_rates.Cases,
+            "line":{"color":colors[1], "width":lw},
+            "marker":{
+                "color":colors[1],
+                "symbol":"triangle-right-open",
+                "size":marker_size,
+                "line":{"width":lw}
+            },
+            "mode":mode,
+            "name":"Cases"
+        };
+    const rate_line = {
+            "x":case_rates.Year,
+            "y":case_rates["Rate per 100000"],
+            "line":{"color":colors[0], "width":lw},
+            "marker":{
+                "color":colors[0],
+                "symbol":"square-open",
+                "size":marker_size,
+                "line":{"width":lw}
+            },
+            "yaxis":"y2",
+            "mode":mode,
+            "name":"Rate per 100,000"
+        };
+    const dat = [case_line, rate_line]
+    var lay = default_layout("Cases over time")
+    lay["xaxis"]={"title":{"text":"Year"}, "zeroline":false, "showline":false}
+    lay["yaxis2"]= {"title": {"text": 'Rate per 100,000'}, "overlaying": 'y', "side": 'right',"zeroline":false, "rangemode":"tozero"}
+    lay["yaxis"]={"title":{"text":"Cases"}, "showline":false, "rangemode":"tozero"}
+    lay["legend"]={"x": 0.5, "xanchor": 'center', "y": 1, "yanchor":"bottom","orientation":"h", "font":{"size":20}}
+    var case_plot = document.getElementById('case_plot');
+    Plotly.newPlot(case_plot, dat, lay, {responsive:true} );
+}
 
-function make_plot(case_line, rate_line){
-        var dat = [case_line, rate_line]
-        var lay = {"xaxis":{
-                    "title":{"text":"Year"},
-                    "zeroline":false,
-                    "showline":false
-                    },
-                    "yaxis2": {
-                    "title": {
-                        "text": 'Rate per 100,000'
-                    },
-                    "overlaying": 'y',
-                    "side": 'right',
-                    "zeroline":false,
-                    "rangemode":"tozero"
-                    }, 
-                    "yaxis":{
-                    "title":{"text":"Cases"},
-                    "showline":false,
-                    "rangemode":"tozero"
-                    },
-                    "legend": {
-                    "x": 0.5,
-                    "xanchor": 'center',
-                    "y": 1,
-                    "yanchor":"bottom",
-                    "orientation":"h",
-                    "font":{"size":20}
-                    }
-                }
-        TESTER = document.getElementById('plot');
-        Plotly.newPlot( TESTER, dat, lay, {responsive:true} );
+function make_bar_plot(by_age, tag, title, color) {
+    const yvalue = Object.values(by_age)
+    const age_dat =  [
+            {
+                "x": Object.keys(by_age),
+                "y": yvalue,
+                "marker": {"color": color},
+                "type": "bar",
+                text: yvalue.map(String),
+            }
+        ];
+    let age_lay = default_layout(title);
+    age_lay["yaxis"] = {"title": {"text": "Cases"}}
+    age_lay["barcornerradius"] = 5
+    var age_plot = document.getElementById(tag);
+    Plotly.newPlot(age_plot, age_dat, age_lay, {responsive:true} );
+}
+
+function default_layout(title) {
+    return {
+        "title": {"text": title},
+        paper_bgcolor:"rgba(0,0,0,0)",
+        plot_bgcolor: "rgba(0,0,0,0)",
+        font: {
+            family: '"Atkinson Hyperlegible", sans-serif',
+            size: 16,
+            color: '#121212'
+        }
     }
+}
+
+function make_transmission(case_rates) {
+    const by_recent = case_rates.by_recent_transmission;
+    const recent = by_recent["% attributed to recent transmission, 2023-2024"];
+    const not_recent = by_recent["% not attributed to recent transmission, 2023-2024"];
+    const dat =  [
+            {
+                "values": [recent, not_recent],
+                "labels": ["Attributed to recent transmission", "Not attributed to recent transmission"],
+                "marker": {"colors": ["#bc1c1a", "#003049"]},
+                "type": "pie",
+                "hole": 0.4,
+                textinfo: "percent",
+                textposition: "inside",
+                automargin: true
+            }
+        ];
+    const lay = default_layout("Cases by time of transmission");
+    var plot_div = document.getElementById("recent_transmission_plot");
+    Plotly.newPlot(plot_div, dat, lay, {responsive:true} );
+}
+
+function add_topmatter(legislator, last_term) {
+    $('#page_title').append(legislator.name.official_full)
+    $('#page_title').append(" (".concat(last_term.party[0], " - ", last_term.state, ")"))
+    if (last_term.type=="sen"){
+        $('#moc_title').append(capitalizeFirstLetter(last_term.state_rank).concat(" Senator"))
+    }
+    else if (last_term.type=="rep"){
+        $('#moc_title').append("Representative from District ".concat(last_term.district));
+    }
+    assign_span('#url', last_term.url, "Website")
+    assign_span('#govtrack', "https://www.govtrack.us/congress/members/".concat(legislator.name.first, "_", legislator.name.last, "/", legislator.id.govtrack), "GovTrack")
+    assign_span('#opensecrets', "https://www.opensecrets.org/members-of-congress/summary?cid=".concat(legislator.id.opensecrets, "&cycle=2022"), "OpenSecrets")
+    assign_span("#congress", "https://www.congress.gov/member/".concat(legislator.name.first.toLowerCase(), "-", legislator.name.last.toLowerCase(), "/", legislator.id.bioguide), "Congress.gov")
+    if (last_term.hasOwnProperty("contact_form")){
+        assign_span("#contact", last_term.contact_form, "Contact")
+    }
+    $('#phone').append(last_term.phone)
+    $('#address').append(last_term.address)  
+}
+
+function add_county_rates(case_rates) {
+    if (case_rates.counties!=null) {
+        var formatted_counties = []
+        for (const [key, val] of Object.entries(case_rates.counties)){
+            formatted_counties.push("<li>".concat(key, ": <b>", val, "</b></li>"))
+        }
+        formatted_counties.sort()
+        $('#counties').append("Known county case rates in 2023: ")
+        $('#countylist').append("<ul>".concat(formatted_counties.join("\n"), "</ul>"))
+    } else {
+        $('#counties').append("No county-level case rates found. ")
+    }
+}
+
+function add_comorbidity(case_rates, last_cases) {
+    const comorbidity = case_rates.by_comorbidity;
+    var cmstrs = "In 2024, of the ".concat(last_cases, ' people with TB: <sup><a href="#cdcref">7</a></sup><ul>')
+    for (const [key, val] of Object.entries(comorbidity)) {
+        cmstrs = cmstrs.concat("<li><b>".concat(val, "</b> people had ", key, "</li>"))
+    }
+    cmstrs = cmstrs.concat("</ul>")
+    $('#comorbidity').append(cmstrs)
+}
+
+function add_evaluation(case_rates, last_cases) {
+    const er = case_rates.by_evaluation_reason;
+    var cmstrs = "In 2024, of the ".concat(last_cases, ' people with TB: <sup><a href="#cdcref">7</a></sup><ul>')
+    for (const [key, val] of Object.entries(er)) {
+        cmstrs = cmstrs.concat("<li><b>".concat(val, "</b> people were evaluated because of ", key, "</li>"))
+    }
+    cmstrs = cmstrs.concat("</ul>")
+    $('#evaluation_reason').append(cmstrs)
+}
+
+function add_incarceration(case_rates) {
+    const incarceration = case_rates.by_incarceration;
+    var cmstrs = 'In 2024, of the people with TB with a known incarceration status: <sup><a href="#cdcref">7</a></sup><ul>'
+    cmstrs = cmstrs.concat("<li>At least <b>".concat(incarceration["No. with history of incarceration"], "</b> people (", incarceration["% with history of incarceration"], ") had a history of incarceration.</li>"))
+    cmstrs = cmstrs.concat("<li>At least <b>".concat(incarceration["No. incarcerated at time of diagnosis"], "</b> people (", incarceration["% incarcerated at time of diagnosis"], ") were incarcerated at the time of diagnosis.</li>"))
+    cmstrs = cmstrs.concat("</ul>")
+    $('#incarceration').append(cmstrs)
+}
+
+function add_outbreaks(case_rates, state) {
+    const outbreaks = case_rates.outbreaks;
+    if (outbreaks["Large outbreaks in 2024"] > 0){
+        $('#outbreaks').append(state.concat(" had a large outbreak in 2024."))
+    } else {
+        $('#outbreaks').append(state.concat(" did not have a large outbreak in 2024."))
+    };
+}
+
+function add_case_totals(case_rates, state, last_cases, years){
+    $('#case_header').append(" in ", state)
+    $('#case_count').append("In ".concat(case_rates.Year[years-1], ", there were <b>", last_cases, " active </b> cases, or <b>", case_rates["Rate per 100000"][years-1], " active </b> cases per 100,000 people."))
+    $('#latent_count').append("".concat(state, " has <b>", case_rates.latent_cases, " latent</b> TB cases, or <b>", (case_rates.latent_pct*1000).toLocaleString(), " latent</b> TB cases per 100,000 people."))
+}
+
+function get_grants(last_term, grants){
+    var key
+    if (last_term.type=="sen"){
+        key = last_term.state
+    }
+    else{
+        key = last_term.state.concat(last_term.district)
+    }
+    if (grants.hasOwnProperty(key)){
+        $('#grants').append("<details class=not-clickable><summary>".concat(key," Fiscal Year 2024: ", grants[key], "</summary></details>"))
+    }
+    else{
+        $('#grants').append("<ul><li>None found</li></ul>")
+    }
+}
+
+function get_socials(social){
+    if (social.hasOwnProperty("twitter")){
+        assign_span('#twitter', "https://twitter.com/".concat(social.twitter), "Twitter")
+    }
+    if (social.hasOwnProperty("facebook")){
+        assign_span('#facebook', "https://facebook.com/".concat(social.facebook), "Facebook")
+    }
+    if (social.hasOwnProperty("instagram")){
+        assign_span('#instagram', "https://instagram.com/".concat(social.instagram), "Instagram")
+    }
+    if (social.hasOwnProperty("youtube")){
+        assign_span('#youtube', "https://youtube.com/@".concat(social.youtube), "YouTube")
+    }
+}
+
+function add_case_rates(last_term, abbrevs, cases) {
+    const state_code = last_term.state;
+    const state = abbrevs[state_code];
+    const case_rates = cases[state_code]
+    const years = case_rates.Year.length
+    const last_cases = case_rates.Cases[years-1]
+
+    // total counts
+    add_case_totals(case_rates, state, last_cases, years);
+    add_county_rates(case_rates);
+    add_comorbidity(case_rates, last_cases);
+    add_incarceration(case_rates);
+    add_outbreaks(case_rates, state);
+ 
+    make_cases_plot(case_rates);
+    make_bar_plot(case_rates["by_age"], "age_plot", "Cases by age", "#003049");
+    make_bar_plot(case_rates["by_evaluation_reason"], "evaluation_reason", "Cases by reason for evaluation", "#bc1c1a");
+    make_transmission(case_rates)
+}
 
 $(document).ready(function () { 
     // get charity name from the url params
@@ -360,10 +547,6 @@ $(document).ready(function () {
     var legislator = {}
     var last_term
     var cases, abbrevs, grants
-    const marker_size = 10
-    const lw = 2
-    const mode = "lines+markers"
-    const colors = ["#BD4089",  "#143642", "#5DD39E","#809BCE"]
     $.when(
         $.getJSON("data/members/legislators-current.json", function (data) {
             for (let i=0; i<data.length; i++){
@@ -376,25 +559,8 @@ $(document).ready(function () {
                 $('#page_title').append("All bills")
             }
             else{
-                $('#page_title').append(legislator.name.official_full)
-                $('#page_title').append(" (".concat(last_term.party[0], " - ", last_term.state, ")"))
-                if (last_term.type=="sen"){
-                    $('#moc_title').append(capitalizeFirstLetter(last_term.state_rank).concat(" Senator"))
-                }
-                else if (last_term.type=="rep"){
-                    $('#moc_title').append("Representative from District ".concat(last_term.district));
-                }
-                assign_span('#url', last_term.url, "Website")
-                assign_span('#govtrack', "https://www.govtrack.us/congress/members/".concat(legislator.name.first, "_", legislator.name.last, "/", legislator.id.govtrack), "GovTrack")
-                assign_span('#opensecrets', "https://www.opensecrets.org/members-of-congress/summary?cid=".concat(legislator.id.opensecrets, "&cycle=2022"), "OpenSecrets")
-                assign_span("#congress", "https://www.congress.gov/member/".concat(legislator.name.first.toLowerCase(), "-", legislator.name.last.toLowerCase(), "/", legislator.id.bioguide), "Congress.gov")
-                if (last_term.hasOwnProperty("contact_form")){
-                    assign_span("#contact", last_term.contact_form, "Contact")
-                }
-                $('#phone').append(last_term.phone)
-                $('#address').append(last_term.address)  
+                add_topmatter(legislator, last_term)
             };
-             
         }),
         $.getJSON("data/cases/cases.json", function (data) {
             cases = data;
@@ -406,69 +572,11 @@ $(document).ready(function () {
             grants = data
         })
     ).then(function (){
-        get_bills(legislator)
-        get_letters(legislator)
-        get_terms(legislator)
-        var state_code = last_term.state
-        var state = abbrevs[state_code]
-        $('#case_header').append(" in ", state)
-        var case_rates = cases[state_code]
-        var years = case_rates.Year.length
-        $('#case_count').append("In ".concat(case_rates.Year[years-1], ", there were <b>", case_rates.Cases[years-1], " active </b> cases, or <b>", case_rates["Rate per 100000"][years-1], " active </b> cases per 100,000 people."))
-        if (case_rates.counties!=null) {
-            var formatted_counties = []
-            for (const [key, val] of Object.entries(case_rates.counties)){
-                formatted_counties.push("<li>".concat(key, ": <b>", val, "</b></li>"))
-            }
-            formatted_counties.sort()
-            $('#counties').append("Known county case rates in 2023: ")
-            $('#countylist').append("<ul>".concat(formatted_counties.join("\n"), "</ul>"))
-        } else {
-            $('#counties').append("No county-level case rates found. ")
-        }
-        
-        $('#latent_count').append("".concat(state, " has <b>", case_rates.latent_cases, " latent</b> TB cases, or <b>", (case_rates.latent_pct*1000).toLocaleString(), " latent</b> TB cases per 100,000 people."))
-        var case_line = {
-                "x":case_rates.Year,
-                "y":case_rates.Cases,
-                "line":{"color":colors[1], "width":lw},
-                "marker":{
-                    "color":colors[1],
-                    "symbol":"triangle-right-open",
-                    "size":marker_size,
-                    "line":{"width":lw}
-                },
-                "mode":mode,
-                "name":"Cases"
-            };
-        var rate_line = {
-                "x":case_rates.Year,
-                "y":case_rates["Rate per 100000"],
-                "line":{"color":colors[0], "width":lw},
-                "marker":{
-                    "color":colors[0],
-                    "symbol":"square-open",
-                    "size":marker_size,
-                    "line":{"width":lw}
-                },
-                "yaxis":"y2",
-                "mode":mode,
-                "name":"Rate per 100,000"
-            };
-        make_plot(case_line, rate_line)
-        var key
-        if (last_term.type=="sen"){
-            key = last_term.state
-        }
-        else{
-            key = last_term.state.concat(last_term.district)
-        }
-        if (grants.hasOwnProperty(key)){
-            $('#grants').append("<details class=not-clickable><summary>".concat(key," Fiscal Year 2024: ", grants[key], "</summary></details>"))
-        }
-        else{
-            $('#grants').append("<ul><li>None found</li></ul>")
-        }
+        get_bills(legislator);
+        get_letters(legislator);
+        get_terms(legislator);
+        get_grants(last_term, grants);
+        add_case_rates(last_term, abbrevs, cases)
     });
 
     var committee_members, committees
@@ -487,18 +595,7 @@ $(document).ready(function () {
         for (let i=0; i<data.length; i++){
             if (data[i].id.bioguide==bioguide){
                 var social = data[i].social
-                if (social.hasOwnProperty("twitter")){
-                    assign_span('#twitter', "https://twitter.com/".concat(social.twitter), "Twitter")
-                }
-                if (social.hasOwnProperty("facebook")){
-                    assign_span('#facebook', "https://facebook.com/".concat(social.facebook), "Facebook")
-                }
-                if (social.hasOwnProperty("instagram")){
-                    assign_span('#instagram', "https://instagram.com/".concat(social.instagram), "Instagram")
-                }
-                if (social.hasOwnProperty("youtube")){
-                    assign_span('#youtube', "https://youtube.com/@".concat(social.youtube), "YouTube")
-                }
+                get_socials(social)
             }
         }
     }); 

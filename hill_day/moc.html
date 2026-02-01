@@ -5,46 +5,61 @@
     <script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
     <script src="../common/jquery-3.7.1.min.js" charset="utf-8"></script>
     <script src="./moc.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="../common/styles.css">
+    <link rel="stylesheet" href="../common/tb_styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   </head>
-  <body>
+  <body style="background-color: var(--accent-blue)">
     <div class="navbar">
-        <a class="navbutton" href="moc_list.html">All Members</a> 
-      </div>
-    <h1 id="page_title"></h1>
-    <h1 id="moc_title"></h2>
-    <div class="subtitle"><span id="terms" class="stat"></span></div>
-    <div class="outertags">
-        <div id="tags">
-            <span id="url" style="display:none"></span>
-            <span id="contact" style="display:none"></span>
-            <span id="twitter" style="display:none"></span>
-            <span id="facebook" style="display:none"></span>
-            <span id="instagram" style="display:none"></span>
-            <span id="youtube" style="display:none"></span>
+            <a class="navbutton" href="moc_list.html">All Members</a> 
         </div>
-    </div>
-    <div class="outertags">
-        <div id="tags">
-            <span id="congress" style="display:none"></span>
-            <span id="govtrack" style="display:none"></span>
-            <span id="opensecrets" style="display:none"></span>
-        </div>
-    </div>
-    <div class="subtitle"><span id="reptype" class="stat"></span></div>
-    
-    <div class="subtitle">Phone:&nbsp;<span id="phone" class="stat"></span></div>
-    <div class="subtitle">Address:&nbsp;<span id="address" class="stat"></span></div>
-    <div class="spacer" style="height:50px"></div>
-    <div style="max-width:1000px; margin:0 auto">
-        <h2 id="case_header">&#x1F4C9;Tuberculosis cases</h2>
-        <span id="case_count"></span><sup><a href="#caseref">3</a></sup><br>
-        <span id="latent_count"></span><sup><a href="#latentref">4</a></sup><br><br>
-        <span id="counties"></span><sup><a href="#caseref">3</a></sup>
-        <span id="countylist"></span>
-        <div id="plot" style="width:100%;min-height:420px"></div>
+    <div class="box-section">
         
+        <h1 id="page_title"></h1>
+        <h1 id="moc_title"></h2>
+        <div class="subtitle"><span id="terms" class="stat"></span></div>
+        <div class="outertags">
+            <div id="tags">
+                <span id="url" style="display:none"></span>
+                <span id="contact" style="display:none"></span>
+                <span id="twitter" style="display:none"></span>
+                <span id="facebook" style="display:none"></span>
+                <span id="instagram" style="display:none"></span>
+                <span id="youtube" style="display:none"></span>
+            </div>
+        </div>
+        <div class="outertags">
+            <div id="tags">
+                <span id="congress" style="display:none"></span>
+                <span id="govtrack" style="display:none"></span>
+                <span id="opensecrets" style="display:none"></span>
+            </div>
+        </div>
+        <div class="subtitle"><span id="reptype" class="stat"></span></div>
+        
+        <div class="subtitle">Phone:&nbsp;<span id="phone" class="stat"></span></div>
+        <div class="subtitle">Address:&nbsp;<span id="address" class="stat"></span></div>
+    </div>
+    <div class="box-section">
+        <h2 id="case_header">&#x1F4C9;Tuberculosis cases</h2>
+        <div class="text-section">
+            <div><span id="case_count"></span><sup><a href="#caseref">3</a>,<a href="#cdcref">7</a></sup></div>
+            <div><span id="latent_count"></span><sup><a href="#latentref">4</a></sup></div>
+            <div><span id="outbreaks"></span><sup><a href="#cdcref">7</a></sup></div>
+        </div>
+        <div id="case_plot" class="wideplot"></div>
+        
+        <div id="recent_transmission_plot" class="wideplot"></div>
+        <div id="evaluation_reason" class="wideplot"></div>
+        <div id="age_plot" class="wideplot"></div>
+
+        
+        <div id="comorbidity" class="text-section"></div>
+        <div id="incarceration" class="text-section"></div>
+        
+        <div class="text-section"><span id="counties"></span><sup><a href="#caseref">3</a></sup>
+        <div id="countylist"></div></div>
+    </div>
+    <div class="box-section">
         <h2>&#x2709;&#xFE0F;Letters<sup> <a href="#resultsref">6</a></sup></h2>
         <div id="letters">
             <div id="FY26FSPGFDC"></div>
@@ -104,9 +119,13 @@
             <div id="FY16FHGTDCL"></div>
             <div id="FY16FHGFaPDCL"></div>
         </div>
+    </div>
+        
+    <div class="box-section">
         <h2>&#x1FA91;Committees</h2>
         <div id="comms"></div>
-
+    </div>
+    <div class="box-section">
         <h2>&#x1F620;Bills that reduce foreign aid</h2>
         <div id="bad_bills">
             <div id="119_hr_4"></div>
@@ -181,22 +200,21 @@
             <div id="107_s_1115"></div>
             <div id="101_hr_4273"></div>
         </div>
+    </div>
+    <div class="box-section">
 
         <h2>&#x1F52C;NIAID grants<sup> <a href="#grantref">5</a></sup></h2>
         <span id="grants"></span>
-        
     </div>
-
-    <div class="spacer" style="height:50px"></div>
-
-    <div class="textbox">
+    <div class="box-section">
         <ol>
-            <li id="legref">Legislator info comes from <a href="https://github.com/unitedstates/congress-legislators">https://github.com/unitedstates/congress-legislators</a>, downloaded 8 March 2025.</li> 
+            <li id="legref">Legislator info comes from <a href="https://github.com/unitedstates/congress-legislators">https://github.com/unitedstates/congress-legislators</a>, downloaded 31 January 2026.</li> 
             <li id="billref">Bill info comes from the Congress.gov API (<a href="https://gpo.congress.gov/">https://gpo.congress.gov/</a>), downloaded 8 March 2025.</li>
             <li id="caseref">Case rates come from <a href="https://gis.cdc.gov/GRASP/NCHHSTPAtlas/tables.html">The CDC,</a> downloaded 28 March 2025.</li>
             <li id="latentref">Latent TB estimates come from <a href="https://doi.org/10.1371/journal.pone.0249012">Mirzazadeh A, Kahn JG, Haddad MB, Hill AN, Marks SM, et al. (2021) State-level prevalence estimates of latent tuberculosis infection in the United States by medical risk factors, demographic characteristics and nativity. PLOS ONE 16(4): e0249012.</a></li>
             <li id="grantref">Grant values come from <a href="https://report.nih.gov/award/index.cfm?ot=&fy=2024&state=USS,AL,AK,AZ,AR,CA,CO,CT,DE,DC,FL,GA,HI,ID,IL,IN,IA,KS,KY,LA,ME,MD,MA,MI,MN,MS,MO,MT,NE,NV,NH,NJ,NM,NY,NC,ND,OH,OK,OR,PA,RI,SC,SD,TN,TX,UT,VT,VA,WA,WV,WI,WY&ic=NIAID&fm=&orgid=&distr=&rfa=&om=n&pid=&view=statedetail#tab1">NIH RePORT</a>, downloaded 1 April 2025.</li>
             <li id="resultsref">Letter signatures come from <a href="https://results.org/issues/tuberculosis">RESULTS</a>.</li>
+            <li id="cdcref">2024 TB rates come from <a href="https://www.cdc.gov/tb-surveillance-report-2024/data/index.html">The CDC</a>, downloaded 31 January 2026.</li>
         </ol>
     </div>
   </body>

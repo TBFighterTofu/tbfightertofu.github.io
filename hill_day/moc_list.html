@@ -5,7 +5,7 @@
     <script src="../common/jquery-3.7.1.min.js" charset="utf-8"></script>
     <script src="../common/hexmap.js" charset="utf-8"></script>
     <script src="./moc_list.js" charset="utf-8"></script>
-    <link rel="stylesheet" href="../common/styles.css">
+    <link rel="stylesheet" href="../common/tb_styles.css">
     <link rel="stylesheet" href="../common/hexmap.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,15 +14,21 @@
   </head>
   <body>
     <div id="container" style="display: flex; flex-direction: column;">
+      <div class="box-section" style="width:100%">
         <h1 id="page_title">Members of Congress</h1>
         <div id="map" class="usmap"></div>
+      </div>
+      <div class="box-section" style="width:100%">
         <h2 style="text-align:center">Senate</h2>
         <div class="navbar" id="senator_links"style="text-align:center"></div>
+      </div>
+      <div class="box-section" style="width:100%">
         <h2 style="text-align:center">House of Representatives</h2>
         <div class="navbar" id="house_links"style="text-align:center"></div>
-        <div></div>
-
-        <div class="textbox">Legislator info comes from <a href="https://github.com/unitedstates/congress-legislators">https://github.com/unitedstates/congress-legislators</a>, downloaded 8 March 2025. Map Javascript code is courtesy of <a href="https://codepen.io/jak_e/details/aONOYM">Jake on codepen.</a></div>
+      </div>
+      <div class="box-section">
+        Legislator info comes from <a href="https://github.com/unitedstates/congress-legislators">https://github.com/unitedstates/congress-legislators</a>, downloaded 31 January 2026. Map Javascript code is courtesy of <a href="https://codepen.io/jak_e/details/aONOYM">Jake on codepen.</a>
+      </div>
     </div>
 
   </body>
