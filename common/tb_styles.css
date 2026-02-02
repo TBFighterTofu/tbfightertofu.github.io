@@ -75,6 +75,12 @@ h1 {
     border: var(--aside-border);
 }
 
+@media (max-width: 800px) { /*choose the width you prefer*/
+  .box-section {
+    padding: 0.5rem 1rem;
+  }
+}
+
 .text-section {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -97,13 +103,12 @@ h1 {
 }
 
 .navbar {
-    margin-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
 }
 
 .navbutton {

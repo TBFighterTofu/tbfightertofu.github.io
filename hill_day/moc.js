@@ -349,7 +349,8 @@ function make_cases_plot(case_rates){
             "name":"Rate per 100,000"
         };
     const dat = [case_line, rate_line]
-    var lay = default_layout("Cases over time")
+    var lay = default_layout(null)
+    lay["margin"]["r"] = 40
     lay["xaxis"]={"title":{"text":"Year"}, "zeroline":false, "showline":false}
     lay["yaxis2"]= {"title": {"text": 'Rate per 100,000'}, "overlaying": 'y', "side": 'right',"zeroline":false, "rangemode":"tozero"}
     lay["yaxis"]={"title":{"text":"Cases"}, "showline":false, "rangemode":"tozero"}
@@ -385,7 +386,8 @@ function default_layout(title) {
             family: '"Atkinson Hyperlegible", sans-serif',
             size: 16,
             color: '#121212'
-        }
+        },
+        margin: {l: 60, r: 5, t: 100, b: 120}
     }
 }
 
@@ -393,20 +395,30 @@ function make_transmission(case_rates) {
     const by_recent = case_rates.by_recent_transmission;
     const recent = by_recent["% attributed to recent transmission, 2023-2024"];
     const not_recent = by_recent["% not attributed to recent transmission, 2023-2024"];
+    console.log(recent, not_recent)
+
     const dat =  [
             {
-                "values": [recent, not_recent],
-                "labels": ["Attributed to recent transmission", "Not attributed to recent transmission"],
-                "marker": {"colors": ["#bc1c1a", "#003049"]},
-                "type": "pie",
-                "hole": 0.4,
-                textinfo: "percent",
-                textposition: "inside",
-                automargin: true
-            }
+                "y": [recent],
+                "x": [""],
+                "name": "Recent",
+                "marker": {"color": "#bc1c1a"},
+                "type": "bar",
+                "text": recent,
+            }, {
+                "y": [not_recent],
+                "x": [""],
+                "name": "Not recent",
+                "marker": {"color": "#003049"},
+                "type": "bar",
+                "text": not_recent
+            },
         ];
-    const lay = default_layout("Cases by time of transmission");
+    const lay = default_layout("Cases by attributed time of transmission");
+    lay["yaxis"] = {"title": {"text": "% of cases"}};
+    lay["barmode"] = "stack"
     var plot_div = document.getElementById("recent_transmission_plot");
+    console.log(dat, lay)
     Plotly.newPlot(plot_div, dat, lay, {responsive:true} );
 }
 
