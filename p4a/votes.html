@@ -28,7 +28,8 @@
     <script>
         $(document).ready(function () { 
   
-          const start_time = 1739552400
+          const start_time = 1771002000
+          const t0 = start_time - 60*60*24*7
           var votes, views, likes, comments
           const marker_size = 10
           const lw = 2
@@ -36,7 +37,11 @@
           const colors = ["#BD4089",  "#143642", "#5DD39E","#809BCE"]
 
           $.when(
-              $.getJSON("data/vote_count.json", function (data) {
+              $.getJSON("data/vote_count_2026.json", function (data) {
+                if(data.length>0){
+
+                
+                data = data.filter(x=>x.timestamp>t0)
                 var voteCount = data[data.length-1]["votes"].toLocaleString();
                 votes = {
                   "x":data.map(x=>(x.timestamp/(x.timestamp>10**10?1000:1) - start_time)/60/60), 
@@ -53,14 +58,17 @@
                   },
                   "mode":mode,
                   "name":"Votes: ".concat(voteCount)
+                }} else {
+                  votes = {}
                 }
               }),
-              $.getJSON("data/last_views.json", function (data) {
+              $.getJSON("data/last_views_2026.json", function (data) {
                 $('#videos').append(data.length);
                 var charities = new Set(data.map(x=>x.Charity));
                 $("#charities").append(charities.size)
               }),
-              $.getJSON("data/all_views.json", function (data) {
+              $.getJSON("data/all_views_2026.json", function (data) {
+                data = data.filter(x=>x.Timestamp>(t0))
                 var viewCount = data[data.length-1]["viewCount"].toLocaleString();
                 var likeCount = data[data.length-1]["likeCount"].toLocaleString();
                 var commentCount = data[data.length-1]["commentCount"].toLocaleString();

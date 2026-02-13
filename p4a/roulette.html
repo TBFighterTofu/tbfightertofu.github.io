@@ -25,7 +25,7 @@
       <h2 style="text-align: center;">Moderators' choice</h2>
       <div class="outertags"><div id="tags">
         <a class="luckybutton" href="https://projectforawesome.com/featured">Featured Video</a>
-        <a class="luckybutton" href="https://projectforawesome.com/random">Random Video</a>
+        <!-- <a class="luckybutton" href="https://projectforawesome.com/random">Random Video</a> -->
       </div></div>
       <h2 style="text-align: center;">Random video</h2>
       <div class="outertags"><div id="tags">
@@ -50,7 +50,7 @@
         var num_vids, vids_cutoff, vlists
         const tt = ["view", "like", "comment"]
         
-        $.getJSON("data/last_views.json", function (data) { 
+        $.getJSON("data/last_views_2026.json", function (data) { 
             var videos = data
             num_vids = data.length
             vids_cutoff = Math.ceil(num_vids/3)
@@ -81,7 +81,7 @@
                 for (let j=0; j<tlist.length; j++){
                     id = "#".concat(tlist[j], slist[i])
                     console.log(id)
-                    $(id).attr("href", "https://projectforawesome.com/watch?v=".concat(vlists[id][k].id))
+                    $(id).attr("href", "https://www.youtube.com/watch?v=".concat(vlists[id][k].id))
                 }
             }
         }
