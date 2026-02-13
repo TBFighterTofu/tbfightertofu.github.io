@@ -5,7 +5,7 @@ import pandas as pd
 from pathlib import Path
 import os
 from datetime import datetime
-
+from read_website import download_submissions
 
 CURRENT_YEAR = datetime.now().year
 data_folder = Path(__file__).parent.parent / "data"
@@ -81,3 +81,4 @@ def scrape_views():
 
 if __name__=="__main__":
     scrape_views()
+    download_submissions()

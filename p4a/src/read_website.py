@@ -19,7 +19,6 @@ views_file = data_folder / "views.csv"
 
 
 def import_vote_count() -> pd.DataFrame:
-    # f0 = pd.read_csv(vote_count_file)
     f0 = pd.read_json(vote_count_json)
     return f0
 
