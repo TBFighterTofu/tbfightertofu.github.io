@@ -5,6 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../common/styles.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./roulette.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
@@ -24,8 +25,7 @@
 
       <h2 style="text-align: center;">Moderators' choice</h2>
       <div class="outertags"><div id="tags">
-        <a class="luckybutton" href="https://projectforawesome.com/featured">Featured Video</a>
-        <!-- <a class="luckybutton" href="https://projectforawesome.com/random">Random Video</a> -->
+        <a class="luckybutton" id="featured">Featured Video</a>
       </div></div>
       <h2 style="text-align: center;">Random video</h2>
       <div class="outertags"><div id="tags">
@@ -47,51 +47,7 @@
     
     <script>
 
-        var num_vids, vids_cutoff, vlists
-        const tt = ["view", "like", "comment"]
         
-        $.getJSON("data/last_views_2026.json", function (data) { 
-            var videos = data
-            num_vids = data.length
-            vids_cutoff = Math.ceil(num_vids/3)
-            var vl = {}
-            var vc = {}
-            vlists = {}
-            for (let j=0; j<tt.length; j++){
-                cname = tt[j].concat("Count")
-                for (let i=0; i<videos.length; i++){
-                    videos[i][cname] = Number(videos[i][cname])
-                }
-                vl = videos.map(x=>x[cname]).toSorted((a,b)=>a-b)
-                clow = vl[vids_cutoff]
-                chigh = vl[num_vids - vids_cutoff]
-                vlists["#low".concat(tt[j], "s")] = videos.filter(x=>x[cname]<=clow)
-                vlists["#med".concat(tt[j], "s")] = videos.filter(x=>x[cname]>=clow && x[cname]<=chigh)
-                vlists["#hi".concat(tt[j], "s")] = videos.filter(x=>x[cname]>=chigh)
-            }
-            refresh_videos()
-        });
-
-        function refresh_videos(){
-            var k = Math.floor(Math.random() * vids_cutoff)
-            var id
-            const slist = ["views", "likes", "comments"]
-            const tlist = ["low", "med", "hi"]
-            for (let i=0; i<slist.length; i++){
-                for (let j=0; j<tlist.length; j++){
-                    id = "#".concat(tlist[j], slist[i])
-                    console.log(id)
-                    $(id).attr("href", "https://www.youtube.com/watch?v=".concat(vlists[id][k].id))
-                }
-            }
-        }
-        var link = document.getElementsByClassName('navbutton');
-        for (let i=0; i<link.length; i++){
-            link[i].addEventListener('click', e => {
-                refresh_videos();
-                console.log("click")
-            });
-        }
         
         
     </script>
