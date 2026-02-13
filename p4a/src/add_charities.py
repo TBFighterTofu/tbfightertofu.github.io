@@ -123,7 +123,7 @@ def load_p4a_website():
             slug = video["Slug"]
 
             youtube_url = f"https://www.youtube.com/watch?v={code}"
-            p4a_href = f"https://projectforawesome.com/{slug}"
+            p4a_href = f"https://projectforawesome.com/videos/{slug}"
             charity_name = video["charity"]["Title"]
             charity_name = conversions.get(charity_name, charity_name)
             title = video["Title"]

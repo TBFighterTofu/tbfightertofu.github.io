@@ -249,9 +249,6 @@ $(document).ready(function () {
                 year = years[i]
                 $('#tester').append(year_section(year, videos[year], features_web, features_stream, features_2026))
             }
-            if (years[0]=="2026"){
-                assign_span("#vote", Object.keys(videos[2026]["Videos"])[0]["Voting link"], "Vote")
-            }
         } else {
             console.log("videos not found")
         }            
