@@ -21,8 +21,7 @@ def remove_common_words(s: str) -> str:
     return s
 
 def find_charity_link(youtube_url: str) -> str | None:
-    # API_KEY = os.environ.get('YT_TOKEN')
-    API_KEY = "AIzaSyDAYWYDVLD_zRPTDgE9HG9KWU47fvgjX24"
+    API_KEY = os.environ.get('YT_TOKEN')
     VIDEO_ID = youtube_url.split("?v=")[1]
     PARTS = 'snippet'
     url = f'https://www.googleapis.com/youtube/v3/videos?part={PARTS}&id={VIDEO_ID}&key={API_KEY}'

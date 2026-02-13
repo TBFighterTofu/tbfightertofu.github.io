@@ -22,8 +22,7 @@ def import_video_list():
 
 def scrape_view_chunk(vid_df: pd.DataFrame, timestamp) -> list[dict]:
     out = []
-    # API_KEY = os.environ.get('YT_TOKEN')
-    API_KEY = "AIzaSyDAYWYDVLD_zRPTDgE9HG9KWU47fvgjX24"
+    API_KEY = os.environ.get('YT_TOKEN')
     VIDEO_ID = ",".join([s.split("?v=")[1] for s in vid_df.url])
     PARTS = 'statistics'
     url = f'https://www.googleapis.com/youtube/v3/videos?part={PARTS}&id={VIDEO_ID}&key={API_KEY}'
