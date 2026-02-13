@@ -209,12 +209,13 @@ h1 {
 }
 
 .video_div {
-    width: 200px;
+    width: 250px;
     margin: 0 auto;
     text-align: center;
     display: inline-block;
     font-size: 12px;
-    padding: 10px;
+    padding: 20px;
+    border-radius: 20px;
     vertical-align: top;
 }
 

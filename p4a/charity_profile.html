@@ -46,7 +46,7 @@
 
         const ytlink = "https://www.youtube.com/watch?v="
         const p4link = "https://projectforawesome.com/watch?v="
-        const start_time0 = 1739552400
+        const start_time0 =   	1771002000
         var votes, views, likes, comments
         const marker_size = 10
         const lw = 2
@@ -65,6 +65,11 @@
         }
 
         function video_div(d, features_web, features_stream){
+            if (d["Voting link"]!=""){
+                href = d["Voting link"]
+            } else {
+                href = d["url"]
+            }
             var vid_id = d["url"].replace(ytlink, "").replace(p4link, "")
             var classes, fcap
             if (features_stream.includes(vid_id)){
@@ -74,27 +79,29 @@
             else if (features_web.hasOwnProperty(vid_id)){
                 classes = "video_div featured_web"
                 var start_time = features_web[vid_id].start
-                annot.push({
-                                x: (start_time - start_time0)/60/60,
-                                y: 0,
-                                xref: 'x',
-                                yref: 'y',
-                                text: 'Featured',
-                                showarrow: true,
-                                arrowcolor: "#BD4089",
-                                bgcolor:"white",
-                                arrowsize: 2,
-                                ax: 0,
-                                ay: dy
-                              })
-                var dt = new Date(start_time * 1000).toLocaleString()
-                fcap = "<br>Featured on web at<br>".concat(dt)
+                if (start_time > start_time0) {
+                    annot.push({
+                                    x: (start_time - start_time0)/60/60,
+                                    y: 0,
+                                    xref: 'x',
+                                    yref: 'y',
+                                    text: 'Featured',
+                                    showarrow: true,
+                                    arrowcolor: "#BD4089",
+                                    bgcolor:"white",
+                                    arrowsize: 2,
+                                    ax: 0,
+                                    ay: dy
+                                })
+                    var dt = new Date(start_time * 1000).toLocaleString()
+                    fcap = "<br>Featured on web at<br>".concat(dt)
+                }
             }
             else{
                 classes = "video_div"
                 fcap = ""
             }
-            return '<a href='.concat(d['url'], '><div class="', classes, '"><img class="thumbnail" src="https://i.ytimg.com/vi/', d['url'].replace(ytlink, ""), '/mqdefault.jpg">', "<br><b>", d["Title"], "</b><br>", d["User"], fcap, "</div></a>" )
+            return '<a href='.concat(href, '><div class="', classes, '"><img class="thumbnail" src="https://i.ytimg.com/vi/', d['url'].replace(ytlink, ""), '/mqdefault.jpg">', "<br><b>", d["Title"], "</b><br>", d["User"], fcap, "</div></a>" )
         }
 
         function year_section(year, d, features_web, features_stream){
@@ -115,9 +122,6 @@
                     fw = {}
                 }
                 vd = video_div(di, fw, features_stream)
-                if (year=="2026"){
-                    vd = vd.replace(ytlink, p4link)
-                }
                 h = h.concat(vd)
             }
             h = h.concat("</div>")
@@ -196,6 +200,7 @@
             })
 
             var videoData, features_web;
+
             $.when(
                 $.getJSON("data/videos.json", function(data) {
                     videoData = data;
@@ -213,14 +218,16 @@
                         year = years[i]
                         $('#tester').append(year_section(year, videos[year], features_web, features_stream))
                     }
-                    if (years[0]==2026){
-                        assign_span("#vote", Object.keys(videos[2026]["Videos"])[0].replace(ytlink, p4link), "Vote")
+                    if (years[0]=="2026"){
+                        assign_span("#vote", Object.keys(videos[2026]["Videos"])[0]["Voting link"], "Vote")
                     }
+                } else {
+                    console.log("videos not found")
                 }            
             });
 
           $.when(
-              $.getJSON("data/views.json", function (data) {
+              $.getJSON("data/views_2026.json", function (data) {
                 data = data.filter(x=>x.Charity==charity)
                 for (let i=0; i<data.length; i++){
                     data[i].Timestamp = Math.round((data[i].Timestamp / (data[i].Timestamp>10**10?1000:1) - start_time0)/15)*15/60/60

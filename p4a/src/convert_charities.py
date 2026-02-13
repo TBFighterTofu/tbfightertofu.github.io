@@ -7,7 +7,8 @@ import requests
 from datetime import datetime
 
 CURRENT_YEAR = datetime.now().year
-VIDEOS_THIS_YEAR = f"Videos this year"
+VIDEOS_THIS_YEAR = "Videos this year"
+DATA_FOLDER = Path(__file__).parent.parent / "data"
 
 def make_website_link(link:str) -> str:
     if (pd.isna(link) or link==""):
@@ -19,10 +20,12 @@ def make_website_link(link:str) -> str:
         return link
     
 def import_videos(names: list[str]):
-    f0 = pd.read_csv(Path(__file__).parent.parent / "data" / "videos.csv")
+    f0 = pd.read_csv(DATA_FOLDER / "videos_updated.csv", index_col = 0)
     f0["views"] = f0["views"].fillna(0)
+    f0["User"] = f0["User"].fillna("")
+    f0["Voting link"] = f0["Voting link"].fillna("")
     current_year = f0.Year.max()
-    d = dict([n, {VIDEOS_THIS_YEAR:0, "All Videos":0}] for n in names)
+    d = {n: {VIDEOS_THIS_YEAR:0, "All Videos":0} for n in names}
     dl =  {}
     for i,row in f0.iterrows():
         name = row["Charity"]
@@ -55,7 +58,7 @@ def combine_dicts(dl, features):
 
 
 def import_charities():
-    f0 = pd.read_csv(Path(__file__).parent.parent / "data" / "charities.csv", header=[0])
+    f0 = pd.read_csv(DATA_FOLDER / "charities_updated.csv", header=[0])
     years = []
     for key in f0.keys():
         if "Pledged" in key:
@@ -112,7 +115,7 @@ def import_charities():
     vd, dl = import_videos(names)
     dlo = combine_dicts(dl, features)
     with open(Path(__file__).parent.parent / "data" / "videos.json", "w") as f:
-        json.dump(dlo, f)
+        json.dump(dlo, f, indent = 4)
     for charity in charities:
         charity["Videos this year"] = vd[charity["Charity"]]["Videos this year"]
         charity["All Videos"] = vd[charity["Charity"]]["All Videos"]
@@ -120,9 +123,9 @@ def import_charities():
     charitydf.sort_values(by=["Total grants", "Most recent grant"], ascending=False, ignore_index=True, inplace=True)
 
     with open(Path(__file__).parent.parent / "data" / "charities.json", "w") as f: 
-        json.dump(cdict, f)
+        json.dump(cdict, f, indent = 4)
     with open(Path(__file__).parent.parent / "data" / "grants.json", "w") as f: 
-        json.dump(gdict, f)    
+        json.dump(gdict, f, indent = 4)    
     charitydf.to_csv(Path(__file__).parent.parent / "data" / "charities_converted.csv")
     charitydf["Charity"] = [local_link(x) for x in charitydf["Charity"]]
     charitydf["Website"] = [self_link(x) for x in charitydf["Website"]]   

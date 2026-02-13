@@ -4,22 +4,26 @@ import time
 import pandas as pd
 from pathlib import Path
 import os
+from datetime import datetime
 
+
+CURRENT_YEAR = datetime.now().year
 data_folder = Path(__file__).parent.parent / "data"
-video_file = data_folder / "videos.csv"
-all_views_file = data_folder / "all_views.json"
-views_json = data_folder / "views.json"
-last_views_json = data_folder / "last_views.json"
+video_file = data_folder / "videos_updated.csv"
+all_views_file = data_folder / f"all_views_{CURRENT_YEAR}.json"
+views_json = data_folder / f"views_{CURRENT_YEAR}.json"
+last_views_json = data_folder / f"last_views_{CURRENT_YEAR}.json"
 
 def import_video_list():
-    v = pd.read_csv(video_file)
-    v = v[v.Year==2025]
+    v = pd.read_csv(video_file, index_col = 0)
+    v = v[v.Year==CURRENT_YEAR]
     v.reset_index(inplace=True, drop=True)
     return v
 
 def scrape_view_chunk(vid_df: pd.DataFrame, timestamp) -> list[dict]:
     out = []
-    API_KEY = os.environ.get('YT_TOKEN')
+    # API_KEY = os.environ.get('YT_TOKEN')
+    API_KEY = "AIzaSyDAYWYDVLD_zRPTDgE9HG9KWU47fvgjX24"
     VIDEO_ID = ",".join([s.split("?v=")[1] for s in vid_df.url])
     PARTS = 'statistics'
     url = f'https://www.googleapis.com/youtube/v3/videos?part={PARTS}&id={VIDEO_ID}&key={API_KEY}'
@@ -38,8 +42,11 @@ def scrape_view_chunk(vid_df: pd.DataFrame, timestamp) -> list[dict]:
     return out
 
 def add_view_summary(new_dfs: pd.DataFrame):
-    with open(all_views_file, "r") as f:
-        d = json.load(f)
+    if all_views_file.exists():
+        with open(all_views_file, "r") as f:
+            d = json.load(f)
+    else:
+        d = []
     d.append({"Timestamp":int(time.time()),
               "viewCount":int(pd.to_numeric(new_dfs["viewCount"]).sum()),
               "likeCount":int(pd.to_numeric(new_dfs["likeCount"]).sum()),
@@ -51,7 +58,10 @@ def add_view_summary(new_dfs: pd.DataFrame):
     print(time.time(), all_views_file)
 
 def scrape_views():
-    views_df = pd.read_json(views_json)
+    if views_json.exists():
+        views_df = pd.read_json(views_json)
+    else:
+        views_df = pd.DataFrame()
     vid_df = import_video_list()
     dfs = []
     i = 0
@@ -71,17 +81,4 @@ def scrape_views():
     return views_df
 
 if __name__=="__main__":
-    try:
-        scrape_views()
-    except:
-        pass
-    from read_website import refresh_votes, refresh_features
-    try:
-        refresh_votes()
-    except:
-        pass
-    try:
-        refresh_features()
-    except:
-        pass
-
+    scrape_views()
