@@ -1,8 +1,8 @@
 name: p4a_view_scraper
 
-on: workflow_dispatch
-  # schedule:
-  #   - cron: '16,46 * * * *' # runs every 30 minutes
+on:
+  schedule:
+    - cron: '16,46 * * * *' # runs every 30 minutes
 
 jobs:
   build:
