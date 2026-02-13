@@ -4,6 +4,7 @@ import pandas as pd
 from pathlib import Path
 import difflib
 import os
+from read_website import read_submissions
 
 DATA_FOLDER = Path(__file__).parent.parent / "data"
 
@@ -58,14 +59,21 @@ def coalesce_website(old_website, new_website):
         return old_website
     return new_website
 
+def extract_charity(row) -> str:
+    if row is None:
+        return ""
+    charity_dict = row.get("charity")
+    if charity_dict is None:
+        return ""
+    return charity_dict.get("Title", "")
+
 def load_p4a_website():
 
-    with open(Path(__file__).parent / "charity_list_temp.txt") as f:
-        charity_options = BeautifulSoup(f.read(), "html.parser")
-    charities = charity_options.find_all("option")
+    videos = read_submissions()["data"]
+
+    new_charity_names = list(set([extract_charity(row) for row in videos]))
 
     charity_table = import_charities()
-
     charity_list = list(charity_table.index)
     cleaned_charities = dict([[remove_common_words(s), s] for s in charity_list])
 
@@ -75,60 +83,64 @@ def load_p4a_website():
         "Aid and Friendship Association": "Associação Auxílio e Amizade (Aid & Friendship Association)",
         "Alzheimer's Research UK": "Alzheimer's Society",
         "Camp Lilac by GenderSphere": "Camp Lilac",
-        "NephCure": "NephCure Kidney International"
+        "NephCure": "NephCure Kidney International",
+        "APOPO": "APOPO Herorats",
+        "Yoga and Sports for Refugees": "Yoga and Sport with Refugees",
+        "Doctors Without Borders (MSF)": "Doctors Without Borders"
     }
     new = []
-    codes = {}
 
-    for charity in charities:
-        name: str = charity.get_text()
-        name = conversions.get(name, name)
-        code = charity.get("value")
-        if code is not None and code!="":
-            codes[code] = name
-            if name not in charity_list:
-                close_matches = difflib.get_close_matches(remove_common_words(name), cleaned_charities.keys(), n=1, cutoff=0.7)
-                if len(close_matches)>0:
-                    conversions[name] = cleaned_charities[close_matches[0]]
-                else:
-                    new.append(name)
+    for charity in new_charity_names:
+        name = conversions.get(charity, charity)
+        if name not in charity_list:
+            close_matches = difflib.get_close_matches(
+                remove_common_words(name),
+                cleaned_charities.keys(),
+                n=1, cutoff=0.7
+            )
+            if len(close_matches)>0:
+                conversions[name] = cleaned_charities[close_matches[0]]
             else:
-                existing.append(name)
-    
+                new.append(name)
+        else:
+            existing.append(name)
+
 
     # print("New: ", new)
     # print("Old: ", existing)
     # print("Conversions: ", conversions) 
-
-    with open(Path(__file__).parent / "video_list_temp.txt", encoding = "utf-8") as f:
-        video_list = BeautifulSoup(f.read(), "html.parser")
-    videos = video_list.find_all("div", class_ = "col")
 
     video_d = []
     new_charities = {}
 
     
     for video in videos:
-        img_span = video.find("img")
-        vid_code = img_span.get("src")
-        href = "https://www.youtube.com/watch?v=" + vid_code.split("/")[-2]
-        p4a_href = "https://projectforawesome.com" + video.find("a").get("href")
-        text_divs = video.find_all("div", class_="text-truncate")
-        charity_name = text_divs[0].get_text()
-        charity_name = conversions.get(charity_name, charity_name)
-        title = text_divs[1].get_text()
-        video_d.append({"Year":2026, "Charity":charity_name, "Voting link": p4a_href, "Title":title, "url":href})
+        if video["Phase"] == "Approved":
+            thumbnail = video["externalThumbnailUrl"]
+            if thumbnail is None:
+                thumbnail = video["oembed"]["oembed"]["thumbnail_url"]
+            code = thumbnail.split("/")[-2]
+            slug = video["Slug"]
 
-        meta = find_charity_info(href)
-        print(charity_name)
-        if charity_name in charity_list:
-            charity_table.loc[charity_name, "2026 Videos"] = charity_table.loc[charity_name, "2026 Videos"] + 1
-        else:
-            if charity_name in new_charities:
-                new_charities[charity_name]["Tags"] = join_tags(new_charities[charity_name]["Tags"], meta["categories"])
-                new_charities[charity_name]["2026 Videos"] = new_charities[charity_name]["2026 Videos"] + 1
+            youtube_url = f"https://www.youtube.com/watch?v={code}"
+            p4a_href = f"https://projectforawesome.com/{slug}"
+            charity_name = video["charity"]["Title"]
+            charity_name = conversions.get(charity_name, charity_name)
+            title = video["Title"]
+
+            video_d.append({"Year":2026, "Charity":charity_name, "Voting link": p4a_href, "Title":title, "url":youtube_url})
+
+            print(charity_name)
+            if charity_name in charity_list:
+                charity_table.loc[charity_name, "2026 Videos"] = charity_table.loc[charity_name, "2026 Videos"] + 1
             else:
-                new_charities[charity_name] = ({"Charity": charity_name, "All time funding (990)":0, "All time pledged":0, "Website":meta["link"], "Tags":meta["categories"], "2026 Videos": 1})
+                categories = "; ".join([row["name"] for row in video["categories"]])
+                if charity_name in new_charities:
+                    new_charities[charity_name]["Tags"] = join_tags(new_charities[charity_name]["Tags"], categories)
+                    new_charities[charity_name]["2026 Videos"] = new_charities[charity_name]["2026 Videos"] + 1
+                else:
+                    charity_link = find_charity_link(youtube_url)
+                    new_charities[charity_name] = ({"Charity": charity_name, "All time funding (990)":0, "All time pledged":0, "Website":charity_link, "Tags":categories, "2026 Videos": 1})
 
     new_charity_table = pd.DataFrame(list(new_charities.values()))
     new_charity_table.set_index("Charity", inplace = True, drop = True)

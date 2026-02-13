@@ -10,16 +10,36 @@ CURRENT_YEAR = str(datetime.now().year)
 data_folder = Path(__file__).parent.parent / "data"
 vote_count_json = data_folder / "vote_count.json"
 features_json = data_folder / "feature_times.json"
+submissions_2026_json = data_folder / "submissions_2026.json"
 videos_file = data_folder / "videos.json"
 feature_list_file = data_folder / "features.json"
 
 video_csv = data_folder / "videos.csv"
 views_file = data_folder / "views.csv"
 
+
 def import_vote_count() -> pd.DataFrame:
     # f0 = pd.read_csv(vote_count_file)
     f0 = pd.read_json(vote_count_json)
     return f0
+
+
+def read_submissions():
+    url = "https://api.projectforawesome.com/api/submissions?pageSize=400"
+    g = requests.get(url)
+    if g.status_code == 200:
+        return g.json()
+    else:
+        return {}
+    
+def download_submissions():
+    res = read_submissions()
+    with open(submissions_2026_json, "w") as f:
+        json.dump(res, f, indent = 4)
+
+
+
+# --------- OUTDATED
 
 def read_votes():
     url = "https://projectforawesome.com/data?req=stats"
@@ -96,11 +116,4 @@ def refresh_features():
         export_features_2(f1)
 
 if __name__=="__main__":
-    try:
-        refresh_votes()
-    except:
-        pass
-    try:
-        refresh_features()
-    except:
-        pass
+    download_submissions()
