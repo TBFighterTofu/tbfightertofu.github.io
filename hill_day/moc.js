@@ -7,6 +7,10 @@ function assign_span(id, link, title){
     $(id).show()
 }
 
+function number_with_commas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 function in_office(data, legislator){
     if (!legislator.hasOwnProperty("id")){
         return true
@@ -221,8 +225,7 @@ function get_terms(legislator){
     var term
     var title = ""
     var new_title
-    var start_year
-    var end_year
+    var start_year, new_start_year, new_end_year, end_year
     for (let i=0; i<legislator.terms.length; i++){
         term = legislator.terms[i]
         if (term.type=="rep"){
@@ -395,7 +398,6 @@ function make_transmission(case_rates) {
     const by_recent = case_rates.by_recent_transmission;
     const recent = by_recent["% attributed to recent transmission, 2023-2024"];
     const not_recent = by_recent["% not attributed to recent transmission, 2023-2024"];
-    console.log(recent, not_recent)
 
     const dat =  [
             {
@@ -418,7 +420,6 @@ function make_transmission(case_rates) {
     lay["yaxis"] = {"title": {"text": "% of cases"}};
     lay["barmode"] = "stack"
     var plot_div = document.getElementById("recent_transmission_plot");
-    console.log(dat, lay)
     Plotly.newPlot(plot_div, dat, lay, {responsive:true} );
 }
 
@@ -500,6 +501,57 @@ function add_case_totals(case_rates, state, last_cases, years){
     $('#latent_count').append("".concat(state, " has <b>", case_rates.latent_cases, " latent</b> TB cases, or <b>", (case_rates.latent_pct*1000).toLocaleString(), " latent</b> TB cases per 100,000 people."))
 }
 
+function make_grant_plot(district_grants){
+    const marker_size = 10
+    const lw = 2
+    const mode = "lines+markers"
+    const colors = ["#003049", "#42aa8b"]
+    var years = []
+    var grants = []
+    var funding = []
+    for (const [year, vals] of Object.entries(district_grants)){
+        years.push(year);
+        grants.push(vals["Awards"]);
+        funding.push(vals["Funding"]);
+    }
+    const funding_line = {
+            "x":years,
+            "y":funding,
+            "line":{"color":colors[0], "width":lw},
+            "marker":{
+                "color":colors[0],
+                "symbol":"triangle-right-open",
+                "size":marker_size,
+                "line":{"width":lw}
+            },
+            "mode":mode,
+            "name":"Total Funding"
+        };
+    const grants_line = {
+            "x":years,
+            "y":grants,
+            "line":{"color":colors[1], "width":lw},
+            "marker":{
+                "color":colors[1],
+                "symbol":"square-open",
+                "size":marker_size,
+                "line":{"width":lw}
+            },
+            "yaxis":"y2",
+            "mode":mode,
+            "name":"Grants"
+        };
+    const dat = [funding_line, grants_line]
+    var lay = default_layout(null)
+    lay["margin"]["r"] = 60
+    lay["xaxis"]={"title":{"text":"Fiscal Year"}, "zeroline":false, "showline":false}
+    lay["yaxis2"]= {"title": {"text": "Grants"}, "overlaying": 'y', "side": 'right',"zeroline":false, "rangemode":"tozero"}
+    lay["yaxis"]={"title":{"text":"Total Funding ($)"}, "showline":false, "rangemode":"tozero"}
+    lay["legend"]={"x": 0.5, "xanchor": 'center', "y": 1, "yanchor":"bottom","orientation":"h", "font":{"size":20}}
+    var grant_plot = document.getElementById('grant_plot');
+    Plotly.newPlot(grant_plot, dat, lay, {responsive:true} );
+}
+
 function get_grants(last_term, grants){
     var key
     if (last_term.type=="sen"){
@@ -509,10 +561,36 @@ function get_grants(last_term, grants){
         key = last_term.state.concat(last_term.district)
     }
     if (grants.hasOwnProperty(key)){
-        $('#grants').append("<details class=not-clickable><summary>".concat(key," Fiscal Year 2024: ", grants[key], "</summary></details>"))
+        const district_grants = grants[key][2025];
+        var nih_report_link = "https://report.nih.gov/award/index.cfm?fy=2025&ic=NIAID&state=".concat(last_term.state, "&view=statedetail");
+        if (last_term.type!="sen"){
+            nih_report_link = nih_report_link.concat("&distr=", key)
+        }
+        $('#district_grants').append("In fiscal year 2025, ".concat(key, " received <b>", district_grants["Awards"], "</b> grants from NIAID, totaling <b>$", number_with_commas(district_grants["Funding"]), '</b>. <a href="', nih_report_link, '#tab5">See recipients</a>'))
+        make_grant_plot(grants[key]);
+    } else {
+        $('#district_grants').append("No grants found in ".concat(key, "."))
+        $('#grant_plot').hide();
     }
-    else{
-        $('#grants').append("<ul><li>None found</li></ul>")
+}
+
+function get_tb_grants(last_term, grants){
+    if (!grants.hasOwnProperty(last_term.state)){
+        return;
+    }
+    var state_grants = grants[last_term.state]
+    var key
+    if (last_term.type!="sen"){
+        key = last_term.state.concat("-",last_term.district);
+        state_grants = state_grants.filter((x)=>(x.cong_dist==key));
+    }
+    if (state_grants.length > 0){
+        $('#grant_list').append("<h4>Grants of interest</h4>")
+        for (let i=0; i<state_grants.length; i++){
+            $('#grant_list').append(
+                "<details><summary>".concat("(", state_grants[i].agencies, ") <b>", state_grants[i].organization, "</b>: ", state_grants[i].project_title, "</summary><div><b>Project number</b>: ", state_grants[i].project_num, "</div><div>", "<b>Award amount</b>: $", number_with_commas(state_grants[i].award_amount), "</div><div><b>Public health relevance: </b>", state_grants[i].public_health_relevance, "</div></details>")
+            )
+        }
     }
 }
 
@@ -558,7 +636,7 @@ $(document).ready(function () {
     const bioguide = decodeURI(urlParams.get('bioguide'))
     var legislator = {}
     var last_term
-    var cases, abbrevs, grants
+    var cases, abbrevs, grants, tb_grants
     $.when(
         $.getJSON("data/members/legislators-current.json", function (data) {
             for (let i=0; i<data.length; i++){
@@ -582,12 +660,16 @@ $(document).ready(function () {
         }),
         $.getJSON("data/grants/grants.json", function (data){
             grants = data
+        }),
+        $.getJSON("data/grants/tb_grants.json", function (data){
+            tb_grants = data
         })
     ).then(function (){
         get_bills(legislator);
         get_letters(legislator);
         get_terms(legislator);
         get_grants(last_term, grants);
+        get_tb_grants(last_term, tb_grants);
         add_case_rates(last_term, abbrevs, cases)
     });
 

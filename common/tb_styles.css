@@ -188,6 +188,10 @@ details {
     border-radius: 5px;
 }
 
+details > summary {
+    margin-bottom: 10px;
+}
+
 .clickable {
     pointer-events: auto;
     cursor: pointer;

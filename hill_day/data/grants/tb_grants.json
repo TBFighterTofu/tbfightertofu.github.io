@@ -1,0 +1,632 @@
+{
+    "NY": [
+        {
+            "project_num": "1R21AI190768-01A1",
+            "project_serial_num": "AI190768",
+            "opportunity_number": "PA-25-304",
+            "organization": "WEILL MEDICAL COLL OF CORNELL UNIV",
+            "state": "NY",
+            "award_amount": 211875,
+            "cong_dist": "NY-12",
+            "project_title": "Conditional M. tuberculosis knockdown mutants in mice with human-like pathology",
+            "public_health_relevance": "Tuberculosis (TB) is still a major cause of morbidity and mortality worldwide and a better understanding of its\npathogenesis will aid the development of strategies to prevent and treat this disease. TB mouse models have\nprovided important insights into host responses and immune mechanisms of M. tuberculosis (Mtb) control, but\nmost studies but have not been performed in mouse strains that recapitulate the diverse and heterogeneous\nenvironments Mtb encounters in humans. Here we propose to develop TB latency models with conditional Mtb\nknockdown mutants and the C3HeB/FeJ mouse strain that develops human-like pathology.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R21AI194706-01",
+            "project_serial_num": "AI194706",
+            "opportunity_number": "PA-25-304",
+            "organization": "TRUDEAU INSTITUTE, INC.",
+            "state": "NY",
+            "award_amount": 332414,
+            "cong_dist": "NY-21",
+            "project_title": "Probing the novel mechanism of action of tuberculocidal compounds",
+            "public_health_relevance": "NARRATIVE\nDue to increasing rates of drug resistance, new antibiotics are urgently needed to treat\nMycobacterium tuberculosis, the deadliest infectious disease in human history. We have\nidentified a small molecule that inhibits Mycobacterium tuberculosis through a novel\nmolecular mechanism, and therefore holds promising potential in mitigating common\ndrug resistance mechanisms. Here we present a detailed plan to characterize this\nmolecule and validate its molecular target, providing a new potential therapeutic\nstrategy to treat this tenacious pathogen.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R21AI196726-01",
+            "project_serial_num": "AI196726",
+            "opportunity_number": "PA-25-304",
+            "organization": "ALBANY MEDICAL COLLEGE",
+            "state": "NY",
+            "award_amount": 451000,
+            "cong_dist": "NY-20",
+            "project_title": "Role of Wnt/\u03b2-catenin pathway in alveolar epithelial repair during tuberculosis and its regulation by chronic type I interferon signaling",
+            "public_health_relevance": "Project Narrative\nTuberculosis (TB), caused by Mycobacterium tuberculosis (Mtb), remains a major global health\nchallenge, worsened by disruptions in care during the COVID-19 pandemic. This study investigates\nhow Mtb-induced type I interferons (IFN-I) contribute to lung barrier injury and impair alveolar\nepithelial repair, with a focus on the regulatory crosstalk between IFN-I and Wnt/\u03b2-catenin signaling.\nBy identifying therapeutic targets to restore lung homeostasis, this work aims to inform new\ninterventions that reduce TB-associated lung damage and improve patient outcomes.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R21AI190640-01A1",
+            "project_serial_num": "AI190640",
+            "opportunity_number": "PA-25-304",
+            "organization": "WEILL MEDICAL COLL OF CORNELL UNIV",
+            "state": "NY",
+            "award_amount": 442146,
+            "cong_dist": "NY-12",
+            "project_title": "Salicylate-based Drugs as Adjuvants to Potentiate Bedaquiline's Anti-TB Activity",
+            "public_health_relevance": "Project Narrative\nBedaquiline is the first new anti-tuberculosis (anti-TB) drug approved in over 40 years and\ncurrently serves as the backbone of nearly all second line regimens for drug resistant TB. This\nproposal aims to study the utility of salicylate-based non-steroidal anti-inflammatory drugs as\nadjunctive therapies to improve the anti-TB activity of bedaquiline. Enhanced bedaquiline\nactivity can ultimately lead to shorter treatment regimens for drug resistant TB and help\novercome existing low-level resistance to bedaquiline, thereby preserving the clinical utility of\nbedaquiline; as well as other anti-TB drugs used in conjunction with bedaquiline.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R01AI195815-01",
+            "project_serial_num": "AI195815",
+            "opportunity_number": "PA-25-301",
+            "organization": "TRUDEAU INSTITUTE, INC.",
+            "state": "NY",
+            "award_amount": 921320,
+            "cong_dist": "NY-21",
+            "project_title": "Optimization of Antitubercular Compounds Against a Novel Mycobacterium tuberculosis target, AspC",
+            "public_health_relevance": "NARRATIVE\nDue to increasing rates of drug resistance, new antibiotics are urgently needed to treat\nMycobacterium tuberculosis, the deadliest infectious disease in human history. We have\nidentified a potent small molecule with favorable drug-like characteristics that inhibits\nMycobacterium tuberculosis through a novel molecular mechanism, and therefore holds\npromising potential in mitigating common drug resistance mechanisms. Here we present a\ndetailed plan to optimize this molecule and validate its molecular target, providing a new\npotential therapeutic strategy to treat this tenacious pathogen.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R01AI196228-01",
+            "project_serial_num": "AI196228",
+            "opportunity_number": "PA-25-301",
+            "organization": "SLOAN-KETTERING INST CAN RESEARCH",
+            "state": "NY",
+            "award_amount": 3178476,
+            "cong_dist": "NY-12",
+            "project_title": "Chalkophore mediated respiratory oxidase flexibility and M. tuberculosis virulence",
+            "public_health_relevance": "PROJECT NARRATIVE\nChalkophore mediated respiratory oxidase flexibility and M. tuberculosis virulence\nDiisonitrile chalkophores are a new class of small-molecule natural products produced by bacteria that bind\ntightly to copper and can be used to transport this micronutrient into the bacterial cell. This project will use a\ncombined chemical and biological approach to investigate the roles of chalkophores in bacterial\ncell physiology and pathogenesis with a particular focus on functions in Mycobacterium tuberculosis,\nthe bacteria that cause tuberculosis.",
+            "agencies": "NIAID"
+        }
+    ],
+    "MA": [
+        {
+            "project_num": "1R01AI197351-01",
+            "project_serial_num": "AI197351",
+            "opportunity_number": "PA-25-301",
+            "organization": "TUFTS UNIVERSITY BOSTON",
+            "state": "MA",
+            "award_amount": 859278,
+            "cong_dist": "MA-07",
+            "project_title": "Accelerating discovery of narrow-spectrum antibiotics for Lyme disease",
+            "public_health_relevance": "PROJECT NARRATIVE\nIdentification of new narrow-spectrum antibiotics could have a major impact through multiple uses in prevention\nand treatment of infectious disease. We propose to develop new computational and experimental technologies\nthat can dramatically accelerate the narrow-spectrum drug development pipeline for Lyme disease, a major\nhealth concern in endemic areas of the U.S. When this project is completed, we hope to contribute expandable\nvalidated tools to rapidly screen for active compounds and identify mechanisms of drug action and novel narrow-\nspectrum antibiotic candidates for Lyme disease.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R01AI184490-01A1",
+            "project_serial_num": "AI184490",
+            "opportunity_number": "PA-25-301",
+            "organization": "BOSTON CHILDREN'S HOSPITAL",
+            "state": "MA",
+            "award_amount": 800557,
+            "cong_dist": "MA-07",
+            "project_title": "Regulation of innate immunity by the pathogen Staphylococcus aureus",
+            "public_health_relevance": "Project Narrative\nStaphylococcus aureus is a leading cause of bacteria-induced morbidity and mortality in the United States. Our\nlack of knowledge of how S. aureus interfaces with the immune system undermines vaccine development in this\nimportant area of biology. Our research proposal focuses on the earliest triggers of immune activation (the\ndetection of bacteria), which may unravel new means to control the activation or inactivation of immunity.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R21AI185451-01A1",
+            "project_serial_num": "AI185451",
+            "opportunity_number": "PA-25-304",
+            "organization": "TUFTS UNIVERSITY BOSTON",
+            "state": "MA",
+            "award_amount": 490704,
+            "cong_dist": "MA-07",
+            "project_title": "Spatial multi-omics to predict granuloma trajectory and bacterial restriction during vaccination",
+            "public_health_relevance": "Project Narrative\nVaccine development for TB has focused on attempting to identify correlates of vaccine protection. Recent\nsuccess using IV vaccination in the rhesus macaque model of Mycobacterium tuberculosis (Mtb) suggests that\ndevelopment of tissue resident memory cells in the lung is a key correlate of protection; however, there is an\nincomplete understanding of where these cells are located and how they influence the development of\ngranulomas in response to different vaccine modalities. Here, we propose to develop a pipeline of spatial\nphenotyping of lung responses during vaccination and to develop multiparameter models to correlate tissue\nphenotypes with peripheral immune responses.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R21AI190989-01A1",
+            "project_serial_num": "AI190989",
+            "opportunity_number": "PA-25-304",
+            "organization": "BOSTON UNIVERSITY MEDICAL CAMPUS",
+            "state": "MA",
+            "award_amount": 245250,
+            "cong_dist": "MA-07",
+            "project_title": "Mechanisms of the alternative macrophage activation in TB",
+            "public_health_relevance": "Narrative: Mechanisms of the alternative macrophage activation in TB\nPulmonary tuberculosis (TB) remains a leading cause of death from a single infectious agent, Mycobacterium\ntuberculosis (Mtb). Lung vulnerability to TB represents a major obstacle for the development of efficacious\nvaccines and therapies, but mechanisms of the particular lung vulnerability to TB remain unknown. We will\ncharacterize the alternatively activated macrophages that uniquely appear during progression of pulmonary TB\nin genetically susceptible hosts using advanced single cell analyses of the blood and multiplexed\nimmunohistochemistry of TB lesions, and investigate the effects of known drivers of the alternative macrophage\nactivation on their induction during pulmonary TB progression.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R21AI196552-01",
+            "project_serial_num": "AI196552",
+            "opportunity_number": "PA-25-304",
+            "organization": "UNIV OF MASSACHUSETTS MED SCH WORCESTER",
+            "state": "MA",
+            "award_amount": 460625,
+            "cong_dist": "MA-02",
+            "project_title": "Eliciting Th1/Th17 dual responses for vaccine-induced immunity to tuberculosis",
+            "public_health_relevance": "Project narrative. Bacille Calmette-Gu\u00e9rin (BCG) is the primary vaccine used against\nMycobacterium tuberculosis. This research proposal seeks to identify immune\nsignatures that can be used to identify a successful vaccine against Mtb, and the\nmechanisms that will lead to a vaccine that can elicit this response.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R01AI192313-01A1",
+            "project_serial_num": "AI192313",
+            "opportunity_number": "PA-25-301",
+            "organization": "MASSACHUSETTS GENERAL HOSPITAL",
+            "state": "MA",
+            "award_amount": 798107,
+            "cong_dist": "MA-08",
+            "project_title": "A tissue-based approach to understanding TB-associated lung fibrosis",
+            "public_health_relevance": "Tuberculosis remains a leading cause of death around the world, and new treatments\nare needed to curb the epidemic. This work will help us understand how fibrosis and\npermanent lung damage happen in TB infection. We anticipate that this work will\nfacilitate future development of new anti-tuberculosis treatments that improve quality and\nlongevity after TB infection.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1F32AI191488-01",
+            "project_serial_num": "AI191488",
+            "opportunity_number": "PA-23-262",
+            "organization": "HARVARD MEDICAL SCHOOL",
+            "state": "MA",
+            "award_amount": 80224,
+            "cong_dist": "MA-07",
+            "project_title": "Investigation of factors involved in assembly of the mycolata envelope",
+            "public_health_relevance": "PROJECT SUMMARY\nBacteria within the Corynebacterineae suborder, such as Mycobacterium tuberculosis and Corynebacterium\ndiphtheriae, pose significant global healthcare challenges, partly due to the distinct cell envelope of these\nbacteria, which plays a crucial role in their pathogenicity and antibiotic resistance. My research focuses on\nunderstanding how the complex mycobacterial cell envelope layers are synthesized to identify new weak points\nto exploit for antibiotic development.",
+            "agencies": "NIAID"
+        }
+    ],
+    "CA": [
+        {
+            "project_num": "1R21AI188119-01A1",
+            "project_serial_num": "AI188119",
+            "opportunity_number": "PA-25-304",
+            "organization": "LA JOLLA INSTITUTE FOR IMMUNOLOGY",
+            "state": "CA",
+            "award_amount": 566875,
+            "cong_dist": "CA-50",
+            "project_title": "Deorphanizing a novel GPCR expressed by tissue resident memory cells",
+            "public_health_relevance": "RELEVANCE\nLung infections cause substantial mortality and morbidity in children and adults across all ages. A wide-range of\nviruses, bacteria and fungi can infect the lungs of healthy and immuno-compromised patients. Current strategies\nto prevent or treat these infections have limitations that are exacerbated by the growing risk of multi-drug\nresistance and emergence of new pathogens. Understanding the immunological basis of protective immune\nresponses to respiratory infections will help develop approaches to improve vaccine and treatment efficacy.\nTissue-resident memory T cells (TRM cells) have emerged as the guardians of mucosal and lung immunity. Thus\napproaches to boost TRM response are likely to offer durable natural and vaccine-induced immunity. In this\nproposal, we are finding potential targets that can to boost lung immune (TRM) responses.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R01AI196019-01",
+            "project_serial_num": "AI196019",
+            "opportunity_number": "PA-25-301",
+            "organization": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+            "state": "CA",
+            "award_amount": 842888,
+            "cong_dist": "CA-11",
+            "project_title": "Immunogenetic determinants of response to drug-susceptible tuberculosis treatment",
+            "public_health_relevance": "PROJECT NARRATIVE\nResponses to tuberculosis treatment vary, with many persons exhibiting signs of treatment failure (incomplete\ncure) by the end of standard therapy or developing recurrent disease after finishing treatment. It remains\nunclear who would benefit from shorter treatments to avoid side effects of toxic antibiotics, and who would\nneed standard or intensified regimens. We will leverage data from three tuberculosis treatment clinical trials\ntesting standard of care, shortened, and novel regimens to identify factors associated with favorable and\nunfavorable outcomes, to test whether we can stratify persons with tuberculosis to different regimens and\ndurations of treatment.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1R21AI190954-01A1",
+            "project_serial_num": "AI190954",
+            "opportunity_number": "PA-25-304",
+            "organization": "UNIVERSITY OF CALIFORNIA-IRVINE",
+            "state": "CA",
+            "award_amount": 141712,
+            "cong_dist": "CA-47",
+            "project_title": "Characterization of a novel histidine phosphotransfer system involved in the virulence of Mycobacterium tuberculosis",
+            "public_health_relevance": "PROJECT NARRATIVE\nMycobacterium tuberculosis (Mtb), the causative agent of tuberculosis (TB), is still one of the deadliest diseases\nafflicting the world\u2019s population, therefore there is urgent need to develop novel anti-TB therapeutics. Metabolic\npathways are good therapeutic drug targets, and this proposal focuses on a metabolic protein of unknown\nfunction that is linked to Mtb virulence. Thus, this proposal may result in new therapeutic targets for drug\ndevelopment, which has the potential to have an extraordinary impact on global health.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "1F32AI194768-01",
+            "project_serial_num": "AI194768",
+            "opportunity_number": "PA-23-262",
+            "organization": "UNIVERSITY OF CALIFORNIA, SAN FRANCISCO",
+            "state": "CA",
+            "award_amount": 75052,
+            "cong_dist": "CA-11",
+            "project_title": "Exploring leaderless mRNA translation, a potential Achilles heel of mycobacteria",
+            "public_health_relevance": "Project Narrative\nTuberculosis (TB) remains a significant global health threat, causing approximately 1.5 million deaths annually,\nand the increasing number of drug-resistant Mycobacterium tuberculosis (Mtb) strains makes reducing this\nburden even more difficult. This project seeks to increase our understanding of a prevalent but poorly\nunderstood form of translation in mycobacteria, the translation of leaderless mRNAs. Knowledge of the\nmechanisms that allow lmRNA translation to occur and a deeper understanding of its contribution to the\nmycobacterial life cycle will contribute to the development of novel therapeutics exploiting this form of\ntranslation, increasing treatment options for drug resistant Mtb and enhancing public health.",
+            "agencies": "NIAID"
+        }
+    ],
+    "MO": [
+        {
+            "project_num": "1R21AI190812-01A1",
+            "project_serial_num": "AI190812",
+            "opportunity_number": "PA-25-304",
+            "organization": "SAINT LOUIS UNIVERSITY",
+            "state": "MO",
+            "award_amount": 192500,
+            "cong_dist": "MO-01",
+            "project_title": "Molecular mechanisms of MCP-1 polymorphism-mediated susceptibility to pulmonary tuberculosis infection",
+            "public_health_relevance": "Project Narrative\n Host genetic variations play an important role in tuberculosis (TB) susceptibility and latent TB infection (LTBI)\nreactivation. One single nucleotide polymorphism G/G (SNP-G) at -2518 in the promoter region of monocyte\nchemoattractant protein-1 (MCP-1) is strongly associated with active pulmonary TB. This project will help us\nunderstand the molecular mechanisms of how the -2518 G/G homozygote in the MCP-1 promoter contributes to\nTB susceptibility and reveal a novel role for a group of transcription factors called E-box binding proteins in\ncontrol of host defense against Mtb infection.",
+            "agencies": "NIAID"
+        }
+    ],
+    "MI": [
+        {
+            "project_num": "1R21AI197453-01",
+            "project_serial_num": "AI197453",
+            "opportunity_number": "PA-25-304",
+            "organization": "HENRY FORD HEALTH + MICHIGAN STATE UNIVERSITY HEALTH SCIENCES",
+            "state": "MI",
+            "award_amount": 447960,
+            "cong_dist": "MI-07",
+            "project_title": "Genetic control of early Mycobacterium tuberculosis inflammatory responses",
+            "public_health_relevance": "Narrative:\nInfection with Mycobacterium tuberculosis can lead to inflammatory lung disease and long-term deficits in\npulmonary function in some individuals. We will investigate the role of genetic variation in the key interactions\nbetween this bacterium and alveolar macrophages in the lung. Through this work, we will test the hypothesis\nthat alveolar macrophage responses are an important determinant of infection outcome, and generate a\nbroadly useful experimental platform for studying this enigmatic cell type.",
+            "agencies": "NIAID"
+        }
+    ],
+    "OR": [
+        {
+            "project_num": "1R21AI196663-01",
+            "project_serial_num": "AI196663",
+            "opportunity_number": "PA-25-304",
+            "organization": "OREGON HEALTH & SCIENCE UNIVERSITY",
+            "state": "OR",
+            "award_amount": 442758,
+            "cong_dist": "OR-01",
+            "project_title": "Identifying drug targets in M. abscessus through the application of fluorescent probes",
+            "public_health_relevance": "Project Narrative\nThe proposed project fits the NIAID's goal to \u201c\u2026better understand Pulmonary Non-Tuberculous Mycobacteria\n(NTM) Infections and inform development of medical countermeasures.\u201d This project will use novel chemical\nprobes to determine the underlying mechanism of action for dual \u03b2-lactam antibiotics against the highly drug-\nresistant NTM Mycobacterium abscessus.",
+            "agencies": "NIAID"
+        }
+    ],
+    "NC": [
+        {
+            "project_num": "1R01AI190532-01A1",
+            "project_serial_num": "AI190532",
+            "opportunity_number": "PA-25-301",
+            "organization": "DUKE UNIVERSITY",
+            "state": "NC",
+            "award_amount": 610124,
+            "cong_dist": "NC-04",
+            "project_title": "BCG-Mediated Immunotherapy Against Bacteria",
+            "public_health_relevance": "Relevance Statement\nBladder infections are a significant medical problem because of its high rate of recurrence, an\nattribute related to bacterial persistence in the bladder long after infection has resolved. We\nhave recently discovered that intravesical administration of a vaccine formulation that includes\nthe live attenuated vaccine, Bacillus Calmette-Guerin (BCG), is highly effective in eliminating\nbacteria harboring in the bladder. Here, we propose to demonstrate the efficacy and durability\nof this novel immunotherapy when applied alone and in combination with vaccine antigens and\nto explore its underling basis of action.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20S1",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 128298,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20SC",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 1,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20S3",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 272708,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20SA",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 1,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20S5",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 90688,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20S7",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 288709,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20SB",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 1,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20S9",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 105412,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20S4",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 91297,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20S8",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 498550,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068636-20S2",
+            "project_serial_num": "AI068636",
+            "opportunity_number": "PA-24-254",
+            "organization": "UNIV OF NORTH CAROLINA CHAPEL HILL",
+            "state": "NC",
+            "award_amount": 193508,
+            "cong_dist": "NC-04",
+            "project_title": "Leadership and Operations Center (LOC), AIDS Clinical Trials Group",
+            "public_health_relevance": "Project Narrative\nThe studies proposed in this application will have a direct beneficial effect on the health of millions of people\nworldwide who are infected with or at risk for HIV, tuberculosis and hepatitis B, transforming the health of\npeople with these infections. The clinical research conducted by the ACTG will lead to significantly reducing\nmorbidity and mortality, particularly among populations disproportionately affected by HIV/AIDS.",
+            "agencies": "NIAID"
+        }
+    ],
+    "GA": [
+        {
+            "project_num": "1R21AI197097-01",
+            "project_serial_num": "AI197097",
+            "opportunity_number": "PA-25-304",
+            "organization": "UNIVERSITY OF GEORGIA",
+            "state": "GA",
+            "award_amount": 224857,
+            "cong_dist": "GA-10",
+            "project_title": "Establishing a cystic fibrosis ferret model of chronic Mycobacterium abscessus lung infection",
+            "public_health_relevance": "Project narrative\n The proposed research is relevant to public health because it proposes to establish a\nnovel, physiologically relevant and urgently needed animal model to study Mycobacterium\nabscessus lung infection in cystic fibrosis that represents a significant medical problem. No animal\nmodels exist that appropriately model chronic M. abs. lung infection in cystic fibrosis. The\nproposed research is, therefore, important to the mission of the NIH by establishing a new animal\nmodel suitable to study disease pathogenesis of chronic M. abs. lung infection in cystic fibrosis\nand to test new therapeutics.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3R01AI173946-04S1",
+            "project_serial_num": "AI173946",
+            "opportunity_number": "PA-20-185",
+            "organization": "EMORY UNIVERSITY",
+            "state": "GA",
+            "award_amount": 51676,
+            "cong_dist": "GA-05",
+            "project_title": "Cavity and Granuloma Oriented Inflammation and Tissue Pharmacokinetics in Pulmonary Tuberculosis (COOK TB)",
+            "public_health_relevance": "PROJECT NARRATIVE\nPulmonary tuberculosis including drug-resistant disease is an enormous public health problem responsible for\nsubstantial morbidity and mortality worldwide with the number of deaths increasing for the first time in over two\ndecades. This proposal seeks to better understand the host inflammatory response to Mycobacterium\ntuberculosis in individual human lung granulomas and to map the spatial distribution of newly implemented\ndrugs used to treat drug-resistant disease within granuloma microenvironments. The long-term goals of this\nwork are to provide data that will help guide the 1) development of host directed therapy to limit lung tissue\ndamage and 2) design of optimal drug combinations to improve treatment and long-term outcomes among\npatients with pulmonary tuberculosis.",
+            "agencies": "NIAID"
+        }
+    ],
+    "MD": [
+        {
+            "project_num": "1R21AI196587-01",
+            "project_serial_num": "AI196587",
+            "opportunity_number": "PA-25-304",
+            "organization": "UNIV OF MARYLAND, COLLEGE PARK",
+            "state": "MD",
+            "award_amount": 421720,
+            "cong_dist": "MD-04",
+            "project_title": "Characterizing NLRP11 Activation by Mycobacteria to Enhance Innate Immune Responses",
+            "public_health_relevance": "We will characterize how the non-canonical NLRP11/caspase-4 inflammasome recognizes\nmycobacteria.",
+            "agencies": "NIAID"
+        }
+    ],
+    "CT": [
+        {
+            "project_num": "3R01AI162826-05S1",
+            "project_serial_num": "AI162826",
+            "opportunity_number": "PA-20-185",
+            "organization": "YALE UNIVERSITY",
+            "state": "CT",
+            "award_amount": 84829,
+            "cong_dist": "CT-03",
+            "project_title": "Translational studies of hookworm infection in Ghana",
+            "public_health_relevance": "PROJECT NARRATIVE\nHookworm infection is a leading cause of anemia and malnutrition in poor countries, especially in sub-Saharan\nAfrica. Using both field-based and advanced genomic techniques, we will conduct studies aimed at defining\nhost and parasite factors that mediate hookworm infection, response to deworming and reinfection in endemic\nsettings. The studies proposed here will provide novel insights that will aid future development of effective\ncontrol strategies for human hookworm infection.",
+            "agencies": "NIAID"
+        }
+    ],
+    "LA": [
+        {
+            "project_num": "5P20GM130555-07",
+            "project_serial_num": "GM130555",
+            "opportunity_number": "PAR-23-063",
+            "organization": "LOUISIANA STATE UNIV A&M COL BATON ROUGE",
+            "state": "LA",
+            "award_amount": 196875,
+            "cong_dist": "LA-05",
+            "project_title": "Role of host glutaminolysis in tuberculosis pathogenesis",
+            "public_health_relevance": null,
+            "agencies": "NIGMS"
+        }
+    ],
+    "PA": [
+        {
+            "project_num": "3R01AI170753-03S1",
+            "project_serial_num": "AI170753",
+            "opportunity_number": "PA-20-185",
+            "organization": "PENNSYLVANIA STATE UNIVERSITY, THE",
+            "state": "PA",
+            "award_amount": 85563,
+            "cong_dist": "PA-15",
+            "project_title": "Estimation of risk associated with zoonotic tuberculosis in South India",
+            "public_health_relevance": "PROJECT NARRATIVE\nTuberculosis (TB) is a major public health threat that spreads readily among humans or from animals to humans\n(termed zoonotic tuberculosis or zTB). Yet we lack accurate estimates of zTB risk, especially in high-TB-burden\nsettings where the disease is endemic in both humans and livestock and where there are greater opportunities\nfor transmission of zTB from animals to humans. Our innovative, rigorously designed, and first-of-its-kind study\nwill fill this major knowledge gap by assessing the risks associated with zTB, and thereby enable the development\nof evidence-based approaches to reduce spillover from livestock to humans.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3R01AI170753-03S2",
+            "project_serial_num": "AI170753",
+            "opportunity_number": "PA-20-185",
+            "organization": "PENNSYLVANIA STATE UNIVERSITY, THE",
+            "state": "PA",
+            "award_amount": 85074,
+            "cong_dist": "PA-15",
+            "project_title": "Estimation of risk associated with zoonotic tuberculosis in South India",
+            "public_health_relevance": "PROJECT NARRATIVE\nTuberculosis (TB) is a major public health threat that spreads readily among humans or from animals to humans\n(termed zoonotic tuberculosis or zTB). Yet we lack accurate estimates of zTB risk, especially in high-TB-burden\nsettings where the disease is endemic in both humans and livestock and where there are greater opportunities\nfor transmission of zTB from animals to humans. Our innovative, rigorously designed, and first-of-its-kind study\nwill fill this major knowledge gap by assessing the risks associated with zTB, and thereby enable the development\nof evidence-based approaches to reduce spillover from livestock to humans.",
+            "agencies": "NIAID"
+        }
+    ],
+    "null": [
+        {
+            "project_num": "3UM1AI069438-20S3",
+            "project_serial_num": "AI069438",
+            "opportunity_number": "RFA-AI-19-045",
+            "organization": "ASOCIACION CIVIL IMPACTA SALUD Y EDUCACN",
+            "state": null,
+            "award_amount": 97211,
+            "cong_dist": null,
+            "project_title": "PERU Clinical Trial Unit",
+            "public_health_relevance": "The PERU CTU proposes to continue contributing to the design and implementation of the DAIDS scientific research agenda to decrease new HIV infections, reduce HIV associated morbidity and mortality, and ultimately end the HIV epidemic. Given the high incidence of tuberculosis in the country and the high burden of drug resistant strains, the PERU CTU is in an advantageous position to continue contributing to the design and implementation of clinical trials evaluating interventions to control the tuberculosis epidemic.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI069399-20S1",
+            "project_serial_num": "AI069399",
+            "opportunity_number": "RFA-AI-19-045",
+            "organization": "CHIANG MAI UNIVERSITY",
+            "state": null,
+            "award_amount": 264444,
+            "cong_dist": null,
+            "project_title": "Thailand HIV/AIDS and Infectious Disease Clinical Trials Unit (THAI CTU)",
+            "public_health_relevance": "Thailand HIV/AIDS and Infectious Disease Clinical Trials Unit (THAI CTU)\n SF 424 (R&R) Other Project Information \u2013 Project Narrative\nThe Thailand HIV/AIDS and Infectious Disease Clinical Trials Unit (THAI CTU) is a collaboration between the\nChiang Mai University-Research Institute for Health Sciences (CMU-RIHES) in Chiang Mai, Thailand, and the\nThai Red Cross AIDS Research Centre (TRC-ARC) in Bangkok, Thailand. The renewed THAI CTU and its four\nCRSs will participate in developing and conducting clinical trials proposed by the four NIH HIV/AIDS Clinical\nTrials Networks: HIV/AIDS adult therapeutics; HIV/AIDS maternal, adolescent and pediatric therapeutics; HIV\nprevention; and HIV vaccines. The collaboration between the NIH HIV/AIDS Clinical Trials Networks and their\naffiliated CTUs, including the THAI CTU, will lead to development of innovative and effective measures for HIV\ntreatment and prevention, and ultimately to HIV cure and an end to the global HIV epidemic.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI069438-20S1",
+            "project_serial_num": "AI069438",
+            "opportunity_number": "RFA-AI-19-045",
+            "organization": "ASOCIACION CIVIL IMPACTA SALUD Y EDUCACN",
+            "state": null,
+            "award_amount": 37500,
+            "cong_dist": null,
+            "project_title": "PERU Clinical Trial Unit",
+            "public_health_relevance": "The PERU CTU proposes to continue contributing to the design and implementation of the DAIDS scientific research agenda to decrease new HIV infections, reduce HIV associated morbidity and mortality, and ultimately end the HIV epidemic. Given the high incidence of tuberculosis in the country and the high burden of drug resistant strains, the PERU CTU is in an advantageous position to continue contributing to the design and implementation of clinical trials evaluating interventions to control the tuberculosis epidemic.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI069438-20S2",
+            "project_serial_num": "AI069438",
+            "opportunity_number": "RFA-AI-19-045",
+            "organization": "ASOCIACION CIVIL IMPACTA SALUD Y EDUCACN",
+            "state": null,
+            "award_amount": 307464,
+            "cong_dist": null,
+            "project_title": "PERU Clinical Trial Unit",
+            "public_health_relevance": "The PERU CTU proposes to continue contributing to the design and implementation of the DAIDS scientific research agenda to decrease new HIV infections, reduce HIV associated morbidity and mortality, and ultimately end the HIV epidemic. Given the high incidence of tuberculosis in the country and the high burden of drug resistant strains, the PERU CTU is in an advantageous position to continue contributing to the design and implementation of clinical trials evaluating interventions to control the tuberculosis epidemic.",
+            "agencies": "NIAID"
+        }
+    ],
+    "WA": [
+        {
+            "project_num": "3UM1AI068614-21S6",
+            "project_serial_num": "AI068614",
+            "opportunity_number": "RFA-AI-19-006",
+            "organization": "FRED HUTCHINSON CANCER CENTER",
+            "state": "WA",
+            "award_amount": 1,
+            "cong_dist": "WA-07",
+            "project_title": "HIV Vaccines Clinical Trials Network Leadership and Operations Center",
+            "public_health_relevance": "Despite the increasing availability and effectiveness of antiretroviral therapy, HIV continues to be the greatest\npandemic of the last 50 years \u2014 70 million infected, 36 million currently living with HIV and over 1.8 million\nnew infections, including over 180,000 new infant infections annually \u2014 so it is imperative to develop an\neffective population-based approach to reduce transmission. This proposal for the Leadership and Operations\nCenter of the HIV Vaccine Trials Network, the collaboration of scientists at 64 clinical trial sites in 15 countries\non 4 continents dedicated to developing a globally effective HIV vaccine, describes the marked advances in\ncandidate vaccines to induce broadly neutralizing antibodies (bnAbs), the advances in bnAbs administered by\ninjection at levels that can prevent infection, and the HVTN\u2019s extensive programs in engaging both local\ncommunities and other scientists throughout the world working to stop the spread of HIV. The goal of the\nHVTN is to develop a vaccine or monoclonal antibody combination that will, either alone or in combination,\nreduce HIV acquisition in adults and children by more than 60 percent.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068614-21S2",
+            "project_serial_num": "AI068614",
+            "opportunity_number": "RFA-AI-19-006",
+            "organization": "FRED HUTCHINSON CANCER CENTER",
+            "state": "WA",
+            "award_amount": 1,
+            "cong_dist": "WA-07",
+            "project_title": "HIV Vaccines Clinical Trials Network Leadership and Operations Center",
+            "public_health_relevance": "Despite the increasing availability and effectiveness of antiretroviral therapy, HIV continues to be the greatest\npandemic of the last 50 years \u2014 70 million infected, 36 million currently living with HIV and over 1.8 million\nnew infections, including over 180,000 new infant infections annually \u2014 so it is imperative to develop an\neffective population-based approach to reduce transmission. This proposal for the Leadership and Operations\nCenter of the HIV Vaccine Trials Network, the collaboration of scientists at 64 clinical trial sites in 15 countries\non 4 continents dedicated to developing a globally effective HIV vaccine, describes the marked advances in\ncandidate vaccines to induce broadly neutralizing antibodies (bnAbs), the advances in bnAbs administered by\ninjection at levels that can prevent infection, and the HVTN\u2019s extensive programs in engaging both local\ncommunities and other scientists throughout the world working to stop the spread of HIV. The goal of the\nHVTN is to develop a vaccine or monoclonal antibody combination that will, either alone or in combination,\nreduce HIV acquisition in adults and children by more than 60 percent.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068614-21S3",
+            "project_serial_num": "AI068614",
+            "opportunity_number": "RFA-AI-19-006",
+            "organization": "FRED HUTCHINSON CANCER CENTER",
+            "state": "WA",
+            "award_amount": 1,
+            "cong_dist": "WA-07",
+            "project_title": "HIV Vaccines Clinical Trials Network Leadership and Operations Center",
+            "public_health_relevance": "Despite the increasing availability and effectiveness of antiretroviral therapy, HIV continues to be the greatest\npandemic of the last 50 years \u2014 70 million infected, 36 million currently living with HIV and over 1.8 million\nnew infections, including over 180,000 new infant infections annually \u2014 so it is imperative to develop an\neffective population-based approach to reduce transmission. This proposal for the Leadership and Operations\nCenter of the HIV Vaccine Trials Network, the collaboration of scientists at 64 clinical trial sites in 15 countries\non 4 continents dedicated to developing a globally effective HIV vaccine, describes the marked advances in\ncandidate vaccines to induce broadly neutralizing antibodies (bnAbs), the advances in bnAbs administered by\ninjection at levels that can prevent infection, and the HVTN\u2019s extensive programs in engaging both local\ncommunities and other scientists throughout the world working to stop the spread of HIV. The goal of the\nHVTN is to develop a vaccine or monoclonal antibody combination that will, either alone or in combination,\nreduce HIV acquisition in adults and children by more than 60 percent.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068614-21S5",
+            "project_serial_num": "AI068614",
+            "opportunity_number": "RFA-AI-19-006",
+            "organization": "FRED HUTCHINSON CANCER CENTER",
+            "state": "WA",
+            "award_amount": 1,
+            "cong_dist": "WA-07",
+            "project_title": "HIV Vaccines Clinical Trials Network Leadership and Operations Center",
+            "public_health_relevance": "Despite the increasing availability and effectiveness of antiretroviral therapy, HIV continues to be the greatest\npandemic of the last 50 years \u2014 70 million infected, 36 million currently living with HIV and over 1.8 million\nnew infections, including over 180,000 new infant infections annually \u2014 so it is imperative to develop an\neffective population-based approach to reduce transmission. This proposal for the Leadership and Operations\nCenter of the HIV Vaccine Trials Network, the collaboration of scientists at 64 clinical trial sites in 15 countries\non 4 continents dedicated to developing a globally effective HIV vaccine, describes the marked advances in\ncandidate vaccines to induce broadly neutralizing antibodies (bnAbs), the advances in bnAbs administered by\ninjection at levels that can prevent infection, and the HVTN\u2019s extensive programs in engaging both local\ncommunities and other scientists throughout the world working to stop the spread of HIV. The goal of the\nHVTN is to develop a vaccine or monoclonal antibody combination that will, either alone or in combination,\nreduce HIV acquisition in adults and children by more than 60 percent.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068614-21S1",
+            "project_serial_num": "AI068614",
+            "opportunity_number": "RFA-AI-19-006",
+            "organization": "FRED HUTCHINSON CANCER CENTER",
+            "state": "WA",
+            "award_amount": 1,
+            "cong_dist": "WA-07",
+            "project_title": "HIV Vaccines Clinical Trials Network Leadership and Operations Center",
+            "public_health_relevance": "Despite the increasing availability and effectiveness of antiretroviral therapy, HIV continues to be the greatest\npandemic of the last 50 years \u2014 70 million infected, 36 million currently living with HIV and over 1.8 million\nnew infections, including over 180,000 new infant infections annually \u2014 so it is imperative to develop an\neffective population-based approach to reduce transmission. This proposal for the Leadership and Operations\nCenter of the HIV Vaccine Trials Network, the collaboration of scientists at 64 clinical trial sites in 15 countries\non 4 continents dedicated to developing a globally effective HIV vaccine, describes the marked advances in\ncandidate vaccines to induce broadly neutralizing antibodies (bnAbs), the advances in bnAbs administered by\ninjection at levels that can prevent infection, and the HVTN\u2019s extensive programs in engaging both local\ncommunities and other scientists throughout the world working to stop the spread of HIV. The goal of the\nHVTN is to develop a vaccine or monoclonal antibody combination that will, either alone or in combination,\nreduce HIV acquisition in adults and children by more than 60 percent.",
+            "agencies": "NIAID"
+        },
+        {
+            "project_num": "3UM1AI068614-21S4",
+            "project_serial_num": "AI068614",
+            "opportunity_number": "RFA-AI-19-006",
+            "organization": "FRED HUTCHINSON CANCER CENTER",
+            "state": "WA",
+            "award_amount": 1,
+            "cong_dist": "WA-07",
+            "project_title": "HIV Vaccines Clinical Trials Network Leadership and Operations Center",
+            "public_health_relevance": "Despite the increasing availability and effectiveness of antiretroviral therapy, HIV continues to be the greatest\npandemic of the last 50 years \u2014 70 million infected, 36 million currently living with HIV and over 1.8 million\nnew infections, including over 180,000 new infant infections annually \u2014 so it is imperative to develop an\neffective population-based approach to reduce transmission. This proposal for the Leadership and Operations\nCenter of the HIV Vaccine Trials Network, the collaboration of scientists at 64 clinical trial sites in 15 countries\non 4 continents dedicated to developing a globally effective HIV vaccine, describes the marked advances in\ncandidate vaccines to induce broadly neutralizing antibodies (bnAbs), the advances in bnAbs administered by\ninjection at levels that can prevent infection, and the HVTN\u2019s extensive programs in engaging both local\ncommunities and other scientists throughout the world working to stop the spread of HIV. The goal of the\nHVTN is to develop a vaccine or monoclonal antibody combination that will, either alone or in combination,\nreduce HIV acquisition in adults and children by more than 60 percent.",
+            "agencies": "NIAID"
+        }
+    ],
+    "SC": [
+        {
+            "project_num": "3K23AI187709-02S1",
+            "project_serial_num": "AI187709",
+            "opportunity_number": "PA-20-205",
+            "organization": "MEDICAL UNIVERSITY OF SOUTH CAROLINA",
+            "state": "SC",
+            "award_amount": 36687,
+            "cong_dist": "SC-06",
+            "project_title": "Metabolic Syndrome Outcomes Among Patients with Tuberculosis in Tanzania",
+            "public_health_relevance": "PROJECT NARRATIVE\nThe prevalence of noncommunicable diseases such as diabetes and metabolic syndrome is increasing in\nsettings where infectious diseases like tuberculosis are common. The proposed clinical study will characterize\nmetabolic profiles of people with newly diagnosed tuberculosis, determine the dynamics of those metabolic\nprofiles during tuberculosis treatment, and identify risk factors for persistence of metabolic disorders, towards a\ngoal of eventually developing better approaches to dual-disease management. An integrated set of career\ndevelopment activities will prepare Dr. Yosra Alkabab to lead future work as an independent physician-scientist\nand contribute to improving human health through interventions that address the intersection of communicable\nand non-communicable diseases.",
+            "agencies": "NIAID"
+        }
+    ]
+}
